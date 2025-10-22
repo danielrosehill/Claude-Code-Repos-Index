@@ -1,79 +1,41 @@
 # Claude Code Repositories Index
 
-**Last Updated:** October 12, 2025
+**Last Updated:** October 22, 2025
 
 [View Master Index](https://github.com/danielrosehill/Github-Master-Index)
 
----
-
-## Tools & Resources
+## Repositories (Alphabetically)
 
 ### Claude Code Context Feature Requests
-
-**Created:** October 9, 2025
-
-A couple of feature requests (including my own) discussing context handling in Claude code
-
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Feature-Requests)
 
----
+### Claude Code Linux Desktop Slash Commands
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands)
 
-### Claude Slash Commands
-
-**Created:** October 11, 2025
-
-My Claude Code slash commands
-
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands)
-
----
-
-### Cool Claude Code Stuff
-
-**Created:** October 2, 2025
-
-Claude Code repos and other resources
-
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
-
----
-
-### Non Code Claude Code
-
-**Created:** October 3, 2025
-
-Small collection of non-development related uses for Claude Code
-
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Non-Code-Claude-Code)
-
----
-
-### Smithery Claude Code MCP Jumpstarter
-
-**Created:** October 11, 2025
-
-Group of Smithery MCPs for Claude Code
-
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Smithery-Claude-Code-MCP-Jumpstarter)
-
----
-
-## Agent Systems
+### Claude Code MCP Command Generator
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-Command-Generator)
 
 ### Claude Code Writing Squad
-
-**Created:** September 16, 2025
-
-Model repository structure for using a Claude Code agent crew for writing related tasks
-
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
----
+### Claude OS Sync Agent
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent)
 
-### Claude Sub Agent Network
+### Claude Slash Commands
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands)
 
-**Created:** September 9, 2025
-
-Collection of subagents for Claude Code with configs spanning ideation, editing, version control
-
+### Claude Sub-Agent Network
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Sub-Agent-Network)
+
+### Cool Claude Code Stuff
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
+
+### Non-Code Claude Code
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Non-Code-Claude-Code)
+
+### Private And Public Claude MD
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Private-And-Public-Claude-MD)
+
+### Smithery Claude Code MCP Jumpstarter
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Smithery-Claude-Code-MCP-Jumpstarter)
+
