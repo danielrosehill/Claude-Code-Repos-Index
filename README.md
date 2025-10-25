@@ -1,6 +1,4 @@
-# Claude Code Repositories Index
-
-**Last Updated:** October 26, 2025
+![alt text](banner.png)
 
 [View Master Index](https://github.com/danielrosehill/Github-Master-Index)
 
