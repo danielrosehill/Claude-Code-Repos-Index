@@ -4,6 +4,28 @@
 
 ---
 
+## Notes
+
+### Beyond Code Generation: Claude for System Administration
+
+A particular focus of my work with agentic IDEs including Claude Code is exploring their potential for **desktop administration and remote system administration** - essentially using them as **Conversational UI Agents (CUAs)** for infrastructure management. I find these tools transformative for system administration and other non-code-generation purposes.
+
+### Claude Workspaces Concept
+
+I've adopted a workflow concept I call **"Claude Workspaces"** or **"Claude Spaces"** (my own nomenclature). This is a repository pattern that defines a workspace for Claude to work on local or remote system administration rather than code generation:
+
+- **CLAUDE.md** and **slash commands** can still be gathered there, but the focus is on system administration tasks
+- A common collection of folders can be standardized to provide modular areas for storing:
+  - Memory files
+  - Context files
+  - Logs
+  - Configuration snapshots
+  - Documentation
+
+Repositories following this pattern are marked with the ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square) badge.
+
+---
+
 ## Agent Systems & Multi-Agent Workflows
 
 ### Claude Code Writing Squad
@@ -106,7 +128,7 @@ Curated collection of 35+ MCP servers across 15+ categories with interactive ins
 ## Security & System Administration
 
 ### Claude Code Security Auditor
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Comprehensive system for managing and auditing security configurations across multiple machines, performing systematic security checks including antivirus status, rootkits, file permissions, and network exposure.
 
@@ -138,14 +160,14 @@ Claude Code-powered tool for systematic management of bash aliases with features
 ---
 
 ### Claude Code LAN Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Tools and resources for using Claude Code to manage local servers and home lab environments.
 
 ---
 
 ### Claude Conda Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
 
@@ -166,14 +188,14 @@ Template for streamlining creation of curated resource lists featuring automated
 ---
 
 ### Claude Linux Desktop Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
 
 ---
 
 ### Claude OS Sync Agent
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Intelligent synchronization tool for maintaining consistency between desktop and laptop using Claude CLI for context-aware decisions about packages, configurations, and tools with hardware-aware installation recommendations.
 
