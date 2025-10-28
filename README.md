@@ -22,10 +22,24 @@ Collection of ready-to-use system prompts and configurations for various develop
 
 ## Configuration & Context Management
 
+### Claude Code Context Toolkit
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit)
+
+Implements the CONTEXT.md workflow system bridging human-friendly context documentation with AI-optimized briefings through slash commands and specialized agents for managing, converting, and synchronizing project context between narrative CONTEXT.md files and structured CLAUDE.md briefings.
+
+---
+
 ### Claude Code Repo Managers ClaudeMD
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD)
 
 Pre-configured CLAUDE.md templates providing context-aware instructions for managing different repository types including Hugging Face projects, GitHub repositories, and collaborative workspaces.
+
+---
+
+### CONTEXT.md
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/CONTEXT.md)
+
+Workflow methodology for preparing project context in human-friendly markdown files that can be converted into agent-specific configuration files, separating casual human-authored CONTEXT.md scratchpads from structured CLAUDE.md briefings for AI agents.
 
 ---
 
@@ -44,6 +58,13 @@ Tools for managing both public CLAUDE.md and private CLAUDE_PRIVATE.md configura
 ---
 
 ## Curated Resources & Discovery
+
+### Claude Code Linux Notes
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
+
+Personal documentation repository containing practical workflows, configurations, and tips for using Claude Code on Ubuntu with KDE Plasma, covering Linux-specific integration, system automation, and real-world usage patterns.
+
+---
 
 ### Cool Claude Code Stuff
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
@@ -65,6 +86,13 @@ Showcase of creative applications of Claude Code beyond traditional software dev
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-Command-Generator)
 
 Generator for creating MCP commands for use with Claude Code.
+
+---
+
+### Claude Code MCP List
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-List)
+
+Curated index of Model Context Protocol servers organized into 14+ categories including AI model integration, memory management, code analysis, development tools, browser automation, and workflow automation for extending Claude Code capabilities.
 
 ---
 
@@ -113,6 +141,34 @@ Claude Code-powered tool for systematic management of bash aliases with features
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager)
 
 Tools and resources for using Claude Code to manage local servers and home lab environments.
+
+---
+
+### Claude Conda Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager)
+
+Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
+
+---
+
+### Claude Github Shortlister
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Github-Shortlister)
+
+Template repository that helps developers systematically evaluate and shortlist GitHub repositories using Claude Code for automated analysis with structured workflow for repository collection, requirements definition, and AI-powered recommendations organized by star count, update date, and relevance.
+
+---
+
+### Claude Is Awesome
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Is-Awesome)
+
+Template for streamlining creation of curated resource lists featuring automated formatting, alphabetization, and badge generation through custom slash commands to help users focus on meaningful curation rather than formatting tasks.
+
+---
+
+### Claude Linux Desktop Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager)
+
+AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
 
 ---
 
