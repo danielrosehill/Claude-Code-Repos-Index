@@ -10,11 +10,11 @@
 
 A particular focus of my work with agentic IDEs including Claude Code is exploring their potential for **desktop administration and remote system administration** - essentially using them as **Conversational UI Agents (CUAs)** for infrastructure management. I find these tools transformative for system administration and other non-code-generation purposes.
 
-### Claude Workspaces Concept
+### Claude Workspaces 
 
 I've adopted a workflow concept I call **"Claude Workspaces"** or **"Claude Spaces"** (my own nomenclature). This is a repository pattern that defines a workspace for Claude to work on local or remote system administration rather than code generation:
 
-- **CLAUDE.md** and **slash commands** can still be gathered there, but the focus is on system administration tasks
+- **CLAUDE.md** and **slash commands** can still be gathered there (as well as subagents and everything else that Claude Code provides), but the focus is on system administration tasks
 - A common collection of folders can be standardized to provide modular areas for storing:
   - Memory files
   - Context files
@@ -27,6 +27,8 @@ Repositories following this pattern are marked with the ![Claude Workspace](http
 ---
 
 ## Agent Systems & Multi-Agent Workflows
+
+Multi-agent systems and orchestration frameworks that enable specialized agents to collaborate on complex tasks through iterative refinement and role-based processing.
 
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
@@ -43,6 +45,8 @@ Collection of ready-to-use system prompts and configurations for various develop
 ---
 
 ## Configuration & Context Management
+
+Tools and methodologies for managing project context, configuration files, and CLAUDE.md templates to provide AI agents with optimal repository understanding and workflow guidance.
 
 ### Claude Code Context Toolkit
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit)
@@ -81,6 +85,8 @@ Tools for managing both public CLAUDE.md and private CLAUDE_PRIVATE.md configura
 
 ## Curated Resources & Discovery
 
+Curated collections, documentation repositories, and discovery tools showcasing Claude Code capabilities, use cases, and community resources.
+
 ### Claude Code Linux Notes
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
 
@@ -104,6 +110,8 @@ Showcase of creative applications of Claude Code beyond traditional software dev
 
 ## MCP & Integrations
 
+Model Context Protocol servers, integration tools, and resources for extending Claude Code capabilities through external services and APIs.
+
 ### Claude Code MCP Command Generator
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-Command-Generator)
 
@@ -125,51 +133,14 @@ Curated collection of 35+ MCP servers across 15+ categories with interactive ins
 
 ---
 
-## Security & System Administration
+## Development Tools & Utilities
 
-### Claude Code Security Auditor
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
-
-Comprehensive system for managing and auditing security configurations across multiple machines, performing systematic security checks including antivirus status, rootkits, file permissions, and network exposure.
-
----
-
-## Slash Command Libraries
-
-### Claude Code Linux Desktop Slash Commands
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands)
-
-System administration and configuration slash commands specifically designed for Linux desktop environments.
-
----
-
-### Claude Slash Commands
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands)
-
-General-purpose slash command library for various Claude Code workflows and tasks.
-
----
-
-## System Management & Automation
+Productivity tools and utilities that streamline development workflows, repository management, and content curation using Claude Code.
 
 ### Bash Alias Manager Claude
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Bash-Alias-Manager-Claude)
 
 Claude Code-powered tool for systematic management of bash aliases with features for adding, editing, deleting, researching, and backing up aliases with automatic YADM synchronization.
-
----
-
-### Claude Code LAN Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
-
-Tools and resources for using Claude Code to manage local servers and home lab environments.
-
----
-
-### Claude Conda Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
-
-Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
 
 ---
 
@@ -187,6 +158,31 @@ Template for streamlining creation of curated resource lists featuring automated
 
 ---
 
+## Security & System Administration
+
+Claude Workspace repositories focused on system administration, security auditing, network management, and infrastructure maintenance across desktop and remote environments.
+
+### Claude Code LAN Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Tools and resources for using Claude Code to manage local servers and home lab environments.
+
+---
+
+### Claude Code Security Auditor
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Comprehensive system for managing and auditing security configurations across multiple machines, performing systematic security checks including antivirus status, rootkits, file permissions, and network exposure.
+
+---
+
+### Claude Conda Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
+
+---
+
 ### Claude Linux Desktop Manager
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
@@ -201,7 +197,27 @@ Intelligent synchronization tool for maintaining consistency between desktop and
 
 ---
 
+## Slash Command Libraries
+
+Collections of reusable slash commands for automating common tasks and workflows in Claude Code.
+
+### Claude Code Linux Desktop Slash Commands
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands)
+
+System administration and configuration slash commands specifically designed for Linux desktop environments.
+
+---
+
+### Claude Slash Commands
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands)
+
+General-purpose slash command library for various Claude Code workflows and tasks.
+
+---
+
 ## Miscellaneous
+
+Additional resources and repositories that don't fit into other categories but provide value to the Claude Code ecosystem.
 
 ### Claude Code Context Feature Requests
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Feature-Requests)
