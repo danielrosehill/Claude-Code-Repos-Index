@@ -3,7 +3,7 @@
     "title": "Claude Code Repos Index",
     "description": "Curated index of Claude Code-related resources and projects",
     "master_index_url": "https://github.com/danielrosehill/Github-Master-Index",
-    "generated_date": "2025-10-28"
+    "generated_date": "2025-10-29"
   },
   "categories": [
     {
@@ -19,6 +19,16 @@
           "name": "Claude Sub-Agent Network",
           "url": "https://github.com/danielrosehill/Claude-Sub-Agent-Network",
           "description": "Collection of ready-to-use system prompts and configurations for various development, operational, and creative tasks, organized into prompts-only and frontmatter-enhanced formats for multi-agent development workflows."
+        },
+        {
+          "name": "Claude Spaces Model",
+          "url": "https://github.com/danielrosehill/Claude-Spaces-Model",
+          "description": "Framework for organizing AI development workflows into distinct 'spaces' - dedicated repositories that serve as focused work environments for specific Claude Code interactions and project contexts."
+        },
+        {
+          "name": "Claude Code Remote Machine Admin Space",
+          "url": "https://github.com/danielrosehill/Claude-Code-Remote-Machine-Admin-Space",
+          "description": "Dedicated workspace implementing the Claude Spaces Model for remote server and machine administration tasks using Claude Code as a central interface."
         }
       ]
     },
@@ -50,6 +60,11 @@
           "name": "Private And Public Claude MD",
           "url": "https://github.com/danielrosehill/Private-And-Public-Claude-MD",
           "description": "Tools for managing both public CLAUDE.md and private CLAUDE_PRIVATE.md configuration files with security-focused git configuration to prevent accidental exposure of sensitive information."
+        },
+        {
+          "name": "AI Dev Repo Template Oct 2025",
+          "url": "https://github.com/danielrosehill/AI-Dev-Repo-Template-Oct-2025",
+          "description": "Comprehensive template for AI-assisted development repositories featuring structured directories for context management, documentation, planning, and project management with built-in Claude Code integration and workflow guidance."
         }
       ]
     },
@@ -177,10 +192,10 @@
   ],
   "statistics": {
     "total_categories": 8,
-    "total_repositories": 26,
+    "total_repositories": 29,
     "repositories_by_category": {
-      "Agent Systems & Multi-Agent Workflows": 2,
-      "Configuration & Context Management": 5,
+      "Agent Systems & Multi-Agent Workflows": 4,
+      "Configuration & Context Management": 6,
       "Curated Resources & Discovery": 3,
       "MCP & Integrations": 3,
       "Security & System Administration": 1,

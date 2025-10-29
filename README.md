@@ -57,6 +57,13 @@ Repositories following this pattern are marked with the ![Claude Workspace](http
 
 Multi-agent systems and orchestration frameworks that enable specialized agents to collaborate on complex tasks through iterative refinement and role-based processing.
 
+### Claude Deep Research Model
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Model)
+
+Framework for conducting iterative deep research using Claude with integrated voice pipeline component, featuring organized research workflows with dedicated sections for prompts, context management, and structured outputs.
+
+---
+
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
