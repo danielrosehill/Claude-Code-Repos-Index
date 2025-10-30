@@ -128,6 +128,13 @@ Personal documentation repository containing practical workflows, configurations
 
 ---
 
+### Claude Code Notebook
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Notebook)
+
+Minimal personal reference repository for documenting and organizing usage patterns, workflows, and notes related to Claude Code.
+
+---
+
 ### Cool Claude Code Stuff
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
 
