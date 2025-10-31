@@ -85,6 +85,13 @@ Collection of ready-to-use system prompts and configurations for various develop
 
 ---
 
+### Claude Tech Research Team
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Tech-Research-Team)
+
+Multi-agent system for conducting comprehensive software and hardware technology evaluations, orchestrating specialized AI agents for SaaS discovery, open-source alternatives, compatibility assessment, geographic sourcing, and automated report generation with MCP integrations.
+
+---
+
 ## Configuration & Context Management
 
 Tools and methodologies for managing project context, configuration files, and CLAUDE.md templates to provide AI agents with optimal repository understanding and workflow guidance.
