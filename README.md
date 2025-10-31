@@ -1,37 +1,8 @@
 ![alt text](banner.png)
 
----
+ My Claude Code related repositories, by section. 
 
-## Index Repositories
-
-| Repository | Description |
-|------------|-------------|
-| [Master Index](https://github.com/danielrosehill/Github-Master-Index) | Main repository index |
-| [AI Agents](https://github.com/danielrosehill/AI-Agents) | AI agent systems and implementations |
-| [AI Generated Projects](https://github.com/danielrosehill/AI-Generated-Projects-Index) | Projects generated with AI assistance |
-| [AI Projects](https://github.com/danielrosehill/AI-Projects-Index) | AI-focused projects and experiments |
-| [Apps](https://github.com/danielrosehill/Apps-Index) | Application repositories |
-| [Awesome List Repos](https://github.com/danielrosehill/Awesome-List-Repos-Index) | Curated awesome lists |
-| [Backup Projects](https://github.com/danielrosehill/Backup-Projects-Index) | Backup and recovery solutions |
-| [Claude Code Repos](https://github.com/danielrosehill/Claude-Code-Repos-Index) | Claude Code related repositories |
-| [Development Projects](https://github.com/danielrosehill/Development-Project-Index) | General development projects |
-| [Docs](https://github.com/danielrosehill/My-Docs-Index) | Documentation repositories |
-| [Experiments And Evaluations](https://github.com/danielrosehill/Experiments-And-Evaluations-Index) | Experimental and evaluation projects |
-| [Gemini Vibe Coding Projects](https://github.com/danielrosehill/Gemini-Vibe-Coding-Projects) | Projects created with Gemini |
-| [Home Assistant](https://github.com/danielrosehill/Home-Assistant-Index) | Home Assistant configurations and projects |
-| [Homebox Projects](https://github.com/danielrosehill/Homebox-Projects-Index) | Homebox inventory management projects |
-| [N8N Workflows](https://github.com/danielrosehill/N8N-Workflows-Index) | N8N automation workflows |
-| [Prompt Libraries](https://github.com/danielrosehill/My-Prompt-Libraries) | LLM prompt collections |
-
----
-
-## Connect
-
-For inquiries or collaboration opportunities, visit my [contact page](https://danielrosehill.com/contact).
-
----
-
-## Notes
+ Most patterns/templates/models are adaptable to other agentic AI CLIs (and frameworks).
 
 ### Beyond Code Generation: Claude for System Administration
 
