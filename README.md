@@ -4,7 +4,9 @@
 
  Most patterns/templates/models are adaptable to other agentic AI CLIs (and frameworks).
 
-### Beyond Code Generation: Claude for System Administration
+ ---
+
+## Beyond Code Generation: Claude for System Administration
 
 A particular focus of my work with agentic IDEs including Claude Code is exploring their potential for **desktop administration and remote system administration** - essentially using them as **Conversational UI Agents (CUAs)** for infrastructure management. I find these tools transformative for system administration and other non-code-generation purposes.
 
@@ -23,6 +25,8 @@ I've adopted a workflow concept I call **"Claude Workspaces"** or **"Claude Spac
 Repositories following this pattern are marked with the ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square) badge.
 
 ---
+
+# Repo Index, By Section
 
 ## Agent Systems & Multi-Agent Workflows
 
