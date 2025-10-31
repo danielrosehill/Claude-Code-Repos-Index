@@ -233,6 +233,13 @@ Intelligent synchronization tool for maintaining consistency between desktop and
 
 Collections of reusable slash commands for automating common tasks and workflows in Claude Code.
 
+## AI-Human Attribution Adder
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/AI-Human-Attribution-Adder)
+
+Automates the addition of attribution sections to README files, enabling developers to transparently document which parts of a project were human-created versus AI-assisted for ethical representation of AI tool usage.
+
+---
+
 ## Claude File Organiser Super Slash
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash)
 
@@ -263,5 +270,4 @@ Additional resources and repositories that don't fit into other categories but p
 
 Feature requests and suggestions for improving Claude Code's context handling capabilities.
 
----
-
+ 
