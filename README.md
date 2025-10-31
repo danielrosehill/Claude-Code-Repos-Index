@@ -57,6 +57,13 @@ Repositories following this pattern are marked with the ![Claude Workspace](http
 
 Multi-agent systems and orchestration frameworks that enable specialized agents to collaborate on complex tasks through iterative refinement and role-based processing.
 
+### Claude Agent Picker Pattern
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Agent-Picker-Pattern)
+
+Conceptual framework for intelligently assembling context-optimized multi-agent crews by evaluating project requirements, selecting complementary subagents with minimal overlap, and automatically generating crew configurations that stay within context window limits.
+
+---
+
 ### Claude Deep Research Model
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Model)
 
