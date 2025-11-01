@@ -208,14 +208,20 @@ Template repository for configuring Claude Code as a comprehensive server admini
 
 ---
 
-# Security & System Administration
+# Network-Level Manager Templates
 
-Claude Workspace repositories focused on system administration, security auditing, network management, and infrastructure maintenance across desktop and remote environments.
+Claude Workspace templates for managing local area networks, home lab environments, and network infrastructure through Claude Code.
 
 ## Claude Code LAN Manager
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Tools and resources for using Claude Code to manage local servers and home lab environments.
+
+---
+
+# Security & System Administration
+
+Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
 
 ---
 
