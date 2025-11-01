@@ -190,6 +190,24 @@ Template for streamlining creation of curated resource lists featuring automated
 
 ---
 
+# OS-Level Manager Templates
+
+Comprehensive Claude Workspace templates for managing entire operating systems through Claude Code, providing extensive slash command libraries and specialized agents for desktop and server administration.
+
+## Claude Linux Desktop Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
+
+---
+
+## Claude Server Manager Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Template repository for configuring Claude Code as a comprehensive server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, network management, and infrastructure maintenance across desktop and remote environments.
@@ -215,24 +233,10 @@ Specialized Claude Code workspace for managing and optimizing Conda environments
 
 ---
 
-## Claude Linux Desktop Manager
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
-
-AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
-
----
-
 ## Claude OS Sync Agent
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Intelligent synchronization tool for maintaining consistency between desktop and laptop using Claude CLI for context-aware decisions about packages, configurations, and tools with hardware-aware installation recommendations.
-
----
-
-## Claude Server Manager Template
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
-
-Template repository for configuring Claude Code as a comprehensive server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
 
 ---
 
