@@ -48,6 +48,13 @@ Framework for conducting iterative deep research using Claude with integrated vo
 
 ---
 
+## Claude Deep Research Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Template)
+
+Structured workflow system for conducting systematic, comprehensive research using Claude Code with specialized research agents, organized directory structure for context and prompts, and support for iterative investigations across academic, market, technical, and strategic research domains.
+
+---
+
 ## Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
