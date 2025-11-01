@@ -194,6 +194,13 @@ Template for streamlining creation of curated resource lists featuring automated
 
 Comprehensive Claude Workspace templates for managing entire operating systems through Claude Code, providing extensive slash command libraries and specialized agents for desktop and server administration.
 
+## Claude Home Assistant Manager Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Home-Assistant-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Customizable template for managing Home Assistant OS through Claude Code with 20+ slash commands covering health monitoring, backups, network diagnostics, and maintenance operations, plus 5 specialized agents for automation, integration, device, backup, and troubleshooting workflows.
+
+---
+
 ## Claude Linux Desktop Manager
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
@@ -201,10 +208,24 @@ AI-powered system administration interface wrapping Claude Code CLI with a graph
 
 ---
 
+## Claude Proxmox Manager Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Proxmox-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Customizable template for Proxmox server management with 38 slash commands and 10 specialized agents supporting Docker, networking, security, backups, and hardware monitoring on low-spec hardware.
+
+---
+
 ## Claude Server Manager Template
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
 Template repository for configuring Claude Code as a comprehensive server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
+
+---
+
+## Claude Server Mgmt Template SBCs
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Server-Mgmt-Template-SBCs) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Template for managing Ubuntu servers on Single Board Computers (SBCs) with 38 slash commands for system administration and 10 specialized agents, designed for Docker deployments, backups, and local network services on resource-constrained hardware.
 
 ---
 
