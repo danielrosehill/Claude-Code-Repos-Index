@@ -229,6 +229,13 @@ Intelligent synchronization tool for maintaining consistency between desktop and
 
 ---
 
+## Claude Server Manager Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Template repository for configuring Claude Code as a comprehensive server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
+
+---
+
 # Slash Command Libraries
 
 Collections of reusable slash commands for automating common tasks and workflows in Claude Code.
