@@ -55,6 +55,13 @@ Structured workflow system for conducting systematic, comprehensive research usi
 
 ---
 
+## Claude Stack Research Workspace
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Stack-Research-Workspace)
+
+Structured environment for conducting technical research and evaluating software solutions using Claude Code, organizing research requests, findings, and recommendations through dedicated directories, custom commands, and specialized AI agents to streamline technology stack comparisons and component evaluations.
+
+---
+
 ## Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
