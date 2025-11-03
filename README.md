@@ -247,6 +247,17 @@ Tools and resources for using Claude Code to manage local servers and home lab e
 
 ---
 
+# Specialized Templates & Non-Development Use Cases
+
+Template repositories for non-traditional applications of Claude Code beyond software development, including personal workflows, research, and specialized domains.
+
+## Claude Therapy Tracker
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Therapy-Tracker)
+
+Template repository structure for organizing and tracking therapy sessions, mental health goals, and therapeutic planning through version-controlled documentation, featuring separated directories for human input and AI outputs with specialized agents and slash commands for session planning and goal tracking.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
