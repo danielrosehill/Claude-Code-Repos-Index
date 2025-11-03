@@ -247,9 +247,9 @@ Tools and resources for using Claude Code to manage local servers and home lab e
 
 ---
 
-# Specialized Templates & Non-Development Use Cases
+# Non-Code Templates
 
-Template repositories for non-traditional applications of Claude Code beyond software development, including personal workflows, research, and specialized domains.
+Template repositories for applying Claude Code to non-development use cases including personal workflows, research, and specialized domains beyond traditional software development.
 
 ## Claude Therapy Tracker
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Therapy-Tracker)
