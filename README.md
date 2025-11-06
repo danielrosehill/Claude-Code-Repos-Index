@@ -101,6 +101,13 @@ Pre-configured CLAUDE.md templates providing context-aware instructions for mana
 
 ---
 
+## Claude Spec Starter
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter)
+
+Template repository that transforms unstructured project descriptions into organized specifications and context files for Claude Code projects, automating the conversion of free-form prompts into structured technical specs through a `/build-repo` slash command.
+
+---
+
 ## CONTEXT.md
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/CONTEXT.md)
 
