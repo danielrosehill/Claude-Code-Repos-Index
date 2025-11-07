@@ -312,7 +312,7 @@ Template repository structure for organizing and tracking therapy sessions, ment
 ---
 
 ## Claude Think Tank
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![GitHub Template](https://img.shields.io/badge/GitHub-Template-green?style=for-the-badge&logo=github)
 
 Template framework for building a virtual think tank using AI agents, enabling research assistance and policy proposal development through collaborative Claude Code agents that synthesize information and generate policy ideas.
 
