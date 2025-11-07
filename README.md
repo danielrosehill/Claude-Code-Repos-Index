@@ -265,6 +265,13 @@ Tools and resources for using Claude Code to manage local servers and home lab e
 
 Template repositories for applying Claude Code to non-development use cases including personal workflows, research, and specialized domains beyond traditional software development.
 
+## Claude Budget Workspace Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Budget-Workspace-Template)
+
+Template for managing household budgets using Claude Code, providing structured workspace framework for financial planning and budget analysis tasks.
+
+---
+
 ## Claude Diary Planner Template
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Diary-Planner-Template)
 
