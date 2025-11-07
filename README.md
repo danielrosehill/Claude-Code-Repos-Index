@@ -10,6 +10,8 @@ My Claude Code related repositories, by section.
 
  Most patterns/templates/models are adaptable to other agentic AI CLIs (and frameworks).
 
+ For the Claude Space idea, see [Claude Spaces](./claude-spaces.md)
+
  ---
 
 ## Beyond Code Generation: Templates & Workspaces
@@ -275,8 +277,6 @@ Claude Workspace templates for managing local area networks, home lab environmen
 ## Claude Code LAN Manager
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
-Tools and resources for using Claude Code to manage local servers and home lab environments.
-let
 ---
 
 # Workspace & Workflow Templates
