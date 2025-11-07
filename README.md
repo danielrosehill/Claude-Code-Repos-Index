@@ -311,6 +311,13 @@ Template repository structure for organizing and tracking therapy sessions, ment
 
 ---
 
+## Claude Think Tank
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Template framework for building a virtual think tank using AI agents, enabling research assistance and policy proposal development through collaborative Claude Code agents that synthesize information and generate policy ideas.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
