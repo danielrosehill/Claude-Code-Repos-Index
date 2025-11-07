@@ -265,6 +265,13 @@ Tools and resources for using Claude Code to manage local servers and home lab e
 
 Template repositories for applying Claude Code to non-development use cases including personal workflows, research, and specialized domains beyond traditional software development.
 
+## Claude Diary Planner Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Diary-Planner-Template)
+
+Forkable template for workflow and time management planning with Claude Code, providing a foundation for organizing daily schedules and productivity workflows.
+
+---
+
 ## Claude Therapy Tracker
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Therapy-Tracker)
 
