@@ -206,6 +206,17 @@ Curated collection of 35+ MCP servers across 15+ categories with interactive ins
 
 ---
 
+# Plugins & Extensions
+
+Plugin collections and extension libraries that add specialized functionality to Claude Code through custom commands and agents.
+
+## Claude Code Plugins
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Plugins)
+
+Comprehensive collection of over 1,000 specialized slash commands and agents across 23 categories including development tools, AI/ML utilities, system administration, content creation, and security for developers, system administrators, and content creators.
+
+---
+
 # Development Tools & Utilities
 
 Productivity tools and utilities that streamline development workflows, repository management, and content curation using Claude Code.
