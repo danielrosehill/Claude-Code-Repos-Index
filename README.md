@@ -107,13 +107,6 @@ Multi-agent system for conducting comprehensive software and hardware technology
 
 Tools and methodologies for managing project context, configuration files, and CLAUDE.md templates to provide AI agents with optimal repository understanding and workflow guidance.
 
-## Claude Code Context Toolkit
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit)
-
-Implements the CONTEXT.md workflow system bridging human-friendly context documentation with AI-optimized briefings through slash commands and specialized agents for managing, converting, and synchronizing project context between narrative CONTEXT.md files and structured CLAUDE.md briefings.
-
----
-
 ## Claude Code Repo Managers ClaudeMD
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD)
 
@@ -209,6 +202,13 @@ Curated collection of 35+ MCP servers across 15+ categories with interactive ins
 # Plugins & Extensions
 
 Plugin collections and extension libraries that add specialized functionality to Claude Code through custom commands and agents.
+
+## Claude Code Context Toolkit
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit)
+
+Implements the CONTEXT.md workflow system bridging human-friendly context documentation with AI-optimized briefings through slash commands and specialized agents for managing, converting, and synchronizing project context between narrative CONTEXT.md files and structured CLAUDE.md briefings.
+
+---
 
 ## Claude Code Plugins
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Plugins)
