@@ -235,6 +235,13 @@ Claude Code-powered tool for systematic management of bash aliases with features
 
 ---
 
+## Claude Code Bash Aliases
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-Bash-Aliases)
+
+Collection of documented bash aliases for speeding up common and repetitive operations with Claude Code on Linux, including quick navigation to configuration directories, shortcuts for creating slash commands and agents, and MCP server management helpers.
+
+---
+
 ## Claude Github Shortlister
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Github-Shortlister) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
