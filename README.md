@@ -178,6 +178,13 @@ Showcase of creative applications of Claude Code beyond traditional software dev
 
 Model Context Protocol servers, integration tools, and resources for extending Claude Code capabilities through external services and APIs.
 
+## Claude MCP Guidelines
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-MCP-Guidelines)
+
+Guideline snippet for adding determinative guidance to Claude Code on how to use MCPs encountered across environments, providing context for MCP selection and usage patterns to resolve ambiguities between MCPs and internal Claude tools.
+
+---
+
 ## Claude Code MCP Command Generator
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-Command-Generator)
 
