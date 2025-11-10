@@ -343,6 +343,13 @@ Template framework for building a virtual think tank using AI agents, enabling r
 
 ---
 
+## Claude News Fetcher - Media Monitoring System
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Comprehensive workspace for conducting media monitoring and gathering articles into a well-defined structured data format. Features date-based article organization, JSON schema validation, specialized agents for article fetching and analysis, and extensive slash commands for batch processing, search, validation, and export workflows.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
