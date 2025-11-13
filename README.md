@@ -329,6 +329,13 @@ Forkable template for workflow and time management planning with Claude Code, pr
 
 ---
 
+## Claude Website Update Sender
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Website-Update-Sender)
+
+Automated workflow for sending polished update emails to colleagues about website changes and deployments, transforming technical commit messages or freeform notes into non-technical updates via Resend MCP with HTML templating and human-in-the-loop review.
+
+---
+
 ## Claude Therapy Tracker
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Therapy-Tracker) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
