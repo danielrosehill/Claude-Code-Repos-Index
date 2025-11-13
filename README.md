@@ -371,6 +371,13 @@ Version-controlled workspace template for managing Android devices through ADB w
 
 ---
 
+## Claude Change My View
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Change-My-View) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured workspace for challenging personal beliefs through AI-assisted critical analysis, inspired by the r/ChangeMyView subreddit. Features organized workflow for documenting viewpoints, running specialized agents to generate counterarguments and rebuttals, and tracking outcomes. Includes slash commands for initiating challenges and specialized subagents for argument generation, podcast creation, and export formatting.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
