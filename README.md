@@ -357,6 +357,13 @@ Structured workspace template for writing projects using Claude Code, designed t
 
 ---
 
+## Claude ADB Workspace Template
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-ADB-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Version-controlled workspace template for managing Android devices through ADB with Claude Code. Features automated device profiling, package management with timestamped exports, bloatware removal, system diagnostics, and forensic logging. Includes specialized agents for device optimization and package analysis, with structured directories for manifests, package lists, and diagnostic logs.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
