@@ -437,6 +437,13 @@ General-purpose slash command library for various Claude Code workflows and task
 
 ---
 
+## Claude Document This
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Document-This)
+
+Collection of methods and example slash commands for documenting system administration changes and fixes made by Claude Code, including MCP-based workflows (Notion, email, Google Drive) and Obsidian notebook integration for long-term reference retention.
+
+---
+
 # Miscellaneous
 
 Additional resources and repositories that don't fit into other categories but provide value to the Claude Code ecosystem.
