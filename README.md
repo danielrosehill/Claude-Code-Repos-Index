@@ -103,6 +103,13 @@ Multi-agent system for conducting comprehensive software and hardware technology
 
 ---
 
+## Panel Of Claude
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude)
+
+Experimental multi-agent framework for simulated debates and argument modeling, orchestrating specialized agents (Advocate, CMV/Change My View, and Moderator) through sequential context passing to generate comprehensive debate proceedings with structured outputs in JSON, Markdown, PDF, and ePub formats, with optional podcast generation via TTS.
+
+---
+
 # Configuration & Context Management
 
 Tools and methodologies for managing project context, configuration files, and CLAUDE.md templates to provide AI agents with optimal repository understanding and workflow guidance.
