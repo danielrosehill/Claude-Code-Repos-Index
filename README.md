@@ -378,6 +378,13 @@ Version-controlled workspace template for managing Android devices through ADB w
 
 ---
 
+## Claude Blog Manager
+[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Conversational blog management workspace for Claude Code enabling API-first content publishing workflows. Template repository for managing blog content through headless CMS platforms using MCP integrations, featuring dedicated directories for drafting and published content, with specialized commands for content creation, proofreading, and automated publishing while preserving authorial voice.
+
+---
+
 ## Claude Change My View
 [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Claude-Change-My-View) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
