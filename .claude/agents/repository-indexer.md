@@ -34,7 +34,7 @@ You are a specialized agent for processing GitHub repository URLs and creating p
    - Follow this exact format:
    ```markdown
    ### Repository Name
-   [![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](REPO_URL) BADGES
+   [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](REPO_URL) BADGES
 
    Brief description (1-2 sentences).
 

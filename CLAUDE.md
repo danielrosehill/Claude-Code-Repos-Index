@@ -44,7 +44,7 @@ Each repository entry should follow this format:
 
 ```markdown
 ### Repository Name
-[![View Repo](https://img.shields.io/badge/View-Repo-blue?style=for-the-badge&logo=github)](https://github.com/danielrosehill/Repository-Name)
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Repository-Name)
 
 Brief description of the repository's purpose and key features (1-2 sentences).
 
