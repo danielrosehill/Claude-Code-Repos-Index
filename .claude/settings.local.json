@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Read(//home/daniel/**)",
+      "WebFetch(domain:github.com)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd Notes section documenting Claude Workspaces concept and CUA usage\n\n- Added Notes section explaining use of agentic IDEs for system administration\n- Documented Claude Workspaces/Claude Spaces workflow pattern\n- Created Claude Workspace badge for relevant repositories\n- Applied badge to 5 system administration-focused repos:\n  - Claude Code Security Auditor\n  - Claude Code LAN Manager\n  - Claude Conda Manager\n  - Claude Linux Desktop Manager\n  - Claude OS Sync Agent\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(gh repo list:*)",
+      "Bash(git commit:*)",
+      "Bash(chmod:*)",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

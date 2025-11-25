@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Track repository count over time and generate visualization.
+Track repository count over time, generate visualization, and update repos.json.
 This script is called by the pre-push git hook.
 """
 
@@ -16,6 +16,7 @@ REPO_ROOT = Path(__file__).parent.parent
 README_PATH = REPO_ROOT / "README.md"
 JSON_PATH = REPO_ROOT / "repo-count-history.json"
 CHART_PATH = REPO_ROOT / "repo-count-chart.png"
+REPOS_JSON_PATH = REPO_ROOT / "repos.json"
 
 
 def count_repos_in_readme():
@@ -27,6 +28,144 @@ def count_repos_in_readme():
     repo_pattern = r'\[!\[View Repo\]'
     matches = re.findall(repo_pattern, content)
     return len(matches)
+
+
+def parse_readme_to_json():
+    """Parse README.md and extract all repositories organized by category"""
+    with open(README_PATH, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    categories = []
+    current_category = None
+    current_category_desc = None
+    current_repo = None
+    repo_description_lines = []
+
+    lines = content.split('\n')
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+
+        # Match top-level category (# heading, not ##)
+        # Skip lines that are part of header/intro (before "Repo Index, By Section")
+        if line.startswith('# ') and not line.startswith('# Repo Index'):
+            # Check if this is a category (comes after the intro section)
+            # Categories start with single # and are not the title or section markers
+            if current_category is not None or 'Repo Index' in '\n'.join(lines[:i]):
+                # Save previous category if exists
+                if current_category and current_category.get('repositories'):
+                    categories.append(current_category)
+
+                category_name = line[2:].strip()
+                # Get description from next non-empty line if it's not a heading or repo
+                current_category_desc = ""
+                j = i + 1
+                while j < len(lines):
+                    next_line = lines[j].strip()
+                    if next_line and not next_line.startswith('#') and not next_line.startswith('[!['):
+                        if not next_line.startswith('---'):
+                            current_category_desc = next_line
+                        break
+                    elif next_line.startswith('#') or next_line.startswith('[!['):
+                        break
+                    j += 1
+
+                current_category = {
+                    "name": category_name,
+                    "description": current_category_desc,
+                    "repositories": []
+                }
+                current_repo = None
+                repo_description_lines = []
+
+        # Match repository entry (## heading followed by View Repo badge)
+        elif line.startswith('## ') and not line.startswith('### '):
+            # Save previous repo description if exists
+            if current_repo and repo_description_lines:
+                current_repo['description'] = ' '.join(repo_description_lines).strip()
+
+            repo_name = line[3:].strip()
+            current_repo = {"name": repo_name, "url": "", "description": ""}
+            repo_description_lines = []
+
+            # Look for the View Repo badge in next few lines
+            for j in range(i + 1, min(i + 5, len(lines))):
+                badge_match = re.search(r'\[!\[View Repo\].*?\]\((https://github\.com/[^)]+)\)', lines[j])
+                if badge_match:
+                    current_repo['url'] = badge_match.group(1)
+                    break
+
+            if current_category:
+                current_category['repositories'].append(current_repo)
+
+        # Match repository entry with ### heading (alternative format)
+        elif line.startswith('### '):
+            # Save previous repo description if exists
+            if current_repo and repo_description_lines:
+                current_repo['description'] = ' '.join(repo_description_lines).strip()
+
+            repo_name = line[4:].strip()
+            current_repo = {"name": repo_name, "url": "", "description": ""}
+            repo_description_lines = []
+
+            # Look for the View Repo badge in next few lines
+            for j in range(i + 1, min(i + 5, len(lines))):
+                badge_match = re.search(r'\[!\[View Repo\].*?\]\((https://github\.com/[^)]+)\)', lines[j])
+                if badge_match:
+                    current_repo['url'] = badge_match.group(1)
+                    break
+
+            if current_category:
+                current_category['repositories'].append(current_repo)
+
+        # Collect description lines for current repo
+        elif current_repo and line.strip():
+            # Skip badge lines, horizontal rules, and empty lines
+            if not line.startswith('[![') and not line.startswith('---') and not line.startswith('#'):
+                repo_description_lines.append(line.strip())
+
+        i += 1
+
+    # Save last repo description
+    if current_repo and repo_description_lines:
+        current_repo['description'] = ' '.join(repo_description_lines).strip()
+
+    # Save last category
+    if current_category and current_category.get('repositories'):
+        categories.append(current_category)
+
+    # Build statistics
+    total_repos = sum(len(cat['repositories']) for cat in categories)
+    repos_by_category = {cat['name']: len(cat['repositories']) for cat in categories}
+
+    result = {
+        "metadata": {
+            "title": "Claude Code Repos Index",
+            "description": "Curated index of Claude Code-related resources and projects",
+            "master_index_url": "https://github.com/danielrosehill/Github-Master-Index",
+            "generated_date": datetime.now().strftime("%Y-%m-%d")
+        },
+        "categories": categories,
+        "statistics": {
+            "total_categories": len(categories),
+            "total_repositories": total_repos,
+            "repositories_by_category": repos_by_category
+        }
+    }
+
+    return result
+
+
+def update_repos_json():
+    """Update repos.json with current README.md content"""
+    print("\nParsing README.md to update repos.json...")
+    data = parse_readme_to_json()
+
+    with open(REPOS_JSON_PATH, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+
+    print(f"repos.json updated: {data['statistics']['total_repositories']} repositories in {data['statistics']['total_categories']} categories")
 
 
 def load_tracking_data():

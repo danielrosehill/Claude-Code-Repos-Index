@@ -27,16 +27,13 @@ When Daniel adds repository URLs to `scratchpad.md`, follow this workflow:
 
 ### 2. Categorization
 
-Organize repositories into these existing categories (or suggest new ones if needed):
+The README Is organized according to categories, but that categorization is in a constant state of flux. 
 
-- **Agent Systems & Multi-Agent Workflows**: Multi-agent systems, agent networks, orchestration
-- **Configuration & Context Management**: CLAUDE.md templates, context tools, configuration managers
-- **Curated Resources & Discovery**: Collections, showcases, resource lists
-- **MCP & Integrations**: MCP servers, integrations, command generators
-- **Security & System Administration**: Security tools, audit systems, admin utilities
-- **Slash Command Libraries**: Slash command collections and libraries
-- **System Management & Automation**: System tools, automation scripts, management utilities
-- **Miscellaneous**: Items that don't fit other categories
+When adding new repositories to the index, for example, you should consider whether they fit with an existing categories or whether a new category or subcategory should be started. 
+
+An important objective of the indexing process is to group together different repositories that explore using Claude Code or the "Claude Workspace" model for a common or similar purpose. 
+
+Within sections (and subsections) repositories are organised alphabetically by title.
 
 ### 3. Entry Format
 

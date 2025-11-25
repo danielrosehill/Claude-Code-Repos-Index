@@ -6,43 +6,13 @@
 
 ---
 
-My Claude Code related repositories, by section. 
+My Claude Code related repositories, by section.
 
- Most patterns/templates/models are adaptable to other agentic AI CLIs (and frameworks).
+Most patterns/templates/models are adaptable to other agentic AI CLIs (and frameworks).
 
- For the Claude Space idea, see [Claude Spaces](./claude-spaces.md)
+For the Claude Space idea, see [Claude Spaces](./claude-spaces.md)
 
- ---
-
-## Beyond Code Generation: Templates & Workspaces
-
-While Claude Code excels at software development, a significant portion of these repositories explore **template-driven workflows** for system administration, personal productivity, research, and domain-specific applications. These templates demonstrate that agentic IDEs are powerful frameworks for **any structured, iterative work** - not just coding.
-
-### Understanding Templates
-
-**Templates** in this context are fully-configured repository patterns you can fork and customize for your own use. Each template includes:
-
-- **Pre-configured CLAUDE.md**: Context and instructions tailored to the domain
-- **Slash command libraries**: Ready-to-use commands for common tasks
-- **Specialized agents**: Domain-specific subagents for complex workflows
-- **Directory structures**: Organized folders for inputs, outputs, context, and memory
-- **Workflow documentation**: Guidance on using the template effectively
-
-Templates are marked with the ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) badge and are designed to be **immediately usable** after forking.
-
-### Claude Workspaces
-
-A subset of templates I call **"Claude Workspaces"** (or **"Claude Spaces"**) focus specifically on **system administration and infrastructure management** - essentially using Claude Code as a **Conversational UI Agent (CUA)** for managing computers, networks, and services.
-
-Workspace characteristics:
-- **System-focused**: Designed for OS, network, or infrastructure management
-- **Administration tasks**: Monitoring, configuration, diagnostics, security
-- **Persistent state**: Organized storage for logs, configs, and documentation
-- **Remote & local**: Can manage the local machine or remote systems via SSH
-
-Repositories following this pattern are marked with the ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square) badge.
-
-**Why this matters**: These templates prove that Claude Code (and similar tools) transcend traditional software development. They're **general-purpose structured workflow engines** applicable to research, personal organization, financial planning, health tracking, and more. If your work involves iterative tasks, context management, and structured outputs, these templates demonstrate viable patterns.
+For notes on templates and workspaces, see [Notes](./notes.md)
 
 ---
 
@@ -58,13 +28,6 @@ Multi-agent systems and orchestration frameworks that enable specialized agents 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Agent-Picker-Pattern)
 
 Conceptual framework for intelligently assembling context-optimized multi-agent crews by evaluating project requirements, selecting complementary subagents with minimal overlap, and automatically generating crew configurations that stay within context window limits.
-
----
-
-## Claude Code Writing Squad
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
-
-Multi-agent writing system designed to iteratively process and refine text through specialized editing agents, including typo review, UK English standardization, flow improvement, heading creation, proofreading, source addition, and SEO optimization.
 
 ---
 
@@ -185,9 +148,9 @@ Tools for managing both public CLAUDE.md and private CLAUDE_PRIVATE.md configura
 
 ---
 
-# Resources & Discovery
+# Resources, Indexes & Notes
 
-Curated collections, documentation repositories, and discovery tools showcasing Claude Code capabilities, use cases, and community resources.
+Repositories containing indexes to smaller groups of projects, notebooks and notes for MCP integration and planning, and curated collections. Some gather Daniel's own projects, while others index third-party repositories and community resources.
 
 ## Claude Code Linux Notes
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
@@ -345,6 +308,8 @@ Claude Workspace templates for managing local area networks, home lab environmen
 ## Claude Code LAN Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
 
+Claude Workspace for managing multiple computers on a local network, providing centralized administration of LAN-connected machines through Claude Code with network-wide configuration, monitoring, and maintenance capabilities.
+
 ---
 
 # Workspace & Workflow Templates
@@ -379,19 +344,23 @@ Template repository structure for organizing and tracking therapy sessions, ment
 
 ---
 
-## Claude Writing Space Template
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Writing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
-
-Structured workspace template for writing projects using Claude Code, designed to preserve authorial voice while providing systematic version control and editing workflows. Features sequential versioning, specialized proofreading and editing agents, archive management, and support for headless CMS publishing with organized directories for drafts, research, notes, and images.
-
----
-
 ## Claude ADB Workspace Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADB-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
 Version-controlled workspace template for managing Android devices through ADB with Claude Code. Features automated device profiling, package management with timestamped exports, bloatware removal, system diagnostics, and forensic logging. Includes specialized agents for device optimization and package analysis, with structured directories for manifests, package lists, and diagnostic logs.
 
 ---
+
+## Claude Decision Evaluation Framework
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured system for analyzing major life and business decisions through seven parallel analytical frameworks using Claude Code. Evaluates decisions via Cost-Benefit Analysis, SWOT, Decision Matrix, ICE Framework, Risk-Reward Assessment, Eisenhower Matrix, and Regret Minimization, producing comprehensive reports with objective 0-100 scores without averaging to help users examine choices from multiple perspectives.
+
+---
+
+# Writing & Content Creation
+
+Templates and tools for writing projects, blog management, and content publishing workflows using Claude Code.
 
 ## Claude Blog Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
@@ -400,10 +369,17 @@ Conversational blog management workspace for Claude Code enabling API-first cont
 
 ---
 
-## Claude Decision Evaluation Framework
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+## Claude Code Writing Squad
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
-Structured system for analyzing major life and business decisions through seven parallel analytical frameworks using Claude Code. Evaluates decisions via Cost-Benefit Analysis, SWOT, Decision Matrix, ICE Framework, Risk-Reward Assessment, Eisenhower Matrix, and Regret Minimization, producing comprehensive reports with objective 0-100 scores without averaging to help users examine choices from multiple perspectives.
+Multi-agent writing system designed to iteratively process and refine text through specialized editing agents, including typo review, UK English standardization, flow improvement, heading creation, proofreading, source addition, and SEO optimization.
+
+---
+
+## Claude Writing Space Template
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Writing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured workspace template for writing projects using Claude Code, designed to preserve authorial voice while providing systematic version control and editing workflows. Features sequential versioning, specialized proofreading and editing agents, archive management, and support for headless CMS publishing with organized directories for drafts, research, notes, and images.
 
 ---
 

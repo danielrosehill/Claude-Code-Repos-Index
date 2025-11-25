@@ -14,3 +14,4 @@ My overall approach to organising readmes, which you should adhere to:
 
 - Create enough sections that are useful for organising the repos into common clusters/groups 
 - Create no more than that level of organisation! 
+- Duplication is not ideal but is permitted if we have two very specific categories and a repo(s) belongs in both categories, for example
