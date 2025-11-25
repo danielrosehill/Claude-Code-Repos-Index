@@ -223,10 +223,10 @@ Implements the CONTEXT.md workflow system bridging human-friendly context docume
 
 ---
 
-## Claude Code Plugins
+## Claude Code Plugins Marketplace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Plugins)
 
-Comprehensive collection of over 1,000 specialized slash commands and agents across 23 categories including development tools, AI/ML utilities, system administration, content creation, and security for developers, system administrators, and content creators.
+Centralized marketplace and registry for discovering and installing Claude Code plugins. Add the marketplace with `/plugin marketplace add` and browse categorized plugins spanning AI tools, development utilities, system administration, media management, and more—each installable via simple commands.
 
 ---
 
@@ -355,6 +355,13 @@ Version-controlled workspace template for managing Android devices through ADB w
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
 Structured system for analyzing major life and business decisions through seven parallel analytical frameworks using Claude Code. Evaluates decisions via Cost-Benefit Analysis, SWOT, Decision Matrix, ICE Framework, Risk-Reward Assessment, Eisenhower Matrix, and Regret Minimization, producing comprehensive reports with objective 0-100 scores without averaging to help users examine choices from multiple perspectives.
+
+---
+
+## Claude Health Helper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Health-Helper) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Organized workspace for managing personal health documentation with AI assistance. Helps users convert medical visit transcripts into structured summaries, prepare symptom lists for doctor visits, document medications and conditions, and generate layperson-friendly summaries of medical reports. Features structured directories for consultations, imaging, test results, visit preparation, and medication references.
 
 ---
 
