@@ -392,6 +392,13 @@ Structured workspace for challenging personal beliefs through AI-assisted critic
 
 ---
 
+## Claude Decision Evaluation Framework
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured system for analyzing major life and business decisions through seven parallel analytical frameworks using Claude Code. Evaluates decisions via Cost-Benefit Analysis, SWOT, Decision Matrix, ICE Framework, Risk-Reward Assessment, Eisenhower Matrix, and Regret Minimization, producing comprehensive reports with objective 0-100 scores without averaging to help users examine choices from multiple perspectives.
+
+---
+
 # Security & System Administration
 
 Claude Workspace repositories focused on system administration, security auditing, and infrastructure maintenance across desktop and remote environments.
