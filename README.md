@@ -103,10 +103,28 @@ Multi-agent system for conducting comprehensive software and hardware technology
 
 ---
 
+# Argument & Perspective Exploration
+
+Frameworks for exploring ideas, challenging viewpoints, and generating multi-perspective analyses through structured AI-assisted debate, counterargument generation, and collaborative reasoning.
+
+## Claude Change My View
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Change-My-View) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured workspace for challenging personal beliefs through AI-assisted critical analysis, inspired by the r/ChangeMyView subreddit. Features organized workflow for documenting viewpoints, running specialized agents to generate counterarguments and rebuttals, and tracking outcomes with slash commands for initiating challenges and subagents for argument generation and podcast creation.
+
+---
+
+## Claude Think Tank
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Template framework for building a virtual think tank using AI agents, enabling research assistance and policy proposal development through collaborative Claude Code agents that synthesize information and generate policy ideas with organized file management and specialized slash commands.
+
+---
+
 ## Panel Of Claude
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude)
 
-Experimental multi-agent framework for simulated debates and argument modeling, orchestrating specialized agents (Advocate, CMV/Change My View, and Moderator) through sequential context passing to generate comprehensive debate proceedings with structured outputs in JSON, Markdown, PDF, and ePub formats, with optional podcast generation via TTS.
+Multi-agent system simulating expert panel discussions using multiple Claude agents with different analytical perspectives (economic, ethical, scientific, political, etc.) to provide comprehensive, multi-dimensional analysis through two-round cross-perspective refinement with outputs in JSON, markdown, PDF, ePub, and podcast-ready audio formats.
 
 ---
 
@@ -350,13 +368,6 @@ Template repository structure for organizing and tracking therapy sessions, ment
 
 ---
 
-## Claude Think Tank
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![GitHub Template](https://img.shields.io/badge/GitHub-Template-green?style=flat-square&logo=github)
-
-Template framework for building a virtual think tank using AI agents, enabling research assistance and policy proposal development through collaborative Claude Code agents that synthesize information and generate policy ideas.
-
----
-
 ## Claude News Fetcher - Media Monitoring System
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
@@ -382,13 +393,6 @@ Version-controlled workspace template for managing Android devices through ADB w
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
 Conversational blog management workspace for Claude Code enabling API-first content publishing workflows. Template repository for managing blog content through headless CMS platforms using MCP integrations, featuring dedicated directories for drafting and published content, with specialized commands for content creation, proofreading, and automated publishing while preserving authorial voice.
-
----
-
-## Claude Change My View
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Change-My-View) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
-
-Structured workspace for challenging personal beliefs through AI-assisted critical analysis, inspired by the r/ChangeMyView subreddit. Features organized workflow for documenting viewpoints, running specialized agents to generate counterarguments and rebuttals, and tracking outcomes. Includes slash commands for initiating challenges and specialized subagents for argument generation, podcast creation, and export formatting.
 
 ---
 
