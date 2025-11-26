@@ -365,6 +365,13 @@ Organized workspace for managing personal health documentation with AI assistanc
 
 ---
 
+## Claude Job Search Strategist
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Job-Search-Strategist) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured workspace for orchestrating Claude sub-agents during a job search process. Features specialized agents for company research, compensation analysis, resume tailoring, cover letter generation, interview preparation, and career strategy. Includes organized directories for user context, application tracking, and generated outputs with slash command conventions for streamlined workflows.
+
+---
+
 # Writing & Content Creation
 
 Templates and tools for writing projects, blog management, and content publishing workflows using Claude Code.
