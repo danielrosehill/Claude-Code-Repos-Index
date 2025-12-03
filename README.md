@@ -301,6 +301,13 @@ Template for managing Ubuntu servers on Single Board Computers (SBCs) with 38 sl
 
 ---
 
+## Claude Synology Manager
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Synology-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Template workspace for managing Synology NAS devices through Claude Code with SSH and MCP integration. Features persistent context storage for NAS configuration, volume snapshots, and mount configurations, enabling conversational management of shared folders, storage monitoring, backup operations, and NFS/SAMBA mount configuration.
+
+---
+
 # Network-Level Manager Templates
 
 Claude Workspace templates for managing local area networks, home lab environments, and network infrastructure through Claude Code.
