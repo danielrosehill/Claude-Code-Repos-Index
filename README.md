@@ -166,6 +166,13 @@ Minimal personal reference repository for documenting and organizing usage patte
 
 ---
 
+## Claude Workspace Setup Helper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Workspace-Setup-Helper)
+
+Interactive tool for setting up Claude Workspaces - pre-configured repository templates for various use cases. Features a catalog of workspace templates organized by category (environment management, content creation, research, health & wellness, career) with an interactive `/start` command that helps users discover, select, and clone workspaces based on their objectives.
+
+---
+
 ## Cool Claude Code Stuff
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
 
