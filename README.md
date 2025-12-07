@@ -308,6 +308,13 @@ Template workspace for managing Synology NAS devices through Claude Code with SS
 
 ---
 
+## Claude Docker Manager
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Workspace](https://img.shields.io/badge/Claude-Workspace-purple?style=flat-square)
+
+Claude Code workspace template for managing Docker environments with pre-built slash commands and specialized subagents. Features commands for environment setup, health monitoring, cleanup, log analysis, deployment, and backups. Includes diagnostic agents for container issues, compose file generation, security auditing, migration planning, and resource optimization. Supports local and remote Docker environments with organized context storage for persistent environment state.
+
+---
+
 # Network-Level Manager Templates
 
 Claude Workspace templates for managing local area networks, home lab environments, and network infrastructure through Claude Code.
