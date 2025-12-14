@@ -393,6 +393,13 @@ Structured workspace for orchestrating Claude sub-agents during a job search pro
 
 ---
 
+## Claude Rig Planner
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rig-Planner) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Structured workspace template for planning computer hardware upgrades with Claude Code. Supports gaming PCs, workstations, homelab servers, or multiple machines with features for context gathering, hardware profiling, multi-machine planning, formal VAT-compliant estimates, and currency localization. Includes slash commands for setup, profiling, analysis, recommendations, and estimates.
+
+---
+
 # Writing & Content Creation
 
 Templates and tools for writing projects, blog management, and content publishing workflows using Claude Code.
