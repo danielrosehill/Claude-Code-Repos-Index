@@ -411,6 +411,13 @@ Conversational blog management workspace for Claude Code enabling API-first cont
 
 ---
 
+## Declaude
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Declaude)
+
+Customizable system for creating personalized text rewriting rules that consolidate into a Claude Code slash command to refine AI-generated technical documentation. Features modular rule management, vocabulary avoidance lists, LLM-powered consolidation, and versioned outputs for maintaining consistent writing style.
+
+---
+
 ## Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad)
 
@@ -463,6 +470,13 @@ Automates the addition of attribution sections to README files, enabling develop
 
 ---
 
+## Claude App Optimiser
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-App-Optimiser)
+
+Slash command (`/optimise`) deploying "Turbo Claude 5000," a specialized sub-agent for analyzing and improving codebases through dead code removal, architectural evaluation, and database optimization.
+
+---
+
 ## Claude File Organiser Super Slash
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash)
 
@@ -491,6 +505,13 @@ Collection of methods and example slash commands for documenting system administ
 
 ---
 
+## No Wheel Inventions
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/No-Wheel-Inventions)
+
+Slash commands and agents encouraging developers to leverage existing libraries, components, and templates rather than building custom solutions. Includes five slash commands for prevention and remediation plus a stack-integration agent for identifying open-source opportunities.
+
+---
+
 # Miscellaneous
 
 Additional resources and repositories that don't fit into other categories but provide value to the Claude Code ecosystem.
@@ -502,7 +523,21 @@ Feature requests and suggestions for improving Claude Code's context handling ca
 
 ---
 
+## Claude Model Identifier
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Model-Identifier)
+
+Prompt template for verifying interaction with the correct Claude model variant at conversation start. Can be deployed as a home folder file or slash command for model authentication purposes.
+
+---
+
 ## Claude Rescue
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rescue)
 
 Concept for using Claude Code as an emergency Linux system recovery tool, providing a quick-install bash script that deploys Claude Code with elevated permissions into recovery shell environments to diagnose and fix boot issues, driver problems, and system failures with AI-assisted troubleshooting.
+
+---
+
+## Claude System Recovery Mode
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-System-Recovery-Mode)
+
+Custom GRUB boot entry integrating Claude CLI into Linux system recovery, enabling AI-assisted system recovery with pre-configured agents and commands for diagnostics and remediation tasks.
