@@ -392,6 +392,13 @@ Minimal personal reference repository for documenting and organizing usage patte
 
 ---
 
+### Claude Development Agents
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Development-Agents)
+
+Curated toolkit of Claude Code configurations for development workflows, organizing sub-agents, slash commands, snippets, orchestrators, and crews into a five-category taxonomy with 74+ configurations covering code editing, deployment, debugging, web development, and multi-agent coordination.
+
+---
+
 ### Claude Sub-Agent Network
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Sub-Agent-Network)
 
