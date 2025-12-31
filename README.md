@@ -473,13 +473,6 @@ Guideline snippet for adding determinative guidance to Claude Code on how to use
 
 ---
 
-### Gemini Transcription MCP
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Gemini-Transcription-MCP)
-
-MCP server leveraging Google's Gemini multimodal API to transcribe audio files with integrated post-processing. Offers five transcription modes (edited, raw, custom, formatted, and large-file optimized) for converting voice notes into structured text suitable for repository documentation and AI-assisted development workflows.
-
----
-
 ### MCPM Claude Code Docs
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/MCPM-Claude-Code-Docs)
 
@@ -526,45 +519,10 @@ Claude plugin for cleaning up repositories by removing Claude-related artifacts 
 
 ---
 
-### Conda Management Plugin
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/conda-management-plugin)
-
-Claude Code plugin providing slash commands and agents for managing Conda environments, Python packages, and virtual environment workflows with streamlined environment creation, package installation, and dependency management.
-
----
-
-### Debugging Plugin
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/debugging-plugin)
-
-Claude Code plugin for debugging workflows providing error analysis, troubleshooting assistance, and diagnostic tools through dedicated slash commands and specialized agents.
-
----
-
-### Docker Assist Plugin
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/docker-asist-plugin)
-
-Claude Code plugin enabling Docker container management and troubleshooting through integrated slash commands and AI agents for containerization workflows.
-
----
-
-### General Dev Plugin
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/general-dev-plugin)
-
-Claude Code plugin extending development capabilities with slash commands and agents for code generation, refactoring, and general programming assistance workflows.
-
----
-
 ### Make Agent Friendly
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Make-Agent-Friendly)
 
 Claude Code plugin that prepares human-developed codebases for agentic development by analyzing structure, asking clarifying questions, restructuring folders for agent navigability, creating CLAUDE.md documentation and /context/ directories, and validating changes before committing.
-
----
-
-### Server Management Plugin
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/server-management-plugin)
-
-Claude Code plugin for server infrastructure management providing slash commands and AI agents for monitoring, deployment, and server administration workflows.
 
 ---
 
