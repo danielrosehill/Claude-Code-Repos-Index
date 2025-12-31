@@ -112,6 +112,11 @@
           "description": "Conversational blog management workspace for Claude Code enabling API-first content publishing workflows. Template repository for managing blog content through headless CMS platforms using MCP integrations, featuring dedicated directories for drafting and published content, with specialized commands for content creation, proofreading, and automated publishing while preserving authorial voice."
         },
         {
+          "name": "Claude Business Idea Evaluator",
+          "url": "https://github.com/danielrosehill/Claude-Business-Idea-Evaluator",
+          "description": "Systematic framework using Claude Code to evaluate and rank business ideas through the ICEC methodology (Impact, Confidence, Ease, Contextual Suitability), enabling data-driven decision-making about which concepts to pursue."
+        },
+        {
           "name": "Claude Budget Workspace Template",
           "url": "https://github.com/danielrosehill/Claude-Budget-Workspace-Template",
           "description": "Template for managing household budgets using Claude Code, providing structured workspace framework for financial planning and budget analysis tasks."
@@ -347,6 +352,11 @@
           "description": "Guideline snippet for adding determinative guidance to Claude Code on how to use MCPs encountered across environments, providing context for MCP selection and usage patterns to resolve ambiguities between MCPs and internal Claude tools."
         },
         {
+          "name": "Gemini Transcription MCP",
+          "url": "https://github.com/danielrosehill/Gemini-Transcription-MCP",
+          "description": "MCP server leveraging Google's Gemini multimodal API to transcribe audio files with integrated post-processing. Offers five transcription modes (edited, raw, custom, formatted, and large-file optimized) for converting voice notes into structured text suitable for repository documentation and AI-assisted development workflows."
+        },
+        {
           "name": "MCPM Claude Code Docs",
           "url": "https://github.com/danielrosehill/MCPM-Claude-Code-Docs",
           "description": "Documentation for integrating Claude Code with MCPM (an external MCP server manager). Provides guidance on managing Model Context Protocol tools across user, project, and local scopes while avoiding conflicts between Claude's native MCP features and external management tools."
@@ -373,14 +383,44 @@
           "description": "Centralized marketplace and registry for discovering and installing Claude Code plugins. Add the marketplace with `/plugin marketplace add` and browse categorized plugins spanning AI tools, development utilities, system administration, media management, and more\u2014each installable via simple commands."
         },
         {
+          "name": "Claude Code Plugin",
+          "url": "https://github.com/danielrosehill/claude-code-plugin",
+          "description": "Meta-plugin for managing Claude Code itself, providing slash commands and agents for configuration management, slash command creation, agent development, and plugin workflow optimization."
+        },
+        {
           "name": "Claude Janitor",
           "url": "https://github.com/danielrosehill/Claude-Janitor",
           "description": "Claude plugin for cleaning up repositories by removing Claude-related artifacts and configurations. Includes plugin configuration files, prompts, and documentation for integrating cleanup functionality into Claude workflows."
         },
         {
+          "name": "Conda Management Plugin",
+          "url": "https://github.com/danielrosehill/conda-management-plugin",
+          "description": "Claude Code plugin providing slash commands and agents for managing Conda environments, Python packages, and virtual environment workflows with streamlined environment creation, package installation, and dependency management."
+        },
+        {
+          "name": "Debugging Plugin",
+          "url": "https://github.com/danielrosehill/debugging-plugin",
+          "description": "Claude Code plugin for debugging workflows providing error analysis, troubleshooting assistance, and diagnostic tools through dedicated slash commands and specialized agents."
+        },
+        {
+          "name": "Docker Assist Plugin",
+          "url": "https://github.com/danielrosehill/docker-asist-plugin",
+          "description": "Claude Code plugin enabling Docker container management and troubleshooting through integrated slash commands and AI agents for containerization workflows."
+        },
+        {
+          "name": "General Dev Plugin",
+          "url": "https://github.com/danielrosehill/general-dev-plugin",
+          "description": "Claude Code plugin extending development capabilities with slash commands and agents for code generation, refactoring, and general programming assistance workflows."
+        },
+        {
           "name": "Make Agent Friendly",
           "url": "https://github.com/danielrosehill/Make-Agent-Friendly",
           "description": "Claude Code plugin that prepares human-developed codebases for agentic development by analyzing structure, asking clarifying questions, restructuring folders for agent navigability, creating CLAUDE.md documentation and /context/ directories, and validating changes before committing."
+        },
+        {
+          "name": "Server Management Plugin",
+          "url": "https://github.com/danielrosehill/server-management-plugin",
+          "description": "Claude Code plugin for server infrastructure management providing slash commands and AI agents for monitoring, deployment, and server administration workflows."
         },
         {
           "name": "User Manual Plugin",
@@ -469,16 +509,16 @@
   ],
   "statistics": {
     "total_categories": 10,
-    "total_repositories": 80,
+    "total_repositories": 88,
     "repositories_by_category": {
       "Systems Administration": 16,
-      "Non-Code Claude Code": 15,
+      "Non-Code Claude Code": 16,
       "Research": 7,
       "Argument and Perspective Exploration": 3,
       "Context and Personalization": 7,
       "Multi-Agent Tooling": 9,
-      "MCP": 5,
-      "Plugins": 5,
+      "MCP": 6,
+      "Plugins": 11,
       "Slash Commands": 7,
       "Misc": 6
     }
