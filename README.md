@@ -491,6 +491,13 @@ Claude Code plugin that prepares human-developed codebases for agentic developme
 
 ---
 
+### User Manual Plugin
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-User-Manual)
+
+Claude Code plugin for generating personal user manuals and private documentation for codebases. Creates personalized, private reference guides with PDF output support, featuring step-by-step workflow commands for documentation setup, section generation, PDF compilation, and version-controlled distribution via MCP integrations.
+
+---
+
 ![Slash Commands](images/slashes.png)
 
 Individual slash commands, sometimes integrated into other plugins or sometimes just for use at the user level.
