@@ -137,6 +137,37 @@ If Daniel requests category restructuring:
 4. Update this CLAUDE.md if needed
 5. Commit with descriptive reorganization message
 
+## JSON Data File
+
+The `data/repos.json` file maintains a programmatic representation of the index for use on Daniel's website and other integrations. To regenerate this file after making changes to README.md:
+
+- Run `/build-json` to parse README.md and regenerate the JSON file
+
+## Badge System
+
+Repositories can have multiple badges to indicate their type and purpose:
+
+| Badge | Color | Purpose |
+|-------|-------|---------|
+| `Claude Space` | Purple | Workspaces where Claude manages files/processes |
+| `Agent Config` | Orange | Multi-agent configurations and orchestration |
+| `Slash Commands` | Cyan | Slash command collections |
+| `Non-Code` | Teal | Non-development use cases |
+| `Light Touch` | Light gray | Minimal configuration/simple utilities |
+| `Template` | Green | Forkable templates |
+| `LAN Manager` | Blue | Network/LAN management |
+| `Diary` | Pink | Diary/planning workspaces |
+| `Health` | Red | Health-related workspaces |
+| `Job Search` | Gold | Career/job search tools |
+| `Rig` | Gray | Hardware planning |
+| `Therapy` | Lavender | Therapy tracking |
+| `Budget` | Gold | Budget/financial workspaces |
+
+Badge format example:
+```markdown
+![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
+```
+
 ## Notes
 
 - All repositories indexed here are public GitHub repositories
