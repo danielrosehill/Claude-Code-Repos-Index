@@ -85,6 +85,13 @@ Customizable template for Proxmox server management with 38 slash commands and 1
 
 ---
 
+### Claude Bug Catcher
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Bug-Catcher)
+
+Hotkey-triggered utility for capturing and debugging Linux system issues in real-time. Presents quick-select presets for common problems (GPU freezes, audio issues, network drops, app crashes) and immediately launches Claude Code with relevant logs for AI-assisted troubleshooting and remediation.
+
+---
+
 ### Claude Rescue
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rescue)
 
