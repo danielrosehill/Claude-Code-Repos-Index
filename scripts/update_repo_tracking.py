@@ -14,9 +14,11 @@ import matplotlib.dates as mdates
 # Paths
 REPO_ROOT = Path(__file__).parent.parent
 README_PATH = REPO_ROOT / "README.md"
-JSON_PATH = REPO_ROOT / "repo-count-history.json"
-CHART_PATH = REPO_ROOT / "repo-count-chart.png"
-REPOS_JSON_PATH = REPO_ROOT / "repos.json"
+DATA_DIR = REPO_ROOT / "data"
+CHARTS_DIR = REPO_ROOT / "charts"
+JSON_PATH = DATA_DIR / "repo-count-history.json"
+CHART_PATH = CHARTS_DIR / "repo-count-chart.png"
+REPOS_JSON_PATH = DATA_DIR / "repos.json"
 
 
 def count_repos_in_readme():
@@ -37,33 +39,38 @@ def parse_readme_to_json():
 
     categories = []
     current_category = None
-    current_category_desc = None
     current_repo = None
     repo_description_lines = []
+
+    # Category images pattern: ![Category Name](images/*.png)
+    # Skip banner, chart, and claude-space images
+    category_pattern = re.compile(r'^!\[([^\]]+)\]\(images/[^)]+\.png\)$')
+    skip_images = {'alt text', 'Repository Count Over Time', 'Claude Space Definition'}
 
     lines = content.split('\n')
     i = 0
 
     while i < len(lines):
-        line = lines[i]
+        line = lines[i].strip()
 
-        # Match top-level category (# heading, not ##)
-        # Skip lines that are part of header/intro (before "Repo Index, By Section")
-        if line.startswith('# ') and not line.startswith('# Repo Index'):
-            # Check if this is a category (comes after the intro section)
-            # Categories start with single # and are not the title or section markers
-            if current_category is not None or 'Repo Index' in '\n'.join(lines[:i]):
+        # Check for category image header
+        cat_match = category_pattern.match(line)
+        if cat_match:
+            category_name = cat_match.group(1)
+            if category_name not in skip_images:
                 # Save previous category if exists
                 if current_category and current_category.get('repositories'):
+                    # Save last repo description
+                    if current_repo and repo_description_lines:
+                        current_repo['description'] = ' '.join(repo_description_lines).strip()
                     categories.append(current_category)
 
-                category_name = line[2:].strip()
-                # Get description from next non-empty line if it's not a heading or repo
+                # Get description from next non-empty line
                 current_category_desc = ""
                 j = i + 1
                 while j < len(lines):
                     next_line = lines[j].strip()
-                    if next_line and not next_line.startswith('#') and not next_line.startswith('[!['):
+                    if next_line and not next_line.startswith('#') and not next_line.startswith('[![') and not next_line.startswith('!['):
                         if not next_line.startswith('---'):
                             current_category_desc = next_line
                         break
@@ -79,27 +86,7 @@ def parse_readme_to_json():
                 current_repo = None
                 repo_description_lines = []
 
-        # Match repository entry (## heading followed by View Repo badge)
-        elif line.startswith('## ') and not line.startswith('### '):
-            # Save previous repo description if exists
-            if current_repo and repo_description_lines:
-                current_repo['description'] = ' '.join(repo_description_lines).strip()
-
-            repo_name = line[3:].strip()
-            current_repo = {"name": repo_name, "url": "", "description": ""}
-            repo_description_lines = []
-
-            # Look for the View Repo badge in next few lines
-            for j in range(i + 1, min(i + 5, len(lines))):
-                badge_match = re.search(r'\[!\[View Repo\].*?\]\((https://github\.com/[^)]+)\)', lines[j])
-                if badge_match:
-                    current_repo['url'] = badge_match.group(1)
-                    break
-
-            if current_category:
-                current_category['repositories'].append(current_repo)
-
-        # Match repository entry with ### heading (alternative format)
+        # Match repository entry with ### heading
         elif line.startswith('### '):
             # Save previous repo description if exists
             if current_repo and repo_description_lines:
@@ -120,10 +107,10 @@ def parse_readme_to_json():
                 current_category['repositories'].append(current_repo)
 
         # Collect description lines for current repo
-        elif current_repo and line.strip():
-            # Skip badge lines, horizontal rules, and empty lines
-            if not line.startswith('[![') and not line.startswith('---') and not line.startswith('#'):
-                repo_description_lines.append(line.strip())
+        elif current_repo and line:
+            # Skip badge lines, horizontal rules, and image lines
+            if not line.startswith('[![') and not line.startswith('---') and not line.startswith('#') and not line.startswith('!['):
+                repo_description_lines.append(line)
 
         i += 1
 
@@ -255,6 +242,10 @@ def generate_chart(data):
 
 def main():
     """Main execution function"""
+    # Ensure output directories exist
+    DATA_DIR.mkdir(exist_ok=True)
+    CHARTS_DIR.mkdir(exist_ok=True)
+
     print("=" * 60)
     print("Claude Code Repos Index - Repository Tracking Update")
     print("=" * 60)
@@ -268,6 +259,9 @@ def main():
 
     # Generate visualization
     generate_chart(data)
+
+    # Update repos.json from README
+    update_repos_json()
 
     print("\n" + "=" * 60)
     print("Tracking update complete!")

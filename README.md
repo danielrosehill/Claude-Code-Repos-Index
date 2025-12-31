@@ -2,7 +2,7 @@
 
 ## Repository Growth
 
-![Repository Count Over Time](repo-count-chart.png)
+![Repository Count Over Time](charts/repo-count-chart.png)
 
 ---
 
