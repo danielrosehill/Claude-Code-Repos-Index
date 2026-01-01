@@ -445,6 +445,13 @@ Planning repository for a sequential task queuing system for Claude Code and oth
 
 ---
 
+### Claude Repo Jumper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Repo-Jumper)
+
+Claude Code skill for automating the "handover" pattern when spinning up new repositories as part of a multi-repo system. Eliminates manual context-passing between interconnected components by creating new private GitHub repos, gathering context from the current repository, generating claude.md files with relevant details, and pushing to GitHub for immediate work with full context.
+
+---
+
 ### Claude Tech Research Team
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Tech-Research-Team) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
