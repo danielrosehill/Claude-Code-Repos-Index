@@ -351,6 +351,13 @@ Multi-agent system simulating expert panel discussions using multiple Claude age
 
 ---
 
+### Claude AI Conference
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-AI-Conference) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Simulated AI conference exploring perspective synthesis through agentic AI, where 30+ diverse personas (HR professionals, CEOs, doctors, artists, skeptics, enthusiasts) each deliver 3-minute speeches on AI's impact from their unique vantage points. An orchestration agent distributes prompts to sub-agents and compiles outputs to PDF and TTS-rendered audio formats.
+
+---
+
 ![Context and Personalization](images/context.png)
 
 Projects exploring using Claude and related tooling for personalized user engagement, including through RAG, interviewing methods, and context injection.
