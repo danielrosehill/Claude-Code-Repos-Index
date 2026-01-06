@@ -312,6 +312,13 @@ Comprehensive workspace for conducting media monitoring and gathering articles i
 
 ---
 
+### Claude Report Parsing Space Template
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Report-Parsing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Claude Code workspace template for critical analysis of reports and lengthy documents. Features a library of slash commands for triage, statistics extraction, argumentation analysis, summarization, and source extraction. Embodies a skeptical approach that evaluates credibility, methodology, and originality rather than passive summarization.
+
+---
+
 ### Claude Stack Research Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Stack-Research-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
