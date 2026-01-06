@@ -245,6 +245,13 @@ Automated workflow for sending polished update emails to colleagues about websit
 
 ---
 
+### Claude Web Analytics Space
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
+
+Structured workspace template for website analytics workflows using Claude Code. Features organized folders for raw and cleaned data, reports, visualizations, and archives, with slash commands for initialization, analysis, cleaning, and reporting. Includes specialized sub-agents for data cleaning, analysis, and script generation, plus MCP integration recommendations for Google Analytics and AI-powered visualization via Replicate.
+
+---
+
 ### Claude Writing Space Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Writing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
