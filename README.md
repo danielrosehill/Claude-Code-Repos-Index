@@ -627,6 +627,13 @@ Claude Code plugin for generating personal user manuals and private documentatio
 
 ---
 
+### QA Team Plugin
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-QA-Team) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Multi-agent quality assurance system providing an orchestrated network of specialized AI agents for comprehensive code review and validation. Features orchestration layer (QA Orchestrator, Team Lead, Documentation Lead) and specialist sub-agents covering general QA, cleanup, documentation, performance optimization, API review, and deployment validation with organized output structure for findings and remediation tracking.
+
+---
+
 ![Slash Commands](images/slashes.png)
 
 Individual slash commands, sometimes integrated into other plugins or sometimes just for use at the user level.
