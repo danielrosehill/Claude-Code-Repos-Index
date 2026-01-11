@@ -235,6 +235,13 @@ Multi-agent writing system designed to iteratively process and refine text throu
 
 ---
 
+### Claude Debugging Workspace
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Debugging-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Structured workspace template for systematic debugging with Claude Code, applicable to technical bugs and beyond. Supports debugging software issues, process problems, life challenges, and creative blocks through hypothesis-driven investigation. Features organized directories for inputs (logs, screenshots, data), outputs (analysis, attempts, resolution), chronological debug logs, and specialized slash commands (/onboarding, /status, /hypotheses, /summarize) with analyst and investigator agents.
+
+---
+
 ### Claude Decision Evaluation Framework
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
