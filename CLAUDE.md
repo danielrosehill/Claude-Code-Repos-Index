@@ -168,6 +168,16 @@ Badge format example:
 ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 ```
 
+## Repository Discovery
+
+In addition to the scratchpad workflow, you can proactively discover missing repositories by querying Daniel's GitHub account:
+
+```bash
+gh repo list danielrosehill --limit 500 --visibility public --json name,description --jq '.[] | select(.name | test("claude|Claude"; "i"))'
+```
+
+This helps identify public Claude-related repositories that may not yet be in the index. Compare results against README.md to find candidates for addition.
+
 ## Notes
 
 - All repositories indexed here are public GitHub repositories
