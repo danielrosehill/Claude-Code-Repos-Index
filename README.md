@@ -256,6 +256,13 @@ Forkable template for workflow and time management planning with Claude Code, pr
 
 ---
 
+### Claude Personal Development Workspace
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Personal-Development-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
+
+Structured workspace for tracking personal habit development, skill acquisition, and self-improvement goals with Claude Code as an AI accountability partner and coach. Features goal templates (SMART, OKR, habit-based), progress tracking with daily logs and weekly reviews, resource curation for courses, books, and professionals, and specialized agents for goal planning and obstacle analysis.
+
+---
+
 ### Claude Health Helper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Health-Helper) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Health](https://img.shields.io/badge/Health-red?style=flat-square)
 
