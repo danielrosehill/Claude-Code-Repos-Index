@@ -471,6 +471,13 @@ Documentation of the pattern for using Claude Code repositories as discrete, mod
 
 ---
 
+### Claude Space Self-Ideator
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Space-Self-ideator)
+
+Ideation workspace for generating new Claude Space concepts. Contains examples of existing Claude Spaces, new ideas organized by category, documentation on the Claude Space pattern, and guidance on agent portability across different implementations.
+
+---
+
 ### Claude Spec Starter
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
