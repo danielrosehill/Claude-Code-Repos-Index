@@ -226,6 +226,11 @@ Template for managing household budgets using Claude Code, providing structured 
 
 Template repository for AI-powered legal research assistance using Claude Code. Features structured intake workflows for gathering case context, evidence handling protocols for audio transcription and document management, and TYPST-based professional document generation with confidentiality markings. Designed for preliminary legal position analysis with organized directories for context, evidence, and AI-generated outputs.
 
+#### Claude Lawyer - Israel Edition
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Lawyer-ISR) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Israeli law adaptation of the Claude Code Lawyer template. Features Israeli court system knowledge (civil, labor, family, religious courts), Hebrew/English bilingual support, pre-configured links to Israeli legal databases (Nevo, Takdin, Kol Zchut), guidance on Israel's one-party consent recording laws, tenancy law coverage (Fair Rental Law 2017), small claims procedures, and Israeli statute of limitations references.
+
 ---
 
 ### Claude Code Writing Squad
