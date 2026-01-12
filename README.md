@@ -68,6 +68,13 @@ Specialized Claude Code workspace for managing and optimizing Conda environments
 
 ---
 
+### Claude Google Drive Organiser
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
+
+Template repository for creating Claude Code workspaces that manage and organize Google Drive via rclone. Features automated file organization based on configurable rules, comprehensive logging, customizable folder structures and naming conventions, and slash commands for common operations like mounting, organizing inbox files, handling duplicates, and generating activity summaries.
+
+---
+
 ### Claude Docker Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
