@@ -214,6 +214,13 @@ Systematic framework using Claude Code to evaluate and rank business ideas throu
 
 ---
 
+### Claude Communications Strategist Template
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Comms-Strategist-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Full-featured workspace template for communications strategy development and execution. Designed for PR, marketing communications, corporate communications, and brand strategy professionals with 12 specialized agents (strategy director, campaign strategist, content creator, media relations advisor, crisis advisor, etc.), 14 slash commands for workflows from initialization to client reporting, and organized directories for context, outputs, and inputs. Supports strategic planning, content creation, campaign management, media relations, performance analysis, and professional PDF report generation via Typst.
+
+---
+
 ### Claude Budget Workspace Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Budget-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Budget](https://img.shields.io/badge/Budget-gold?style=flat-square)
 
