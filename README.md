@@ -500,7 +500,7 @@ Prompt template for verifying interaction with the correct Claude model variant 
 ### Claude Spaces Model
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spaces-Model)
 
-Documentation of the pattern for using Claude Code repositories as discrete, modularized workspaces for operational tasks beyond traditional software development. Describes how to leverage repository-based organization for persistent context, history, and system prompts across domain-specific workspaces for system administration, data pipelines, content creation, and more.
+Comprehensive index and documentation of the "Claude Spaces" pattern—using Claude Code workspaces as repositories for non-development operational tasks. Features a curated catalog of implemented Claude Spaces across local and remote system administration, with detailed explanations of the pattern characteristics, implementation requirements, and potential applications across media processing, data analytics, content creation, DevOps, research, and monitoring domains. Includes guidance on adapting the pattern to other AI agent CLIs beyond Claude Code.
 
 ---
 
