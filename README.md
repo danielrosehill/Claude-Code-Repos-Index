@@ -338,6 +338,13 @@ Structured workspace template for website analytics workflows using Claude Code.
 
 ---
 
+### Claude Pseudonym Workspace
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Pseudoym-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Information security workspace for document redaction and identity protection, designed for whistleblowers, journalists, researchers, and anyone handling sensitive information. Features multiple redaction techniques (consistent aliases, random replacement, pattern-based), metadata scrubbing for images and documents, Python tools for text redaction and alias management, and slash commands for analyzing, redacting, and verifying document sanitization.
+
+---
+
 ### Claude Writing Space Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Writing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
