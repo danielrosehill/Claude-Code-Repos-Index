@@ -235,6 +235,13 @@ Template for managing household budgets using Claude Code, providing structured 
 
 ---
 
+### Claude Business Continuity Planner
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Business-Continuity-Planner) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Claude Code workspace for developing Business Continuity Management (BCM) programs aligned with ISO 22301 and industry best practices. Features slash commands for Business Impact Analysis, Risk Assessment, BC Plan generation, Incident Response Plans, and Crisis Management documentation with proper document control and role-based procedures.
+
+---
+
 ### Claude Code Lawyer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Lawyer) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
