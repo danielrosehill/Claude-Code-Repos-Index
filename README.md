@@ -254,6 +254,13 @@ Israeli law adaptation of the Claude Code Lawyer template. Features Israeli cour
 
 ---
 
+### Claude Case File
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Case-File) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Structured workspace template for managing legal cases using Claude Code. Features evidence management with SHA-256 checksums and chain of custody tracking, document organization by type (contracts, correspondence, court filings, discovery), timeline building, legal analysis support, privilege review flagging, and document bundle preparation. Includes slash commands for case onboarding, evidence verification, timeline updates, and export workflows.
+
+---
+
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
