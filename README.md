@@ -261,6 +261,13 @@ Structured workspace template for managing legal cases using Claude Code. Featur
 
 ---
 
+### Claude Evidence Assistant
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Evidence-Assistant) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square) ![Forensics](https://img.shields.io/badge/Forensics-darkred?style=flat-square)
+
+Professional digital evidence management workspace with cryptographic integrity verification, chain of custody tracking, and Library of Congress standards-compliant exports. Features Proofmode integration for GPG signature and OpenTimestamps verification, evidence migration from scattered sources, SHA-256 hashing, PREMIS/METS/Dublin Core metadata generation, and cloud sync to S3, Google Drive, and IPFS. Includes 9 slash commands for case onboarding, evidence intake, verification, status, sync, export, migration, custody logging, and report generation.
+
+---
+
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
