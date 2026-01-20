@@ -268,6 +268,13 @@ Professional digital evidence management workspace with cryptographic integrity 
 
 ---
 
+### Claude Legal Aid Clinic
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Legal-Aid-Clinic) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Claude Space template for assisting individuals seeking legal aid services, leveraging agentic AI to synthesize context for pursuing justice. Features two primary purposes: informing users of their rights (researching eligibility, explaining programs, clarifying paths to assistance) and preparing their case (organizing evidence, building case files, formatting applications). Includes 6 slash commands for onboarding/intake, eligibility assessment, preliminary legal research with disclaimers, case file building, application preparation with character limit formatting, and status tracking.
+
+---
+
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
