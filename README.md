@@ -314,6 +314,13 @@ Template repository structure for organizing and tracking therapy sessions, ment
 
 ---
 
+### Claude Visual Communications Space
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Visual-Communications-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Claude Code workspace template for enhancing long-form content (whitepapers, blog posts, technical documents) with AI-generated visual communications. Features a two-phase workflow: ideation (brainstorming visual elements) and generation (creating visuals via fal-ai MCP). Includes `/onboard` for project setup with source material and platform targeting, `/ideate` for suggesting visual communication methods (infographics, diagrams, illustrations, videos), and `/prompt` for generating optimized text-to-image and image-to-image prompts with resolution and style guidance.
+
+---
+
 ### Claude Website Update Sender
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Website-Update-Sender) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
