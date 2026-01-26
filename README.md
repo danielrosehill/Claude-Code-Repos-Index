@@ -244,8 +244,6 @@ Claude Code workspace for developing Business Continuity Management (BCM) progra
 
 ---
 
-<<<<<<< HEAD
-=======
 ### Claude Code Lawyer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Lawyer) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
