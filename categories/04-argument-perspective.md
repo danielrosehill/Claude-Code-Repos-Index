@@ -18,13 +18,6 @@ Template framework for building a virtual think tank using AI agents, enabling r
 
 ---
 
-### Panel Of Claude
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Multi-agent system simulating expert panel discussions using multiple Claude agents with different analytical perspectives (economic, ethical, scientific, political, etc.) to provide multi-dimensional analysis through two-round cross-perspective refinement with outputs in JSON, markdown, PDF, ePub, and podcast-ready audio formats.
-
----
-
 ### Claude AI Conference
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-AI-Conference) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 

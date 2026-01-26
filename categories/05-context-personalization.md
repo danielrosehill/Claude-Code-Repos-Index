@@ -74,13 +74,6 @@ Automatically generates and deploys contextual CLAUDE.md files across a Linux de
 
 ---
 
-### Make Agent Friendly
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Make-Agent-Friendly) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Claude Code plugin that prepares human-developed codebases for agentic development by analyzing structure, asking clarifying questions, restructuring folders for agent navigability, creating CLAUDE.md documentation and /context/ directories, and validating changes before committing.
-
----
-
 ### Private And Public Claude MD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Private-And-Public-Claude-MD)
 

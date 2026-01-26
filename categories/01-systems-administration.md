@@ -16,13 +16,6 @@ Python GUI application enabling management of local network devices through Clau
 
 ---
 
-### Claude Code Linux Desktop Slash Commands
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
-
-System administration and configuration slash commands specifically designed for Linux desktop environments.
-
----
-
 ### Claude Code Security Auditor
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
@@ -132,13 +125,6 @@ Template workspace for managing Synology NAS devices through Claude Code with SS
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-System-Recovery-Mode)
 
 Custom GRUB boot entry integrating Claude CLI into Linux system recovery, enabling AI-assisted system recovery with pre-configured agents and commands for diagnostics and remediation tasks.
-
----
-
-### Linux Desktop ClaudeMD Seeder
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Linux-Desktop-ClaudeMD-Seeder) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
-
-Automatically generates and deploys contextual CLAUDE.md files across a Linux desktop filesystem to improve Claude Code's understanding of directory structures and workflows.
 
 ---
 

@@ -4,13 +4,6 @@
 
 My Plugin Marketplace enhancing capabilities in Claude.
 
-### Claude Code Context Toolkit
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Implements the CONTEXT.md workflow system bridging human-friendly context documentation with AI-optimized briefings through slash commands and specialized agents for managing, converting, and synchronizing project context between narrative CONTEXT.md files and structured CLAUDE.md briefings.
-
----
-
 ### Claude Code Plugins Marketplace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Plugins)
 

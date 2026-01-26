@@ -34,3 +34,10 @@ Professional digital evidence management workspace with cryptographic integrity 
 Claude Space template for assisting individuals seeking legal aid services, leveraging agentic AI to synthesize context for pursuing justice. Features two primary purposes: informing users of their rights (researching eligibility, explaining programs, clarifying paths to assistance) and preparing their case (organizing evidence, building case files, formatting applications). Includes 6 slash commands for onboarding/intake, eligibility assessment, preliminary legal research with disclaimers, case file building, application preparation with character limit formatting, and status tracking.
 
 ---
+
+### ProofMode Unpacker
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Proofmode-Unpacker) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Utility for managing ProofMode evidence bundles with automated cloud backup and chain of custody preservation. Features evidence integrity preservation through immutable storage, parallel cloud backup for tamper detection, automated Rclone sync to any supported provider, and organized media extraction while keeping original cryptographic bundles untouched. Includes slash commands for onboarding, uploading, and cloud configuration.
+
+---

@@ -4,13 +4,6 @@
 
 Projects using Claude and agentic systems for deep research, report generation, and information synthesis.
 
-### Claude ADHD Research Workspace
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADHD-Research-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Health](https://img.shields.io/badge/Health-red?style=flat-square)
-
-Research repository documenting systemic barriers preventing ADHD patients from accessing prescribed medications, gathering research, personal narratives, and advocacy materials to propose policy reforms balancing regulatory oversight with patient welfare.
-
----
-
 ### Claude Deep Research Model (Notes / Documentation)
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Model) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
@@ -67,16 +60,3 @@ Structured environment for conducting technical research and evaluating software
 
 ---
 
-### Claude Tech Research Team
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Tech-Research-Team) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Multi-agent system for conducting thorough software and hardware technology evaluations, orchestrating specialized AI agents for SaaS discovery, open-source alternatives, compatibility assessment, geographic sourcing, and automated report generation with MCP integrations.
-
----
-
-### Ecosystem Mapper
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ecosystem-Mapper) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Experimental AI agent that automatically discovers, categorizes, and visualizes technology ecosystems based on keyword searches. Searches GitHub and the web for recent projects, analyzes the landscape using Gemini AI to create a taxonomy, identifies representative examples, and generates visual ecosystem maps showing relationships and groupings.
-
----
