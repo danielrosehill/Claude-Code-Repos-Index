@@ -244,6 +244,34 @@ Claude Code workspace for developing Business Continuity Management (BCM) progra
 
 ---
 
+<<<<<<< HEAD
+=======
+### Claude Code Lawyer
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Lawyer) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Template repository for AI-powered legal research assistance using Claude Code. Features structured intake workflows for gathering case context, evidence handling protocols for audio transcription and document management, and TYPST-based professional document generation with confidentiality markings. Designed for preliminary legal position analysis with organized directories for context, evidence, and AI-generated outputs.
+
+#### Claude Lawyer - Israel Edition
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Lawyer-ISR) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Israeli law adaptation of the Claude Code Lawyer template. Features Israeli court system knowledge (civil, labor, family, religious courts), Hebrew/English bilingual support, pre-configured links to Israeli legal databases (Nevo, Takdin, Kol Zchut), guidance on Israel's one-party consent recording laws, tenancy law coverage (Fair Rental Law 2017), small claims procedures, and Israeli statute of limitations references.
+
+---
+
+### Claude Case File
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Case-File) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
+
+Structured workspace template for managing legal cases using Claude Code. Features evidence management with SHA-256 checksums and chain of custody tracking, document organization by type (contracts, correspondence, court filings, discovery), timeline building, legal analysis support, privilege review flagging, and document bundle preparation. Includes slash commands for case onboarding, evidence verification, timeline updates, and export workflows.
+
+---
+
+### ProofMode Unpacker
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Proofmode-Unpacker) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Utility for managing ProofMode evidence bundles with automated cloud backup and chain of custody preservation. Features evidence integrity preservation through immutable storage, parallel cloud backup for tamper detection, automated Rclone sync to any supported provider, and organized media extraction while keeping original cryptographic bundles untouched. Includes slash commands for onboarding, uploading, and cloud configuration.
+
+---
+
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
