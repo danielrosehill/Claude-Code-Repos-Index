@@ -223,6 +223,13 @@ Structured workspace template for planning computer hardware upgrades with Claud
 
 ---
 
+### Ivory PC Builder
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ivory-Computer-Builder-V2) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
+
+AI-powered PC building assistant that generates optimized component specifications based on requirements, with real-time pricing from Ivory.co.il (Israeli computer parts retailer). Features a scraped catalog system with timestamped snapshots for price tracking, compatibility checking, and slash commands for creating builds, updating catalogs, and searching products across categories.
+
+---
+
 ### Claude Web Analytics Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
 
