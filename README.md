@@ -843,6 +843,13 @@ General-purpose slash command library for various Claude Code workflows and task
 
 ---
 
+### Claude MD Chunk
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MD-Chunk) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Slash command that prunes bloated CLAUDE.md files down to their essentials and nests supplementary context into an `agent-context/` folder, reducing configuration files to the minimum needed for an agent to understand the project while preserving useful detail in organized separate files.
+
+---
+
 ### No Wheel Inventions
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/No-Wheel-Inventions) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
