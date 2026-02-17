@@ -46,6 +46,13 @@ Ideation workspace for generating new Claude Space concepts. Contains examples o
 
 ---
 
+### Split Context Setup
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Split-Context-Setup) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Slash command that reviews a repository's CLAUDE.md, prunes it to essential context, and scaffolds a structured `context/` store with topic-based subfolders, an ingestion pipeline for raw materials (audio, documents), and subagent templates for automated context maintenance and organization. Establishes clear boundaries between project context and working memory.
+
+---
+
 ### Claude Spec Starter
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
