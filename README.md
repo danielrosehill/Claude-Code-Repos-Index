@@ -651,6 +651,13 @@ Multi-agent system simulating expert panel discussions using multiple Claude age
 
 ---
 
+### Agent Junction
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Junction)
+
+MCP server enabling direct peer-to-peer communication between Claude Code instances via an ephemeral, encrypted message bus. Agents register with human-readable aliases, discover peers, and exchange AES-256-GCM encrypted messages with destructive reads and automatic key zeroing. Supports localhost and LAN modes with configurable known hosts for multi-machine setups.
+
+---
+
 ## Agent Libraries & Collections
 
 ### Claude Development Agents
