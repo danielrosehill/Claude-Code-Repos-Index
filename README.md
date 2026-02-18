@@ -182,6 +182,13 @@ Version-controlled workspace template for managing Android devices through ADB w
 
 ---
 
+### Claude MVT Workspace
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MVT-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Forensics](https://img.shields.io/badge/Forensics-darkred?style=flat-square)
+
+Claude Code workspace for running MVT (Mobile Verification Toolkit) spyware scans on Android devices via ADB. Features slash commands for guided setup, scanning, IOC updates, and result review, enabling detection of targeted spyware like Pegasus and Predator using Amnesty International's indicators of compromise. Scans are read-only with timestamped reports saved locally.
+
+---
+
 # Non-Code Applications
 
 ![Non-Code Claude Code](images/non-code.png)
