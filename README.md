@@ -1,4 +1,4 @@
-![alt text](images/banner.png)
+![Claude Code Repository Index](images/banner.png)
 
 ## Repository Growth
 
@@ -26,6 +26,16 @@ This index showcases diverse applications of Claude Code beyond traditional soft
 📝 **[Notes on Templates & Workspaces](./notes.md)** — Additional context on these approaches
 
 ![Claude Space Definition](images/claude-space.png)
+
+---
+
+## Praise For This Repo
+
+> *"This is either the work of a prolific genius, or a very clever bot (or both), although it hardly matters because the quality is so good - an index of 75+ Claude Code repositories published by the author - and I'm not talking about slop. CMS, system design, deep research, IoT, agentic workflows, server management, personal health... If you spot the lie, let me know, otherwise please check these out."*
+>
+> — [awesome-claude-code](https://github.com/wong2/awesome-claude-code)
+
+For those wondering: I'm a real human ([danielrosehill.com](https://danielrosehill.com)). The repos and spaces in this index are generated using Claude Code but very much human-designed and refined.
 
 ---
 
