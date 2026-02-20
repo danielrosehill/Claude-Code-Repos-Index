@@ -37,6 +37,12 @@ This index showcases diverse applications of Claude Code beyond traditional soft
 
 For those wondering: I'm a real human ([danielrosehill.com](https://danielrosehill.com)). The repos and spaces in this index are generated using Claude Code but very much human-designed and refined.
 
+## Commonalities
+
+I've been using Claude Code daily for about six months, for everything from development to audio editing to SEO analysis. This is a diverse collection of repositories, but it tends to lean away from the classic code generation use cases. Instead, it explores the longer tail of what Claude Code can do — deep research, systems administration, legal workflows, health documentation, media monitoring, and more.
+
+If there's a common thread, it's treating Claude Code less as a coding assistant and more as a general-purpose AI workspace that happens to run in a terminal.
+
 ---
 
 # Systems Administration
