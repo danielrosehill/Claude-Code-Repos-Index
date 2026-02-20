@@ -192,13 +192,6 @@ Version-controlled workspace template for managing Android devices through ADB w
 
 ---
 
-### Claude MVT Workspace
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MVT-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Forensics](https://img.shields.io/badge/Forensics-darkred?style=flat-square)
-
-Claude Code workspace for running MVT (Mobile Verification Toolkit) spyware scans on Android devices via ADB. Features slash commands for guided setup, scanning, IOC updates, and result review, enabling detection of targeted spyware like Pegasus and Predator using Amnesty International's indicators of compromise. Scans are read-only with timestamped reports saved locally.
-
----
-
 # Non-Code Applications
 
 ![Non-Code Claude Code](images/non-code.png)
@@ -237,13 +230,6 @@ Structured workspace for tracking personal habit development, skill acquisition,
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rig-Planner) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square) ![Rig](https://img.shields.io/badge/Rig-gray?style=flat-square)
 
 Structured workspace template for planning computer hardware upgrades with Claude Code. Supports gaming PCs, workstations, homelab servers, or multiple machines with features for context gathering, hardware profiling, multi-machine planning, formal VAT-compliant estimates, and currency localization. Includes slash commands for setup, profiling, analysis, recommendations, and estimates.
-
----
-
-### Ivory PC Builder
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ivory-Computer-Builder-V2) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
-
-AI-powered PC building assistant that generates optimized component specifications based on requirements, with real-time pricing from Ivory.co.il (Israeli computer parts retailer). Features a scraped catalog system with timestamped snapshots for price tracking, compatibility checking, and slash commands for creating builds, updating catalogs, and searching products across categories.
 
 ---
 
@@ -583,6 +569,13 @@ Ideation workspace for generating new Claude Space concepts. Contains examples o
 
 ---
 
+### Split Context Setup
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Split-Context-Setup) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Slash command that reviews a repository's CLAUDE.md, prunes it to essential context, and scaffolds a structured `context/` store with topic-based subfolders, an ingestion pipeline for raw materials (audio, documents), and subagent templates for automated context maintenance and organization. Establishes clear boundaries between project context and working memory.
+
+---
+
 ### Claude Spec Starter
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
@@ -665,13 +658,6 @@ Experimental AI agent that automatically discovers, categorizes, and visualizes 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
 Multi-agent system simulating expert panel discussions using multiple Claude agents with different analytical perspectives (economic, ethical, scientific, political, etc.) to provide multi-dimensional analysis through two-round cross-perspective refinement with outputs in JSON, markdown, PDF, ePub, and podcast-ready audio formats.
-
----
-
-### Agent Junction
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Junction)
-
-MCP server enabling direct peer-to-peer communication between Claude Code instances via an ephemeral, encrypted message bus. Agents register with human-readable aliases, discover peers, and exchange AES-256-GCM encrypted messages with destructive reads and automatic key zeroing. Supports localhost and LAN modes with configurable known hosts for multi-machine setups.
 
 ---
 
@@ -864,13 +850,6 @@ Comprehensive slash command that transforms disorganized filesystems into well-s
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
 General-purpose slash command library for various Claude Code workflows and tasks.
-
----
-
-### Claude MD Chunk
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MD-Chunk) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
-
-Slash command that prunes bloated CLAUDE.md files down to their essentials and nests supplementary context into an `agent-context/` folder, reducing configuration files to the minimum needed for an agent to understand the project while preserving useful detail in organized separate files.
 
 ---
 
