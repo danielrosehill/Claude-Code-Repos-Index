@@ -25,6 +25,13 @@ Research into agentic AI tools and LLMs specifically optimized for system admini
 
 ---
 
+### Non-Code Claude Code
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Non-Code-Claude-Code)
+
+Showcase of creative applications of Claude Code beyond traditional software development, including deep research, writing, learning, and finance use cases.
+
+---
+
 ### New Turn Claude Hook
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/New-Turn-Claude-Hook)
 

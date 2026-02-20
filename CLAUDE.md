@@ -32,8 +32,14 @@ Files are named with numeric prefixes to control concatenation order:
 categories/
   00-header.md              # Banner, intro, understanding section
   01-systems-administration.md
-  02-non-code.md            # General non-code applications
-  02a-non-code-legal.md     # Non-Code: Legal subsection
+  02-productivity.md        # Productivity & Planning
+  02a-legal.md              # Legal
+  02b-health.md             # Health & Wellbeing
+  02c-communications.md     # Communications & Writing
+  02d-financial.md          # Financial Planning
+  02e-career.md             # Career
+  02f-business.md           # Business
+  02g-privacy.md            # Privacy & Anonymity
   03-research.md
   04-argument-perspective.md
   05-context-personalization.md
