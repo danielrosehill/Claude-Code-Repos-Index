@@ -521,6 +521,13 @@ Simulated AI conference exploring perspective synthesis through agentic AI, wher
 
 ---
 
+### Perspective Finder
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Perspective-Finder-Prompt) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
+
+Claude Code workspace for identifying individuals who hold specific viewpoints within policy debates, advocacy spaces, and topic areas. Surfaces voices difficult to discover through simple keyword searches by leveraging LLM knowledge of public figures, commentators, and researchers. Features slash commands for finding voices, bulk processing, debate mapping, quadrant visualizations, and compiled PDF reports via Typst.
+
+---
+
 # Context and Personalization
 
 ![Context and Personalization](images/context.png)
