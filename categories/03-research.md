@@ -53,6 +53,13 @@ Claude Code workspace template for critical analysis of reports and lengthy docu
 
 ---
 
+### Claude Dork
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Dork) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Agent for generating batches of platform-specific search dorks across Google, Reddit, Twitter/X, Bluesky, LinkedIn, YouTube, GitHub, and Facebook. Takes keyword input files and produces CSV files with ready-to-use search queries and URLs.
+
+---
+
 ### Claude Stack Research Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Stack-Research-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
