@@ -3,7 +3,7 @@
     "title": "Claude Code Repos Index",
     "description": "Curated index of Claude Code-related resources and projects",
     "master_index_url": "https://github.com/danielrosehill/Github-Master-Index",
-    "generated_date": "2026-03-05"
+    "generated_date": "2026-03-06"
   },
   "categories": [
     {
@@ -290,6 +290,11 @@
           "name": "Claude Report Parsing Space Template",
           "url": "https://github.com/danielrosehill/Claude-Report-Parsing-Space-Template",
           "description": "Claude Code workspace template for critical analysis of reports and lengthy documents. Features a library of slash commands for triage, statistics extraction, argumentation analysis, summarization, and source extraction. Embodies a skeptical approach that evaluates credibility, methodology, and originality rather than passive summarization."
+        },
+        {
+          "name": "Claude Dork",
+          "url": "https://github.com/danielrosehill/Claude-Dork",
+          "description": "Agent for generating batches of platform-specific search dorks across Google, Reddit, Twitter/X, Bluesky, LinkedIn, YouTube, GitHub, and Facebook. Takes keyword input files and produces CSV files with ready-to-use search queries and URLs."
         },
         {
           "name": "Claude Stack Research Workspace",
@@ -608,10 +613,10 @@
   ],
   "statistics": {
     "total_categories": 9,
-    "total_repositories": 109,
+    "total_repositories": 110,
     "repositories_by_category": {
       "Systems Administration": 48,
-      "Research": 8,
+      "Research": 9,
       "Argument and Perspective Exploration": 3,
       "Context and Personalization": 12,
       "Multi-Agent Tooling": 12,

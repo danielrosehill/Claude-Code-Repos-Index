@@ -93,7 +93,7 @@ async function loadData() {
     repos = await res.json();
     const tagCount = {};
     repos.forEach(r => r.tags.forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
-    allTags = Object.entries(tagCount).sort((a, b) => b[1] - a[1]);
+    allTags = Object.entries(tagCount).sort((a, b) => a[0].localeCompare(b[0]));
 
     document.getElementById('stat-repos').textContent = repos.length;
     document.getElementById('repo-count').textContent = repos.length;
@@ -152,6 +152,8 @@ function render() {
   } else {
     countEl.textContent = `${repos.length} repos`;
   }
+
+  filtered.sort((a, b) => a.name.localeCompare(b.name));
 
   if (filtered.length === 0) {
     area.innerHTML = '<div class="loading">No repositories match your filters.</div>';

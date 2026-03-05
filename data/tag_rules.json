@@ -1,0 +1,74 @@
+{
+  "_comment": "Rules for auto-tagging repos when generating tagged_repos.json from repos.json",
+
+  "category_tags": {
+    "Systems Administration": ["Sysadmin"],
+    "Productivity & Planning": ["Productivity"],
+    "Legal": ["Legal"],
+    "Health & Wellbeing": ["Health"],
+    "Communications & Writing": ["Communications"],
+    "Financial Planning": ["Financial", "Planning"],
+    "Career": ["Planning"],
+    "Business": ["Business"],
+    "Privacy & Anonymity": ["Privacy"],
+    "Research": ["Research"],
+    "Argument & Perspective Analysis": ["Analysis"],
+    "Context & Personalization": ["Configuration"],
+    "Multi-Agent & Tooling": ["Multi-Agent"],
+    "MCP (Model Context Protocol)": ["MCP"],
+    "Plugins": ["Plugin"],
+    "Slash Commands": ["Slash Commands"],
+    "Miscellaneous & Meta": ["Documentation"]
+  },
+
+  "keyword_tags": {
+    "Template": {
+      "name_patterns": ["template", "Template"],
+      "desc_patterns": ["template for", "forkable"]
+    },
+    "Claude Space": {
+      "name_patterns": ["Space", "Workspace", "Manager"],
+      "desc_patterns": ["workspace", "claude space", "Claude Code workspace"]
+    },
+    "Slash Commands": {
+      "name_patterns": ["Slash"],
+      "desc_patterns": ["slash command"]
+    },
+    "Multi-Agent": {
+      "name_patterns": [],
+      "desc_patterns": ["subagent", "multi-agent", "specialized agent", "agents for"]
+    },
+    "Automation": {
+      "name_patterns": [],
+      "desc_patterns": ["automat", "automated", "scheduling", "pipeline", "workflow"]
+    },
+    "Tool": {
+      "name_patterns": [],
+      "desc_patterns": ["tool for", "utility", "CLI", "command-line", "GUI", "interface for"]
+    },
+    "Configuration": {
+      "name_patterns": ["Config", "Setup"],
+      "desc_patterns": ["configuration", "settings", "pre-configured"]
+    },
+    "Documentation": {
+      "name_patterns": [],
+      "desc_patterns": ["documentation", "guide", "tutorial", "reference", "transcript", "showcase"]
+    },
+    "Research": {
+      "name_patterns": ["Research"],
+      "desc_patterns": ["research", "exploration", "concept", "planning-stage"]
+    },
+    "MCP": {
+      "name_patterns": ["MCP"],
+      "desc_patterns": ["model context protocol", "MCP server", "MCP config"]
+    },
+    "Plugin": {
+      "name_patterns": ["Plugin"],
+      "desc_patterns": ["plugin", "extension"]
+    }
+  },
+
+  "tag_overrides": {
+    "_comment": "Manual overrides: repo name -> exact tag list. Takes precedence over auto-tagging."
+  }
+}
