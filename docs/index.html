@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Repos Index</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-hover: #1c2129;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #7c3aed;
+      --accent-light: #a78bfa;
+      --link: #58a6ff;
+      --card-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1040 0%, #0d1117 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .header h1 span { color: var(--accent-light); }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-light);
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+    }
+
+    .controls-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.5rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box:focus { border-color: var(--accent); }
+
+    .search-box::placeholder { color: var(--text-muted); }
+
+    .category-pills {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      flex: 2;
+    }
+
+    .pill {
+      padding: 0.35rem 0.7rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .pill:hover { border-color: var(--accent); color: var(--text); }
+
+    .pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .category-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .category-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    .category-desc {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .repo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      transition: border-color 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .repo-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .repo-name {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .repo-name a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .repo-name a:hover { text-decoration: underline; }
+
+    .repo-desc {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .repo-card.expanded .repo-desc {
+      -webkit-line-clamp: unset;
+    }
+
+    .expand-btn {
+      background: none;
+      border: none;
+      color: var(--accent-light);
+      font-size: 0.78rem;
+      cursor: pointer;
+      padding: 0.3rem 0;
+      align-self: flex-start;
+    }
+
+    .repo-badges {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+
+    .badge-space { background: #7c3aed33; color: #c4b5fd; }
+    .badge-template { background: #16a34a33; color: #86efac; }
+    .badge-noncode { background: #0d948833; color: #5eead4; }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem;
+      color: var(--text-muted);
+    }
+
+    .back-to-gh {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-top: 0.75rem;
+    }
+
+    .back-to-gh:hover { color: var(--text); }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer a { color: var(--link); text-decoration: none; }
+
+    .result-count {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+      .header { padding: 1.5rem 1rem; }
+      .header h1 { font-size: 1.5rem; }
+      .controls-inner { flex-direction: column; }
+      .repo-grid { grid-template-columns: 1fr; }
+      .stats { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span>Claude Code</span> Repos Index</h1>
+  <p>Curated index of Claude Code-related resources and projects shared on GitHub</p>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num" id="repo-count">-</div>
+      <div class="stat-label">Repositories</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="cat-count">-</div>
+      <div class="stat-label">Categories</div>
+    </div>
+  </div>
+  <a class="back-to-gh" href="https://github.com/danielrosehill/Claude-Code-Repos-Index">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    View on GitHub
+  </a>
+</div>
+
+<div class="controls">
+  <div class="controls-inner">
+    <input type="text" class="search-box" id="search" placeholder="Search repositories..." autocomplete="off">
+    <div class="category-pills" id="pills"></div>
+    <div class="result-count" id="result-count"></div>
+  </div>
+</div>
+
+<div class="main" id="main">
+  <div class="no-results">Loading index...</div>
+</div>
+
+<div class="footer">
+  Built from <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Claude Code Repos Index</a>
+  by <a href="https://github.com/danielrosehill">Daniel Rosehill</a>
+</div>
+
+<script>
+let data = null;
+let activeCategory = null;
+let searchQuery = '';
+
+async function loadData() {
+  try {
+    const res = await fetch('repos.json');
+    data = await res.json();
+    init();
+  } catch (e) {
+    document.getElementById('main').innerHTML = '<div class="no-results">Failed to load repository data.</div>';
+  }
+}
+
+function init() {
+  const totalRepos = data.categories.reduce((sum, c) => sum + c.repositories.length, 0);
+  document.getElementById('repo-count').textContent = totalRepos;
+  document.getElementById('cat-count').textContent = data.categories.length;
+
+  buildPills();
+  render();
+
+  document.getElementById('search').addEventListener('input', (e) => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    render();
+  });
+}
+
+function buildPills() {
+  const container = document.getElementById('pills');
+  const allPill = document.createElement('button');
+  allPill.className = 'pill active';
+  allPill.textContent = 'All';
+  allPill.onclick = () => { activeCategory = null; updatePills(); render(); };
+  container.appendChild(allPill);
+
+  data.categories.forEach((cat, i) => {
+    const pill = document.createElement('button');
+    pill.className = 'pill';
+    pill.textContent = cat.name;
+    pill.dataset.index = i;
+    pill.onclick = () => {
+      activeCategory = (activeCategory === i) ? null : i;
+      updatePills();
+      render();
+    };
+    container.appendChild(pill);
+  });
+}
+
+function updatePills() {
+  document.querySelectorAll('.pill').forEach((p, i) => {
+    if (i === 0) {
+      p.classList.toggle('active', activeCategory === null);
+    } else {
+      p.classList.toggle('active', activeCategory === parseInt(p.dataset.index));
+    }
+  });
+}
+
+function render() {
+  const main = document.getElementById('main');
+  let html = '';
+  let totalShown = 0;
+
+  const cats = activeCategory !== null ? [data.categories[activeCategory]] : data.categories;
+
+  cats.forEach(cat => {
+    const repos = cat.repositories.filter(r => {
+      if (!searchQuery) return true;
+      return r.name.toLowerCase().includes(searchQuery) ||
+             r.description.toLowerCase().includes(searchQuery);
+    });
+
+    if (repos.length === 0) return;
+    totalShown += repos.length;
+
+    html += `<div class="category-section">`;
+    html += `<div class="category-title">${esc(cat.name)}</div>`;
+    if (cat.description) {
+      html += `<div class="category-desc">${esc(cat.description)}</div>`;
+    }
+    html += `<div class="repo-grid">`;
+
+    repos.forEach(repo => {
+      const desc = esc(repo.description || '');
+      const needsExpand = desc.length > 180;
+      html += `<div class="repo-card" ${needsExpand ? 'onclick="this.classList.toggle(\'expanded\')"' : ''}>`;
+      html += `<div class="repo-name"><a href="${esc(repo.url)}" target="_blank" rel="noopener">${esc(repo.name)}</a></div>`;
+      html += `<div class="repo-desc">${desc}</div>`;
+      if (needsExpand) {
+        html += `<button class="expand-btn" onclick="event.stopPropagation(); this.parentElement.classList.toggle('expanded')">show more</button>`;
+      }
+      html += `</div>`;
+    });
+
+    html += `</div></div>`;
+  });
+
+  if (!html) {
+    html = '<div class="no-results">No repositories match your search.</div>';
+  }
+
+  main.innerHTML = html;
+
+  const totalRepos = data.categories.reduce((sum, c) => sum + c.repositories.length, 0);
+  const countEl = document.getElementById('result-count');
+  if (searchQuery || activeCategory !== null) {
+    countEl.textContent = `${totalShown} of ${totalRepos}`;
+  } else {
+    countEl.textContent = '';
+  }
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+loadData();
+</script>
+</body>
+</html>

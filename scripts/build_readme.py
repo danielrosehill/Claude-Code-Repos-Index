@@ -18,6 +18,7 @@ The category files should be named with numeric prefixes to control order:
 """
 
 from pathlib import Path
+import shutil
 import sys
 
 
@@ -55,6 +56,13 @@ def build_readme():
 
     print(f"\nREADME.md built successfully ({len(full_content)} characters)")
     print(f"Source files: {[f.name for f in category_files]}")
+
+    # Copy repos.json to docs/ for GitHub Pages site
+    docs_dir = repo_root / "docs"
+    repos_json_src = repo_root / "data" / "repos.json"
+    if docs_dir.exists() and repos_json_src.exists():
+        shutil.copy2(repos_json_src, docs_dir / "repos.json")
+        print("Copied repos.json to docs/")
 
 
 if __name__ == "__main__":
