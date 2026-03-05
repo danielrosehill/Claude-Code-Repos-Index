@@ -12,6 +12,8 @@ My Claude Code related repositories, organized by use case and category.
 
 Most patterns, templates, and models are adaptable to other agentic AI CLIs and frameworks.
 
+**[Browse the index online](https://claude.danielrosehill.com)** | **[Documentation portal](https://docs.bydanielrosehill.com)**
+
 ## Understanding This Index
 
 This index showcases diverse applications of Claude Code beyond traditional software development. Key concepts:
