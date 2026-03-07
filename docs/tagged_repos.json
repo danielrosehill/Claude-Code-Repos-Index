@@ -540,6 +540,17 @@
     "slug": "claude-file-organiser-super-slash"
   },
   {
+    "name": "Claude Georeaction Researcher",
+    "url": "https://github.com/danielrosehill/Claude-Georeaction-Researcher",
+    "description": "Tool for researching international reactions to any topic across 193 UN member states and 17 major multilateral organizations using Gemini with Google Search grounding. Pre-groups entities into 21 geographic batches for efficient parallel processing and produces structured JSON output with stance categorization.",
+    "tags": [
+      "Research",
+      "Tool"
+    ],
+    "added_date": "2026-03-08",
+    "slug": "claude-georeaction-researcher"
+  },
+  {
     "name": "Claude Github Shortlister",
     "url": "https://github.com/danielrosehill/Claude-Github-Shortlister",
     "description": "Template repository that helps developers systematically evaluate and shortlist GitHub repositories using Claude Code for automated analysis with structured workflow for repository collection, requirements definition, and AI-powered recommendations organized by star count, update date, and relevance.",

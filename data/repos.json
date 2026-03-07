@@ -297,6 +297,11 @@
           "description": "Agent for generating batches of platform-specific search dorks across Google, Reddit, Twitter/X, Bluesky, LinkedIn, YouTube, GitHub, and Facebook. Takes keyword input files and produces CSV files with ready-to-use search queries and URLs."
         },
         {
+          "name": "Claude Georeaction Researcher",
+          "url": "https://github.com/danielrosehill/Claude-Georeaction-Researcher",
+          "description": "Tool for researching international reactions to any topic across 193 UN member states and 17 major multilateral organizations using Gemini with Google Search grounding. Pre-groups entities into 21 geographic batches for efficient parallel processing and produces structured JSON output with stance categorization."
+        },
+        {
           "name": "Claude Stack Research Workspace",
           "url": "https://github.com/danielrosehill/Claude-Stack-Research-Workspace",
           "description": "Structured environment for conducting technical research and evaluating software solutions using Claude Code, organizing research requests, findings, and recommendations through dedicated directories, custom commands, and specialized AI agents to streamline technology stack comparisons and component evaluations."
@@ -613,10 +618,10 @@
   ],
   "statistics": {
     "total_categories": 9,
-    "total_repositories": 110,
+    "total_repositories": 111,
     "repositories_by_category": {
       "Systems Administration": 48,
-      "Research": 9,
+      "Research": 10,
       "Argument and Perspective Exploration": 3,
       "Context and Personalization": 12,
       "Multi-Agent Tooling": 12,
