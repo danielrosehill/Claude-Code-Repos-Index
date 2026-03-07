@@ -45,7 +45,7 @@ def build_readme():
 
     full_content = "\n".join(content_parts)
     README_PATH.write_text(full_content, encoding="utf-8")
-    print(f"[1/5] README.md built from {len(category_files)} category files")
+    print(f"[1/6] README.md built from {len(category_files)} category files")
     return full_content
 
 
@@ -62,7 +62,7 @@ def parse_readme_to_repos_json():
 
     total = data["statistics"]["total_repositories"]
     cats = data["statistics"]["total_categories"]
-    print(f"[2/5] repos.json updated: {total} repos in {cats} categories")
+    print(f"[2/6] repos.json updated: {total} repos in {cats} categories")
     return data
 
 
@@ -204,6 +204,12 @@ def generate_tagged_repos(_repos_data):
                 "tags": repo_tags,
             })
 
+    # Add dates and slugs
+    added_dates = derive_added_dates(tagged)
+    for repo in tagged:
+        repo["added_date"] = added_dates.get(repo["name"], datetime.now().strftime("%Y-%m-%d"))
+        repo["slug"] = slugify(repo["name"])
+
     # Sort repos alphabetically by name
     tagged.sort(key=lambda r: r["name"].lower())
 
@@ -215,16 +221,129 @@ def generate_tagged_repos(_repos_data):
     for r in tagged:
         all_tags.update(r["tags"])
 
-    print(f"[3/5] tagged_repos.json generated: {len(tagged)} repos, {len(all_tags)} tags")
+    print(f"[3/6] tagged_repos.json generated: {len(tagged)} repos, {len(all_tags)} tags")
     return tagged
 
 
+def slugify(name):
+    """Convert a repo name to a URL-safe slug."""
+    slug = name.lower().strip()
+    slug = re.sub(r"[^a-z0-9]+", "-", slug)
+    return slug.strip("-")
+
+
+def derive_added_dates(tagged_repos):
+    """Derive per-repo added dates from site_state.json history."""
+    dates = {}
+    if SITE_STATE_PATH.exists():
+        with open(SITE_STATE_PATH, "r", encoding="utf-8") as f:
+            state = json.load(f)
+        for entry in state.get("history", []):
+            date = entry.get("date", "")[:10]  # YYYY-MM-DD
+            for change in entry.get("changes", []):
+                if change.get("type") == "added":
+                    for name in change.get("repos", []):
+                        if name not in dates:
+                            dates[name] = date
+    # Default for repos with no history
+    today = datetime.now().strftime("%Y-%m-%d")
+    for repo in tagged_repos:
+        if repo["name"] not in dates:
+            dates[repo["name"]] = today
+    return dates
+
+
+def generate_repo_pages(tagged_repos):
+    """Step 4a: Generate individual HTML pages for each repo."""
+    repos_dir = DOCS_DIR / "repos"
+    repos_dir.mkdir(parents=True, exist_ok=True)
+
+    # Clean old pages
+    for old_page in repos_dir.glob("*.html"):
+        old_page.unlink()
+
+    template = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{name} - Claude Code Repos Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="../" class="nav-brand">Claude Code Index</a>
+    <div class="nav-links">
+      <a href="../">Index</a>
+      <a href="../about.html">About</a>
+      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
+      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
+      <a href="https://danielrosehill.com/contact" target="_blank">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="page repo-detail">
+  <a class="back-link" href="../">&larr; Back to Index</a>
+  <h1>{name}</h1>
+  <div class="repo-detail-tags">{tags_html}</div>
+  <p>{description}</p>
+  <div class="repo-detail-actions">
+    <a class="btn btn-primary" href="{url}" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      View on GitHub
+    </a>
+  </div>
+  {added_html}
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; Daniel Rosehill</span>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://danielrosehill.com">danielrosehill.com</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
+  </div>
+</footer>
+
+</body>
+</html>'''
+
+    for repo in tagged_repos:
+        slug = slugify(repo["name"])
+        tags_html = "".join(
+            f'<span class="repo-detail-tag">{t}</span>' for t in repo["tags"]
+        )
+        added = repo.get("added_date", "")
+        added_html = f'<p class="repo-detail-added">Added to index: {added}</p>' if added else ""
+
+        html = template.format(
+            name=repo["name"],
+            description=repo["description"],
+            url=repo["url"],
+            tags_html=tags_html,
+            added_html=added_html,
+        )
+        (repos_dir / f"{slug}.html").write_text(html, encoding="utf-8")
+
+    print(f"[4a/6] Generated {len(tagged_repos)} repo detail pages")
+
+
 def copy_assets():
-    """Step 4: Copy data files to docs/."""
+    """Step 4b: Copy data files to docs/."""
     DOCS_DIR.mkdir(exist_ok=True)
     if REPOS_JSON_PATH.exists():
         shutil.copy2(REPOS_JSON_PATH, DOCS_DIR / "repos.json")
-    print("[4/5] Assets copied to docs/")
+    print("[4b/6] Assets copied to docs/")
 
 
 def update_site_state(tagged_repos):
@@ -293,7 +412,7 @@ def update_site_state(tagged_repos):
     if not summary:
         summary.append("no changes")
 
-    print(f"[5/5] site_state.json updated ({', '.join(summary)})")
+    print(f"[6/6] site_state.json updated ({', '.join(summary)})")
 
     if added:
         for name in added:
@@ -311,6 +430,7 @@ def main():
     readme_content = build_readme()
     repos_data = parse_readme_to_repos_json()
     tagged = generate_tagged_repos(repos_data)
+    generate_repo_pages(tagged)
     copy_assets()
     update_site_state(tagged)
 

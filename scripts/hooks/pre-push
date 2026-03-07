@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#
+# pre-push hook: rebuild site data before pushing so Vercel deploys fresh content.
+#
+# Install with: ./scripts/install-hooks.sh
+#
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+echo "[pre-push] Running site build pipeline..."
+python3 "$REPO_ROOT/scripts/build_site.py"
+
+# Check if the build produced any uncommitted changes
+if ! git diff --quiet -- README.md docs/ data/; then
+    echo "[pre-push] Build produced changes — auto-committing..."
+    git add README.md docs/ data/
+    git commit -m "Rebuild site data for deployment
+
+Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"
+    echo "[pre-push] Changes committed. They will be included in this push."
+else
+    echo "[pre-push] Site data is up to date."
+fi
