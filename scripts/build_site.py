@@ -312,6 +312,8 @@ def generate_repo_pages(tagged_repos):
     <a href="https://danielrosehill.com">danielrosehill.com</a>
     <span class="footer-sep">&middot;</span>
     <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://dsrholdings.cloud" target="_blank">Business Enquiries</a>
   </div>
 </footer>
 
