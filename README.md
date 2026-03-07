@@ -695,6 +695,13 @@ Curated collection of Claude Code projects, tools, and resources organized by ca
 
 ## Workspace Setup & Management
 
+### Claude Repo Retrofitter
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Repo-Retrofitter) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Batch-retrofit existing repositories with Claude Code scaffolding (CLAUDE.md, AGENTS.md, slash commands, subagents, and project folders). Includes a scan script to identify repos missing Claude elements and slash commands for targeted retrofitting.
+
+---
+
 ### Claude Workspace Setup Helper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Workspace-Setup-Helper) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
