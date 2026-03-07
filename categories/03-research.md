@@ -60,6 +60,13 @@ Agent for generating batches of platform-specific search dorks across Google, Re
 
 ---
 
+### Claude Georeaction Researcher
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Georeaction-Researcher)
+
+Tool for researching international reactions to any topic across 193 UN member states and 17 major multilateral organizations using Gemini with Google Search grounding. Pre-groups entities into 21 geographic batches for efficient parallel processing and produces structured JSON output with stance categorization.
+
+---
+
 ### Claude Stack Research Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Stack-Research-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
