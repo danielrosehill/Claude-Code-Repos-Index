@@ -1,5 +1,20 @@
 [
   {
+    "name": "Agent Junction",
+    "url": "https://github.com/danielrosehill/Agent-Junction",
+    "description": "MCP server enabling encrypted peer-to-peer communication between multiple Claude Code instances running on localhost or across a local network. Agents discover each other and exchange AES-256-GCM encrypted messages with destructive reads, supporting both localhost and LAN modes with automatic session expiry and ephemeral in-memory storage.",
+    "tags": [
+      "Automation",
+      "MCP"
+    ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
+    "added_date": "2026-03-08",
+    "slug": "agent-junction",
+    "created_date": "2026-03-08"
+  },
+  {
     "name": "AI-Human Attribution Adder",
     "url": "https://github.com/danielrosehill/AI-Human-Attribution-Adder",
     "description": "Automates the addition of attribution sections to README files, enabling developers to transparently document which parts of a project were human-created versus AI-assisted for ethical representation of AI tool usage.",

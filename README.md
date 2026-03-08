@@ -635,6 +635,13 @@ Components and tooling for multi-agent development and orchestration frameworks.
 
 ## Multi-Agent Systems
 
+### Agent Junction
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Junction) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+MCP server enabling encrypted peer-to-peer communication between multiple Claude Code instances running on localhost or across a local network. Agents discover each other and exchange AES-256-GCM encrypted messages with destructive reads, supporting both localhost and LAN modes with automatic session expiry and ephemeral in-memory storage.
+
+---
+
 ### Claude Agent Picker Pattern
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Agent-Picker-Pattern) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 

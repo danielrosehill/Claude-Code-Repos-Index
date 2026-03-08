@@ -1,8 +1,9 @@
 {
-  "last_built": "2026-03-08T02:23:04",
-  "total_repos": 111,
+  "last_built": "2026-03-08T02:25:44",
+  "total_repos": 112,
   "total_tags": 20,
   "repo_manifest": {
+    "Agent Junction": "69283df52290ebd3c14ce5d9d02bc809",
     "AI-Human Attribution Adder": "7d30b1672189164204c99f342cf90402",
     "Bash Alias Manager Claude": "19f1995c2327e07a2915284c6cdb6586",
     "Batch ClaudeMD Repo Creator": "da243cc178e5d352a63eb8f855f70726",
@@ -670,6 +671,18 @@
         }
       ],
       "total_repos": 111
+    },
+    {
+      "date": "2026-03-08T02:25:44",
+      "changes": [
+        {
+          "type": "added",
+          "repos": [
+            "Agent Junction"
+          ]
+        }
+      ],
+      "total_repos": 112
     }
   ]
 }

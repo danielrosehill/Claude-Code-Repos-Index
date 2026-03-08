@@ -400,6 +400,11 @@
       "description": "Components and tooling for multi-agent development and orchestration frameworks.",
       "repositories": [
         {
+          "name": "Agent Junction",
+          "url": "https://github.com/danielrosehill/Agent-Junction",
+          "description": "MCP server enabling encrypted peer-to-peer communication between multiple Claude Code instances running on localhost or across a local network. Agents discover each other and exchange AES-256-GCM encrypted messages with destructive reads, supporting both localhost and LAN modes with automatic session expiry and ephemeral in-memory storage."
+        },
+        {
           "name": "Claude Agent Picker Pattern",
           "url": "https://github.com/danielrosehill/Claude-Agent-Picker-Pattern",
           "description": "Conceptual framework for intelligently assembling context-optimized multi-agent crews by evaluating project requirements, selecting complementary subagents with minimal overlap, and automatically generating crew configurations that stay within context window limits."
@@ -618,13 +623,13 @@
   ],
   "statistics": {
     "total_categories": 9,
-    "total_repositories": 111,
+    "total_repositories": 112,
     "repositories_by_category": {
       "Systems Administration": 48,
       "Research": 10,
       "Argument and Perspective Exploration": 3,
       "Context and Personalization": 12,
-      "Multi-Agent Tooling": 12,
+      "Multi-Agent Tooling": 13,
       "MCP": 5,
       "Plugins": 7,
       "Slash Commands": 7,
