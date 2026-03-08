@@ -7,6 +7,9 @@
       "Automation",
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "ai-human-attribution-adder"
   },
@@ -21,6 +24,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "bash-alias-manager-claude"
   },
@@ -33,6 +39,9 @@
       "Claude Space",
       "Documentation"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "batch-claudemd-repo-creator"
   },
@@ -47,6 +56,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-adb-workspace-template"
   },
@@ -59,6 +71,9 @@
       "Health",
       "Research"
     ],
+    "category": "Health & Wellbeing",
+    "category_slug": "health",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-adhd-research-workspace"
   },
@@ -72,6 +87,9 @@
       "Multi-Agent",
       "Research"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-agent-picker-pattern"
   },
@@ -82,6 +100,9 @@
     "tags": [
       "Documentation"
     ],
+    "category": "Argument and Perspective Exploration",
+    "category_slug": "argument",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-ai-conference"
   },
@@ -92,6 +113,9 @@
     "tags": [
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-app-optimiser"
   },
@@ -104,6 +128,9 @@
       "Claude Space",
       "Communications"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-blog-manager"
   },
@@ -117,6 +144,9 @@
       "Planning",
       "Template"
     ],
+    "category": "Financial Planning",
+    "category_slug": "financial",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-budget-workspace-template"
   },
@@ -128,6 +158,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-bug-catcher"
   },
@@ -141,6 +174,9 @@
       "Documentation",
       "Slash Commands"
     ],
+    "category": "Business",
+    "category_slug": "business",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-business-continuity-planner"
   },
@@ -152,6 +188,9 @@
       "Business",
       "Research"
     ],
+    "category": "Business",
+    "category_slug": "business",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-business-idea-evaluator"
   },
@@ -166,6 +205,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Legal",
+    "category_slug": "legal",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-case-file"
   },
@@ -179,6 +221,9 @@
       "Multi-Agent",
       "Slash Commands"
     ],
+    "category": "Argument and Perspective Exploration",
+    "category_slug": "argument",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-change-my-view"
   },
@@ -192,6 +237,9 @@
       "Slash Commands",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-bash-aliases"
   },
@@ -202,6 +250,9 @@
     "tags": [
       "Documentation"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "claude-code-context-feature-requests"
   },
@@ -215,6 +266,9 @@
       "Multi-Agent",
       "Slash Commands"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-code-context-toolkit"
   },
@@ -229,6 +283,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-lan-manager"
   },
@@ -244,6 +301,9 @@
       "Research",
       "Tool"
     ],
+    "category": "Legal",
+    "category_slug": "legal",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-code-lawyer"
   },
@@ -255,6 +315,9 @@
       "Configuration",
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-linux-desktop-slash-commands"
   },
@@ -267,6 +330,9 @@
       "Configuration",
       "Documentation"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-linux-notes"
   },
@@ -277,6 +343,9 @@
     "tags": [
       "Plugin"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-marketplace-hub"
   },
@@ -287,6 +356,9 @@
     "tags": [
       "MCP"
     ],
+    "category": "MCP",
+    "category_slug": "mcp",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-mcp-command-generator"
   },
@@ -298,6 +370,9 @@
       "Automation",
       "MCP"
     ],
+    "category": "MCP",
+    "category_slug": "mcp",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-mcp-list"
   },
@@ -309,6 +384,9 @@
       "Automation",
       "Documentation"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-notebook"
   },
@@ -323,6 +401,9 @@
       "Plugin",
       "Slash Commands"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-plugin"
   },
@@ -333,6 +414,9 @@
     "tags": [
       "Plugin"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-plugins-marketplace"
   },
@@ -346,6 +430,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-remote-machine-admin-space"
   },
@@ -357,6 +444,9 @@
       "Claude Space",
       "Configuration"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-code-repo-managers-claudemd"
   },
@@ -368,6 +458,9 @@
       "Configuration",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-code-security-auditor"
   },
@@ -379,6 +472,9 @@
       "Communications",
       "Multi-Agent"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-code-writing-squad"
   },
@@ -395,6 +491,9 @@
       "Template",
       "Tool"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-communications-strategist-template"
   },
@@ -407,6 +506,9 @@
       "Documentation",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-conda-manager"
   },
@@ -420,6 +522,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-debugging-workspace"
   },
@@ -430,6 +535,9 @@
     "tags": [
       "Productivity"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-decision-evaluation-framework"
   },
@@ -441,6 +549,9 @@
       "Automation",
       "Research"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-deep-research-model-notes-documentation"
   },
@@ -453,6 +564,9 @@
       "Research",
       "Template"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-deep-research-template-implementation-template"
   },
@@ -466,6 +580,9 @@
       "Multi-Agent",
       "Slash Commands"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-development-agents"
   },
@@ -478,6 +595,9 @@
       "Productivity",
       "Template"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-diary-planner-template"
   },
@@ -492,6 +612,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-docker-manager"
   },
@@ -504,6 +627,9 @@
       "Documentation",
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-document-this"
   },
@@ -514,6 +640,9 @@
     "tags": [
       "Research"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-dork"
   },
@@ -526,6 +655,9 @@
       "Legal",
       "Slash Commands"
     ],
+    "category": "Legal",
+    "category_slug": "legal",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-evidence-assistant"
   },
@@ -536,6 +668,9 @@
     "tags": [
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-file-organiser-super-slash"
   },
@@ -547,6 +682,9 @@
       "Research",
       "Tool"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-08",
     "slug": "claude-georeaction-researcher"
   },
@@ -558,6 +696,9 @@
       "Automation",
       "Research"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-github-shortlister"
   },
@@ -571,6 +712,9 @@
       "Slash Commands",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-google-drive-organiser"
   },
@@ -583,6 +727,9 @@
       "Documentation",
       "Health"
     ],
+    "category": "Health & Wellbeing",
+    "category_slug": "health",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-health-helper"
   },
@@ -598,6 +745,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-home-assistant-manager-template"
   },
@@ -609,6 +759,9 @@
       "Documentation",
       "Research"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "claude-interview"
   },
@@ -622,6 +775,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "claude-is-awesome"
   },
@@ -635,6 +791,9 @@
       "Documentation",
       "Plugin"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-janitor"
   },
@@ -650,6 +809,9 @@
       "Research",
       "Slash Commands"
     ],
+    "category": "Career",
+    "category_slug": "career",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-job-search-strategist"
   },
@@ -664,6 +826,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Legal",
+    "category_slug": "legal",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-legal-aid-clinic"
   },
@@ -678,6 +843,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-linux-desktop-manager"
   },
@@ -693,6 +861,9 @@
       "Slash Commands",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-linux-server-manager"
   },
@@ -704,6 +875,9 @@
       "Documentation",
       "Research"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "claude-local-ai-agent-research"
   },
@@ -716,6 +890,9 @@
       "MCP",
       "Tool"
     ],
+    "category": "MCP",
+    "category_slug": "mcp",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-mcp-guidelines"
   },
@@ -728,6 +905,9 @@
       "Research",
       "Slash Commands"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-media-monitor"
   },
@@ -739,6 +919,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-model-identifier"
   },
@@ -753,6 +936,9 @@
       "Research",
       "Slash Commands"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-news-fetcher-media-monitoring-system"
   },
@@ -765,6 +951,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-os-sync-agent"
   },
@@ -777,6 +966,9 @@
       "Research",
       "Template"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-osint-investigator"
   },
@@ -789,6 +981,9 @@
       "Multi-Agent",
       "Productivity"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-personal-development-workspace"
   },
@@ -803,6 +998,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-proxmox-manager-template"
   },
@@ -818,6 +1016,9 @@
       "Research",
       "Template"
     ],
+    "category": "Financial Planning",
+    "category_slug": "financial",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-purchasing-assistant"
   },
@@ -831,6 +1032,9 @@
       "Research",
       "Slash Commands"
     ],
+    "category": "Privacy & Anonymity",
+    "category_slug": "privacy",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-redaction-and-obfuscation"
   },
@@ -841,6 +1045,9 @@
     "tags": [
       "Automation"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-repo-jumper"
   },
@@ -854,6 +1061,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-report-parsing-space-template"
   },
@@ -865,6 +1075,9 @@
       "Research",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-rescue"
   },
@@ -876,6 +1089,9 @@
       "Documentation",
       "Slash Commands"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "claude-resource-list-builder"
   },
@@ -889,6 +1105,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-rig-planner"
   },
@@ -904,6 +1123,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-server-manager-template"
   },
@@ -917,6 +1139,9 @@
       "Sysadmin",
       "Template"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-server-mgmt-template-sbcs"
   },
@@ -928,6 +1153,9 @@
       "Automation",
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-slash-commands"
   },
@@ -941,6 +1169,9 @@
       "Research",
       "Tool"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-space-self-ideator"
   },
@@ -954,6 +1185,9 @@
       "Research",
       "Tool"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-spaces-model"
   },
@@ -965,6 +1199,9 @@
       "Automation",
       "Slash Commands"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-spec-starter"
   },
@@ -976,6 +1213,9 @@
       "Claude Space",
       "Research"
     ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-stack-research-workspace"
   },
@@ -988,6 +1228,9 @@
       "Configuration",
       "Multi-Agent"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-sub-agent-network"
   },
@@ -1000,6 +1243,9 @@
       "Configuration",
       "Sysadmin"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-synology-manager"
   },
@@ -1012,6 +1258,9 @@
       "Sysadmin",
       "Tool"
     ],
+    "category": "Systems Administration",
+    "category_slug": "sysadmin",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-system-recovery-mode"
   },
@@ -1023,6 +1272,9 @@
       "Automation",
       "Claude Space"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-task-manager"
   },
@@ -1035,6 +1287,9 @@
       "Multi-Agent",
       "Research"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-tech-research-team"
   },
@@ -1048,6 +1303,9 @@
       "Multi-Agent",
       "Slash Commands"
     ],
+    "category": "Health & Wellbeing",
+    "category_slug": "health",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-therapy-tracker"
   },
@@ -1059,6 +1317,9 @@
       "Research",
       "Slash Commands"
     ],
+    "category": "Argument and Perspective Exploration",
+    "category_slug": "argument",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "claude-think-tank"
   },
@@ -1073,6 +1334,9 @@
       "Template",
       "Tool"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-visual-communications-space"
   },
@@ -1088,6 +1352,9 @@
       "Slash Commands",
       "Template"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-web-analytics-space"
   },
@@ -1099,6 +1366,9 @@
       "Automation",
       "Communications"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-website-update-sender"
   },
@@ -1112,6 +1382,9 @@
       "Research",
       "Tool"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "claude-workspace-setup-helper"
   },
@@ -1126,6 +1399,9 @@
       "Research",
       "Template"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "claude-writing-space-template"
   },
@@ -1137,6 +1413,9 @@
       "Automation",
       "Configuration"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "context-md"
   },
@@ -1147,6 +1426,9 @@
     "tags": [
       "Automation"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "cool-claude-code-stuff"
   },
@@ -1159,6 +1441,9 @@
       "Documentation",
       "Slash Commands"
     ],
+    "category": "Communications & Writing",
+    "category_slug": "communications",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "declaude"
   },
@@ -1169,6 +1454,9 @@
     "tags": [
       "Automation"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "ecosystem-mapper"
   },
@@ -1180,6 +1468,9 @@
       "Automation",
       "Configuration"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "home-folder-claude-md"
   },
@@ -1191,6 +1482,9 @@
       "Productivity",
       "Slash Commands"
     ],
+    "category": "Productivity & Planning",
+    "category_slug": "productivity",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "ivory-pc-builder"
   },
@@ -1201,6 +1495,9 @@
     "tags": [
       "Automation"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "linux-desktop-claudemd-seeder"
   },
@@ -1212,6 +1509,9 @@
       "Documentation",
       "Plugin"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "make-agent-friendly"
   },
@@ -1224,6 +1524,9 @@
       "MCP",
       "Tool"
     ],
+    "category": "MCP",
+    "category_slug": "mcp",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "mcpm-claude-code-docs"
   },
@@ -1236,6 +1539,9 @@
       "Documentation",
       "Research"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "new-turn-claude-hook"
   },
@@ -1246,6 +1552,9 @@
     "tags": [
       "Slash Commands"
     ],
+    "category": "Slash Commands",
+    "category_slug": "slash-commands",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "no-wheel-inventions"
   },
@@ -1257,6 +1566,9 @@
       "Documentation",
       "Research"
     ],
+    "category": "Miscellaneous",
+    "category_slug": "misc",
+    "category_group": "Other",
     "added_date": "2026-03-06",
     "slug": "non-code-claude-code"
   },
@@ -1267,6 +1579,9 @@
     "tags": [
       "Multi-Agent"
     ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "panel-of-claude"
   },
@@ -1277,6 +1592,9 @@
     "tags": [
       "Configuration"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "private-and-public-claude-md"
   },
@@ -1291,6 +1609,9 @@
       "Slash Commands",
       "Tool"
     ],
+    "category": "Legal",
+    "category_slug": "legal",
+    "category_group": "Workspaces",
     "added_date": "2026-03-06",
     "slug": "proofmode-unpacker"
   },
@@ -1303,6 +1624,9 @@
       "Multi-Agent",
       "Plugin"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "qa-team-plugin"
   },
@@ -1314,6 +1638,9 @@
       "Configuration",
       "MCP"
     ],
+    "category": "MCP",
+    "category_slug": "mcp",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "smithery-claude-code-mcp-jumpstarter"
   },
@@ -1327,6 +1654,9 @@
       "Multi-Agent",
       "Slash Commands"
     ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
     "slug": "split-context-setup"
   },
@@ -1340,6 +1670,9 @@
       "Plugin",
       "Tool"
     ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
     "added_date": "2026-03-06",
     "slug": "user-manual-plugin"
   }

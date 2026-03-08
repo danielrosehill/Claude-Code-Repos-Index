@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "name": "Workspaces",
+      "categories": [
+        {"name": "Productivity & Planning", "slug": "productivity"},
+        {"name": "Legal", "slug": "legal"},
+        {"name": "Health & Wellbeing", "slug": "health"},
+        {"name": "Communications & Writing", "slug": "communications"},
+        {"name": "Financial Planning", "slug": "financial"},
+        {"name": "Career", "slug": "career"},
+        {"name": "Business", "slug": "business"},
+        {"name": "Privacy & Anonymity", "slug": "privacy"}
+      ]
+    },
+    {
+      "name": "Technical",
+      "categories": [
+        {"name": "Systems Administration", "slug": "sysadmin"},
+        {"name": "Multi-Agent Tooling", "slug": "multi-agent"},
+        {"name": "MCP", "slug": "mcp"},
+        {"name": "Plugins", "slug": "plugins"},
+        {"name": "Slash Commands", "slug": "slash-commands"}
+      ]
+    },
+    {
+      "name": "Research & Ideas",
+      "categories": [
+        {"name": "Research", "slug": "research"},
+        {"name": "Argument and Perspective Exploration", "slug": "argument"},
+        {"name": "Context and Personalization", "slug": "context"}
+      ]
+    },
+    {
+      "name": "Other",
+      "categories": [
+        {"name": "Miscellaneous", "slug": "misc"}
+      ]
+    }
+  ]
+}

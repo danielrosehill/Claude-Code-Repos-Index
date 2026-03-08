@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Code Uses - Claude Code Repos Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Claude Code Index</a>
+    <div class="nav-links">
+      <a href="/">Index</a>
+      <a href="about.html">About</a>
+      <a href="claude-spaces.html">Claude Spaces</a>
+      <a href="non-code.html">Non-Code Uses</a>
+      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
+      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="page">
+  <h1>Non-Code Uses of Claude Code</h1>
+
+  <p>Claude Code was built as a coding assistant. But the moment you realise it's an AI agent with filesystem access, shell execution, and MCP integrations, the use cases expand far beyond writing software. This index documents over a hundred repositories that explore what happens when you point Claude Code at problems that have nothing to do with programming.</p>
+
+  <p>The <a class="repo-link" href="repos/non-code-claude-code.html">Non-Code Claude Code</a> repository captures the broader philosophy: Claude Code as a general-purpose AI workspace that happens to run in a terminal.</p>
+
+  <h2>Legal Research and Case Management</h2>
+
+  <p>The terminal turns out to be a surprisingly effective interface for legal work. The <a class="repo-link" href="?category=legal">Legal</a> category includes workspaces for tracking cases, analysing evidence, and building forensic timelines.</p>
+
+  <p>The <a class="repo-link" href="repos/claude-case-file.html">Claude Case File</a> workspace provides structured case management with Claude handling document organisation, timeline construction, and cross-referencing. <a class="repo-link" href="repos/claude-evidence-assistant.html">Claude Evidence Assistant</a> focuses specifically on evidence handling and chain-of-custody documentation. And <a class="repo-link" href="repos/claude-code-lawyer.html">Claude Code Lawyer</a> provides a more general legal research interface.</p>
+
+  <p>The <a class="repo-link" href="repos/claude-legal-aid-clinic.html">Claude Legal Aid Clinic</a> explores an interesting angle: using Claude as a first-pass legal aid tool that can help people understand their rights and options before engaging professional counsel.</p>
+
+  <h2>Health and Wellbeing</h2>
+
+  <p>Several workspaces in the <a class="repo-link" href="?category=health">Health &amp; Wellbeing</a> category use Claude to manage personal health data. The <a class="repo-link" href="repos/claude-health-helper.html">Claude Health Helper</a> provides a general health documentation workspace, while <a class="repo-link" href="repos/claude-therapy-tracker.html">Claude Therapy Tracker</a> focuses specifically on therapy session notes and progress tracking.</p>
+
+  <p>These workspaces highlight an advantage of the terminal-based approach: your health data stays local on your machine. There's no cloud service, no account, no third-party data processing. Claude works with files on your filesystem, and nothing leaves your computer unless you explicitly push it somewhere.</p>
+
+  <h2>Financial Planning</h2>
+
+  <p>The <a class="repo-link" href="?category=financial">Financial Planning</a> category includes the <a class="repo-link" href="repos/claude-budget-workspace-template.html">Claude Budget Workspace Template</a> for personal budgeting and the <a class="repo-link" href="repos/claude-purchasing-assistant.html">Claude Purchasing Assistant</a> for evaluating purchase decisions. Claude can parse bank statements, categorise expenses, and help with tax preparation &mdash; all from structured files on your local disk.</p>
+
+  <h2>Communications and Writing</h2>
+
+  <p>The <a class="repo-link" href="?category=communications">Communications &amp; Writing</a> category covers content creation, blog management, and media strategy. The <a class="repo-link" href="repos/claude-blog-manager.html">Claude Blog Manager</a> turns Claude into a content management system, while <a class="repo-link" href="repos/claude-media-monitor.html">Claude Media Monitor</a> and the <a class="repo-link" href="repos/claude-news-fetcher-media-monitoring-system.html">Claude News Fetcher</a> handle media monitoring workflows.</p>
+
+  <p>The <a class="repo-link" href="repos/claude-code-writing-squad.html">Claude Code Writing Squad</a> demonstrates multi-agent collaboration for writing projects &mdash; different Claude agents handling research, drafting, editing, and fact-checking as a coordinated team.</p>
+
+  <h2>Research and Analysis</h2>
+
+  <p>The <a class="repo-link" href="?category=research">Research</a> category is one of the largest in the index. The <a class="repo-link" href="repos/claude-deep-research-template-implementation-template.html">Claude Deep Research Template</a> provides a structured approach to multi-source research, while the <a class="repo-link" href="repos/claude-stack-research-workspace.html">Claude Stack Research Workspace</a> focuses on technology evaluation.</p>
+
+  <p><a class="repo-link" href="repos/claude-dork.html">Claude Dork</a> generates search queries (dorks) across multiple platforms for OSINT-style research. <a class="repo-link" href="repos/claude-osint-investigator.html">Claude OSINT Investigator</a> takes this further with a full open-source intelligence workspace.</p>
+
+  <h2>Productivity and Decision-Making</h2>
+
+  <p>The <a class="repo-link" href="?category=productivity">Productivity</a> category includes tools for personal planning and decision frameworks. <a class="repo-link" href="repos/claude-decision-evaluation-framework.html">Claude Decision Evaluation Framework</a> provides structured decision analysis. <a class="repo-link" href="repos/claude-task-manager.html">Claude Task Manager</a> is a full task management system running in the terminal. <a class="repo-link" href="repos/claude-diary-planner-template.html">Claude Diary Planner Template</a> combines journaling with daily planning.</p>
+
+  <h2>The Pattern</h2>
+
+  <p>What connects all of these is a simple pattern: define a workspace with structured context (<code>CLAUDE.md</code>), give Claude access to the right tools (filesystem, MCP servers, slash commands), and let it manage workflows that would traditionally require dedicated GUI applications. The terminal becomes a universal interface for AI-assisted work.</p>
+
+  <p>If you're interested in this approach, the <a class="repo-link" href="repos/claude-spaces-model.html">Claude Spaces Model</a> repository documents the methodology, and the <a class="repo-link" href="claude-spaces.html">Claude Spaces</a> page explains the workspace pattern in detail.</p>
+
+  <p><a href="?tag=Non-Code">Browse all non-code repositories &rarr;</a></p>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; Daniel Rosehill</span>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://danielrosehill.com">danielrosehill.com</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://dsrholdings.cloud" target="_blank">Business Enquiries</a>
+  </div>
+</footer>
+
+</body>
+</html>

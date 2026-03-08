@@ -16,10 +16,15 @@
     <a href="/" class="nav-brand">Claude Code Index</a>
     <div class="nav-links">
       <a href="/">Index</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Categories <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu" id="cat-dropdown"></div>
+      </div>
       <a href="about.html">About</a>
+      <a href="claude-spaces.html">Claude Spaces</a>
+      <a href="non-code.html">Non-Code Uses</a>
       <a href="https://danielrosehill.com" target="_blank">Homepage</a>
       <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
-      <a href="https://danielrosehill.com/contact" target="_blank">Contact</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
@@ -34,6 +39,7 @@
     <div class="hero-stats">
       <div class="stat"><span class="stat-num" id="stat-repos">-</span><span class="stat-label">Repositories</span></div>
       <div class="stat"><span class="stat-num" id="stat-tags">-</span><span class="stat-label">Tags</span></div>
+      <div class="stat"><span class="stat-num" id="stat-cats">-</span><span class="stat-label">Categories</span></div>
     </div>
   </div>
 </header>
@@ -49,10 +55,23 @@
   </div>
 </div>
 
+<div class="breadcrumbs" id="breadcrumbs" style="display:none">
+  <div class="breadcrumbs-inner">
+    <a href="/">Index</a>
+    <span class="bc-sep">/</span>
+    <span class="bc-current" id="bc-label"></span>
+    <button class="bc-clear" onclick="clearFilters()" title="Clear filter">&times;</button>
+  </div>
+</div>
+
 <main class="content">
   <aside class="sidebar" id="sidebar">
-    <h3 class="sidebar-heading">Tags</h3>
-    <div id="tag-list"></div>
+    <h3 class="sidebar-heading">Categories</h3>
+    <div id="category-nav"></div>
+    <div class="sidebar-section">
+      <h3 class="sidebar-heading">Tags</h3>
+      <div id="tag-list"></div>
+    </div>
     <div class="sidebar-section">
       <h3 class="sidebar-heading">Data</h3>
       <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Repos-Index" target="_blank">
@@ -62,10 +81,6 @@
       <a class="sidebar-link" href="tagged_repos.json" target="_blank">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1h8l3 3v11H1V1h3z"/><path d="M5 8h6M5 11h4"/></svg>
         JSON Data
-      </a>
-      <a class="sidebar-link" href="repos.json" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1h8l3 3v11H1V1h3z"/><path d="M5 8h6M5 11h4"/></svg>
-        Full Index JSON
       </a>
     </div>
   </aside>
@@ -90,23 +105,71 @@
 <script>
 let repos = [];
 let allTags = [];
+let catHierarchy = null;
 let activeTags = new Set();
+let activeCategory = '';
 let searchQuery = '';
 let sortMode = 'newest';
 
+const CATEGORY_ICONS = {
+  'Workspaces': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+  'Technical': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+  'Research & Ideas': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>',
+  'Other': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>',
+  'Productivity & Planning': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>',
+  'Legal': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 7l9-4 9 4M3 7v4l9 4 9-4V7"/></svg>',
+  'Health & Wellbeing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>',
+  'Communications & Writing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>',
+  'Financial Planning': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>',
+  'Career': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>',
+  'Business': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>',
+  'Privacy & Anonymity': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  'Systems Administration': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
+  'Multi-Agent Tooling': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>',
+  'MCP': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M12 18v4M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M18 12h4M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>',
+  'Plugins': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg>',
+  'Slash Commands': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="21" x2="17" y2="3"/></svg>',
+  'Research': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>',
+  'Argument and Perspective Exploration': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5A8.48 8.48 0 0121 11.5z"/></svg>',
+  'Context and Personalization': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  'Miscellaneous': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>'
+};
+
 async function loadData() {
   try {
-    const res = await fetch('tagged_repos.json');
-    repos = await res.json();
+    const [repoRes, catRes] = await Promise.all([
+      fetch('tagged_repos.json'),
+      fetch('categories.json')
+    ]);
+    repos = await repoRes.json();
+    catHierarchy = await catRes.json();
+
     const tagCount = {};
     repos.forEach(r => r.tags.forEach(t => { tagCount[t] = (tagCount[t] || 0) + 1; }));
     allTags = Object.entries(tagCount).sort((a, b) => a[0].localeCompare(b[0]));
 
+    const uniqueCats = new Set(repos.map(r => r.category));
+
     document.getElementById('stat-repos').textContent = repos.length;
     document.getElementById('repo-count').textContent = repos.length;
     document.getElementById('stat-tags').textContent = allTags.length;
+    document.getElementById('stat-cats').textContent = uniqueCats.size;
 
+    buildCategoryNav();
+    buildCategoryDropdown();
     buildTagList();
+
+    // Check URL params
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('category')) {
+      activeCategory = params.get('category');
+      updateCategoryButtons();
+    }
+    if (params.get('tag')) {
+      activeTags.add(params.get('tag'));
+      updateTagButtons();
+    }
+
     render();
 
     document.getElementById('search').addEventListener('input', e => {
@@ -118,17 +181,82 @@ async function loadData() {
   }
 }
 
+function buildCategoryNav() {
+  const container = document.getElementById('category-nav');
+  catHierarchy.groups.forEach(group => {
+    const groupEl = document.createElement('div');
+    groupEl.className = 'cat-group';
+    const groupLabel = document.createElement('div');
+    groupLabel.className = 'cat-group-label';
+    groupLabel.innerHTML = (CATEGORY_ICONS[group.name] || '') + ' ' + esc(group.name);
+    groupEl.appendChild(groupLabel);
+
+    group.categories.forEach(cat => {
+      const count = repos.filter(r => r.category_slug === cat.slug).length;
+      if (count === 0) return;
+      const btn = document.createElement('button');
+      btn.className = 'cat-btn';
+      btn.dataset.slug = cat.slug;
+      btn.innerHTML = (CATEGORY_ICONS[cat.name] || '') + ' <span class="cat-name">' + esc(cat.name) + '</span><span class="tag-count">' + count + '</span>';
+      btn.onclick = () => {
+        activeCategory = activeCategory === cat.slug ? '' : cat.slug;
+        updateCategoryButtons();
+        render();
+        updateURL();
+      };
+      groupEl.appendChild(btn);
+    });
+    container.appendChild(groupEl);
+  });
+}
+
+function buildCategoryDropdown() {
+  const dropdown = document.getElementById('cat-dropdown');
+  catHierarchy.groups.forEach(group => {
+    const col = document.createElement('div');
+    col.className = 'dropdown-col';
+    const heading = document.createElement('div');
+    heading.className = 'dropdown-group-label';
+    heading.innerHTML = (CATEGORY_ICONS[group.name] || '') + ' ' + esc(group.name);
+    col.appendChild(heading);
+    group.categories.forEach(cat => {
+      const count = repos.filter(r => r.category_slug === cat.slug).length;
+      if (count === 0) return;
+      const a = document.createElement('a');
+      a.href = '?category=' + cat.slug;
+      a.className = 'dropdown-item';
+      a.innerHTML = (CATEGORY_ICONS[cat.name] || '') + ' ' + esc(cat.name) + ' <span class="tag-count">' + count + '</span>';
+      a.onclick = (e) => {
+        e.preventDefault();
+        activeCategory = cat.slug;
+        updateCategoryButtons();
+        render();
+        updateURL();
+      };
+      col.appendChild(a);
+    });
+    dropdown.appendChild(col);
+  });
+}
+
+function updateCategoryButtons() {
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.classList.toggle('active', activeCategory === btn.dataset.slug);
+  });
+}
+
 function buildTagList() {
   const container = document.getElementById('tag-list');
   allTags.forEach(([tag, count]) => {
     const btn = document.createElement('button');
     btn.className = 'tag-btn';
-    btn.innerHTML = `<span class="tag-name">${esc(tag)}</span><span class="tag-count">${count}</span>`;
+    btn.innerHTML = '<span class="tag-name">' + esc(tag) + '</span><span class="tag-count">' + count + '</span>';
     btn.onclick = () => {
       if (activeTags.has(tag)) activeTags.delete(tag);
       else activeTags.add(tag);
       updateTagButtons();
       render();
+      updateURL();
     };
     btn.dataset.tag = tag;
     container.appendChild(btn);
@@ -137,27 +265,65 @@ function buildTagList() {
 
 function updateTagButtons() {
   document.querySelectorAll('.tag-btn').forEach(btn => {
-    btn.classList.toggle('active', activeTags.has(btn.dataset.tag));
+    if (btn.dataset.tag) btn.classList.toggle('active', activeTags.has(btn.dataset.tag));
   });
+}
+
+function updateURL() {
+  const params = new URLSearchParams();
+  if (activeCategory) params.set('category', activeCategory);
+  if (activeTags.size === 1) params.set('tag', [...activeTags][0]);
+  const qs = params.toString();
+  history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+}
+
+function clearFilters() {
+  activeCategory = '';
+  activeTags.clear();
+  searchQuery = '';
+  document.getElementById('search').value = '';
+  updateCategoryButtons();
+  updateTagButtons();
+  render();
+  updateURL();
 }
 
 function render() {
   const area = document.getElementById('repo-area');
+  const bc = document.getElementById('breadcrumbs');
+  const bcLabel = document.getElementById('bc-label');
+
   const filtered = repos.filter(r => {
+    if (activeCategory && r.category_slug !== activeCategory) return false;
     if (activeTags.size > 0 && ![...activeTags].some(t => r.tags.includes(t))) return false;
     if (searchQuery) {
       return r.name.toLowerCase().includes(searchQuery) ||
              r.description.toLowerCase().includes(searchQuery) ||
-             r.tags.some(t => t.toLowerCase().includes(searchQuery));
+             r.tags.some(t => t.toLowerCase().includes(searchQuery)) ||
+             r.category.toLowerCase().includes(searchQuery);
     }
     return true;
   });
 
-  const countEl = document.getElementById('result-count');
-  if (searchQuery || activeTags.size > 0) {
-    countEl.textContent = `${filtered.length} of ${repos.length} repos`;
+  // Breadcrumbs
+  if (activeCategory || activeTags.size > 0) {
+    bc.style.display = '';
+    const labels = [];
+    if (activeCategory) {
+      const catRepo = repos.find(r => r.category_slug === activeCategory);
+      labels.push(catRepo ? catRepo.category : activeCategory);
+    }
+    activeTags.forEach(t => labels.push('Tag: ' + t));
+    bcLabel.textContent = labels.join(' + ');
   } else {
-    countEl.textContent = `${repos.length} repos`;
+    bc.style.display = 'none';
+  }
+
+  const countEl = document.getElementById('result-count');
+  if (searchQuery || activeTags.size > 0 || activeCategory) {
+    countEl.textContent = filtered.length + ' of ' + repos.length + ' repos';
+  } else {
+    countEl.textContent = repos.length + ' repos';
   }
 
   if (sortMode === 'newest') {
@@ -174,28 +340,22 @@ function render() {
   let html = '<div class="repo-grid">';
   filtered.forEach(repo => {
     const detailUrl = 'repos/' + esc(repo.slug) + '.html';
-    html += `<div class="repo-card">
-      <div class="repo-header">
-        <a class="repo-name" href="${detailUrl}">${esc(repo.name)}</a>
-        <a class="repo-gh" href="${esc(repo.url)}" target="_blank" rel="noopener" title="View on GitHub">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        </a>
-      </div>
-      <p class="repo-desc">${esc(repo.description)}</p>
-      <div class="repo-tags">${repo.tags.map(t =>
-        `<button class="repo-tag${activeTags.has(t) ? ' active' : ''}" onclick="event.stopPropagation(); toggleTag('${esc(t)}')">${esc(t)}</button>`
-      ).join('')}</div>
-    </div>`;
+    html += '<div class="repo-card">' +
+      '<div class="repo-header">' +
+        '<a class="repo-name" href="' + detailUrl + '">' + esc(repo.name) + '</a>' +
+        '<a class="repo-gh" href="' + esc(repo.url) + '" target="_blank" rel="noopener" title="View on GitHub">' +
+          '<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>' +
+        '</a>' +
+      '</div>' +
+      '<span class="repo-card-cat">' + (CATEGORY_ICONS[repo.category] || '') + ' ' + esc(repo.category) + '</span>' +
+      '<p class="repo-desc">' + esc(repo.description) + '</p>' +
+      '<div class="repo-tags">' + repo.tags.map(t =>
+        '<button class="tag-pill' + (activeTags.has(t) ? ' active' : '') + '" onclick="event.stopPropagation(); toggleTag(\'' + esc(t) + '\')">' + esc(t) + '</button>'
+      ).join('') + '</div>' +
+    '</div>';
   });
   html += '</div>';
   area.innerHTML = html;
-}
-
-function toggleTag(tag) {
-  if (activeTags.has(tag)) activeTags.delete(tag);
-  else activeTags.add(tag);
-  updateTagButtons();
-  render();
 }
 
 function setSort(mode) {
@@ -203,6 +363,14 @@ function setSort(mode) {
   document.getElementById('sort-newest').classList.toggle('active', mode === 'newest');
   document.getElementById('sort-az').classList.toggle('active', mode === 'az');
   render();
+}
+
+function toggleTag(tag) {
+  if (activeTags.has(tag)) activeTags.delete(tag);
+  else activeTags.add(tag);
+  updateTagButtons();
+  render();
+  updateURL();
 }
 
 function esc(s) {
