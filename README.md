@@ -56,138 +56,138 @@ Projects involving using Claude for local or remote systems administration as di
 ### Claude Code LAN Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![LAN Manager](https://img.shields.io/badge/LAN-Manager-blue?style=flat-square)
 
-Claude Workspace for managing multiple computers on a local network, providing centralized administration of LAN-connected machines through Claude Code with network-wide configuration, monitoring, and maintenance capabilities.
+Workspace for centralized management of multiple LAN-connected machines through Claude Code.
 
 #### Claude LAN Manager GUI
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-LAN-Manager-0126)
 
-Python GUI application enabling management of local network devices through Claude Code by creating isolated "Claude Spaces" with device-specific MCP configurations. Each space provides Claude with access to only designated devices via lightweight HTTP-based MCP servers, preventing accidental cross-device commands.
+GUI application for managing local network devices through isolated, device-specific Claude Spaces.
 
 ---
 
 ### Claude Code Security Auditor
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Full-featured system for managing and auditing security configurations across multiple machines, performing systematic security checks including antivirus status, rootkits, file permissions, and network exposure.
+Multi-machine security auditing workspace covering antivirus, rootkits, permissions, and network exposure.
 
 ---
 
 ### Claude Conda Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
+Workspace for managing Conda environments on Ubuntu workstations with AMD ROCm hardware.
 
 ---
 
 ### Claude Google Drive Organiser
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template repository for creating Claude Code workspaces that manage and organize Google Drive via rclone. Features automated file organization based on configurable rules, comprehensive logging, customizable folder structures and naming conventions, and slash commands for common operations like mounting, organizing inbox files, handling duplicates, and generating activity summaries.
+Template for managing and organizing Google Drive via rclone with configurable rules and slash commands.
 
 ---
 
 ### Claude Docker Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Claude Code workspace template for managing Docker environments with pre-built slash commands and specialized subagents. Features commands for environment setup, health monitoring, cleanup, log analysis, deployment, and backups. Includes diagnostic agents for container issues, compose file generation, security auditing, migration planning, and resource optimization. Supports local and remote Docker environments with organized context storage for persistent environment state.
+Workspace template for Docker environment management with slash commands and diagnostic agents.
 
 ---
 
 ### Claude Home Assistant Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Home-Assistant-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Customizable template for managing Home Assistant OS through Claude Code with 20+ slash commands covering health monitoring, backups, network diagnostics, and maintenance operations, plus 5 specialized agents for automation, integration, device, backup, and troubleshooting workflows.
+Template for managing Home Assistant OS with 20+ slash commands and 5 specialized agents.
 
 ---
 
 ### Claude Linux Desktop Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
+System administration interface for Linux desktop management with extensive slash commands.
 
 ---
 
 ### Claude OS Sync Agent
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Intelligent synchronization tool for maintaining consistency between desktop and laptop using Claude CLI for context-aware decisions about packages, configurations, and tools with hardware-aware installation recommendations.
+Synchronization tool for maintaining consistency between desktop and laptop configurations.
 
 ---
 
 ### Claude Proxmox Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Proxmox-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Customizable template for Proxmox server management with 38 slash commands and 10 specialized agents supporting Docker, networking, security, backups, and hardware monitoring on low-spec hardware.
+Proxmox server management template with 38 slash commands and 10 agents for low-spec hardware.
 
 ---
 
 ### Claude Bug Catcher
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Bug-Catcher)
 
-Hotkey-triggered utility for capturing and debugging Linux system issues in real-time. Presents quick-select presets for common problems (GPU freezes, audio issues, network drops, app crashes) and immediately launches Claude Code with relevant logs for AI-assisted troubleshooting and remediation.
+Hotkey-triggered utility that launches Claude Code with relevant logs for real-time Linux debugging.
 
 ---
 
 ### Claude Code Remote Machine Admin Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Remote-Machine-Admin-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Claude Code workspace template for managing individual remote machines via SSH, providing structured organization for system profiles, logs, snapshots, and administrative documentation. Part of the Claude Spaces Model framework for persistent, context-aware system administration.
+Template for managing individual remote machines via SSH with structured system profiles and logs.
 
 ---
 
 ### Claude Linux Server Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Linux-Server-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template providing a structured Claude Code environment for managing Ubuntu servers with pre-configured automation for routine system administration tasks. Includes 38 slash commands for health monitoring, Docker management, storage administration, and backups, plus 10 specialized agents for complex operations like deployment management and security auditing.
+Ubuntu server management template with 38 slash commands and 10 agents for routine administration.
 
 ---
 
 ### Claude Rescue
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rescue)
 
-Concept for using Claude Code as an emergency Linux system recovery tool, providing a quick-install bash script that deploys Claude Code with elevated permissions into recovery shell environments to diagnose and fix boot issues, driver problems, and system failures with AI-assisted troubleshooting.
+Concept for deploying Claude Code into recovery shell environments for AI-assisted system repair.
 
 ---
 
 ### Claude Server Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template repository for configuring Claude Code as a full-featured server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
+Server administration template with 38 slash commands and 10 agents optimized for Docker deployments.
 
 ---
 
 ### Claude Server Mgmt Template SBCs
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Server-Mgmt-Template-SBCs) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template for managing Ubuntu servers on Single Board Computers (SBCs) with 38 slash commands for system administration and 10 specialized agents, designed for Docker deployments, backups, and local network services on resource-constrained hardware.
+Server management template adapted for Single Board Computers and resource-constrained hardware.
 
 ---
 
 ### Claude Synology Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Synology-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template workspace for managing Synology NAS devices through Claude Code with SSH and MCP integration. Features persistent context storage for NAS configuration, volume snapshots, and mount configurations, enabling conversational management of shared folders, storage monitoring, backup operations, and NFS/SAMBA mount configuration.
+Template for managing Synology NAS devices through SSH and MCP with persistent context storage.
 
 ---
 
 ### Claude System Recovery Mode
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-System-Recovery-Mode)
 
-Custom GRUB boot entry integrating Claude CLI into Linux system recovery, enabling AI-assisted system recovery with pre-configured agents and commands for diagnostics and remediation tasks.
+Custom GRUB boot entry integrating Claude CLI into Linux system recovery workflows.
 
 ---
 
 ### Bash Alias Manager Claude
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Bash-Alias-Manager-Claude)
 
-Claude Code-powered tool for systematic management of bash aliases with features for adding, editing, deleting, researching, and backing up aliases with automatic YADM synchronization.
+Workspace for managing bash aliases with YADM synchronization support.
 
 ---
 
 ### Claude Code Bash Aliases
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Bash-Aliases)
 
-Collection of documented bash aliases for speeding up common and repetitive operations with Claude Code on Linux, including quick navigation to configuration directories, shortcuts for creating slash commands and agents, and MCP server management helpers.
+Collection of bash aliases for common Claude Code operations on Linux.
 
 ---
 
@@ -196,7 +196,7 @@ Collection of documented bash aliases for speeding up common and repetitive oper
 ### Claude ADB Workspace Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADB-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Version-controlled workspace template for managing Android devices through ADB with Claude Code. Features automated device profiling, package management with timestamped exports, bloatware removal, system diagnostics, and forensic logging. Includes specialized agents for device optimization and package analysis, with structured directories for manifests, package lists, and diagnostic logs.
+Template for managing Android devices through ADB with device profiling and package management.
 
 ---
 
@@ -207,42 +207,42 @@ Workspaces for decision-making, personal planning, hardware builds, and general-
 ### Claude Debugging Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Debugging-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Structured workspace template for systematic debugging with Claude Code, applicable to technical bugs and beyond. Supports debugging software issues, process problems, life challenges, and creative blocks through hypothesis-driven investigation. Features organized directories for inputs (logs, screenshots, data), outputs (analysis, attempts, resolution), chronological debug logs, and specialized slash commands (/onboarding, /status, /hypotheses, /summarize) with analyst and investigator agents.
+Structured debugging template supporting software bugs, process problems, and creative blocks through hypothesis-driven investigation.
 
 ---
 
 ### Claude Decision Evaluation Framework
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Decision-Evaluation-Framework) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
-Structured system for analyzing major life and business decisions through seven parallel analytical frameworks using Claude Code. Evaluates decisions via Cost-Benefit Analysis, SWOT, Decision Matrix, ICE Framework, Risk-Reward Assessment, Eisenhower Matrix, and Regret Minimization, producing detailed reports with objective 0-100 scores without averaging to help users examine choices from multiple perspectives.
+Analyzes decisions through seven parallel frameworks (SWOT, ICE, Regret Minimization, etc.) with objective scoring.
 
 ---
 
 ### Claude Diary Planner Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Diary-Planner-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Diary](https://img.shields.io/badge/Diary-pink?style=flat-square)
 
-Forkable template for workflow and time management planning with Claude Code, providing a foundation for organizing daily schedules and productivity workflows.
+Forkable template for daily workflow and time management planning with Claude Code.
 
 ---
 
 ### Claude Personal Development Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Personal-Development-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Structured workspace for tracking personal habit development, skill acquisition, and self-improvement goals with Claude Code as an AI accountability partner and coach. Features goal templates (SMART, OKR, habit-based), progress tracking with daily logs and weekly reviews, resource curation for courses, books, and professionals, and specialized agents for goal planning and obstacle analysis.
+Workspace for tracking habits, skill acquisition, and self-improvement goals with AI coaching.
 
 ---
 
 ### Claude Rig Planner
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rig-Planner) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Rig](https://img.shields.io/badge/Rig-gray?style=flat-square)
 
-Structured workspace template for planning computer hardware upgrades with Claude Code. Supports gaming PCs, workstations, homelab servers, or multiple machines with features for context gathering, hardware profiling, multi-machine planning, formal VAT-compliant estimates, and currency localization. Includes slash commands for setup, profiling, analysis, recommendations, and estimates.
+Template for planning computer hardware upgrades with profiling, recommendations, and VAT-compliant estimates.
 
 ---
 
 ### Ivory PC Builder
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ivory-Computer-Builder-V2) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-AI-powered PC building assistant that generates optimized component specifications based on requirements, with real-time pricing from Ivory.co.il (Israeli computer parts retailer). Features a scraped catalog system with timestamped snapshots for price tracking, compatibility checking, and slash commands for creating builds, updating catalogs, and searching products across categories.
+PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management.
 
 ---
 
@@ -253,40 +253,40 @@ Workspaces and templates for legal research, case management, and evidence handl
 ### Claude Case File
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Case-File) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
-Structured workspace template for managing legal cases using Claude Code. Features evidence management with SHA-256 checksums and chain of custody tracking, document organization by type (contracts, correspondence, court filings, discovery), timeline building, legal analysis support, privilege review flagging, and document bundle preparation. Includes slash commands for case onboarding, evidence verification, timeline updates, and export workflows.
+Legal case management template with evidence tracking, chain of custody, and document organization.
 
 ---
 
 ### Claude Code Lawyer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Lawyer) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
-Template repository for AI-powered legal research assistance using Claude Code. Features structured intake workflows for gathering case context, evidence handling protocols for audio transcription and document management, and TYPST-based professional document generation with confidentiality markings. Designed for preliminary legal position analysis with organized directories for context, evidence, and AI-generated outputs.
+Legal research template with structured intake, evidence handling, and professional document generation.
 
 #### Claude Lawyer - Israel Edition
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Lawyer-ISR) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
-Israeli law adaptation of the Claude Code Lawyer template. Features Israeli court system knowledge (civil, labor, family, religious courts), Hebrew/English bilingual support, pre-configured links to Israeli legal databases (Nevo, Takdin, Kol Zchut), guidance on Israel's one-party consent recording laws, tenancy law coverage (Fair Rental Law 2017), small claims procedures, and Israeli statute of limitations references.
+Israeli law adaptation with local court system knowledge, Hebrew support, and Israeli legal database links.
 
 ---
 
 ### Claude Evidence Assistant
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Evidence-Assistant) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square) ![Forensics](https://img.shields.io/badge/Forensics-darkred?style=flat-square)
 
-Professional digital evidence management workspace with cryptographic integrity verification, chain of custody tracking, and Library of Congress standards-compliant exports. Features Proofmode integration for GPG signature and OpenTimestamps verification, evidence migration from scattered sources, SHA-256 hashing, PREMIS/METS/Dublin Core metadata generation, and cloud sync to S3, Google Drive, and IPFS. Includes 9 slash commands for case onboarding, evidence intake, verification, status, sync, export, migration, custody logging, and report generation.
+Digital evidence management workspace with cryptographic verification and Library of Congress-compliant exports.
 
 ---
 
 ### Claude Legal Aid Clinic
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Legal-Aid-Clinic) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square)
 
-Claude Space template for assisting individuals seeking legal aid services, leveraging agentic AI to synthesize context for pursuing justice. Features two primary purposes: informing users of their rights (researching eligibility, explaining programs, clarifying paths to assistance) and preparing their case (organizing evidence, building case files, formatting applications). Includes 6 slash commands for onboarding/intake, eligibility assessment, preliminary legal research with disclaimers, case file building, application preparation with character limit formatting, and status tracking.
+Template helping legal aid seekers understand their rights and prepare case materials.
 
 ---
 
 ### ProofMode Unpacker
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Proofmode-Unpacker) ![Legal](https://img.shields.io/badge/Legal-navy?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Utility for managing ProofMode evidence bundles with automated cloud backup and chain of custody preservation. Features evidence integrity preservation through immutable storage, parallel cloud backup for tamper detection, automated Rclone sync to any supported provider, and organized media extraction while keeping original cryptographic bundles untouched. Includes slash commands for onboarding, uploading, and cloud configuration.
+Utility for managing ProofMode evidence bundles with automated cloud backup and chain of custody preservation.
 
 ---
 
@@ -297,21 +297,21 @@ Workspaces and templates for health documentation, medical visit management, the
 ### Claude ADHD Research Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADHD-Research-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Health](https://img.shields.io/badge/Health-red?style=flat-square)
 
-Research repository documenting systemic barriers preventing ADHD patients from accessing prescribed medications, gathering research, personal narratives, and advocacy materials to propose policy reforms balancing regulatory oversight with patient welfare.
+Research repository documenting barriers to ADHD medication access and advocacy for policy reform.
 
 ---
 
 ### Claude Health Helper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Health-Helper) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Health](https://img.shields.io/badge/Health-red?style=flat-square)
 
-Organized workspace for managing personal health documentation with AI assistance. Helps users convert medical visit transcripts into structured summaries, prepare symptom lists for doctor visits, document medications and conditions, and generate layperson-friendly summaries of medical reports. Features structured directories for consultations, imaging, test results, visit preparation, and medication references.
+Workspace for organizing personal health documentation, visit preparation, and medical report summaries.
 
 ---
 
 ### Claude Therapy Tracker
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Therapy-Tracker) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Therapy](https://img.shields.io/badge/Therapy-lavender?style=flat-square)
 
-Template repository structure for organizing and tracking therapy sessions, mental health goals, and therapeutic planning through version-controlled documentation, featuring separated directories for human input and AI outputs with specialized agents and slash commands for session planning and goal tracking.
+Template for tracking therapy sessions, mental health goals, and therapeutic planning.
 
 ---
 
@@ -322,56 +322,56 @@ Workspaces and templates for content creation, blog management, writing workflow
 ### Claude Blog Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Conversational blog management workspace for Claude Code enabling API-first content publishing workflows. Template repository for managing blog content through headless CMS platforms using MCP integrations, featuring dedicated directories for drafting and published content, with specialized commands for content creation, proofreading, and automated publishing while preserving authorial voice.
+Template for managing blog content through headless CMS platforms with drafting and publishing workflows.
 
 ---
 
 ### Claude Code Writing Squad
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Writing-Squad) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Multi-agent writing system designed to iteratively process and refine text through specialized editing agents, including typo review, UK English standardization, flow improvement, heading creation, proofreading, source addition, and SEO optimization.
+Multi-agent writing system that refines text through specialized editing agents.
 
 ---
 
 ### Claude Communications Strategist Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Comms-Strategist-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Full-featured workspace template for communications strategy development and execution. Designed for PR, marketing communications, corporate communications, and brand strategy professionals with 12 specialized agents (strategy director, campaign strategist, content creator, media relations advisor, crisis advisor, etc.), 14 slash commands for workflows from initialization to client reporting, and organized directories for context, outputs, and inputs. Supports strategic planning, content creation, campaign management, media relations, performance analysis, and professional PDF report generation via Typst.
+Full-featured workspace for communications strategy with 12 agents and 14 slash commands.
 
 ---
 
 ### Claude Visual Communications Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Visual-Communications-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Claude Code workspace template for enhancing long-form content (whitepapers, blog posts, technical documents) with AI-generated visual communications. Features a two-phase workflow: ideation (brainstorming visual elements) and generation (creating visuals via fal-ai MCP). Includes `/onboard` for project setup with source material and platform targeting, `/ideate` for suggesting visual communication methods (infographics, diagrams, illustrations, videos), and `/prompt` for generating optimized text-to-image and image-to-image prompts with resolution and style guidance.
+Template for enhancing long-form content with AI-generated visuals via fal-ai MCP.
 
 ---
 
 ### Claude Web Analytics Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Structured workspace template for website analytics workflows using Claude Code. Features organized folders for raw and cleaned data, reports, visualizations, and archives, with slash commands for initialization, analysis, cleaning, and reporting. Includes specialized sub-agents for data cleaning, analysis, and script generation, plus MCP integration recommendations for Google Analytics and AI-powered visualization via Replicate.
+Workspace template for website analytics with data cleaning, analysis, and reporting workflows.
 
 ---
 
 ### Claude Website Update Sender
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Website-Update-Sender)
 
-Automated workflow for sending polished update emails to colleagues about website changes and deployments, transforming technical commit messages or freeform notes into non-technical updates via Resend MCP with HTML templating and human-in-the-loop review.
+Automated workflow for sending polished update emails about website changes via Resend MCP.
 
 ---
 
 ### Claude Writing Space Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Writing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Structured workspace template for writing projects using Claude Code, designed to preserve authorial voice while providing systematic version control and editing workflows. Features sequential versioning, specialized proofreading and editing agents, archive management, and support for headless CMS publishing with organized directories for drafts, research, notes, and images.
+Writing workspace with sequential versioning, editing agents, and headless CMS publishing support.
 
 ---
 
 ### Declaude
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Declaude) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Customizable system for creating personalized text rewriting rules that consolidate into a Claude Code slash command to refine AI-generated technical documentation. Features modular rule management, vocabulary avoidance lists, LLM-powered consolidation, and versioned outputs for maintaining consistent writing style.
+Personalized text rewriting rules that consolidate into a slash command for refining AI-generated documentation.
 
 ---
 
@@ -382,14 +382,14 @@ Workspaces and templates for budgeting, purchasing decisions, and personal finan
 ### Claude Budget Workspace Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Budget-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Budget](https://img.shields.io/badge/Budget-gold?style=flat-square)
 
-Template for managing household budgets using Claude Code, providing structured workspace framework for financial planning and budget analysis tasks.
+Template for managing household budgets and financial planning with Claude Code.
 
 ---
 
 ### Claude Purchasing Assistant
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Purchasing-Assistant) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Claude Code workspace template for structured purchasing decisions. Captures buyer preferences once via interview, then applies them consistently to evaluate products against user-defined criteria, compare local pricing against international RRP, research manufacturer reputation and product reliability, and provide specific value-for-money recommendations with full customization for location, currency, and priorities.
+Structured purchasing decision workspace that evaluates products against user-defined criteria and local pricing.
 
 ---
 
@@ -400,7 +400,7 @@ Workspaces and templates for job searching, career planning, and professional de
 ### Claude Job Search Strategist
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Job-Search-Strategist) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Job Search](https://img.shields.io/badge/Job-Search-gold?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Structured workspace for orchestrating Claude sub-agents during a job search process. Features specialized agents for company research, compensation analysis, resume tailoring, cover letter generation, interview preparation, and career strategy. Includes organized directories for user context, application tracking, and generated outputs with slash command conventions for streamlined workflows.
+Job search workspace with specialized agents for company research, resume tailoring, and interview preparation.
 
 ---
 
@@ -411,14 +411,14 @@ Workspaces and templates for business planning, idea evaluation, and organizatio
 ### Claude Business Continuity Planner
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Business-Continuity-Planner) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Claude Code workspace for developing Business Continuity Management (BCM) programs aligned with ISO 22301 and industry best practices. Features slash commands for Business Impact Analysis, Risk Assessment, BC Plan generation, Incident Response Plans, and Crisis Management documentation with proper document control and role-based procedures.
+Workspace for developing ISO 22301-aligned business continuity programs with slash commands.
 
 ---
 
 ### Claude Business Idea Evaluator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Business-Idea-Evaluator) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
 
-Systematic framework using Claude Code to evaluate and rank business ideas through the ICEC methodology (Impact, Confidence, Ease, Contextual Suitability), enabling data-driven decision-making about which concepts to pursue.
+Framework for evaluating and ranking business ideas using the ICEC methodology.
 
 ---
 
@@ -429,7 +429,7 @@ Workspaces and templates for document redaction, identity protection, and PII ob
 ### Claude Redaction And Obfuscation
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Redaction-And-Obfuscation) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Information security workspace for document redaction and identity protection, designed for whistleblowers, journalists, researchers, and anyone handling sensitive information. Features multiple redaction techniques (consistent aliases, random replacement, pattern-based), metadata scrubbing for images and documents, Python tools for text redaction and alias management, and slash commands for analyzing, redacting, and verifying document sanitization.
+Document redaction and identity protection workspace for handling sensitive information.
 
 ---
 
@@ -442,70 +442,70 @@ Projects using Claude and agentic systems for deep research, report generation, 
 ### Claude Deep Research Model (Notes / Documentation)
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Model) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Framework for conducting iterative deep research using Claude with integrated voice pipeline component, featuring organized research workflows with dedicated sections for prompts, context management, and structured outputs.
+Framework for iterative deep research using Claude with voice pipeline and structured outputs.
 
 ---
 
 ### Claude Deep Research Template (Implementation Template)
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Deep-Research-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Structured workflow system for conducting systematic, in-depth research using Claude Code with specialized research agents, organized directory structure for context and prompts, and support for iterative investigations across academic, market, technical, and strategic research domains.
+Structured workflow for systematic research with specialized agents across academic and technical domains.
 
 ---
 
 ### Claude Github Shortlister
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Github-Shortlister) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template repository that helps developers systematically evaluate and shortlist GitHub repositories using Claude Code for automated analysis with structured workflow for repository collection, requirements definition, and AI-powered recommendations organized by star count, update date, and relevance.
+Template for systematically evaluating and shortlisting GitHub repositories using AI-powered analysis.
 
 ---
 
 ### Claude Media Monitor
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Media-Monitor) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Workspace template enabling systematic collection and organization of news articles for media monitoring and research. Provides slash commands for fetching individual or batch articles, organizing them by date with rich metadata, validating against JSON schemas, and generating analytical reports with consistent naming and schema compliance.
+Workspace for systematic news collection and organization with metadata and schema validation.
 
 ---
 
 ### Claude News Fetcher - Media Monitoring System
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Full-featured workspace for conducting media monitoring and gathering articles into a well-defined structured data format. Features date-based article organization, JSON schema validation, specialized agents for article fetching and analysis, and extensive slash commands for batch processing, search, validation, and export workflows.
+Full-featured media monitoring workspace with structured data capture and batch processing.
 
 ---
 
 ### Claude OSINT Investigator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-OSINT-Investigator) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template for conducting open-source intelligence investigations using Claude Code. Enables researchers to systematize OSINT workflows through Claude's capabilities with structured organization for investigation context, evidence, and findings.
+Template for conducting open-source intelligence investigations with organized evidence management.
 
 ---
 
 ### Claude Report Parsing Space Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Report-Parsing-Space-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Claude Code workspace template for critical analysis of reports and lengthy documents. Features a library of slash commands for triage, statistics extraction, argumentation analysis, summarization, and source extraction. Embodies a skeptical approach that evaluates credibility, methodology, and originality rather than passive summarization.
+Template for critical analysis of reports with slash commands for triage, argumentation, and source extraction.
 
 ---
 
 ### Claude Dork
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Dork) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Agent for generating batches of platform-specific search dorks across Google, Reddit, Twitter/X, Bluesky, LinkedIn, YouTube, GitHub, and Facebook. Takes keyword input files and produces CSV files with ready-to-use search queries and URLs.
+Agent that generates platform-specific search dorks across Google, Reddit, Twitter/X, and more.
 
 ---
 
 ### Claude Georeaction Researcher
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Georeaction-Researcher)
 
-Tool for researching international reactions to any topic across 193 UN member states and 17 major multilateral organizations using Gemini with Google Search grounding. Pre-groups entities into 21 geographic batches for efficient parallel processing and produces structured JSON output with stance categorization.
+Researches international reactions across 193 UN member states using Gemini with search grounding.
 
 ---
 
 ### Claude Stack Research Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Stack-Research-Workspace) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Structured environment for conducting technical research and evaluating software solutions using Claude Code, organizing research requests, findings, and recommendations through dedicated directories, custom commands, and specialized AI agents to streamline technology stack comparisons and component evaluations.
+Environment for evaluating software solutions with specialized agents for technology comparisons.
 
 ---
 
@@ -519,21 +519,21 @@ Projects using AI for synthesized debate to explore various perspectives, includ
 ### Claude Change My View
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Change-My-View) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Structured workspace for challenging personal beliefs through AI-assisted critical analysis, inspired by the r/ChangeMyView subreddit. Features organized workflow for documenting viewpoints, running specialized agents to generate counterarguments and rebuttals, and tracking outcomes with slash commands for initiating challenges and subagents for argument generation and podcast creation.
+Workspace for challenging personal beliefs through AI-generated counterarguments and rebuttals.
 
 ---
 
 ### Claude Think Tank
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Think-Tank) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Template framework for building a virtual think tank using AI agents, enabling research assistance and policy proposal development through collaborative Claude Code agents that synthesize information and generate policy ideas with organized file management and specialized slash commands.
+Virtual think tank framework using AI agents for research and policy proposal development.
 
 ---
 
 ### Claude AI Conference
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-AI-Conference) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Simulated AI conference exploring perspective synthesis through agentic AI, where 30+ diverse personas (HR professionals, CEOs, doctors, artists, skeptics, enthusiasts) each deliver 3-minute speeches on AI's impact from their unique vantage points. An orchestration agent distributes prompts to sub-agents and compiles outputs to PDF and TTS-rendered audio formats.
+Simulated conference where 30+ AI personas deliver speeches on AI's impact from diverse perspectives.
 
 ---
 
@@ -546,84 +546,84 @@ Projects exploring using Claude and related tooling for personalized user engage
 ### Claude Code Context Toolkit
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Implements the CONTEXT.md workflow system bridging human-friendly context documentation with AI-optimized briefings through slash commands and specialized agents for managing, converting, and synchronizing project context between narrative CONTEXT.md files and structured CLAUDE.md briefings.
+Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands.
 
 ---
 
 ### Claude Code Repo Managers ClaudeMD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Pre-configured CLAUDE.md templates providing context-aware instructions for managing different repository types including Hugging Face projects, GitHub repositories, and collaborative workspaces.
+Pre-configured CLAUDE.md templates for managing different repository types.
 
 ---
 
 ### Batch ClaudeMD Repo Creator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Batch-ClaudeMD-Repo-Creator)
 
-Automation workspace enabling Claude Code to systematically process multiple GitHub repositories by adding CLAUDE.md files, standardizing metadata, and improving repository documentation. Streamlines batch updates across large repository collections with safety features and progress tracking.
+Automation workspace for batch-adding CLAUDE.md files across multiple GitHub repositories.
 
 ---
 
 ### Claude Model Identifier
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Model-Identifier) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Prompt template for verifying interaction with the correct Claude model variant at conversation start. Can be deployed as a home folder file or slash command for model authentication purposes.
+Prompt template for verifying the correct Claude model variant at conversation start.
 
 ---
 
 ### Claude Spaces Model
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spaces-Model)
 
-Comprehensive index and documentation of the "Claude Spaces" pattern—using Claude Code workspaces as repositories for non-development operational tasks. Features a curated catalog of implemented Claude Spaces across local and remote system administration, with detailed explanations of the pattern characteristics, implementation requirements, and potential applications across media processing, data analytics, content creation, DevOps, research, and monitoring domains. Includes guidance on adapting the pattern to other AI agent CLIs beyond Claude Code.
+Documentation and catalog of the Claude Spaces pattern for non-development operational workspaces.
 
 ---
 
 ### Claude Space Self-Ideator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Space-Self-ideator)
 
-Ideation workspace for generating new Claude Space concepts. Contains examples of existing Claude Spaces, new ideas organized by category, documentation on the Claude Space pattern, and guidance on agent portability across different implementations.
+Ideation workspace for generating and documenting new Claude Space concepts.
 
 ---
 
 ### Split Context Setup
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Split-Context-Setup) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Slash command that reviews a repository's CLAUDE.md, prunes it to essential context, and scaffolds a structured `context/` store with topic-based subfolders, an ingestion pipeline for raw materials (audio, documents), and subagent templates for automated context maintenance and organization. Establishes clear boundaries between project context and working memory.
+Slash command that scaffolds a structured context store with topic-based subfolders.
 
 ---
 
 ### Claude Spec Starter
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Template repository that transforms unstructured project descriptions into organized specifications and context files for Claude Code projects, automating the conversion of free-form prompts into structured technical specs through a `/build-repo` slash command.
+Template that transforms unstructured project descriptions into organized specifications for Claude Code.
 
 ---
 
 ### CONTEXT.md
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/CONTEXT.md) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Workflow methodology for preparing project context in human-friendly markdown files that can be converted into agent-specific configuration files, separating casual human-authored CONTEXT.md scratchpads from structured CLAUDE.md briefings for AI agents.
+Workflow methodology for separating human-authored context from structured AI agent briefings.
 
 ---
 
 ### Home Folder Claude MD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Home-Folder-Claude-MD) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Version-controlled CLAUDE.md configuration file for applying Claude Code settings across a home directory on Ubuntu Linux. Provides a workflow for editing, syncing changes via script, and maintaining full version history with easy rollback of configuration changes.
+Version-controlled CLAUDE.md for applying Claude Code settings across a home directory.
 
 ---
 
 ### Linux Desktop ClaudeMD Seeder
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Linux-Desktop-ClaudeMD-Seeder) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Automatically generates and deploys contextual CLAUDE.md files across a Linux desktop filesystem to improve Claude Code's understanding of directory structures and workflows.
+Automatically generates contextual CLAUDE.md files across a Linux desktop filesystem.
 
 ---
 
 ### Private And Public Claude MD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Private-And-Public-Claude-MD)
 
-Tools for managing both public CLAUDE.md and private CLAUDE_PRIVATE.md configuration files with security-focused git configuration to prevent accidental exposure of sensitive information.
+Tools for managing public and private CLAUDE.md files with security-focused git configuration.
 
 ---
 
@@ -638,49 +638,49 @@ Components and tooling for multi-agent development and orchestration frameworks.
 ### Agent Junction
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Junction) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-MCP server enabling encrypted peer-to-peer communication between multiple Claude Code instances running on localhost or across a local network. Agents discover each other and exchange AES-256-GCM encrypted messages with destructive reads, supporting both localhost and LAN modes with automatic session expiry and ephemeral in-memory storage.
+MCP server enabling encrypted peer-to-peer communication between Claude Code instances on localhost or LAN.
 
 ---
 
 ### Claude Agent Picker Pattern
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Agent-Picker-Pattern) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Conceptual framework for intelligently assembling context-optimized multi-agent crews by evaluating project requirements, selecting complementary subagents with minimal overlap, and automatically generating crew configurations that stay within context window limits.
+Framework for assembling context-optimized multi-agent crews with minimal overlap.
 
 ---
 
 ### Claude Task Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Task-Manager) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Planning repository for a sequential task queuing system for Claude Code and other agentic AI coding tools. Addresses context window exhaustion and manual task handoff friction through a queue that accepts freeform/voice input, parses it into discrete tasks, prioritizes fixes over features automatically, and executes tasks one at a time with fresh context.
+Sequential task queuing system addressing context window exhaustion in agentic coding tools.
 
 ---
 
 ### Claude Repo Jumper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Repo-Jumper)
 
-Claude Code skill for automating the "handover" pattern when spinning up new repositories as part of a multi-repo system. Eliminates manual context-passing between interconnected components by creating new private GitHub repos, gathering context from the current repository, generating claude.md files with relevant details, and pushing to GitHub for immediate work with full context.
+Skill for automating repository handovers with context-passing in multi-repo systems.
 
 ---
 
 ### Claude Tech Research Team
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Tech-Research-Team) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Multi-agent system for conducting thorough software and hardware technology evaluations, orchestrating specialized AI agents for SaaS discovery, open-source alternatives, compatibility assessment, geographic sourcing, and automated report generation with MCP integrations.
+Multi-agent system for evaluating software and hardware technologies with automated reporting.
 
 ---
 
 ### Ecosystem Mapper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ecosystem-Mapper) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Experimental AI agent that automatically discovers, categorizes, and visualizes technology ecosystems based on keyword searches. Searches GitHub and the web for recent projects, analyzes the landscape using Gemini AI to create a taxonomy, identifies representative examples, and generates visual ecosystem maps showing relationships and groupings.
+Agent that discovers, categorizes, and visualizes technology ecosystems from keyword searches.
 
 ---
 
 ### Panel Of Claude
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Multi-agent system simulating expert panel discussions using multiple Claude agents with different analytical perspectives (economic, ethical, scientific, political, etc.) to provide multi-dimensional analysis through two-round cross-perspective refinement with outputs in JSON, markdown, PDF, ePub, and podcast-ready audio formats.
+Multi-agent panel discussion simulator providing multi-dimensional analysis across expert perspectives.
 
 ---
 
@@ -689,21 +689,21 @@ Multi-agent system simulating expert panel discussions using multiple Claude age
 ### Claude Development Agents
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Development-Agents) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Curated toolkit of Claude Code configurations for development workflows, organizing sub-agents, slash commands, snippets, orchestrators, and crews into a five-category taxonomy with 74+ configurations covering code editing, deployment, debugging, web development, and multi-agent coordination.
+Curated toolkit of 74+ Claude Code configurations for development workflows and multi-agent coordination.
 
 ---
 
 ### Claude Sub-Agent Network
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Sub-Agent-Network) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Collection of ready-to-use system prompts and configurations for various development, operational, and creative tasks, organized into prompts-only and frontmatter-enhanced formats for multi-agent development workflows.
+Collection of system prompts and configurations for development, operational, and creative tasks.
 
 ---
 
 ### Cool Claude Code Stuff
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Cool-Claude-Code-Stuff)
 
-Curated collection of Claude Code projects, tools, and resources organized by category including account management, ACP integration, actions, agent managers, API providers, automation tools, and autonomy enhancers.
+Curated collection of Claude Code projects and resources organized by category.
 
 ---
 
@@ -712,7 +712,7 @@ Curated collection of Claude Code projects, tools, and resources organized by ca
 ### Claude Workspace Setup Helper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Workspace-Setup-Helper) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Interactive tool for setting up Claude Workspaces - pre-configured repository templates for various use cases. Features a catalog of workspace templates organized by category (environment management, content creation, research, health & wellness, career) with an interactive `/start` command that helps users discover, select, and clone workspaces based on their objectives.
+Interactive tool for discovering, selecting, and cloning Claude Workspace templates.
 
 ---
 
@@ -721,14 +721,14 @@ Interactive tool for setting up Claude Workspaces - pre-configured repository te
 ### Claude Code Linux Notes
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
 
-Personal documentation repository containing practical workflows, configurations, and tips for using Claude Code on Ubuntu with KDE Plasma, covering Linux-specific integration, system automation, and real-world usage patterns.
+Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma.
 
 ---
 
 ### Claude Code Notebook
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Notebook) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Minimal personal reference repository for documenting and organizing usage patterns, workflows, and notes related to Claude Code.
+Minimal reference repository for documenting Claude Code usage patterns and workflows.
 
 ---
 
@@ -741,35 +741,35 @@ Projects related to Claude and MCP tooling and setup.
 ### Claude Code MCP Command Generator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-Command-Generator)
 
-Generator for creating MCP commands for use with Claude Code.
+Generator for creating MCP server configuration commands for Claude Code.
 
 ---
 
 ### Claude Code MCP List
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-List)
 
-Curated index of Model Context Protocol servers organized into 14+ categories including AI model integration, memory management, code analysis, development tools, browser automation, and workflow automation for extending Claude Code capabilities.
+Curated index of MCP servers organized into 14+ categories for extending Claude Code.
 
 ---
 
 ### Claude MCP Guidelines
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MCP-Guidelines) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Guideline snippet for adding determinative guidance to Claude Code on how to use MCPs encountered across environments, providing context for MCP selection and usage patterns to resolve ambiguities between MCPs and internal Claude tools.
+Guideline snippet for directing Claude Code on MCP usage across environments.
 
 ---
 
 ### MCPM Claude Code Docs
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/MCPM-Claude-Code-Docs)
 
-Documentation for integrating Claude Code with MCPM (an external MCP server manager). Provides guidance on managing Model Context Protocol tools across user, project, and local scopes while avoiding conflicts between Claude's native MCP features and external management tools.
+Documentation for integrating Claude Code with MCPM external MCP server manager.
 
 ---
 
 ### Smithery Claude Code MCP Jumpstarter
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Smithery-Claude-Code-MCP-Jumpstarter)
 
-Curated collection of 35+ MCP servers across 15+ categories with interactive installer for streamlining installation and configuration, including essentials bundle for core functionality.
+Curated collection of 35+ MCP servers with interactive installer across 15+ categories.
 
 ---
 
@@ -782,49 +782,49 @@ My Plugin Marketplace enhancing capabilities in Claude.
 ### Claude Code Plugins Marketplace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Plugins)
 
-Centralized marketplace and registry for discovering and installing Claude Code plugins. Add the marketplace with `/plugin marketplace add` and browse categorized plugins spanning AI tools, development utilities, system administration, media management, and more—each installable via simple commands.
+Centralized marketplace for discovering and installing Claude Code plugins via simple commands.
 
 ---
 
 ### Claude Code Marketplace Hub
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/claude-code-marketplace)
 
-Decentralized directory service connecting users to multiple community-maintained Claude Code plugin marketplaces. Aggregates marketplaces from various maintainers, dynamically fetches marketplace data, provides unified search and discovery, and allows anyone to create and submit their own marketplace following Anthropic's plugin schema standards.
+Decentralized directory aggregating multiple community-maintained Claude Code plugin marketplaces.
 
 ---
 
 ### Claude Code Plugin
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/claude-code-plugin)
 
-Meta-plugin for managing Claude Code itself, providing slash commands and agents for configuration management, slash command creation, agent development, and plugin workflow optimization.
+Meta-plugin for managing Claude Code configuration, slash commands, and agent development.
 
 ---
 
 ### Claude Janitor
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Janitor)
 
-Claude plugin for cleaning up repositories by removing Claude-related artifacts and configurations. Includes plugin configuration files, prompts, and documentation for integrating cleanup functionality into Claude workflows.
+Plugin for cleaning up repositories by removing Claude-related artifacts and configurations.
 
 ---
 
 ### Make Agent Friendly
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Make-Agent-Friendly) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Claude Code plugin that prepares human-developed codebases for agentic development by analyzing structure, asking clarifying questions, restructuring folders for agent navigability, creating CLAUDE.md documentation and /context/ directories, and validating changes before committing.
+Plugin that prepares human-developed codebases for agentic development with restructuring and documentation.
 
 ---
 
 ### User Manual Plugin
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-User-Manual)
 
-Claude Code plugin for generating personal user manuals and private documentation for codebases. Creates personalized, private reference guides with PDF output support, featuring step-by-step workflow commands for documentation setup, section generation, PDF compilation, and version-controlled distribution via MCP integrations.
+Plugin for generating personalized user manuals and private documentation for codebases.
 
 ---
 
 ### QA Team Plugin
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-QA-Team) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Multi-agent quality assurance system providing an orchestrated network of specialized AI agents for thorough code review and validation. Features orchestration layer (QA Orchestrator, Team Lead, Documentation Lead) and specialist sub-agents covering general QA, cleanup, documentation, performance optimization, API review, and deployment validation with organized output structure for findings and remediation tracking.
+Multi-agent quality assurance system with specialized agents for code review and validation.
 
 ---
 
@@ -837,49 +837,49 @@ Individual slash commands, sometimes integrated into other plugins or sometimes 
 ### AI-Human Attribution Adder
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/AI-Human-Attribution-Adder) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Automates the addition of attribution sections to README files, enabling developers to transparently document which parts of a project were human-created versus AI-assisted for ethical representation of AI tool usage.
+Adds AI/human attribution sections to README files for transparent tool usage documentation.
 
 ---
 
 ### Claude App Optimiser
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-App-Optimiser) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Slash command (`/optimise`) deploying "Turbo Claude 5000," a specialized sub-agent for analyzing and improving codebases through dead code removal, architectural evaluation, and database optimization.
+Slash command deploying a sub-agent for codebase optimization and dead code removal.
 
 ---
 
 ### Claude Code Linux Desktop Slash Commands
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-System administration and configuration slash commands specifically designed for Linux desktop environments.
+System administration slash commands for Linux desktop environments.
 
 ---
 
 ### Claude Document This
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Document-This) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Collection of methods and example slash commands for documenting system administration changes and fixes made by Claude Code, including MCP-based workflows (Notion, email, Google Drive) and Obsidian notebook integration for long-term reference retention.
+Methods and slash commands for documenting system changes made by Claude Code.
 
 ---
 
 ### Claude File Organiser Super Slash
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Comprehensive slash command that transforms disorganized filesystems into well-structured directories through intelligent pattern recognition, applying machine-readable naming conventions, detecting domain-specific organizational patterns, and autonomously fixing typos while managing cross-platform compatibility.
+Slash command that transforms disorganized filesystems into well-structured directories.
 
 ---
 
 ### Claude Slash Commands
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Slash-Commands) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-General-purpose slash command library for various Claude Code workflows and tasks.
+General-purpose slash command library for various Claude Code workflows.
 
 ---
 
 ### No Wheel Inventions
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/No-Wheel-Inventions) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
-Slash commands and agents encouraging developers to leverage existing libraries, components, and templates rather than building custom solutions. Includes five slash commands for prevention and remediation plus a stack-integration agent for identifying open-source opportunities.
+Slash commands encouraging use of existing libraries instead of building custom solutions.
 
 ---
 
@@ -892,48 +892,48 @@ Other projects including meta-resources, feedback, and utilities that span multi
 ### Claude Code Context Feature Requests
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Feature-Requests)
 
-Feature requests and suggestions for improving Claude Code's context handling capabilities.
+Feature requests for improving Claude Code's context handling capabilities.
 
 ---
 
 ### Claude Interview
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Interview-062325)
 
-Transcript from a user research interview conducted by Anthropic's AI interviewer program, documenting perspectives on AI tools and views regarding artificial intelligence adoption and development.
+Transcript from an Anthropic user research interview on AI tools and adoption.
 
 ---
 
 ### Claude Local AI Agent Research
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Local-AI-Agent-Research)
 
-Research into agentic AI tools and LLMs specifically optimized for system administration tasks—particularly desktop troubleshooting and OS maintenance on Linux, Windows, and macOS—rather than code generation, identifying both adaptable existing tools and purpose-built alternatives.
+Research into agentic AI tools optimized for system administration rather than code generation.
 
 ---
 
 ### Non-Code Claude Code
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Non-Code-Claude-Code)
 
-Showcase of creative applications of Claude Code beyond traditional software development, including deep research, writing, learning, and finance use cases.
+Showcase of creative Claude Code applications beyond traditional software development.
 
 ---
 
 ### New Turn Claude Hook
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/New-Turn-Claude-Hook)
 
-Planning-stage tool that automatically determines whether users should continue an AI conversation or start fresh, optimizing context management and agent performance. Features binary decision-making via lightweight model, front-end logic gate interception, and configurable automation modes to prevent context bloat in extended interactions.
+Tool that determines whether to continue an AI conversation or start fresh for optimal context.
 
 ---
 
 ### Claude Is Awesome
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Is-Awesome) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
-Template for streamlining creation of curated resource lists featuring automated formatting, alphabetization, and badge generation through custom slash commands to help users focus on meaningful curation rather than formatting tasks.
+Template for creating curated resource lists with automated formatting and badge generation.
 
 ---
 
 ### Claude Resource List Builder
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Resource-List-Builder) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
-Template repository for creating curated resource lists with Claude Code. Features organized slash commands for setup, adding resources, gathering metrics, scouting for missing items, reorganizing taxonomy, and exporting to PDF. Prioritizes organized taxonomy over popularity metrics for mapping ecosystems into logical clusters.
+Template for building curated resource lists with organized taxonomy and PDF export.
 
 ---

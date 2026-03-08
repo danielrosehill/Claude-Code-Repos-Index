@@ -7,138 +7,138 @@ Projects involving using Claude for local or remote systems administration as di
 ### Claude Code LAN Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-LAN-Manager) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![LAN Manager](https://img.shields.io/badge/LAN-Manager-blue?style=flat-square)
 
-Claude Workspace for managing multiple computers on a local network, providing centralized administration of LAN-connected machines through Claude Code with network-wide configuration, monitoring, and maintenance capabilities.
+Workspace for centralized management of multiple LAN-connected machines through Claude Code.
 
 #### Claude LAN Manager GUI
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-LAN-Manager-0126)
 
-Python GUI application enabling management of local network devices through Claude Code by creating isolated "Claude Spaces" with device-specific MCP configurations. Each space provides Claude with access to only designated devices via lightweight HTTP-based MCP servers, preventing accidental cross-device commands.
+GUI application for managing local network devices through isolated, device-specific Claude Spaces.
 
 ---
 
 ### Claude Code Security Auditor
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Security-Auditor) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Full-featured system for managing and auditing security configurations across multiple machines, performing systematic security checks including antivirus status, rootkits, file permissions, and network exposure.
+Multi-machine security auditing workspace covering antivirus, rootkits, permissions, and network exposure.
 
 ---
 
 ### Claude Conda Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Conda-Manager) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Specialized Claude Code workspace for managing and optimizing Conda environments on Ubuntu workstations with AMD ROCm hardware, designed to maintain efficient AI/ML development environments through systematic documentation and version control.
+Workspace for managing Conda environments on Ubuntu workstations with AMD ROCm hardware.
 
 ---
 
 ### Claude Google Drive Organiser
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template repository for creating Claude Code workspaces that manage and organize Google Drive via rclone. Features automated file organization based on configurable rules, comprehensive logging, customizable folder structures and naming conventions, and slash commands for common operations like mounting, organizing inbox files, handling duplicates, and generating activity summaries.
+Template for managing and organizing Google Drive via rclone with configurable rules and slash commands.
 
 ---
 
 ### Claude Docker Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Claude Code workspace template for managing Docker environments with pre-built slash commands and specialized subagents. Features commands for environment setup, health monitoring, cleanup, log analysis, deployment, and backups. Includes diagnostic agents for container issues, compose file generation, security auditing, migration planning, and resource optimization. Supports local and remote Docker environments with organized context storage for persistent environment state.
+Workspace template for Docker environment management with slash commands and diagnostic agents.
 
 ---
 
 ### Claude Home Assistant Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Home-Assistant-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Customizable template for managing Home Assistant OS through Claude Code with 20+ slash commands covering health monitoring, backups, network diagnostics, and maintenance operations, plus 5 specialized agents for automation, integration, device, backup, and troubleshooting workflows.
+Template for managing Home Assistant OS with 20+ slash commands and 5 specialized agents.
 
 ---
 
 ### Claude Linux Desktop Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Linux-Desktop-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-AI-powered system administration interface wrapping Claude Code CLI with a graphical interface for executing Linux desktop management tasks, integrating an extensive library of slash commands for system configuration, diagnostics, hardware benchmarking, security auditing, and network operations.
+System administration interface for Linux desktop management with extensive slash commands.
 
 ---
 
 ### Claude OS Sync Agent
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-OS-Sync-Agent) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Intelligent synchronization tool for maintaining consistency between desktop and laptop using Claude CLI for context-aware decisions about packages, configurations, and tools with hardware-aware installation recommendations.
+Synchronization tool for maintaining consistency between desktop and laptop configurations.
 
 ---
 
 ### Claude Proxmox Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Proxmox-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Customizable template for Proxmox server management with 38 slash commands and 10 specialized agents supporting Docker, networking, security, backups, and hardware monitoring on low-spec hardware.
+Proxmox server management template with 38 slash commands and 10 agents for low-spec hardware.
 
 ---
 
 ### Claude Bug Catcher
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Bug-Catcher)
 
-Hotkey-triggered utility for capturing and debugging Linux system issues in real-time. Presents quick-select presets for common problems (GPU freezes, audio issues, network drops, app crashes) and immediately launches Claude Code with relevant logs for AI-assisted troubleshooting and remediation.
+Hotkey-triggered utility that launches Claude Code with relevant logs for real-time Linux debugging.
 
 ---
 
 ### Claude Code Remote Machine Admin Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Remote-Machine-Admin-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Claude Code workspace template for managing individual remote machines via SSH, providing structured organization for system profiles, logs, snapshots, and administrative documentation. Part of the Claude Spaces Model framework for persistent, context-aware system administration.
+Template for managing individual remote machines via SSH with structured system profiles and logs.
 
 ---
 
 ### Claude Linux Server Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Linux-Server-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template providing a structured Claude Code environment for managing Ubuntu servers with pre-configured automation for routine system administration tasks. Includes 38 slash commands for health monitoring, Docker management, storage administration, and backups, plus 10 specialized agents for complex operations like deployment management and security auditing.
+Ubuntu server management template with 38 slash commands and 10 agents for routine administration.
 
 ---
 
 ### Claude Rescue
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rescue)
 
-Concept for using Claude Code as an emergency Linux system recovery tool, providing a quick-install bash script that deploys Claude Code with elevated permissions into recovery shell environments to diagnose and fix boot issues, driver problems, and system failures with AI-assisted troubleshooting.
+Concept for deploying Claude Code into recovery shell environments for AI-assisted system repair.
 
 ---
 
 ### Claude Server Manager Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Server-Manager-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template repository for configuring Claude Code as a full-featured server administration tool with 38 slash commands for routine system administration tasks and 10 specialized agents for complex management workflows, optimized for Docker deployments, backup management, and low-spec hardware monitoring on Ubuntu servers.
+Server administration template with 38 slash commands and 10 agents optimized for Docker deployments.
 
 ---
 
 ### Claude Server Mgmt Template SBCs
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Server-Mgmt-Template-SBCs) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template for managing Ubuntu servers on Single Board Computers (SBCs) with 38 slash commands for system administration and 10 specialized agents, designed for Docker deployments, backups, and local network services on resource-constrained hardware.
+Server management template adapted for Single Board Computers and resource-constrained hardware.
 
 ---
 
 ### Claude Synology Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Synology-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template workspace for managing Synology NAS devices through Claude Code with SSH and MCP integration. Features persistent context storage for NAS configuration, volume snapshots, and mount configurations, enabling conversational management of shared folders, storage monitoring, backup operations, and NFS/SAMBA mount configuration.
+Template for managing Synology NAS devices through SSH and MCP with persistent context storage.
 
 ---
 
 ### Claude System Recovery Mode
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-System-Recovery-Mode)
 
-Custom GRUB boot entry integrating Claude CLI into Linux system recovery, enabling AI-assisted system recovery with pre-configured agents and commands for diagnostics and remediation tasks.
+Custom GRUB boot entry integrating Claude CLI into Linux system recovery workflows.
 
 ---
 
 ### Bash Alias Manager Claude
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Bash-Alias-Manager-Claude)
 
-Claude Code-powered tool for systematic management of bash aliases with features for adding, editing, deleting, researching, and backing up aliases with automatic YADM synchronization.
+Workspace for managing bash aliases with YADM synchronization support.
 
 ---
 
 ### Claude Code Bash Aliases
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Bash-Aliases)
 
-Collection of documented bash aliases for speeding up common and repetitive operations with Claude Code on Linux, including quick navigation to configuration directories, shortcuts for creating slash commands and agents, and MCP server management helpers.
+Collection of bash aliases for common Claude Code operations on Linux.
 
 ---
 
@@ -147,6 +147,6 @@ Collection of documented bash aliases for speeding up common and repetitive oper
 ### Claude ADB Workspace Template
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADB-Workspace-Template) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Version-controlled workspace template for managing Android devices through ADB with Claude Code. Features automated device profiling, package management with timestamped exports, bloatware removal, system diagnostics, and forensic logging. Includes specialized agents for device optimization and package analysis, with structured directories for manifests, package lists, and diagnostic logs.
+Template for managing Android devices through ADB with device profiling and package management.
 
 ---
