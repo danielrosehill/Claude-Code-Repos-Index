@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Spaces - Claude Code Repos Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Claude Code Index</a>
+    <span class="nav-author">by Daniel Rosehill</span>
+    <div class="nav-links">
+      <a href="/">Index</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-ideas">
+          <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
+          <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
+        </div>
+      </div>
+      <a href="/about/">About</a>
+      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
+      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <div class="breadcrumbs-inner">
+    <a href="/">Index</a>
+    <span class="bc-sep">/</span>
+    <span>Ideas</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">Claude Spaces</span>
+  </div>
+</div>
+
+<div class="landing-hero">
+  <div class="landing-hero-inner">
+    <div class="landing-hero-text">
+      <h1>Claude Spaces: Repos as AI Agent Workspaces</h1>
+      <p>Most people think of a GitHub repository as a place to store code. <strong>Claude Spaces</strong> are something different: they're pre-configured workspaces where the repository itself <em>is</em> the application. There's no build step, no deployment pipeline. You clone the repo, open Claude Code, and you have a working AI workspace tuned for a specific purpose.</p>
+    </div>
+    <img class="landing-hero-img" src="/images/claude-space.png" alt="Claude Space definition illustration">
+  </div>
+</div>
+
+<div class="landing-section">
+  <h2>What Makes a Claude Space?</h2>
+  <p style="color: var(--text-muted); line-height: 1.75; margin-bottom: 1.5rem;">A Claude Space typically includes a <code>CLAUDE.md</code> file for instructions, slash commands for common operations, MCP server configurations for external integrations, subagent definitions for specialised tasks, and structured data directories that Claude reads from and writes to. The key insight is that Claude Code isn't just a coding assistant &mdash; it's a general-purpose agent that happens to live in your terminal.</p>
+
+  <h2>Explore the Pattern</h2>
+  <div class="landing-grid">
+
+    <a class="landing-card" href="/ideas/claude-spaces/remote-admin/">
+      <img class="landing-card-thumb" src="/images/sysadmin.png" alt="Systems Administration illustration">
+      <h3>Claude as a Remote Admin Launcher</h3>
+      <p>Use Claude Spaces as system administration interfaces &mdash; describe what you want in natural language and Claude handles the execution across your infrastructure.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/claude-spaces/workspace-templates/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      </div>
+      <h3>Workspace Templates</h3>
+      <p>Forkable templates for common workflows &mdash; daily planning, budgeting, communications, writing, home automation, and document analysis.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/claude-spaces/the-model/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+      </div>
+      <h3>The Model</h3>
+      <p>Documentation and meta-tools for understanding, designing, and brainstorming new Claude Spaces.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="landing-cta">
+  <a href="/?tag=Claude+Space">Browse all Claude Spaces in the index &rarr;</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; Daniel Rosehill</span>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://danielrosehill.com">danielrosehill.com</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://dsrholdings.cloud" target="_blank">Business Enquiries</a>
+  </div>
+</footer>
+
+</body>
+</html>

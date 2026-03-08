@@ -275,9 +275,14 @@ def generate_repo_pages(tagged_repos):
     repos_dir = DOCS_DIR / "repos"
     repos_dir.mkdir(parents=True, exist_ok=True)
 
-    # Clean old pages
+    # Clean old pages (both flat .html and directory-based)
     for old_page in repos_dir.glob("*.html"):
         old_page.unlink()
+    for old_dir in repos_dir.iterdir():
+        if old_dir.is_dir():
+            for f in old_dir.glob("*"):
+                f.unlink()
+            old_dir.rmdir()
 
     template = '''<!DOCTYPE html>
 <html lang="en">
@@ -288,17 +293,24 @@ def generate_repo_pages(tagged_repos):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <nav class="topnav">
   <div class="nav-inner">
-    <a href="../" class="nav-brand">Claude Code Index</a>
+    <a href="/" class="nav-brand">Claude Code Index</a>
+    <span class="nav-author">by Daniel Rosehill</span>
     <div class="nav-links">
-      <a href="../">Index</a>
-      <a href="../" class="nav-dropdown-trigger">Categories <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></a>
-      <a href="../about.html">About</a>
+      <a href="/">Index</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-ideas">
+          <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
+          <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
+        </div>
+      </div>
+      <a href="/about/">About</a>
       <a href="https://danielrosehill.com" target="_blank">Homepage</a>
       <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
     </div>
@@ -310,9 +322,9 @@ def generate_repo_pages(tagged_repos):
 
 <div class="breadcrumbs">
   <div class="breadcrumbs-inner">
-    <a href="../">Index</a>
+    <a href="/">Index</a>
     <span class="bc-sep">/</span>
-    <a href="../?category={category_slug}">{category}</a>
+    <a href="/?category={category_slug}">{category}</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">{name}</span>
   </div>
@@ -348,7 +360,7 @@ def generate_repo_pages(tagged_repos):
         <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         View on GitHub
       </a>
-      <a class="btn btn-outline" href="../">
+      <a class="btn btn-outline" href="/">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L4 8l6 6"/></svg>
         Back to Index
       </a>
@@ -373,7 +385,7 @@ const CURRENT_REPO = "{slug}";
 const CURRENT_CATEGORY = "{category}";
 async function loadSidebar() {{
   try {{
-    const res = await fetch('../tagged_repos.json');
+    const res = await fetch('/tagged_repos.json');
     const repos = await res.json();
     const sameCategory = repos
       .filter(r => r.category === CURRENT_CATEGORY)
@@ -382,7 +394,7 @@ async function loadSidebar() {{
     sameCategory.forEach(r => {{
       const a = document.createElement('a');
       a.className = 'sidebar-repo' + (r.slug === CURRENT_REPO ? ' active' : '');
-      a.href = r.slug + '.html';
+      a.href = '/repos/' + r.slug + '/';
       a.textContent = r.name;
       catEl.appendChild(a);
     }});
@@ -392,7 +404,7 @@ async function loadSidebar() {{
     Object.keys(allTags).sort().forEach(tag => {{
       const btn = document.createElement('a');
       btn.className = 'tag-btn';
-      btn.href = '../?tag=' + encodeURIComponent(tag);
+      btn.href = '/?tag=' + encodeURIComponent(tag);
       btn.innerHTML = '<span class="tag-name">' + tag + '</span><span class="tag-count">' + allTags[tag] + '</span>';
       tagEl.appendChild(btn);
     }});
@@ -422,7 +434,9 @@ loadSidebar();
             category_group=repo.get("category_group", "Other"),
             slug=slug,
         )
-        (repos_dir / f"{slug}.html").write_text(html, encoding="utf-8")
+        repo_page_dir = repos_dir / slug
+        repo_page_dir.mkdir(exist_ok=True)
+        (repo_page_dir / "index.html").write_text(html, encoding="utf-8")
 
     print(f"[4a/6] Generated {len(tagged_repos)} repo detail pages")
 

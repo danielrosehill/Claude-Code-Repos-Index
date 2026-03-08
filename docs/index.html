@@ -14,15 +14,21 @@
 <nav class="topnav">
   <div class="nav-inner">
     <a href="/" class="nav-brand">Claude Code Index</a>
+    <span class="nav-author">by Daniel Rosehill</span>
     <div class="nav-links">
       <a href="/">Index</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger">Categories <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
         <div class="nav-dropdown-menu" id="cat-dropdown"></div>
       </div>
-      <a href="about.html">About</a>
-      <a href="claude-spaces.html">Claude Spaces</a>
-      <a href="non-code.html">Non-Code Uses</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-ideas">
+          <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
+          <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
+        </div>
+      </div>
+      <a href="/about/">About</a>
       <a href="https://danielrosehill.com" target="_blank">Homepage</a>
       <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
     </div>
@@ -339,7 +345,7 @@ function render() {
 
   let html = '<div class="repo-grid">';
   filtered.forEach(repo => {
-    const detailUrl = 'repos/' + esc(repo.slug) + '.html';
+    const detailUrl = '/repos/' + esc(repo.slug) + '/';
     html += '<div class="repo-card">' +
       '<div class="repo-header">' +
         '<a class="repo-name" href="' + detailUrl + '">' + esc(repo.name) + '</a>' +

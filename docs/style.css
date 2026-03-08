@@ -686,6 +686,205 @@ a:hover { color: var(--link-hover); }
 
 .footer-sep { margin: 0 0.5rem; }
 
+/* === Nav Author === */
+.nav-author {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* === Ideas Dropdown (simple list) === */
+.nav-dropdown-ideas {
+  min-width: 200px !important;
+  grid-template-columns: 1fr !important;
+}
+
+/* === Landing Page Hero === */
+.landing-hero {
+  position: relative;
+  background: linear-gradient(135deg, #0061a7 0%, #003d6b 100%);
+  color: #fff;
+  padding: 3.5rem 1.5rem 3rem;
+  overflow: hidden;
+}
+
+.landing-hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.landing-hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.landing-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.landing-hero p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 0.9;
+  max-width: 580px;
+}
+
+.landing-hero-img {
+  width: 320px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* === Landing Page Cards === */
+.landing-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.landing-section > h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.landing-card {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.landing-card:hover {
+  border-color: var(--brand);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  color: inherit;
+}
+
+.landing-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--brand-light);
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.landing-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.landing-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.landing-card-arrow {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 0.25rem;
+}
+
+/* Landing card with image thumbnail */
+.landing-card-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+}
+
+/* === CTA Banner === */
+.landing-cta {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.landing-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--brand);
+  color: #fff;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+}
+
+.landing-cta a:hover {
+  background: var(--brand-dark);
+  color: #fff;
+}
+
+/* === Subpage Hero === */
+.subpage-hero {
+  position: relative;
+  background: linear-gradient(135deg, #0061a7 0%, #003d6b 100%);
+  color: #fff;
+  padding: 2rem 1.5rem;
+}
+
+.subpage-hero-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.subpage-hero h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.subpage-hero p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 0.4rem;
+}
+
+.subpage-hero-img {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
 /* === About / Narrative Pages === */
 .page {
   max-width: 780px;
@@ -868,4 +1067,10 @@ a:hover { color: var(--link-hover); }
   .hero p { font-size: 0.95rem; }
   .content { padding: 1rem; }
   .page { padding: 1.5rem 1rem; }
+  .landing-hero-inner { flex-direction: column; text-align: center; }
+  .landing-hero-img { width: 240px; }
+  .landing-hero h1 { font-size: 1.6rem; }
+  .landing-grid { grid-template-columns: 1fr; }
+  .subpage-hero-inner { flex-direction: column; text-align: center; }
+  .subpage-hero-img { width: 160px; }
 }

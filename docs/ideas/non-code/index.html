@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Code Uses - Claude Code Repos Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Claude Code Index</a>
+    <span class="nav-author">by Daniel Rosehill</span>
+    <div class="nav-links">
+      <a href="/">Index</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-ideas">
+          <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
+          <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
+        </div>
+      </div>
+      <a href="/about/">About</a>
+      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
+      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="breadcrumbs">
+  <div class="breadcrumbs-inner">
+    <a href="/">Index</a>
+    <span class="bc-sep">/</span>
+    <span>Ideas</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-current">Non-Code Uses</span>
+  </div>
+</div>
+
+<div class="landing-hero">
+  <div class="landing-hero-inner">
+    <div class="landing-hero-text">
+      <h1>Non-Code Uses of Claude Code</h1>
+      <p>Claude Code was built as a coding assistant. But the moment you realise it's an AI agent with filesystem access, shell execution, and MCP integrations, the use cases expand far beyond writing software. This index documents over a hundred repositories that explore what happens when you point Claude Code at problems that have nothing to do with programming.</p>
+    </div>
+    <img class="landing-hero-img" src="/images/non-code.png" alt="Non-Code Claude Code illustration">
+  </div>
+</div>
+
+<div class="landing-section">
+  <h2>Explore by Domain</h2>
+  <div class="landing-grid">
+
+    <a class="landing-card" href="/ideas/non-code/legal/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 7l9-4 9 4M3 7v4l9 4 9-4V7"/></svg>
+      </div>
+      <h3>Legal Research &amp; Case Management</h3>
+      <p>Workspaces for tracking cases, analysing evidence, building forensic timelines, and providing structured legal aid.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/non-code/health/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <h3>Health &amp; Wellbeing</h3>
+      <p>Personal health documentation and therapy tracking with complete data privacy &mdash; everything stays local on your machine.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/non-code/financial/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <h3>Financial Planning</h3>
+      <p>Budget management, purchase evaluation, and expense categorisation from structured files on your local disk.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/non-code/communications/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      </div>
+      <h3>Communications &amp; Writing</h3>
+      <p>Content management, blog publishing, media monitoring, and multi-agent writing collaboration.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/non-code/research/">
+      <img class="landing-card-thumb" src="/images/research.png" alt="Research illustration">
+      <h3>Research &amp; Analysis</h3>
+      <p>Deep research templates, OSINT investigation, technology evaluation, and geopolitical analysis.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+    <a class="landing-card" href="/ideas/non-code/productivity/">
+      <div class="landing-card-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <h3>Productivity &amp; Decision-Making</h3>
+      <p>Task management, decision frameworks, daily planning, and journaling &mdash; all from the terminal.</p>
+      <span class="landing-card-arrow">Explore &rarr;</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="landing-section">
+  <p style="color: var(--text-muted); line-height: 1.75;">What connects all of these is a simple pattern: define a workspace with structured context (<code>CLAUDE.md</code>), give Claude access to the right tools (filesystem, MCP servers, slash commands), and let it manage workflows that would traditionally require dedicated GUI applications. The terminal becomes a universal interface for AI-assisted work.</p>
+</div>
+
+<div class="landing-cta">
+  <a href="/?tag=Non-Code">Browse all non-code repositories &rarr;</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; Daniel Rosehill</span>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://danielrosehill.com">danielrosehill.com</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
+    <span class="footer-sep">&middot;</span>
+    <a href="https://dsrholdings.cloud" target="_blank">Business Enquiries</a>
+  </div>
+</footer>
+
+</body>
+</html>
