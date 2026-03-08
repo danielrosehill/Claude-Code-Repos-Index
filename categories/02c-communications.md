@@ -1,6 +1,6 @@
 # Communications & Writing
 
-Workspaces and templates for content creation, blog management, writing workflows, communications strategy, and web analytics.
+Workspaces and templates for content creation, blog management, writing workflows, and communications strategy.
 
 ### Claude Blog Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
@@ -27,13 +27,6 @@ Full-featured workspace for communications strategy with 12 agents and 14 slash 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Visual-Communications-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
 Template for enhancing long-form content with AI-generated visuals via fal-ai MCP.
-
----
-
-### Claude Web Analytics Space
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
-
-Workspace template for website analytics with data cleaning, analysis, and reporting workflows.
 
 ---
 

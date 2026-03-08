@@ -26,11 +26,6 @@
           "description": "Workspace for managing Conda environments on Ubuntu workstations with AMD ROCm hardware."
         },
         {
-          "name": "Claude Google Drive Organiser",
-          "url": "https://github.com/danielrosehill/Claude-Gdrive-Organiser",
-          "description": "Template for managing and organizing Google Drive via rclone with configurable rules and slash commands."
-        },
-        {
           "name": "Claude Docker Manager",
           "url": "https://github.com/danielrosehill/Claude-Docker-Manager",
           "description": "Workspace template for Docker environment management with slash commands and diagnostic agents."
@@ -108,7 +103,7 @@
         {
           "name": "Claude ADB Workspace Template",
           "url": "https://github.com/danielrosehill/Claude-ADB-Workspace-Template",
-          "description": "Template for managing Android devices through ADB with device profiling and package management. Workspaces for decision-making, personal planning, hardware builds, and general-purpose productivity workflows."
+          "description": "Template for managing Android devices through ADB with device profiling and package management. Workspaces for decision-making, personal planning, file management, and general-purpose productivity workflows."
         },
         {
           "name": "Claude Debugging Workspace",
@@ -131,14 +126,9 @@
           "description": "Workspace for tracking habits, skill acquisition, and self-improvement goals with AI coaching."
         },
         {
-          "name": "Claude Rig Planner",
-          "url": "https://github.com/danielrosehill/Claude-Rig-Planner",
-          "description": "Template for planning computer hardware upgrades with profiling, recommendations, and VAT-compliant estimates."
-        },
-        {
-          "name": "Ivory PC Builder",
-          "url": "https://github.com/danielrosehill/Ivory-Computer-Builder-V2",
-          "description": "PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management. Workspaces and templates for legal research, case management, and evidence handling workflows."
+          "name": "Claude Google Drive Organiser",
+          "url": "https://github.com/danielrosehill/Claude-Gdrive-Organiser",
+          "description": "Template for managing and organizing Google Drive via rclone with configurable rules and slash commands. Workspaces and templates for legal research, case management, and evidence handling workflows."
         },
         {
           "name": "Claude Case File",
@@ -178,7 +168,7 @@
         {
           "name": "Claude Therapy Tracker",
           "url": "https://github.com/danielrosehill/Claude-Therapy-Tracker",
-          "description": "Template for tracking therapy sessions, mental health goals, and therapeutic planning. Workspaces and templates for content creation, blog management, writing workflows, communications strategy, and web analytics."
+          "description": "Template for tracking therapy sessions, mental health goals, and therapeutic planning. Workspaces and templates for content creation, blog management, writing workflows, and communications strategy."
         },
         {
           "name": "Claude Blog Manager",
@@ -199,11 +189,6 @@
           "name": "Claude Visual Communications Space",
           "url": "https://github.com/danielrosehill/Claude-Visual-Communications-Space",
           "description": "Template for enhancing long-form content with AI-generated visuals via fal-ai MCP."
-        },
-        {
-          "name": "Claude Web Analytics Space",
-          "url": "https://github.com/danielrosehill/Claude-Web-Analytics-Space",
-          "description": "Workspace template for website analytics with data cleaning, analysis, and reporting workflows."
         },
         {
           "name": "Claude Website Update Sender",
@@ -248,7 +233,32 @@
         {
           "name": "Claude Redaction And Obfuscation",
           "url": "https://github.com/danielrosehill/Claude-Redaction-And-Obfuscation",
-          "description": "Document redaction and identity protection workspace for handling sensitive information."
+          "description": "Document redaction and identity protection workspace for handling sensitive information. Workspaces for hardware planning, PC builds, and technology procurement."
+        },
+        {
+          "name": "Claude Rig Planner",
+          "url": "https://github.com/danielrosehill/Claude-Rig-Planner",
+          "description": "Template for planning computer hardware upgrades with profiling, recommendations, and VAT-compliant estimates."
+        },
+        {
+          "name": "Ivory PC Builder",
+          "url": "https://github.com/danielrosehill/Ivory-Computer-Builder-V2",
+          "description": "PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management. Workspaces for SEO, web analytics, PR monitoring, and media tracking."
+        },
+        {
+          "name": "Claude Media Monitor",
+          "url": "https://github.com/danielrosehill/Claude-Media-Monitor",
+          "description": "Workspace for systematic news collection and organization with metadata and schema validation."
+        },
+        {
+          "name": "Claude News Fetcher - Media Monitoring System",
+          "url": "https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace",
+          "description": "Full-featured media monitoring workspace with structured data capture and batch processing."
+        },
+        {
+          "name": "Claude Web Analytics Space",
+          "url": "https://github.com/danielrosehill/Claude-Web-Analytics-Space",
+          "description": "Workspace template for SEO analytics with data cleaning, analysis, and reporting workflows."
         }
       ]
     },
@@ -270,16 +280,6 @@
           "name": "Claude Github Shortlister",
           "url": "https://github.com/danielrosehill/Claude-Github-Shortlister",
           "description": "Template for systematically evaluating and shortlisting GitHub repositories using AI-powered analysis."
-        },
-        {
-          "name": "Claude Media Monitor",
-          "url": "https://github.com/danielrosehill/Claude-Media-Monitor",
-          "description": "Workspace for systematic news collection and organization with metadata and schema validation."
-        },
-        {
-          "name": "Claude News Fetcher - Media Monitoring System",
-          "url": "https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace",
-          "description": "Full-featured media monitoring workspace with structured data capture and batch processing."
         },
         {
           "name": "Claude OSINT Investigator",
@@ -625,8 +625,8 @@
     "total_categories": 9,
     "total_repositories": 112,
     "repositories_by_category": {
-      "Systems Administration": 48,
-      "Research": 10,
+      "Systems Administration": 50,
+      "Research": 8,
       "Argument and Perspective Exploration": 3,
       "Context and Personalization": 12,
       "Multi-Agent Tooling": 13,

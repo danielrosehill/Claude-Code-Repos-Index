@@ -30,13 +30,6 @@ Workspace for managing Conda environments on Ubuntu workstations with AMD ROCm h
 
 ---
 
-### Claude Google Drive Organiser
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
-
-Template for managing and organizing Google Drive via rclone with configurable rules and slash commands.
-
----
-
 ### Claude Docker Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 

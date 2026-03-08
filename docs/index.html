@@ -18,10 +18,6 @@
     <div class="nav-links">
       <a href="/">Index</a>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger">Categories <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
-        <div class="nav-dropdown-menu" id="cat-dropdown"></div>
-      </div>
-      <div class="nav-dropdown">
         <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
         <div class="nav-dropdown-menu nav-dropdown-ideas">
           <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
@@ -120,7 +116,9 @@ const PAGE_SIZE = 10;
 let currentPage = 1;
 
 const CATEGORY_ICONS = {
-  'Workspaces': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+  'Non-Code': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+  'Marketing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+  'Technology & Hardware': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
   'Technical': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
   'Research & Ideas': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>',
   'Other': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>',
@@ -164,7 +162,6 @@ async function loadData() {
     document.getElementById('stat-cats').textContent = uniqueCats.size;
 
     buildCategoryNav();
-    buildCategoryDropdown();
     buildTagList();
 
     // Check URL params
@@ -217,35 +214,6 @@ function buildCategoryNav() {
       groupEl.appendChild(btn);
     });
     container.appendChild(groupEl);
-  });
-}
-
-function buildCategoryDropdown() {
-  const dropdown = document.getElementById('cat-dropdown');
-  catHierarchy.groups.forEach(group => {
-    const col = document.createElement('div');
-    col.className = 'dropdown-col';
-    const heading = document.createElement('div');
-    heading.className = 'dropdown-group-label';
-    heading.innerHTML = (CATEGORY_ICONS[group.name] || '') + ' ' + esc(group.name);
-    col.appendChild(heading);
-    group.categories.forEach(cat => {
-      const count = repos.filter(r => r.category_slug === cat.slug).length;
-      if (count === 0) return;
-      const a = document.createElement('a');
-      a.href = '?category=' + cat.slug;
-      a.className = 'dropdown-item';
-      a.innerHTML = (CATEGORY_ICONS[cat.name] || '') + ' ' + esc(cat.name) + ' <span class="tag-count">' + count + '</span>';
-      a.onclick = (e) => {
-        e.preventDefault();
-        activeCategory = cat.slug;
-        updateCategoryButtons();
-        render();
-        updateURL();
-      };
-      col.appendChild(a);
-    });
-    dropdown.appendChild(col);
   });
 }
 

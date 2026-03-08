@@ -28,6 +28,7 @@
       <a href="https://danielrosehill.com" target="_blank">Homepage</a>
       <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
     </div>
+
     <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open'); document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'))">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
     </button>
@@ -38,7 +39,7 @@
   <div class="breadcrumbs-inner">
     <a href="/">Index</a>
     <span class="bc-sep">/</span>
-    <a href="/?category=productivity">Productivity & Planning</a>
+    <a href="/?category=technology">Technology & Hardware</a>
     <span class="bc-sep">/</span>
     <span class="bc-current">Ivory PC Builder</span>
   </div>
@@ -64,10 +65,10 @@
   <div class="repo-detail">
     <h1>Ivory PC Builder</h1>
     <div class="repo-detail-meta">
-      <span class="repo-detail-category">Workspaces &rsaquo; Productivity & Planning</span>
+      <span class="repo-detail-category">Non-Code &rsaquo; Technology & Hardware</span>
       <span class="repo-detail-date">Added 2026-03-06</span>
     </div>
-    <div class="repo-detail-tags"><span class="tag-pill">Productivity</span></div>
+    <div class="repo-detail-tags"><span class="tag-pill">Hardware</span></div>
     <p class="repo-detail-desc">PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management.</p>
     <div class="repo-detail-actions">
       <a class="btn btn-primary" href="https://github.com/danielrosehill/Ivory-Computer-Builder-V2" target="_blank" rel="noopener">
@@ -96,7 +97,7 @@
 
 <script>
 const CURRENT_REPO = "ivory-pc-builder";
-const CURRENT_CATEGORY = "Productivity & Planning";
+const CURRENT_CATEGORY = "Technology & Hardware";
 async function loadSidebar() {
   try {
     const res = await fetch('/tagged_repos.json');

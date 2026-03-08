@@ -1,16 +1,18 @@
 {
   "groups": [
     {
-      "name": "Workspaces",
+      "name": "Non-Code",
       "categories": [
         {"name": "Productivity & Planning", "slug": "productivity"},
         {"name": "Legal", "slug": "legal"},
         {"name": "Health & Wellbeing", "slug": "health"},
         {"name": "Communications & Writing", "slug": "communications"},
+        {"name": "Marketing", "slug": "marketing"},
         {"name": "Financial Planning", "slug": "financial"},
         {"name": "Career", "slug": "career"},
         {"name": "Business", "slug": "business"},
-        {"name": "Privacy & Anonymity", "slug": "privacy"}
+        {"name": "Privacy & Anonymity", "slug": "privacy"},
+        {"name": "Technology & Hardware", "slug": "technology"}
       ]
     },
     {

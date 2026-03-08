@@ -79,13 +79,6 @@ Workspace for managing Conda environments on Ubuntu workstations with AMD ROCm h
 
 ---
 
-### Claude Google Drive Organiser
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
-
-Template for managing and organizing Google Drive via rclone with configurable rules and slash commands.
-
----
-
 ### Claude Docker Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Docker-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
@@ -202,7 +195,7 @@ Template for managing Android devices through ADB with device profiling and pack
 
 # Productivity & Planning
 
-Workspaces for decision-making, personal planning, hardware builds, and general-purpose productivity workflows.
+Workspaces for decision-making, personal planning, file management, and general-purpose productivity workflows.
 
 ### Claude Debugging Workspace
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Debugging-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
@@ -232,17 +225,10 @@ Workspace for tracking habits, skill acquisition, and self-improvement goals wit
 
 ---
 
-### Claude Rig Planner
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rig-Planner) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Rig](https://img.shields.io/badge/Rig-gray?style=flat-square)
+### Claude Google Drive Organiser
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Gdrive-Organiser) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
-Template for planning computer hardware upgrades with profiling, recommendations, and VAT-compliant estimates.
-
----
-
-### Ivory PC Builder
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ivory-Computer-Builder-V2) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
-
-PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management.
+Template for managing and organizing Google Drive via rclone with configurable rules and slash commands.
 
 ---
 
@@ -317,7 +303,7 @@ Template for tracking therapy sessions, mental health goals, and therapeutic pla
 
 # Communications & Writing
 
-Workspaces and templates for content creation, blog management, writing workflows, communications strategy, and web analytics.
+Workspaces and templates for content creation, blog management, writing workflows, and communications strategy.
 
 ### Claude Blog Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Blog-Manager) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
@@ -344,13 +330,6 @@ Full-featured workspace for communications strategy with 12 agents and 14 slash 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Visual-Communications-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
 Template for enhancing long-form content with AI-generated visuals via fal-ai MCP.
-
----
-
-### Claude Web Analytics Space
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
-
-Workspace template for website analytics with data cleaning, analysis, and reporting workflows.
 
 ---
 
@@ -433,6 +412,49 @@ Document redaction and identity protection workspace for handling sensitive info
 
 ---
 
+# Technology & Hardware
+
+Workspaces for hardware planning, PC builds, and technology procurement.
+
+### Claude Rig Planner
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Rig-Planner) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Rig](https://img.shields.io/badge/Rig-gray?style=flat-square)
+
+Template for planning computer hardware upgrades with profiling, recommendations, and VAT-compliant estimates.
+
+---
+
+### Ivory PC Builder
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Ivory-Computer-Builder-V2) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
+
+PC building assistant with real-time pricing from Ivory.co.il and scraped catalog management.
+
+---
+
+# Marketing
+
+Workspaces for SEO, web analytics, PR monitoring, and media tracking.
+
+### Claude Media Monitor
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Media-Monitor) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Workspace for systematic news collection and organization with metadata and schema validation.
+
+---
+
+### Claude News Fetcher - Media Monitoring System
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Full-featured media monitoring workspace with structured data capture and batch processing.
+
+---
+
+### Claude Web Analytics Space
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Web-Analytics-Space) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
+
+Workspace template for SEO analytics with data cleaning, analysis, and reporting workflows.
+
+---
+
 # Research
 
 ![Research](images/research.png)
@@ -457,20 +479,6 @@ Structured workflow for systematic research with specialized agents across acade
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Github-Shortlister) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square)
 
 Template for systematically evaluating and shortlisting GitHub repositories using AI-powered analysis.
-
----
-
-### Claude Media Monitor
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Media-Monitor) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
-
-Workspace for systematic news collection and organization with metadata and schema validation.
-
----
-
-### Claude News Fetcher - Media Monitoring System
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PR-And-Media-Monitoring-Workspace) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square) ![Claude Space](https://img.shields.io/badge/Claude-Space-purple?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Full-featured media monitoring workspace with structured data capture and batch processing.
 
 ---
 
