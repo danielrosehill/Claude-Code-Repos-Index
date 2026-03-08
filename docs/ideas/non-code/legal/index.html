@@ -17,7 +17,6 @@
     <span class="nav-author">by Daniel Rosehill</span>
     <div class="nav-links">
       <a href="/">Index</a>
-      <a href="/ideas/claude-spaces/">Claude Spaces</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
         <div class="nav-dropdown-menu nav-dropdown-ideas">
@@ -29,7 +28,7 @@
       <a href="https://danielrosehill.com" target="_blank">Homepage</a>
       <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
     </div>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open'); document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'))">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
     </button>
   </div>
@@ -71,5 +70,20 @@
   </div>
 </footer>
 
+<script>
+// Mobile dropdown toggle
+document.querySelectorAll('.nav-dropdown-trigger').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const dropdown = btn.closest('.nav-dropdown');
+    const wasOpen = dropdown.classList.contains('open');
+    document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+    if (!wasOpen) dropdown.classList.toggle('open');
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+});
+</script>
 </body>
 </html>

@@ -126,7 +126,8 @@ a:hover { color: var(--link-hover); }
   gap: 1rem;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
   display: grid;
 }
 
@@ -1051,7 +1052,12 @@ a:hover { color: var(--link-hover); }
 
   .nav-toggle { display: block; }
 
-  .nav-dropdown-menu {
+  .nav-dropdown:hover .nav-dropdown-menu {
+    display: none;
+  }
+
+  .nav-dropdown.open .nav-dropdown-menu {
+    display: grid;
     position: static;
     transform: none;
     min-width: auto;
