@@ -116,6 +116,8 @@ let activeTags = new Set();
 let activeCategory = '';
 let searchQuery = '';
 let sortMode = 'newest';
+const PAGE_SIZE = 10;
+let currentPage = 1;
 
 const CATEGORY_ICONS = {
   'Workspaces': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
@@ -180,6 +182,7 @@ async function loadData() {
 
     document.getElementById('search').addEventListener('input', e => {
       searchQuery = e.target.value.toLowerCase().trim();
+      currentPage = 1;
       render();
     });
   } catch (e) {
@@ -206,6 +209,7 @@ function buildCategoryNav() {
       btn.innerHTML = (CATEGORY_ICONS[cat.name] || '') + ' <span class="cat-name">' + esc(cat.name) + '</span><span class="tag-count">' + count + '</span>';
       btn.onclick = () => {
         activeCategory = activeCategory === cat.slug ? '' : cat.slug;
+        currentPage = 1;
         updateCategoryButtons();
         render();
         updateURL();
@@ -260,6 +264,7 @@ function buildTagList() {
     btn.onclick = () => {
       if (activeTags.has(tag)) activeTags.delete(tag);
       else activeTags.add(tag);
+      currentPage = 1;
       updateTagButtons();
       render();
       updateURL();
@@ -287,6 +292,7 @@ function clearFilters() {
   activeCategory = '';
   activeTags.clear();
   searchQuery = '';
+  currentPage = 1;
   document.getElementById('search').value = '';
   updateCategoryButtons();
   updateTagButtons();
@@ -325,17 +331,23 @@ function render() {
     bc.style.display = 'none';
   }
 
+  if (sortMode === 'newest') {
+    filtered.sort((a, b) => (b.created_date || '').localeCompare(a.created_date || '') || a.name.localeCompare(b.name));
+  } else {
+    filtered.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  // Pagination
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageRepos = filtered.slice(start, start + PAGE_SIZE);
+
   const countEl = document.getElementById('result-count');
   if (searchQuery || activeTags.size > 0 || activeCategory) {
     countEl.textContent = filtered.length + ' of ' + repos.length + ' repos';
   } else {
     countEl.textContent = repos.length + ' repos';
-  }
-
-  if (sortMode === 'newest') {
-    filtered.sort((a, b) => (b.added_date || '').localeCompare(a.added_date || '') || a.name.localeCompare(b.name));
-  } else {
-    filtered.sort((a, b) => a.name.localeCompare(b.name));
   }
 
   if (filtered.length === 0) {
@@ -344,8 +356,9 @@ function render() {
   }
 
   let html = '<div class="repo-grid">';
-  filtered.forEach(repo => {
+  pageRepos.forEach(repo => {
     const detailUrl = '/repos/' + esc(repo.slug) + '/';
+    const dateLabel = repo.created_date ? '<span class="repo-card-date">Created ' + esc(repo.created_date) + '</span>' : '';
     html += '<div class="repo-card">' +
       '<div class="repo-header">' +
         '<a class="repo-name" href="' + detailUrl + '">' + esc(repo.name) + '</a>' +
@@ -354,6 +367,7 @@ function render() {
         '</a>' +
       '</div>' +
       '<span class="repo-card-cat">' + (CATEGORY_ICONS[repo.category] || '') + ' ' + esc(repo.category) + '</span>' +
+      dateLabel +
       '<p class="repo-desc">' + esc(repo.description) + '</p>' +
       '<div class="repo-tags">' + repo.tags.map(t =>
         '<button class="tag-pill' + (activeTags.has(t) ? ' active' : '') + '" onclick="event.stopPropagation(); toggleTag(\'' + esc(t) + '\')">' + esc(t) + '</button>'
@@ -361,11 +375,62 @@ function render() {
     '</div>';
   });
   html += '</div>';
+
+  // Pagination controls
+  if (totalPages > 1) {
+    html += '<div class="pagination">';
+    html += '<button class="page-btn' + (currentPage === 1 ? ' disabled' : '') + '" onclick="goToPage(' + (currentPage - 1) + ')">&laquo; Prev</button>';
+    const range = paginationRange(currentPage, totalPages);
+    range.forEach(p => {
+      if (p === '...') {
+        html += '<span class="page-ellipsis">&hellip;</span>';
+      } else {
+        html += '<button class="page-btn' + (p === currentPage ? ' active' : '') + '" onclick="goToPage(' + p + ')">' + p + '</button>';
+      }
+    });
+    html += '<button class="page-btn' + (currentPage === totalPages ? ' disabled' : '') + '" onclick="goToPage(' + (currentPage + 1) + ')">Next &raquo;</button>';
+    html += '</div>';
+  }
+
   area.innerHTML = html;
+}
+
+function paginationRange(current, total) {
+  if (total <= 7) return Array.from({length: total}, (_, i) => i + 1);
+  const pages = [];
+  pages.push(1);
+  if (current > 3) pages.push('...');
+  for (let i = Math.max(2, current - 1); i <= Math.min(total - 1, current + 1); i++) {
+    pages.push(i);
+  }
+  if (current < total - 2) pages.push('...');
+  pages.push(total);
+  return pages;
+}
+
+function goToPage(page) {
+  const area = document.getElementById('repo-area');
+  const totalFiltered = repos.filter(r => {
+    if (activeCategory && r.category_slug !== activeCategory) return false;
+    if (activeTags.size > 0 && ![...activeTags].some(t => r.tags.includes(t))) return false;
+    if (searchQuery) {
+      return r.name.toLowerCase().includes(searchQuery) ||
+             r.description.toLowerCase().includes(searchQuery) ||
+             r.tags.some(t => t.toLowerCase().includes(searchQuery)) ||
+             r.category.toLowerCase().includes(searchQuery);
+    }
+    return true;
+  }).length;
+  const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
+  if (page < 1 || page > totalPages) return;
+  currentPage = page;
+  render();
+  area.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 
 function setSort(mode) {
   sortMode = mode;
+  currentPage = 1;
   document.getElementById('sort-newest').classList.toggle('active', mode === 'newest');
   document.getElementById('sort-az').classList.toggle('active', mode === 'az');
   render();

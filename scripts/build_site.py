@@ -31,6 +31,7 @@ TAG_RULES_PATH = DATA_DIR / "tag_rules.json"
 CATEGORIES_JSON_PATH = DATA_DIR / "categories.json"
 TAGGED_REPOS_PATH = DOCS_DIR / "tagged_repos.json"
 SITE_STATE_PATH = DATA_DIR / "site_state.json"
+CREATED_DATES_PATH = DATA_DIR / "repo_created_dates.json"
 
 
 def build_readme():
@@ -223,9 +224,13 @@ def generate_tagged_repos(_repos_data):
 
     # Add dates and slugs
     added_dates = derive_added_dates(tagged)
+    created_dates = load_created_dates()
     for repo in tagged:
         repo["added_date"] = added_dates.get(repo["name"], datetime.now().strftime("%Y-%m-%d"))
         repo["slug"] = slugify(repo["name"])
+        # Look up created_date by GitHub repo name from URL
+        gh_name = repo["url"].rstrip("/").split("/")[-1] if repo["url"] else ""
+        repo["created_date"] = created_dates.get(gh_name, repo["added_date"])
 
     # Sort repos alphabetically by name
     tagged.sort(key=lambda r: r["name"].lower())
@@ -247,6 +252,14 @@ def slugify(name):
     slug = name.lower().strip()
     slug = re.sub(r"[^a-z0-9]+", "-", slug)
     return slug.strip("-")
+
+
+def load_created_dates():
+    """Load GitHub repo creation dates from data file."""
+    if CREATED_DATES_PATH.exists():
+        with open(CREATED_DATES_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
 
 
 def derive_added_dates(tagged_repos):

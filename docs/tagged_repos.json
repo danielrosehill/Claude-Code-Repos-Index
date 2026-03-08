@@ -11,7 +11,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "ai-human-attribution-adder"
+    "slug": "ai-human-attribution-adder",
+    "created_date": "2025-10-31"
   },
   {
     "name": "Bash Alias Manager Claude",
@@ -28,7 +29,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "bash-alias-manager-claude"
+    "slug": "bash-alias-manager-claude",
+    "created_date": "2025-10-25"
   },
   {
     "name": "Batch ClaudeMD Repo Creator",
@@ -43,7 +45,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "batch-claudemd-repo-creator"
+    "slug": "batch-claudemd-repo-creator",
+    "created_date": "2025-10-26"
   },
   {
     "name": "Claude ADB Workspace Template",
@@ -60,7 +63,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-adb-workspace-template"
+    "slug": "claude-adb-workspace-template",
+    "created_date": "2025-11-12"
   },
   {
     "name": "Claude ADHD Research Workspace",
@@ -75,7 +79,8 @@
     "category_slug": "health",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-adhd-research-workspace"
+    "slug": "claude-adhd-research-workspace",
+    "created_date": "2025-11-07"
   },
   {
     "name": "Claude Agent Picker Pattern",
@@ -91,7 +96,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-agent-picker-pattern"
+    "slug": "claude-agent-picker-pattern",
+    "created_date": "2025-10-31"
   },
   {
     "name": "Claude AI Conference",
@@ -104,7 +110,8 @@
     "category_slug": "argument",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-ai-conference"
+    "slug": "claude-ai-conference",
+    "created_date": "2026-01-01"
   },
   {
     "name": "Claude App Optimiser",
@@ -117,7 +124,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-app-optimiser"
+    "slug": "claude-app-optimiser",
+    "created_date": "2025-12-23"
   },
   {
     "name": "Claude Blog Manager",
@@ -132,7 +140,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-blog-manager"
+    "slug": "claude-blog-manager",
+    "created_date": "2025-11-18"
   },
   {
     "name": "Claude Budget Workspace Template",
@@ -148,7 +157,8 @@
     "category_slug": "financial",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-budget-workspace-template"
+    "slug": "claude-budget-workspace-template",
+    "created_date": "2025-11-07"
   },
   {
     "name": "Claude Bug Catcher",
@@ -162,7 +172,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-bug-catcher"
+    "slug": "claude-bug-catcher",
+    "created_date": "2025-12-28"
   },
   {
     "name": "Claude Business Continuity Planner",
@@ -178,7 +189,8 @@
     "category_slug": "business",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-business-continuity-planner"
+    "slug": "claude-business-continuity-planner",
+    "created_date": "2026-01-14"
   },
   {
     "name": "Claude Business Idea Evaluator",
@@ -192,7 +204,8 @@
     "category_slug": "business",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-business-idea-evaluator"
+    "slug": "claude-business-idea-evaluator",
+    "created_date": "2025-11-23"
   },
   {
     "name": "Claude Case File",
@@ -209,7 +222,8 @@
     "category_slug": "legal",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-case-file"
+    "slug": "claude-case-file",
+    "created_date": "2026-01-15"
   },
   {
     "name": "Claude Change My View",
@@ -225,7 +239,8 @@
     "category_slug": "argument",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-change-my-view"
+    "slug": "claude-change-my-view",
+    "created_date": "2025-11-13"
   },
   {
     "name": "Claude Code Bash Aliases",
@@ -241,7 +256,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-bash-aliases"
+    "slug": "claude-code-bash-aliases",
+    "created_date": "2025-11-09"
   },
   {
     "name": "Claude Code Context Feature Requests",
@@ -254,7 +270,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "claude-code-context-feature-requests"
+    "slug": "claude-code-context-feature-requests",
+    "created_date": "2025-10-09"
   },
   {
     "name": "Claude Code Context Toolkit",
@@ -270,7 +287,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-code-context-toolkit"
+    "slug": "claude-code-context-toolkit",
+    "created_date": "2025-10-27"
   },
   {
     "name": "Claude Code LAN Manager",
@@ -287,7 +305,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-lan-manager"
+    "slug": "claude-code-lan-manager",
+    "created_date": "2026-01-09"
   },
   {
     "name": "Claude Code Lawyer",
@@ -305,7 +324,8 @@
     "category_slug": "legal",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-code-lawyer"
+    "slug": "claude-code-lawyer",
+    "created_date": "2026-01-12"
   },
   {
     "name": "Claude Code Linux Desktop Slash Commands",
@@ -319,7 +339,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-linux-desktop-slash-commands"
+    "slug": "claude-code-linux-desktop-slash-commands",
+    "created_date": "2025-10-21"
   },
   {
     "name": "Claude Code Linux Notes",
@@ -334,7 +355,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-linux-notes"
+    "slug": "claude-code-linux-notes",
+    "created_date": "2025-10-22"
   },
   {
     "name": "Claude Code Marketplace Hub",
@@ -347,7 +369,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-marketplace-hub"
+    "slug": "claude-code-marketplace-hub",
+    "created_date": "2025-11-09"
   },
   {
     "name": "Claude Code MCP Command Generator",
@@ -360,7 +383,8 @@
     "category_slug": "mcp",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-mcp-command-generator"
+    "slug": "claude-code-mcp-command-generator",
+    "created_date": "2025-10-16"
   },
   {
     "name": "Claude Code MCP List",
@@ -374,7 +398,8 @@
     "category_slug": "mcp",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-mcp-list"
+    "slug": "claude-code-mcp-list",
+    "created_date": "2025-10-28"
   },
   {
     "name": "Claude Code Notebook",
@@ -388,7 +413,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-notebook"
+    "slug": "claude-code-notebook",
+    "created_date": "2025-10-30"
   },
   {
     "name": "Claude Code Plugin",
@@ -405,7 +431,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-plugin"
+    "slug": "claude-code-plugin",
+    "created_date": "2025-11-15"
   },
   {
     "name": "Claude Code Plugins Marketplace",
@@ -418,7 +445,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-plugins-marketplace"
+    "slug": "claude-code-plugins-marketplace",
+    "created_date": "2025-11-09"
   },
   {
     "name": "Claude Code Remote Machine Admin Space",
@@ -434,7 +462,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-remote-machine-admin-space"
+    "slug": "claude-code-remote-machine-admin-space",
+    "created_date": "2025-10-29"
   },
   {
     "name": "Claude Code Repo Managers ClaudeMD",
@@ -448,7 +477,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-code-repo-managers-claudemd"
+    "slug": "claude-code-repo-managers-claudemd",
+    "created_date": "2025-10-25"
   },
   {
     "name": "Claude Code Security Auditor",
@@ -462,7 +492,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-code-security-auditor"
+    "slug": "claude-code-security-auditor",
+    "created_date": "2025-10-25"
   },
   {
     "name": "Claude Code Writing Squad",
@@ -476,7 +507,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-code-writing-squad"
+    "slug": "claude-code-writing-squad",
+    "created_date": "2025-09-16"
   },
   {
     "name": "Claude Communications Strategist Template",
@@ -495,7 +527,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-communications-strategist-template"
+    "slug": "claude-communications-strategist-template",
+    "created_date": "2026-01-12"
   },
   {
     "name": "Claude Conda Manager",
@@ -510,7 +543,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-conda-manager"
+    "slug": "claude-conda-manager",
+    "created_date": "2025-10-28"
   },
   {
     "name": "Claude Debugging Workspace",
@@ -526,7 +560,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-debugging-workspace"
+    "slug": "claude-debugging-workspace",
+    "created_date": "2026-01-11"
   },
   {
     "name": "Claude Decision Evaluation Framework",
@@ -539,7 +574,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-decision-evaluation-framework"
+    "slug": "claude-decision-evaluation-framework",
+    "created_date": "2025-11-23"
   },
   {
     "name": "Claude Deep Research Model (Notes / Documentation)",
@@ -553,7 +589,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-deep-research-model-notes-documentation"
+    "slug": "claude-deep-research-model-notes-documentation",
+    "created_date": "2025-10-29"
   },
   {
     "name": "Claude Deep Research Template (Implementation Template)",
@@ -568,7 +605,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-deep-research-template-implementation-template"
+    "slug": "claude-deep-research-template-implementation-template",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Development Agents",
@@ -584,7 +622,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-development-agents"
+    "slug": "claude-development-agents",
+    "created_date": "2025-12-29"
   },
   {
     "name": "Claude Diary Planner Template",
@@ -599,7 +638,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-diary-planner-template"
+    "slug": "claude-diary-planner-template",
+    "created_date": "2025-11-07"
   },
   {
     "name": "Claude Docker Manager",
@@ -616,7 +656,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-docker-manager"
+    "slug": "claude-docker-manager",
+    "created_date": "2025-12-07"
   },
   {
     "name": "Claude Document This",
@@ -631,7 +672,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-document-this"
+    "slug": "claude-document-this",
+    "created_date": "2025-11-16"
   },
   {
     "name": "Claude Dork",
@@ -644,7 +686,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-dork"
+    "slug": "claude-dork",
+    "created_date": "2026-03-05"
   },
   {
     "name": "Claude Evidence Assistant",
@@ -659,7 +702,8 @@
     "category_slug": "legal",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-evidence-assistant"
+    "slug": "claude-evidence-assistant",
+    "created_date": "2026-01-19"
   },
   {
     "name": "Claude File Organiser Super Slash",
@@ -672,7 +716,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-file-organiser-super-slash"
+    "slug": "claude-file-organiser-super-slash",
+    "created_date": "2025-10-29"
   },
   {
     "name": "Claude Georeaction Researcher",
@@ -686,7 +731,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-08",
-    "slug": "claude-georeaction-researcher"
+    "slug": "claude-georeaction-researcher",
+    "created_date": "2026-03-04"
   },
   {
     "name": "Claude Github Shortlister",
@@ -700,7 +746,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-github-shortlister"
+    "slug": "claude-github-shortlister",
+    "created_date": "2025-10-28"
   },
   {
     "name": "Claude Google Drive Organiser",
@@ -716,7 +763,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-google-drive-organiser"
+    "slug": "claude-google-drive-organiser",
+    "created_date": "2026-01-12"
   },
   {
     "name": "Claude Health Helper",
@@ -731,7 +779,8 @@
     "category_slug": "health",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-health-helper"
+    "slug": "claude-health-helper",
+    "created_date": "2025-11-25"
   },
   {
     "name": "Claude Home Assistant Manager Template",
@@ -749,7 +798,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-home-assistant-manager-template"
+    "slug": "claude-home-assistant-manager-template",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Interview",
@@ -763,7 +813,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "claude-interview"
+    "slug": "claude-interview",
+    "created_date": "2025-12-06"
   },
   {
     "name": "Claude Is Awesome",
@@ -779,7 +830,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "claude-is-awesome"
+    "slug": "claude-is-awesome",
+    "created_date": "2025-10-28"
   },
   {
     "name": "Claude Janitor",
@@ -795,7 +847,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-janitor"
+    "slug": "claude-janitor",
+    "created_date": "2025-12-16"
   },
   {
     "name": "Claude Job Search Strategist",
@@ -813,7 +866,8 @@
     "category_slug": "career",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-job-search-strategist"
+    "slug": "claude-job-search-strategist",
+    "created_date": "2025-11-26"
   },
   {
     "name": "Claude Legal Aid Clinic",
@@ -830,7 +884,8 @@
     "category_slug": "legal",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-legal-aid-clinic"
+    "slug": "claude-legal-aid-clinic",
+    "created_date": "2026-01-20"
   },
   {
     "name": "Claude Linux Desktop Manager",
@@ -847,7 +902,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-linux-desktop-manager"
+    "slug": "claude-linux-desktop-manager",
+    "created_date": "2025-10-27"
   },
   {
     "name": "Claude Linux Server Manager",
@@ -865,7 +921,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-linux-server-manager"
+    "slug": "claude-linux-server-manager",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Local AI Agent Research",
@@ -879,7 +936,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "claude-local-ai-agent-research"
+    "slug": "claude-local-ai-agent-research",
+    "created_date": "2025-11-27"
   },
   {
     "name": "Claude MCP Guidelines",
@@ -894,7 +952,8 @@
     "category_slug": "mcp",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-mcp-guidelines"
+    "slug": "claude-mcp-guidelines",
+    "created_date": "2025-11-09"
   },
   {
     "name": "Claude Media Monitor",
@@ -909,7 +968,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-media-monitor"
+    "slug": "claude-media-monitor",
+    "created_date": "2025-11-10"
   },
   {
     "name": "Claude Model Identifier",
@@ -923,7 +983,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-model-identifier"
+    "slug": "claude-model-identifier",
+    "created_date": "2025-12-21"
   },
   {
     "name": "Claude News Fetcher - Media Monitoring System",
@@ -940,7 +1001,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-news-fetcher-media-monitoring-system"
+    "slug": "claude-news-fetcher-media-monitoring-system",
+    "created_date": "2025-11-10"
   },
   {
     "name": "Claude OS Sync Agent",
@@ -955,7 +1017,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-os-sync-agent"
+    "slug": "claude-os-sync-agent",
+    "created_date": "2025-10-22"
   },
   {
     "name": "Claude OSINT Investigator",
@@ -970,7 +1033,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-osint-investigator"
+    "slug": "claude-osint-investigator",
+    "created_date": "2026-01-11"
   },
   {
     "name": "Claude Personal Development Workspace",
@@ -985,7 +1049,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-personal-development-workspace"
+    "slug": "claude-personal-development-workspace",
+    "created_date": "2026-01-11"
   },
   {
     "name": "Claude Proxmox Manager Template",
@@ -1002,7 +1067,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-proxmox-manager-template"
+    "slug": "claude-proxmox-manager-template",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Purchasing Assistant",
@@ -1020,7 +1086,8 @@
     "category_slug": "financial",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-purchasing-assistant"
+    "slug": "claude-purchasing-assistant",
+    "created_date": "2026-01-13"
   },
   {
     "name": "Claude Redaction And Obfuscation",
@@ -1036,7 +1103,8 @@
     "category_slug": "privacy",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-redaction-and-obfuscation"
+    "slug": "claude-redaction-and-obfuscation",
+    "created_date": "2026-01-14"
   },
   {
     "name": "Claude Repo Jumper",
@@ -1049,7 +1117,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-repo-jumper"
+    "slug": "claude-repo-jumper",
+    "created_date": "2026-01-01"
   },
   {
     "name": "Claude Report Parsing Space Template",
@@ -1065,7 +1134,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-report-parsing-space-template"
+    "slug": "claude-report-parsing-space-template",
+    "created_date": "2026-01-06"
   },
   {
     "name": "Claude Rescue",
@@ -1079,7 +1149,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-rescue"
+    "slug": "claude-rescue",
+    "created_date": "2025-11-14"
   },
   {
     "name": "Claude Resource List Builder",
@@ -1093,7 +1164,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "claude-resource-list-builder"
+    "slug": "claude-resource-list-builder",
+    "created_date": "2026-01-01"
   },
   {
     "name": "Claude Rig Planner",
@@ -1109,7 +1181,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-rig-planner"
+    "slug": "claude-rig-planner",
+    "created_date": "2025-12-14"
   },
   {
     "name": "Claude Server Manager Template",
@@ -1127,7 +1200,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-server-manager-template"
+    "slug": "claude-server-manager-template",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Server Mgmt Template SBCs",
@@ -1143,7 +1217,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-server-mgmt-template-sbcs"
+    "slug": "claude-server-mgmt-template-sbcs",
+    "created_date": "2025-11-01"
   },
   {
     "name": "Claude Slash Commands",
@@ -1157,7 +1232,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-slash-commands"
+    "slug": "claude-slash-commands",
+    "created_date": "2025-10-11"
   },
   {
     "name": "Claude Space Self-Ideator",
@@ -1173,7 +1249,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-space-self-ideator"
+    "slug": "claude-space-self-ideator",
+    "created_date": "2026-01-11"
   },
   {
     "name": "Claude Spaces Model",
@@ -1189,7 +1266,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-spaces-model"
+    "slug": "claude-spaces-model",
+    "created_date": "2025-10-29"
   },
   {
     "name": "Claude Spec Starter",
@@ -1203,7 +1281,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-spec-starter"
+    "slug": "claude-spec-starter",
+    "created_date": "2025-11-06"
   },
   {
     "name": "Claude Stack Research Workspace",
@@ -1217,7 +1296,8 @@
     "category_slug": "research",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-stack-research-workspace"
+    "slug": "claude-stack-research-workspace",
+    "created_date": "2025-11-03"
   },
   {
     "name": "Claude Sub-Agent Network",
@@ -1232,7 +1312,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-sub-agent-network"
+    "slug": "claude-sub-agent-network",
+    "created_date": "2025-09-09"
   },
   {
     "name": "Claude Synology Manager",
@@ -1247,7 +1328,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-synology-manager"
+    "slug": "claude-synology-manager",
+    "created_date": "2025-12-03"
   },
   {
     "name": "Claude System Recovery Mode",
@@ -1262,7 +1344,8 @@
     "category_slug": "sysadmin",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-system-recovery-mode"
+    "slug": "claude-system-recovery-mode",
+    "created_date": "2025-12-27"
   },
   {
     "name": "Claude Task Manager",
@@ -1276,7 +1359,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-task-manager"
+    "slug": "claude-task-manager",
+    "created_date": "2025-12-28"
   },
   {
     "name": "Claude Tech Research Team",
@@ -1291,7 +1375,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-tech-research-team"
+    "slug": "claude-tech-research-team",
+    "created_date": "2025-10-31"
   },
   {
     "name": "Claude Therapy Tracker",
@@ -1307,7 +1392,8 @@
     "category_slug": "health",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-therapy-tracker"
+    "slug": "claude-therapy-tracker",
+    "created_date": "2025-11-03"
   },
   {
     "name": "Claude Think Tank",
@@ -1321,7 +1407,8 @@
     "category_slug": "argument",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "claude-think-tank"
+    "slug": "claude-think-tank",
+    "created_date": "2025-11-07"
   },
   {
     "name": "Claude Visual Communications Space",
@@ -1338,7 +1425,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-visual-communications-space"
+    "slug": "claude-visual-communications-space",
+    "created_date": "2026-01-21"
   },
   {
     "name": "Claude Web Analytics Space",
@@ -1356,7 +1444,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-web-analytics-space"
+    "slug": "claude-web-analytics-space",
+    "created_date": "2026-01-06"
   },
   {
     "name": "Claude Website Update Sender",
@@ -1370,7 +1459,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-website-update-sender"
+    "slug": "claude-website-update-sender",
+    "created_date": "2025-11-13"
   },
   {
     "name": "Claude Workspace Setup Helper",
@@ -1386,7 +1476,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "claude-workspace-setup-helper"
+    "slug": "claude-workspace-setup-helper",
+    "created_date": "2025-12-07"
   },
   {
     "name": "Claude Writing Space Template",
@@ -1403,7 +1494,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "claude-writing-space-template"
+    "slug": "claude-writing-space-template",
+    "created_date": "2025-11-12"
   },
   {
     "name": "CONTEXT.md",
@@ -1417,7 +1509,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "context-md"
+    "slug": "context-md",
+    "created_date": "2025-10-27"
   },
   {
     "name": "Cool Claude Code Stuff",
@@ -1430,7 +1523,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "cool-claude-code-stuff"
+    "slug": "cool-claude-code-stuff",
+    "created_date": "2025-10-02"
   },
   {
     "name": "Declaude",
@@ -1445,7 +1539,8 @@
     "category_slug": "communications",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "declaude"
+    "slug": "declaude",
+    "created_date": "2025-12-15"
   },
   {
     "name": "Ecosystem Mapper",
@@ -1458,7 +1553,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "ecosystem-mapper"
+    "slug": "ecosystem-mapper",
+    "created_date": "2025-12-19"
   },
   {
     "name": "Home Folder Claude MD",
@@ -1472,7 +1568,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "home-folder-claude-md"
+    "slug": "home-folder-claude-md",
+    "created_date": "2025-10-23"
   },
   {
     "name": "Ivory PC Builder",
@@ -1486,7 +1583,8 @@
     "category_slug": "productivity",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "ivory-pc-builder"
+    "slug": "ivory-pc-builder",
+    "created_date": "2026-02-05"
   },
   {
     "name": "Linux Desktop ClaudeMD Seeder",
@@ -1499,7 +1597,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "linux-desktop-claudemd-seeder"
+    "slug": "linux-desktop-claudemd-seeder",
+    "created_date": "2025-10-25"
   },
   {
     "name": "Make Agent Friendly",
@@ -1513,7 +1612,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "make-agent-friendly"
+    "slug": "make-agent-friendly",
+    "created_date": "2025-12-13"
   },
   {
     "name": "MCPM Claude Code Docs",
@@ -1528,7 +1628,8 @@
     "category_slug": "mcp",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "mcpm-claude-code-docs"
+    "slug": "mcpm-claude-code-docs",
+    "created_date": "2025-12-09"
   },
   {
     "name": "New Turn Claude Hook",
@@ -1543,7 +1644,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "new-turn-claude-hook"
+    "slug": "new-turn-claude-hook",
+    "created_date": "2025-12-31"
   },
   {
     "name": "No Wheel Inventions",
@@ -1556,7 +1658,8 @@
     "category_slug": "slash-commands",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "no-wheel-inventions"
+    "slug": "no-wheel-inventions",
+    "created_date": "2025-12-27"
   },
   {
     "name": "Non-Code Claude Code",
@@ -1570,7 +1673,8 @@
     "category_slug": "misc",
     "category_group": "Other",
     "added_date": "2026-03-06",
-    "slug": "non-code-claude-code"
+    "slug": "non-code-claude-code",
+    "created_date": "2025-10-03"
   },
   {
     "name": "Panel Of Claude",
@@ -1583,7 +1687,8 @@
     "category_slug": "multi-agent",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "panel-of-claude"
+    "slug": "panel-of-claude",
+    "created_date": "2025-11-17"
   },
   {
     "name": "Private And Public Claude MD",
@@ -1596,7 +1701,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "private-and-public-claude-md"
+    "slug": "private-and-public-claude-md",
+    "created_date": "2025-10-22"
   },
   {
     "name": "ProofMode Unpacker",
@@ -1613,7 +1719,8 @@
     "category_slug": "legal",
     "category_group": "Workspaces",
     "added_date": "2026-03-06",
-    "slug": "proofmode-unpacker"
+    "slug": "proofmode-unpacker",
+    "created_date": "2026-01-26"
   },
   {
     "name": "QA Team Plugin",
@@ -1628,7 +1735,8 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "qa-team-plugin"
+    "slug": "qa-team-plugin",
+    "created_date": "2026-01-10"
   },
   {
     "name": "Smithery Claude Code MCP Jumpstarter",
@@ -1642,7 +1750,8 @@
     "category_slug": "mcp",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "smithery-claude-code-mcp-jumpstarter"
+    "slug": "smithery-claude-code-mcp-jumpstarter",
+    "created_date": "2025-10-11"
   },
   {
     "name": "Split Context Setup",
@@ -1658,7 +1767,8 @@
     "category_slug": "context",
     "category_group": "Research & Ideas",
     "added_date": "2026-03-06",
-    "slug": "split-context-setup"
+    "slug": "split-context-setup",
+    "created_date": "2026-02-17"
   },
   {
     "name": "User Manual Plugin",
@@ -1674,6 +1784,7 @@
     "category_slug": "plugins",
     "category_group": "Technical",
     "added_date": "2026-03-06",
-    "slug": "user-manual-plugin"
+    "slug": "user-manual-plugin",
+    "created_date": "2025-12-31"
   }
 ]
