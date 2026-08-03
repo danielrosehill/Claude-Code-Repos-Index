@@ -280,6 +280,13 @@ Direct agent-to-agent communication and coordination within a LAN. Two Claude in
 
 ---
 
+### Unofficial MCP Builder
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Unofficial-MCP-Builder-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Author and maintain unofficial MCP servers for third-party APIs that don't ship one. Generate a server from the vendor's API docs verified against the live API with your own key, detect upstream drift on a schedule, and smoke-test against real operations. Bound by a committed api-surface.yaml recording what the API actually does versus what its docs claim. Publishes to npm.
+
+---
+
 ## Adb
 
 ### Adb Ops
@@ -295,6 +302,15 @@ ADB (Android Debug Bridge) operations — onboard a phone, map folders, import m
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Air-Quality-Toolkit-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Look up current and historical air quality, calculate AQI from raw pollutant readings, and run modelling utilities. Defaults to WAQI with fallbacks to OpenAQ and AireLibre.
+
+---
+
+## Aliexpress
+
+### Aliexpress Israel Skills
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Aliexpress-Israel-Skills) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+AliExpress shopping skills for Israel-based buyers — Choice-first search in ILS via a local browser, free-shipping filter, Israeli-reviews filter, single-listing landed-cost parse, and a running cart-value VAT-threshold nudge ($75 de-minimis).
 
 ---
 
@@ -533,6 +549,15 @@ General-purpose digital-evidence processing: capture, hash, OpenTimestamps, Exif
 
 ---
 
+## Freight
+
+### Freight Vol Calculator
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Freight-Vol-Calculator) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: freight volume arithmetic from a product's external dimensions — retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.
+
+---
+
 ## Gimp
 
 ### Gimp
@@ -595,7 +620,7 @@ Identify and annotate hardware components from photos — circuit boards, mother
 ### Hardware Spec Assembly
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Hardware-Spec-Assembly-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Define hardware project BOMs with ESP32-first focus — onboarding captures location/vendors/on-hand gear, then skills for spec creation, budgeting, sourcing, compatibility checks, wiring specs, assembly instructions, 3D-printable suggestions, and AI-generated mockups via fal.ai nano-banana.
+Define hardware project BOMs with ESP32-first focus — onboarding captures location/vendors/on-hand gear, then skills for spec creation, live web research of parts (AliExpress/Adafruit/etc.), budgeting, sourcing, compatibility checks, wiring specs, PCB design starting points, assembly instructions, 3D-printable suggestions, and AI-generated mockups via fal.ai nano-banana.
 
 ---
 
@@ -649,10 +674,24 @@ Claude Code agent skills for Israel and Hebrew-specific workflows: Hebrew transl
 
 ---
 
+### Israel Opening Hours
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Israel-Opening-Hours-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.
+
+---
+
 ### Israel Shopping
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Israel-Shopping-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Israeli shopping workflows — tech retailers (Ivory, KSP, Bug, TMS), Zap price comparison, Hebrew term resolution, ILS conversion, RRP checks, PN cross-reference, brand identification, and AliExpress IL-context search (ILS/Hebrew, IL reviews, free-shipping, combo exclusion, local-vs-import compare).
+
+---
+
+### Netek Disconnect
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/netek-disconnect-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: cancel Israeli service subscriptions (ניתוק) through netek.co.il — mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend — not a published API.
 
 ---
 
@@ -685,6 +724,15 @@ KDE Plasma (Wayland) runtime utilities — KWin scripting, plasmoid management, 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-KDE-Plasmoid-Dev-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Skill for developing KDE Plasma plasmoids (QML/Plasma 6 desktop and panel widgets) — scaffold, debug, package, install, and migrate Plasma 5 → 6.
+
+---
+
+## Label Printer
+
+### Label Printer
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/label-printer-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: print labels on a Brother P-touch label printer — single labels, N copies, batch runs, and QR-coded asset and storage-unit templates for inventory work. Bundles a streamable-HTTP MCP server that renders labels and hands them to a USB print bridge on a Linux host, plus notes on the device settings the Linux driver cannot reach.
 
 ---
 
@@ -953,12 +1001,30 @@ Spec-driven development workflow for Claude Code: turn unstructured project brie
 
 ---
 
+## Stack
+
+### Stack Evaluator
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/stack-evaluator-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: component-level review of a project's technology stack, not its code — records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.
+
+---
+
 ## Staging
 
 ### Loose Tasks
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Loose-Tasks-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Loose skills that will be migrated into other plugins later. Recommended not to enable/use this!
+
+---
+
+## Support
+
+### Contact Support
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/contact-support-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin (work in progress — concept stage): contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones — ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service.
 
 ---
 

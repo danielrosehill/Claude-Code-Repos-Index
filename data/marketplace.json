@@ -1848,8 +1848,8 @@
         "source": "github",
         "repo": "danielrosehill/Claude-Hardware-Spec-Assembly-Plugin"
       },
-      "description": "Define hardware project BOMs with ESP32-first focus \u2014 onboarding captures location/vendors/on-hand gear, then skills for spec creation, budgeting, sourcing, compatibility checks, wiring specs, assembly instructions, 3D-printable suggestions, and AI-generated mockups via fal.ai nano-banana.",
-      "version": "1.0.0",
+      "description": "Define hardware project BOMs with ESP32-first focus \u2014 onboarding captures location/vendors/on-hand gear, then skills for spec creation, live web research of parts (AliExpress/Adafruit/etc.), budgeting, sourcing, compatibility checks, wiring specs, PCB design starting points, assembly instructions, 3D-printable suggestions, and AI-generated mockups via fal.ai nano-banana.",
+      "version": "1.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -2815,6 +2815,192 @@
         "easyeffects",
         "voice",
         "dictation"
+      ]
+    },
+    {
+      "name": "aliexpress-israel-skills",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Aliexpress-Israel-Skills"
+      },
+      "description": "AliExpress shopping skills for Israel-based buyers \u2014 Choice-first search in ILS via a local browser, free-shipping filter, Israeli-reviews filter, single-listing landed-cost parse, and a running cart-value VAT-threshold nudge ($75 de-minimis).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "aliexpress",
+        "shopping",
+        "israel",
+        "ils",
+        "choice",
+        "vat"
+      ]
+    },
+    {
+      "name": "unofficial-mcp-builder",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Unofficial-MCP-Builder-Plugin"
+      },
+      "description": "Author and maintain unofficial MCP servers for third-party APIs that don't ship one. Generate a server from the vendor's API docs verified against the live API with your own key, detect upstream drift on a schedule, and smoke-test against real operations. Bound by a committed api-surface.yaml recording what the API actually does versus what its docs claim. Publishes to npm.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "mcp",
+        "api",
+        "codegen",
+        "npm",
+        "dev-tools"
+      ]
+    },
+    {
+      "name": "israel-opening-hours",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Israel-Opening-Hours-Plugin"
+      },
+      "description": "Claude Code plugin: check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "israel",
+        "opening-hours",
+        "shabbat",
+        "hebcal",
+        "regional"
+      ]
+    },
+    {
+      "name": "label-printer",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/label-printer-plugin"
+      },
+      "description": "Claude Code plugin: print labels on a Brother P-touch label printer \u2014 single labels, N copies, batch runs, and QR-coded asset and storage-unit templates for inventory work. Bundles a streamable-HTTP MCP server that renders labels and hands them to a USB print bridge on a Linux host, plus notes on the device settings the Linux driver cannot reach.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "label-printer",
+        "brother",
+        "p-touch",
+        "qr-code",
+        "inventory",
+        "printing"
+      ]
+    },
+    {
+      "name": "freight-vol-calculator",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Freight-Vol-Calculator"
+      },
+      "description": "Claude Code plugin: freight volume arithmetic from a product's external dimensions \u2014 retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "freight",
+        "logistics",
+        "shipping",
+        "pallet",
+        "container",
+        "packing",
+        "supply-chain",
+        "import-export"
+      ]
+    },
+    {
+      "name": "stack-evaluator",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/stack-evaluator-plugin"
+      },
+      "description": "Claude Code plugin: component-level review of a project's technology stack, not its code \u2014 records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "stack",
+        "architecture",
+        "modernization",
+        "audit",
+        "dependencies",
+        "eol",
+        "caching",
+        "review"
+      ]
+    },
+    {
+      "name": "contact-support",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/contact-support-plugin"
+      },
+      "description": "Claude Code plugin (work in progress \u2014 concept stage): contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones \u2014 ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "support",
+        "helpdesk",
+        "vendor",
+        "tickets",
+        "escalation",
+        "sla",
+        "twilio",
+        "work-in-progress"
+      ]
+    },
+    {
+      "name": "netek-disconnect",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/netek-disconnect-plugin"
+      },
+      "description": "Claude Code plugin: cancel Israeli service subscriptions (\u05e0\u05d9\u05ea\u05d5\u05e7) through netek.co.il \u2014 mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend \u2014 not a published API.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "israel",
+        "consumer-rights",
+        "cancellation",
+        "hebrew"
       ]
     }
   ]
