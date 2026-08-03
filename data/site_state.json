@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-08-03T21:34:59",
-  "total_repos": 193,
+  "last_built": "2026-08-03T21:35:08",
+  "total_repos": 194,
   "total_tags": 14,
   "repo_manifest": {
     "Adb Ops": "29140deced1e81a01605e5687efac672",
@@ -53,7 +53,7 @@
     "Claude Dolphin & Konsole Actions": "88f805ecb5e1835d9bb9f25cf8ff45b8",
     "Claude Dork": "0470964438f8e058a4ac3e63575b7b25",
     "Claude File Organiser Super Slash": "56e23ccf072a34dc8afd5001cd8c54e2",
-    "Claude Hopper": "2e61247125dd850f0698c6c2aa3889ea",
+    "Claude Hopper": "b4ab2ed387507dcadf357322e367b8bd",
     "Claude Interview": "0fa76a03469afb1a6cbbe53b4ebf0c8c",
     "Claude Is Awesome": "36fe55185a34b81dd10648c6b751ef1b",
     "Claude Local AI Agent Research": "f8c4527b36773e4ebb77f9e33ed0687b",
@@ -72,7 +72,7 @@
     "Claude User Context Pattern": "3f2ae830752f16d3a65b9be1de2deca4",
     "Claude User Manual": "5382310b1381c0d0284b93eddb701eb8",
     "Claude User Memory": "c26ff1bcf51f182afc64650a20fe4872",
-    "Claude Vault": "f6753b5071358c661e9f768232d1c76e",
+    "Claude Vault": "b5d27212ac2d524ffdc3b7af94395e5e",
     "Claude Website Update Sender": "b14732717e4a799dfbca2142470db6b8",
     "Claude Workspace Setup Helper": "6ebd5ddac0307f681b3fa09e14b5f458",
     "Contact Support": "fa970042b628d975e3d3fb95a8549748",
@@ -105,6 +105,7 @@
     "Github Explorer": "12c480c94ad52131d5dcdfc00e630c56",
     "Gpg Ops": "6de7fedde850480ce5555fc272982baa",
     "Greeninvoice Ops": "def725082c08a27cb53d8fb9c886a5fa",
+    "Habits Of Claude": "b9becd956f1b4daf203e4016ff339617",
     "Hardware Id Annotation": "9a7fea455678d47632e1ce0da185919f",
     "Hardware Spec Assembly": "e1f98860f643a9b5f5dafe20dc6c2ce9",
     "Home Assistant Mgmt": "795db6230ba56ecfdf59ac3a6ffa5cfa",
@@ -198,18 +199,6 @@
     "Zigbee Home Maintenance": "ba03f10b0b08bea540fa518f15073dc5"
   },
   "history": [
-    {
-      "date": "2026-04-29T12:36:24",
-      "changes": [
-        {
-          "type": "modified",
-          "repos": [
-            "Claude Hopper"
-          ]
-        }
-      ],
-      "total_repos": 137
-    },
     {
       "date": "2026-04-29T12:44:51",
       "changes": [
@@ -1899,6 +1888,25 @@
         }
       ],
       "total_repos": 193
+    },
+    {
+      "date": "2026-08-03T21:35:08",
+      "changes": [
+        {
+          "type": "added",
+          "repos": [
+            "Habits Of Claude"
+          ]
+        },
+        {
+          "type": "modified",
+          "repos": [
+            "Claude Hopper",
+            "Claude Vault"
+          ]
+        }
+      ],
+      "total_repos": 194
     }
   ]
 }

@@ -754,9 +754,9 @@
     "category": "Plugins",
     "category_slug": "plugins",
     "category_group": "Technical",
-    "added_date": "2026-04-29",
+    "added_date": "2026-08-03",
     "slug": "claude-hopper",
-    "created_date": "2026-04-29",
+    "created_date": "2026-08-03",
     "banner": "/banners/claude-hopper.png"
   },
   {
@@ -1039,9 +1039,9 @@
     "category": "Plugins",
     "category_slug": "plugins",
     "category_group": "Technical",
-    "added_date": "2026-04-29",
+    "added_date": "2026-08-03",
     "slug": "claude-vault",
-    "created_date": "2026-04-29"
+    "created_date": "2026-08-03"
   },
   {
     "name": "Claude Website Update Sender",
@@ -1519,6 +1519,20 @@
     "category_group": "Technical",
     "added_date": "2026-08-03",
     "slug": "greeninvoice-ops",
+    "created_date": "2026-08-03"
+  },
+  {
+    "name": "Habits Of Claude",
+    "url": "https://github.com/danielrosehill/Habits-Of-Claude",
+    "description": "Splits a user-level system prompt into one file per standing habit, assembled into a pasteable block and a JSON index. Ships skills to install a subset into any CLAUDE.md and to reconcile drift when the prompt and the repo disagree.",
+    "tags": [
+      "Configuration"
+    ],
+    "category": "Context and Personalization",
+    "category_slug": "context",
+    "category_group": "Research & Ideas",
+    "added_date": "2026-08-03",
+    "slug": "habits-of-claude",
     "created_date": "2026-08-03"
   },
   {

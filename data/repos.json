@@ -98,6 +98,11 @@
           "description": "Workflow methodology for separating human-authored context from structured AI agent briefings."
         },
         {
+          "name": "Habits Of Claude",
+          "url": "https://github.com/danielrosehill/Habits-Of-Claude",
+          "description": "Splits a user-level system prompt into one file per standing habit, assembled into a pasteable block and a JSON index. Ships skills to install a subset into any CLAUDE.md and to reconcile drift when the prompt and the repo disagree."
+        },
+        {
           "name": "Linux Desktop ClaudeMD Seeder",
           "url": "https://github.com/danielrosehill/Linux-Desktop-ClaudeMD-Seeder",
           "description": "Automatically generates contextual CLAUDE.md files across a Linux desktop filesystem."
@@ -245,11 +250,11 @@
   ],
   "statistics": {
     "total_categories": 6,
-    "total_repositories": 40,
+    "total_repositories": 41,
     "repositories_by_category": {
       "Systems Administration": 8,
       "Argument and Perspective Exploration": 1,
-      "Context and Personalization": 9,
+      "Context and Personalization": 10,
       "Multi-Agent Tooling": 9,
       "MCP": 5,
       "Slash Commands": 8
