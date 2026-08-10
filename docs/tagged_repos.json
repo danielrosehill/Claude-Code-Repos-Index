@@ -906,6 +906,20 @@
     "created_date": "2025-10-29"
   },
   {
+    "name": "Claude Fleet Traffic Shaper",
+    "url": "https://github.com/danielrosehill/Claude-Fleet-Traffic-Shaper",
+    "description": "Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape.",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "category": "Multi-Agent Tooling",
+    "category_slug": "multi-agent",
+    "category_group": "Technical",
+    "added_date": "2026-08-10",
+    "slug": "claude-fleet-traffic-shaper",
+    "created_date": "2026-08-10"
+  },
+  {
     "name": "Claude For OS Mgmt Research",
     "url": "https://github.com/danielrosehill/Claude-For-OS-Mgmt-Research",
     "description": "Research workspace on using Claude and Claude Code for operating system management.",

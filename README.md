@@ -474,6 +474,13 @@ Launchpad for creating standardized workspace templates conforming to the Agent 
 
 ---
 
+### Claude Fleet Traffic Shaper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Fleet-Traffic-Shaper) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape.
+
+---
+
 ### Claude Task Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Task-Manager) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 

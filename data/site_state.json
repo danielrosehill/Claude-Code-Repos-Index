@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-08-10T18:41:27",
-  "total_repos": 236,
+  "last_built": "2026-08-10T19:13:22",
+  "total_repos": 237,
   "total_tags": 20,
   "repo_manifest": {
     "Adb Ops": "70fcc4da075f6cc2494811c1ee2d9cfb",
@@ -64,6 +64,7 @@
     "Claude Dolphin & Konsole Actions": "4b4d94855520e673b1d09171bbb56792",
     "Claude Dork": "68dd965c91efe583f1da831a8dbdd5cb",
     "Claude File Organiser Super Slash": "6f6c6fa25711c02f9a32e14dcf0a6fc7",
+    "Claude Fleet Traffic Shaper": "51a5d6b8f3cf8c9829dd86a314dec3c0",
     "Claude For OS Mgmt Research": "b30aae9e3ea6325da38d683bff19bf53",
     "Claude Friction Points": "4ab5d1768f803313b5ddcfaf00d17d2a",
     "Claude FX Pair Analyst Template": "1c556e4fceae263efc57f1f0f8bab46f",
@@ -241,25 +242,6 @@
     "Zigbee Home Maintenance": "ba03f10b0b08bea540fa518f15073dc5"
   },
   "history": [
-    {
-      "date": "2026-04-29T14:07:29",
-      "changes": [
-        {
-          "type": "added",
-          "repos": [
-            "Buttondown Mgmt"
-          ]
-        },
-        {
-          "type": "modified",
-          "repos": [
-            "AI Attribution",
-            "Security Checkup"
-          ]
-        }
-      ],
-      "total_repos": 138
-    },
     {
       "date": "2026-04-29T14:12:52",
       "changes": [
@@ -2128,6 +2110,18 @@
         }
       ],
       "total_repos": 236
+    },
+    {
+      "date": "2026-08-10T19:13:22",
+      "changes": [
+        {
+          "type": "added",
+          "repos": [
+            "Claude Fleet Traffic Shaper"
+          ]
+        }
+      ],
+      "total_repos": 237
     }
   ]
 }

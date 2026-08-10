@@ -229,6 +229,11 @@
           "description": "Launchpad for creating standardized workspace templates conforming to the Agent Workspace Model v1.1 spec, with slash commands to generate, validate, and publish new workspaces."
         },
         {
+          "name": "Claude Fleet Traffic Shaper",
+          "url": "https://github.com/danielrosehill/Claude-Fleet-Traffic-Shaper",
+          "description": "Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape."
+        },
+        {
           "name": "Claude Task Manager",
           "url": "https://github.com/danielrosehill/Claude-Task-Manager",
           "description": "Sequential task queuing system addressing context window exhaustion in agentic coding tools."
@@ -370,12 +375,12 @@
   ],
   "statistics": {
     "total_categories": 6,
-    "total_repositories": 65,
+    "total_repositories": 66,
     "repositories_by_category": {
       "Systems Administration": 19,
       "Argument and Perspective Exploration": 2,
       "Context and Personalization": 15,
-      "Multi-Agent Tooling": 13,
+      "Multi-Agent Tooling": 14,
       "MCP": 7,
       "Slash Commands": 9
     }
