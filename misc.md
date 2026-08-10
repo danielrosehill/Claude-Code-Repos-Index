@@ -62,13 +62,6 @@ Small tricks and temporary workarounds for Claude Code, each timestamped because
 
 ---
 
-### Claude Code Marketplace Hub
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/claude-code-marketplace)
-
-Decentralized directory aggregating multiple community-maintained Claude Code plugin marketplaces.
-
----
-
 ### Claude Code Notes
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Notes)
 
@@ -122,13 +115,6 @@ Template for creating curated resource lists with automated formatting and badge
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Israel)
 
 Index of people and projects building with Claude, including Claude Code, in Israel.
-
----
-
-### Claude Local AI Agent Research
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Local-AI-Agent-Research)
-
-Research into agentic AI tools optimized for system administration rather than code generation.
 
 ---
 

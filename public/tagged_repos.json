@@ -593,21 +593,6 @@
     "created_date": "2025-10-09"
   },
   {
-    "name": "Claude Code Context Toolkit",
-    "url": "https://github.com/danielrosehill/Claude-Code-Context-Toolkit",
-    "description": "Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands.",
-    "tags": [
-      "Configuration",
-      "Slash Commands"
-    ],
-    "category": "Context and Personalization",
-    "category_slug": "context",
-    "category_group": "Research & Ideas",
-    "added_date": "2026-03-06",
-    "slug": "claude-code-context-toolkit",
-    "created_date": "2025-10-27"
-  },
-  {
     "name": "Claude Code Feedback",
     "url": "https://github.com/danielrosehill/Claude-Code-Feedback",
     "description": "File well-formed bug reports, feature requests, model-behavior reports, and documentation issues against anthropics/claude-code. Fetches the live issue templates, gathers required fields, and submits via gh CLI.",
@@ -650,37 +635,6 @@
     "added_date": "2026-03-06",
     "slug": "claude-code-linux-desktop-slash-commands",
     "created_date": "2025-10-21"
-  },
-  {
-    "name": "Claude Code Linux Notes",
-    "url": "https://github.com/danielrosehill/Claude-Code-Linux-Notes",
-    "description": "Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma.",
-    "tags": [
-      "Automation",
-      "Documentation",
-      "Multi-Agent"
-    ],
-    "category": "Multi-Agent Tooling",
-    "category_slug": "multi-agent",
-    "category_group": "Technical",
-    "added_date": "2026-03-06",
-    "slug": "claude-code-linux-notes",
-    "created_date": "2025-10-22"
-  },
-  {
-    "name": "Claude Code Marketplace Hub",
-    "url": "https://github.com/danielrosehill/claude-code-marketplace",
-    "description": "Decentralized directory aggregating multiple community-maintained Claude Code plugin marketplaces.",
-    "tags": [
-      "Documentation",
-      "Plugin"
-    ],
-    "category": "Miscellaneous",
-    "category_slug": "misc",
-    "category_group": "Other",
-    "added_date": "2026-03-06",
-    "slug": "claude-code-marketplace-hub",
-    "created_date": "2025-11-09"
   },
   {
     "name": "Claude Code MCP Command Generator",
@@ -892,20 +846,6 @@
     "created_date": "2026-03-05"
   },
   {
-    "name": "Claude File Organiser Super Slash",
-    "url": "https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash",
-    "description": "Slash command that transforms disorganized filesystems into well-structured directories.",
-    "tags": [
-      "Slash Commands"
-    ],
-    "category": "Slash Commands",
-    "category_slug": "slash-commands",
-    "category_group": "Technical",
-    "added_date": "2026-03-06",
-    "slug": "claude-file-organiser-super-slash",
-    "created_date": "2025-10-29"
-  },
-  {
     "name": "Claude Fleet Traffic Shaper",
     "url": "https://github.com/danielrosehill/Claude-Fleet-Traffic-Shaper",
     "description": "Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape.",
@@ -1074,21 +1014,6 @@
     "added_date": "2026-08-10",
     "slug": "claude-linux-desktop-manager-notes-0426",
     "created_date": "2026-04-17"
-  },
-  {
-    "name": "Claude Local AI Agent Research",
-    "url": "https://github.com/danielrosehill/Claude-Local-AI-Agent-Research",
-    "description": "Research into agentic AI tools optimized for system administration rather than code generation.",
-    "tags": [
-      "Documentation",
-      "Research"
-    ],
-    "category": "Miscellaneous",
-    "category_slug": "misc",
-    "category_group": "Other",
-    "added_date": "2026-03-06",
-    "slug": "claude-local-ai-agent-research",
-    "created_date": "2025-11-27"
   },
   {
     "name": "Claude Macropad V2",
@@ -1416,21 +1341,6 @@
     "added_date": "2026-03-06",
     "slug": "claude-system-recovery-mode",
     "created_date": "2025-12-27"
-  },
-  {
-    "name": "Claude Task Manager",
-    "url": "https://github.com/danielrosehill/Claude-Task-Manager",
-    "description": "Sequential task queuing system addressing context window exhaustion in agentic coding tools.",
-    "tags": [
-      "Agent Workspace",
-      "Multi-Agent"
-    ],
-    "category": "Multi-Agent Tooling",
-    "category_slug": "multi-agent",
-    "category_group": "Technical",
-    "added_date": "2026-03-06",
-    "slug": "claude-task-manager",
-    "created_date": "2025-12-28"
   },
   {
     "name": "Claude Transcription",

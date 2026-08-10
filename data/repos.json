@@ -133,11 +133,6 @@
           "description": "Automation workspace for batch-adding CLAUDE.md files across multiple GitHub repositories."
         },
         {
-          "name": "Claude Code Context Toolkit",
-          "url": "https://github.com/danielrosehill/Claude-Code-Context-Toolkit",
-          "description": "Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands."
-        },
-        {
           "name": "Claude Code Repo Managers ClaudeMD",
           "url": "https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD",
           "description": "Pre-configured CLAUDE.md templates for managing different repository types."
@@ -234,11 +229,6 @@
           "description": "Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape."
         },
         {
-          "name": "Claude Task Manager",
-          "url": "https://github.com/danielrosehill/Claude-Task-Manager",
-          "description": "Sequential task queuing system addressing context window exhaustion in agentic coding tools."
-        },
-        {
           "name": "Claude Development Agents",
           "url": "https://github.com/danielrosehill/Claude-Development-Agents",
           "description": "Curated toolkit of 74+ Claude Code configurations for development workflows and multi-agent coordination."
@@ -272,11 +262,6 @@
           "name": "Claude Workspace Setup Helper",
           "url": "https://github.com/danielrosehill/Claude-Workspace-Setup-Helper",
           "description": "Interactive tool for discovering, selecting, and cloning Claude Workspace templates."
-        },
-        {
-          "name": "Claude Code Linux Notes",
-          "url": "https://github.com/danielrosehill/Claude-Code-Linux-Notes",
-          "description": "Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma."
         }
       ]
     },
@@ -346,11 +331,6 @@
           "description": "System administration slash commands for Linux desktop environments."
         },
         {
-          "name": "Claude File Organiser Super Slash",
-          "url": "https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash",
-          "description": "Slash command that transforms disorganized filesystems into well-structured directories."
-        },
-        {
           "name": "Claude MD Chunk",
           "url": "https://github.com/danielrosehill/Claude-MD-Chunk",
           "description": "Slash command that condenses bloated CLAUDE.md files to essentials and organizes supplementary context into a structured `agent-context/` folder."
@@ -375,14 +355,14 @@
   ],
   "statistics": {
     "total_categories": 6,
-    "total_repositories": 66,
+    "total_repositories": 62,
     "repositories_by_category": {
       "Systems Administration": 19,
       "Argument and Perspective Exploration": 2,
-      "Context and Personalization": 15,
-      "Multi-Agent Tooling": 14,
+      "Context and Personalization": 14,
+      "Multi-Agent Tooling": 12,
       "MCP": 7,
-      "Slash Commands": 9
+      "Slash Commands": 8
     }
   }
 }

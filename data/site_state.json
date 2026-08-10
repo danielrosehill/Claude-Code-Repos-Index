@@ -1,6 +1,6 @@
 {
-  "last_built": "2026-08-10T19:24:14",
-  "total_repos": 237,
+  "last_built": "2026-08-10T19:43:11",
+  "total_repos": 231,
   "total_tags": 20,
   "repo_manifest": {
     "Adb Ops": "855fbda816f42cab8a0cf9efa1c0a9e3",
@@ -43,12 +43,9 @@
     "Claude Code Bugs And FRs": "f2497ea42c6593d5fc088992b33facc4",
     "Claude Code Changelog Notes": "f6ae529ad08c8fc47de663c644cddb46",
     "Claude Code Context Feature Requests": "135a854f6ca9dbd8b3e9de5768447f16",
-    "Claude Code Context Toolkit": "24573ff117dab7bce3a4d55318ceac90",
     "Claude Code Feedback": "98599e7919c416a2b383d7e99af608a4",
     "Claude Code Hacks": "1d9e9806df64243e352443dff4319eb6",
     "Claude Code Linux Desktop Slash Commands": "5554dbe5b2497f4cf5f53149303ff511",
-    "Claude Code Linux Notes": "f07b588313f2d76a2e66058e81d4d0cd",
-    "Claude Code Marketplace Hub": "4fd01c91aaf06329ee19f87298e72cb9",
     "Claude Code MCP Command Generator": "9f5884e9f9adb23a278744d0321df74c",
     "Claude Code MCP List": "3b15be2814655a3e85b0c482d8988647",
     "Claude Code Notes": "3f18b24518bd5e4d0b7bbdab69a1a8c9",
@@ -63,7 +60,6 @@
     "Claude Document Nudge": "5a539481229518b1bfc7f657c51f2687",
     "Claude Dolphin & Konsole Actions": "651469a8630216c8e39e5f4b178f9fd6",
     "Claude Dork": "691d589505cd5d6157d5005bab4d94b8",
-    "Claude File Organiser Super Slash": "7178de3040bbd371b0934d0d03b390e7",
     "Claude Fleet Traffic Shaper": "51a5d6b8f3cf8c9829dd86a314dec3c0",
     "Claude For OS Mgmt Research": "76d1972d0bdfb0a5771dd10762b9b478",
     "Claude Friction Points": "f07d567b2948d29dc10853cbe77f3c36",
@@ -75,7 +71,6 @@
     "Claude Konsole Launcher": "6b6e993a96be798aa670dc66b3c0d891",
     "Claude LAN Manager 0126": "5ac2d78cd91bc4e9da8b7ddf30f693d4",
     "Claude Linux Desktop Manager Notes 0426": "3cf2cb93287673d8f27f3ca55eea73f6",
-    "Claude Local AI Agent Research": "b81fa051dab2104f8be97a8c521f32e8",
     "Claude Macropad V2": "0141e62a4bdd131b8730f57f8011b586",
     "Claude MCP Guidelines": "ba8336f3e31c76f08b26e68789465cc6",
     "Claude MD Chunk": "0fd98cddb2e996ebb054051738eddbc5",
@@ -98,7 +93,6 @@
     "Claude Spec Starter": "0bdc8ab4aa51aa3b771ecf2e04d098e2",
     "Claude Sub-Agent Network": "84729c6a4fcd48dfeff2cf62af443c7b",
     "Claude System Recovery Mode": "2d2f70f4ee3175bba7b6b5fb9ddee122",
-    "Claude Task Manager": "59f506d978b00d9ae0c77f3e355243a4",
     "Claude Transcription": "38d6ec2409e6d138f9bc9dac447ce8d9",
     "Claude User Context Pattern": "3f2ae830752f16d3a65b9be1de2deca4",
     "Claude User Manual": "45835ba9eebfc2e142c4233cddb68288",
@@ -242,24 +236,6 @@
     "Zigbee Home Maintenance": "ba03f10b0b08bea540fa518f15073dc5"
   },
   "history": [
-    {
-      "date": "2026-04-29T16:08:44",
-      "changes": [
-        {
-          "type": "added",
-          "repos": [
-            "Gist Writer"
-          ]
-        },
-        {
-          "type": "modified",
-          "repos": [
-            "Claude Code Feedback"
-          ]
-        }
-      ],
-      "total_repos": 139
-    },
     {
       "date": "2026-04-29T16:30:06",
       "changes": [
@@ -2314,6 +2290,23 @@
         }
       ],
       "total_repos": 237
+    },
+    {
+      "date": "2026-08-10T19:43:11",
+      "changes": [
+        {
+          "type": "removed",
+          "repos": [
+            "Claude Code Context Toolkit",
+            "Claude Code Linux Notes",
+            "Claude Code Marketplace Hub",
+            "Claude File Organiser Super Slash",
+            "Claude Local AI Agent Research",
+            "Claude Task Manager"
+          ]
+        }
+      ],
+      "total_repos": 231
     }
   ]
 }

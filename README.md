@@ -340,13 +340,6 @@ Automation workspace for batch-adding CLAUDE.md files across multiple GitHub rep
 
 ---
 
-### Claude Code Context Toolkit
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands.
-
----
-
 ### Claude Code Repo Managers ClaudeMD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 
@@ -481,15 +474,6 @@ Specification for a local proxy that assigns priorities to concurrent Claude Cod
 
 ---
 
-### Claude Task Manager
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Task-Manager) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Sequential task queuing system addressing context window exhaustion in agentic coding tools.
-
----
-
-## Agent Libraries & Collections
-
 ### Claude Development Agents
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Development-Agents) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
@@ -542,13 +526,6 @@ Interactive tool for discovering, selecting, and cloning Claude Workspace templa
 ---
 
 ## Documentation & Notes
-
-### Claude Code Linux Notes
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
-
-Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma.
-
----
 
 
 # MCP
@@ -666,13 +643,6 @@ System administration slash commands for Linux desktop environments.
 
 ---
 
-### Claude File Organiser Super Slash
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
-
-Slash command that transforms disorganized filesystems into well-structured directories.
-
----
-
 ### Claude MD Chunk
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MD-Chunk) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
 
@@ -707,6 +677,6 @@ Slash commands encouraging use of existing libraries instead of building custom 
 
 Other projects including meta-resources, feedback, and utilities that span multiple categories.
 
-**[See full list in the dedicated misc page →](./misc.md)** (28 entries)
+**[See full list in the dedicated misc page →](./misc.md)** (26 entries)
 
 ---

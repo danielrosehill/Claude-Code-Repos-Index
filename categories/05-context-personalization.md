@@ -11,13 +11,6 @@ Automation workspace for batch-adding CLAUDE.md files across multiple GitHub rep
 
 ---
 
-### Claude Code Context Toolkit
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Context-Toolkit) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands.
-
----
-
 ### Claude Code Repo Managers ClaudeMD
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
 

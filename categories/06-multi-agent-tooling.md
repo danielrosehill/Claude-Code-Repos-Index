@@ -41,15 +41,6 @@ Specification for a local proxy that assigns priorities to concurrent Claude Cod
 
 ---
 
-### Claude Task Manager
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Task-Manager) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
-
-Sequential task queuing system addressing context window exhaustion in agentic coding tools.
-
----
-
-## Agent Libraries & Collections
-
 ### Claude Development Agents
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Development-Agents) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
@@ -102,11 +93,4 @@ Interactive tool for discovering, selecting, and cloning Claude Workspace templa
 ---
 
 ## Documentation & Notes
-
-### Claude Code Linux Notes
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Linux-Notes)
-
-Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma.
-
----
 

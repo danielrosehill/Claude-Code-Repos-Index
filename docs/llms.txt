@@ -1,6 +1,6 @@
 # Claude Code Projects Index
 
-> A curated index of 237 open-source Claude Code repositories by Daniel Rosehill —
+> A curated index of 231 open-source Claude Code repositories by Daniel Rosehill —
 > agent workspaces, plugins, slash commands and MCP tooling, spanning software
 > development and non-code domains such as sysadmin, legal, health and research.
 > Site: https://claude.danielrosehill.com
@@ -41,7 +41,6 @@ Install guide: https://claude.danielrosehill.com/plugins/
 ## Context and Personalization
 
 - [Batch ClaudeMD Repo Creator](https://github.com/danielrosehill/Batch-ClaudeMD-Repo-Creator): Automation workspace for batch-adding CLAUDE.md files across multiple GitHub repositories.
-- [Claude Code Context Toolkit](https://github.com/danielrosehill/Claude-Code-Context-Toolkit): Bridges human-friendly CONTEXT.md files with AI-optimized CLAUDE.md briefings via slash commands.
 - [Claude Code Repo Managers ClaudeMD](https://github.com/danielrosehill/Claude-Code-Repo-Managers-ClaudeMD): Pre-configured CLAUDE.md templates for managing different repository types.
 - [Claude Context Analysis 0526](https://github.com/danielrosehill/Claude-Context-Analysis-0526): Redacted point-in-time dump of `/context` from a heavily-pluginned Claude Code session, analysing where the context budget actually goes and what is eagerly versus lazily loaded.
 - [Claude Model Identifier](https://github.com/danielrosehill/Claude-Model-Identifier): Prompt template for verifying the correct Claude model variant at conversation start.
@@ -89,7 +88,6 @@ Install guide: https://claude.danielrosehill.com/plugins/
 - [Claude Code Changelog Notes](https://github.com/danielrosehill/Claude-Code-Changelog-Notes): Ad-hoc close readings of selected entries from the upstream Claude Code changelog, with generated PDFs and categorised JSON per version.
 - [Claude Code Context Feature Requests](https://github.com/danielrosehill/Claude-Code-Context-Feature-Requests): Feature requests for improving Claude Code's context handling capabilities.
 - [Claude Code Hacks](https://github.com/danielrosehill/Claude-Code-Hacks): Small tricks and temporary workarounds for Claude Code, each timestamped because the harness usually closes the gap quickly.
-- [Claude Code Marketplace Hub](https://github.com/danielrosehill/claude-code-marketplace): Decentralized directory aggregating multiple community-maintained Claude Code plugin marketplaces.
 - [Claude Code Notes](https://github.com/danielrosehill/Claude-Code-Notes): Running notebook of techniques for getting more out of Claude Code.
 - [Claude Code Plugin (Meta)](https://github.com/danielrosehill/claude-code-plugin): Meta-plugin for managing Claude Code configuration, slash commands, and agent development.
 - [Claude Code Plugins Marketplace](https://github.com/danielrosehill/Claude-Code-Plugins): Centralized marketplace for discovering and installing Claude Code plugins — source of truth for the [Plugins section](./plugins.md).
@@ -97,7 +95,6 @@ Install guide: https://claude.danielrosehill.com/plugins/
 - [Claude Interview](https://github.com/danielrosehill/Claude-Interview-062325): Transcript from an Anthropic user research interview on AI tools and adoption.
 - [Claude Is Awesome](https://github.com/danielrosehill/Claude-Is-Awesome): Template for creating curated resource lists with automated formatting and badge generation.
 - [Claude Israel](https://github.com/danielrosehill/Claude-Israel): Index of people and projects building with Claude, including Claude Code, in Israel.
-- [Claude Local AI Agent Research](https://github.com/danielrosehill/Claude-Local-AI-Agent-Research): Research into agentic AI tools optimized for system administration rather than code generation.
 - [Claude Meta Dorker](https://github.com/danielrosehill/Claude-Meta-Dorker): Agent-readable search manifests documenting advanced URL parameters for websites, written for AI agents rather than human readers.
 - [Claude Repo Jumper](https://github.com/danielrosehill/Claude-Repo-Jumper): System prompt and skill notes for keeping repository boundaries clean during agentic development.
 - [Claude Spec Starter](https://github.com/danielrosehill/Claude-Spec-Starter): Pattern for AI-assisted development that starts from a single long user prompt and refines it into a spec.
@@ -115,13 +112,11 @@ Install guide: https://claude.danielrosehill.com/plugins/
 - [Agent Junction](https://github.com/danielrosehill/Agent-Junction): MCP server enabling encrypted peer-to-peer communication between Claude Code instances on localhost or LAN.
 - [Claude Agent Picker Pattern](https://github.com/danielrosehill/Claude-Agent-Picker-Pattern): Framework for assembling context-optimized multi-agent crews with minimal overlap.
 - [Claude Agent Workspace Generator](https://github.com/danielrosehill/Claude-Agent-Workspace-Generator): Launchpad for creating standardized workspace templates conforming to the Agent Workspace Model v1.1 spec, with slash commands to generate, validate, and publish new workspaces.
-- [Claude Code Linux Notes](https://github.com/danielrosehill/Claude-Code-Linux-Notes): Personal documentation of workflows and tips for using Claude Code on Ubuntu with KDE Plasma.
 - [Claude Development Agents](https://github.com/danielrosehill/Claude-Development-Agents): Curated toolkit of 74+ Claude Code configurations for development workflows and multi-agent coordination.
 - [Claude Fleet Traffic Shaper](https://github.com/danielrosehill/Claude-Fleet-Traffic-Shaper): Specification for a local proxy that assigns priorities to concurrent Claude Code sessions and shapes their aggregate traffic, so rate limiting degrades background work instead of landing at random. Includes a prior-art survey of the multi-agent proxy and queueing landscape.
 - [Claude Plugin Workspace Vault](https://github.com/danielrosehill/Claude-Plugin-Workspace-Vault): Architecture for Claude Code plugins that do sustained work: a public plugin, a private workspace instantiated from a template repo, and a vault at `~/.claude-plugins/<name>/` for user data.
 - [Claude Skill Definer](https://github.com/danielrosehill/Claude-Skill-Definer): Multimodal workspace for defining Claude Code skills from voice notes, videos, images and text, or written specs.
 - [Claude Sub-Agent Network](https://github.com/danielrosehill/Claude-Sub-Agent-Network): Collection of system prompts and configurations for development, operational, and creative tasks.
-- [Claude Task Manager](https://github.com/danielrosehill/Claude-Task-Manager): Sequential task queuing system addressing context window exhaustion in agentic coding tools.
 - [Claude Vault Idea](https://github.com/danielrosehill/Claude-Vault-Idea): Idea capture for a meta-plugin holding a personal vault of plugins and MCP servers, activated selectively per project to mitigate eager plugin description loading at user level.
 - [Claude Workspace Setup Helper](https://github.com/danielrosehill/Claude-Workspace-Setup-Helper): Interactive tool for discovering, selecting, and cloning Claude Workspace templates.
 - [Cool Claude Code Stuff](https://github.com/danielrosehill/Cool-Claude-Code-Stuff): Curated collection of Claude Code projects and resources organized by category.
@@ -285,7 +280,6 @@ Install guide: https://claude.danielrosehill.com/plugins/
 - [Claude App Optimiser](https://github.com/danielrosehill/Claude-App-Optimiser): Slash command deploying a sub-agent for codebase optimization and dead code removal.
 - [Claude Calls The Shots](https://github.com/danielrosehill/Claude-Calls-The-Shots): Flips Claude Code into autonomous, action-first mode — ships a per-session `/calls-the-shots` slash command plus an optional always-on snippet injected into `~/.claude/CLAUDE.md`.
 - [Claude Code Linux Desktop Slash Commands](https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands): System administration slash commands for Linux desktop environments.
-- [Claude File Organiser Super Slash](https://github.com/danielrosehill/Claude-File-Organiser-Super-Slash): Slash command that transforms disorganized filesystems into well-structured directories.
 - [Claude MD Chunk](https://github.com/danielrosehill/Claude-MD-Chunk): Slash command that condenses bloated CLAUDE.md files to essentials and organizes supplementary context into a structured `agent-context/` folder.
 - [Claude Slash Commands](https://github.com/danielrosehill/Claude-Slash-Commands): General-purpose slash command library for various Claude Code workflows.
 - [Document As You Go](https://github.com/danielrosehill/Document-As-You-Go): Drop-in system prompt and slash command that make coding agents capture what they discover — undocumented APIs, auth flows, dead ends — instead of losing it when the session ends.
