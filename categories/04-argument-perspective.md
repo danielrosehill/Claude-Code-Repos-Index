@@ -11,3 +11,10 @@ Workspace for challenging personal beliefs through AI-generated counterarguments
 
 ---
 
+### Panel Of Claude
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Panel-Of-Claude) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Exploratory model running multiple agents as a panel debate.
+
+---
+

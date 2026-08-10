@@ -20,10 +20,24 @@ Planning notes and architecture diagrams exploring three complementary methods f
 
 ---
 
-### Claude Agent Blueprints
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Agent-Blueprints)
+### Aliexpress Shopper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Aliexpress-Shopper)
 
-Curated collection of 75+ agent workspace templates organized by use case, demonstrating the Agent Workspace Model across code and non-code domains.
+Claude Code plugin for browser-driven AliExpress shopping via Claude in Chrome — search, read listings, compare tabs, filter, and find similar, plus bundled userscripts.
+
+---
+
+### An Ode To Claude
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/An-Ode-To-Claude) ![Non-Code](https://img.shields.io/badge/Non--Code-teal?style=flat-square)
+
+Workspace tracking a blog post through iterative drafting and revision, keeping every iteration, diff, and supporting context.
+
+---
+
+### Android Media Importer
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Android-Media-Importer)
+
+Claude Code plugin for moving or copying media off a connected Android phone using user-defined mappings, MIME-based routing, and optional date-folder and orientation-split layouts.
 
 ---
 
@@ -34,10 +48,31 @@ Staging area for Claude Code bug reports and feature requests before filing upst
 
 ---
 
+### Claude Code Changelog Notes
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Changelog-Notes)
+
+Ad-hoc close readings of selected entries from the upstream Claude Code changelog, with generated PDFs and categorised JSON per version.
+
+---
+
+### Claude Code Hacks
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Hacks)
+
+Small tricks and temporary workarounds for Claude Code, each timestamped because the harness usually closes the gap quickly.
+
+---
+
 ### Claude Code Marketplace Hub
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/claude-code-marketplace)
 
 Decentralized directory aggregating multiple community-maintained Claude Code plugin marketplaces.
+
+---
+
+### Claude Code Notes
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-Notes)
+
+Running notebook of techniques for getting more out of Claude Code.
 
 ---
 
@@ -62,6 +97,13 @@ Feature requests for improving Claude Code's context handling capabilities.
 
 ---
 
+### Claude Friction Points
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Friction-Points)
+
+Dated public notebook of friction points encountered across Claude Code, the desktop and web apps, and the API, with point-in-time documentation snapshots used as grounding.
+
+---
+
 ### Claude Interview
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Interview-062325)
 
@@ -76,6 +118,13 @@ Template for creating curated resource lists with automated formatting and badge
 
 ---
 
+### Claude Israel
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Israel)
+
+Index of people and projects building with Claude, including Claude Code, in Israel.
+
+---
+
 ### Claude Local AI Agent Research
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Local-AI-Agent-Research)
 
@@ -83,10 +132,45 @@ Research into agentic AI tools optimized for system administration rather than c
 
 ---
 
+### Claude Meta Dorker
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Meta-Dorker)
+
+Agent-readable search manifests documenting advanced URL parameters for websites, written for AI agents rather than human readers.
+
+---
+
+### Claude Repo Jumper
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Repo-Jumper)
+
+System prompt and skill notes for keeping repository boundaries clean during agentic development.
+
+---
+
+### Claude Spec Starter
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Spec-Starter) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Pattern for AI-assisted development that starts from a single long user prompt and refines it into a spec.
+
+---
+
 ### Claude User Manual
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-User-Manual)
 
 Plugin for generating personalized user manuals and private documentation for codebases.
+
+---
+
+### Claude Voice Mode Notes 300426
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Voice-Mode-Notes-300426)
+
+Notes on the Claude Code voice mode feature.
+
+---
+
+### Israel Phonebook Manager
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Israel-Phonebook-Manager)
+
+Claude Code plugin for recording Israeli phonebook entries in Google Contacts — counter versus call-centre hours, Shabbat and chag closures, seasonal timetables, and numbers that do not connect from abroad.
 
 ---
 

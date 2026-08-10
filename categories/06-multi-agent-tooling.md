@@ -6,6 +6,13 @@ Components and tooling for multi-agent development and orchestration frameworks.
 
 ## Multi-Agent Systems
 
+### Agent Briefing Gateway
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Briefing-Gateway) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
+
+Design model for an orchestration agent that buffers a human from a batch of working sub-agents — one consolidated brief per cycle, a budgeted override channel, and resumable approval gates.
+
+---
+
 ### Agent Junction
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Agent-Junction) ![Agent Config](https://img.shields.io/badge/Agent-Config-orange?style=flat-square)
 
@@ -58,6 +65,27 @@ Curated collection of Claude Code projects and resources organized by category.
 ---
 
 ## Workspace Setup & Management
+
+### Claude Plugin Workspace Vault
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Plugin-Workspace-Vault) ![Template](https://img.shields.io/badge/Template-Ready-green?style=flat-square)
+
+Architecture for Claude Code plugins that do sustained work: a public plugin, a private workspace instantiated from a template repo, and a vault at `~/.claude-plugins/<name>/` for user data.
+
+---
+
+### Claude Skill Definer
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Skill-Definer) ![Agent Workspace](https://img.shields.io/badge/Agent-Workspace-purple?style=flat-square)
+
+Multimodal workspace for defining Claude Code skills from voice notes, videos, images and text, or written specs.
+
+---
+
+### Claude Vault Idea
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Vault-Idea)
+
+Idea capture for a meta-plugin holding a personal vault of plugins and MCP servers, activated selectively per project to mitigate eager plugin description loading at user level.
+
+---
 
 ### Claude Workspace Setup Helper
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Workspace-Setup-Helper) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)

@@ -72,10 +72,22 @@ categories/
   05-context-personalization.md
   06-multi-agent-tooling.md
   07-mcp.md
-  08-plugins.md
+  08-plugins.md             # GENERATED — see below, do not hand-edit
   09-slash-commands.md
   10-misc.md
 ```
+
+### `08-plugins.md` is generated, not authored
+
+`scripts/sync_marketplace.py` fetches `.claude-plugin/marketplace.json` from
+`danielrosehill/Claude-Code-Plugins` and regenerates `categories/08-plugins.md`
+wholesale. Hand-written entries there are silently destroyed on the next sync or
+build.
+
+To get a plugin into the index, register it in the **marketplace repo** — it then
+flows here automatically. A plugin repo that is not in the marketplace has no
+route into the Plugins category; file it under its topical category instead, or
+add it to the marketplace first.
 
 ### Building the Site
 
@@ -273,13 +285,51 @@ Badge format example:
 
 ## Repository Discovery
 
-In addition to the scratchpad workflow, you can proactively discover missing repositories by querying Daniel's GitHub account:
+In addition to the scratchpad workflow, run the discovery script to find public
+repos that are not yet in the index:
 
 ```bash
-gh repo list danielrosehill --limit 500 --visibility public --json name,description --jq '.[] | select(.name | test("claude|Claude"; "i"))'
+python3 scripts/discover_new_repos.py          # names matching /claude/
+python3 scripts/discover_new_repos.py --all    # every public repo
 ```
 
-This helps identify public Claude-related repositories that may not yet be in the index. Compare results against the category files to find candidates for addition.
+Results are written to `data/unindexed_repos.json`.
+
+Two traps this script has already fallen into, both fixed — do not reintroduce
+either:
+
+- **`gh repo list --limit` must exceed the account's total public repo count**
+  (>1050 as of Aug 2026). `gh` truncates silently, so a limit of 500 returned a
+  plausible-looking list while hiding every older candidate.
+- **The default pattern only matches `claude` in the repo *name*.** Genuinely
+  Claude Code-related repos named otherwise — `Document-As-You-Go`,
+  `Aliexpress-Shopper`, `Android-Media-Importer`, `Israel-Phonebook-Manager` —
+  are invisible to it. Periodically re-run with `--all`, or grep descriptions for
+  `claude|agentic|slash command|subagent|agent workspace`, and triage by hand.
+
+Compare results against the category files before adding anything; the script
+does not know which repos were deliberately excluded.
+
+## This repo's own name
+
+Canonical slug: **`danielrosehill/Claude-Code-Projects-Index`**. It has been
+renamed twice, and both former slugs still resolve via GitHub's rename redirect:
+
+| Former slug | Status |
+| --- | --- |
+| `Claude-Code-Repos-Index` | redirects |
+| `Claude-Agent-Blueprints` | redirects |
+
+The redirects make staleness invisible — a clone whose `origin` points at an old
+slug fetches and pushes perfectly well, and `gh api repos/<old-slug>` returns
+`200`. Resolve `.full_name` before trusting any slug. Consequences already hit:
+the local checkout sat 130 commits behind on a stale remote URL, and `10-misc.md`
+carried an entry for "Claude Agent Blueprints" — this repo listing *itself* under
+a dead name, with a description that had drifted. All three former names are in
+`SKIP_REPOS` in `scripts/discover_new_repos.py`.
+
+The local working copy's directory name may also lag the repo name; it is not
+authoritative.
 
 ## Notes
 

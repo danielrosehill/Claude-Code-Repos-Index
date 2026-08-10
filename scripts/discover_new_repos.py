@@ -31,9 +31,11 @@ DEFAULT_PATTERN = r"claude|agent-workspace|claude-code"
 
 # Repos to always skip (meta repos, forks, non-relevant)
 SKIP_REPOS = {
-    "Claude-Code-Repos-Index",  # This repo itself
-    "claude-code",              # Anthropic's Claude Code (fork)
-    "awesome-claude-code",      # Curated list, not a project repo
+    "Claude-Code-Projects-Index",  # This repo itself
+    "Claude-Code-Repos-Index",     # Former name of this repo (rename redirect)
+    "Claude-Agent-Blueprints",     # Former name of this repo (rename redirect)
+    "claude-code",                 # Anthropic's Claude Code (fork)
+    "awesome-claude-code",         # Curated list, not a project repo
 }
 
 
@@ -52,10 +54,14 @@ def get_indexed_repo_names():
 
 def get_github_repos(pattern=None):
     """Fetch public repos from GitHub using gh CLI."""
+    # Limit must stay above the account's total public repo count (>1050 as of
+    # Aug 2026) — gh truncates silently, which used to hide older candidates.
     cmd = [
         "gh", "repo", "list", "danielrosehill",
-        "--limit", "500",
+        "--limit", "2000",
         "--visibility", "public",
+        "--no-archived",
+        "--source",  # exclude forks
         "--json", "name,description,url",
     ]
     result = subprocess.run(cmd, capture_output=True, text=True, check=True)

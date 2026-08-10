@@ -11,17 +11,31 @@ Generator for creating MCP server configuration commands for Claude Code.
 
 ---
 
-### How-To-MCP
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/How-To-MCP)
-
-Guide for instructing AI agents on how to provision and manage MCP server connections according to user-specific preferences, with a tiered decision matrix.
-
----
-
 ### Claude Code MCP List
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Code-MCP-List)
 
 Curated index of MCP servers organized into 14+ categories for extending Claude Code.
+
+---
+
+### Claude MCP Guidelines
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-MCP-Guidelines) ![Light Touch](https://img.shields.io/badge/Light-Touch-lightgray?style=flat-square)
+
+Home-folder CLAUDE.md snippet giving an agent guidance on which MCP server to reach for.
+
+---
+
+### Claude Meta MCP Slash
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Meta-MCP-Slash) ![Slash Commands](https://img.shields.io/badge/Slash-Commands-cyan?style=flat-square)
+
+Template `/install-mcp` slash command that routes MCP server installations across multiple MetaMCP instances using a tiered preference system.
+
+---
+
+### How-To-MCP
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/How-To-MCP)
+
+Guide for instructing AI agents on how to provision and manage MCP server connections according to user-specific preferences, with a tiered decision matrix.
 
 ---
 

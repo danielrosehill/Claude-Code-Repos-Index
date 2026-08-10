@@ -728,8 +728,8 @@
         "source": "github",
         "repo": "danielrosehill/Claude-Teach-This-Repo-Plugin"
       },
-      "description": "Uses a real code repository in reverse for developer education: assesses the learner's profile, builds a teaching plan grounded in the repo, writes lessons with code samples drawn from the source, and supports an interactive Q&A mode.",
-      "version": "1.0.0",
+      "description": "Uses a real code repository in reverse for developer education: assesses the learner's profile, builds a teaching plan grounded in the repo, writes lessons and file-by-file analyses with code samples drawn from the source, supports interactive Q&A, and typesets any of it as a PDF via Typst.",
+      "version": "1.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -741,7 +741,10 @@
         "teaching",
         "repo-analysis",
         "learning",
-        "curriculum"
+        "curriculum",
+        "documentation",
+        "typst",
+        "pdf"
       ]
     },
     {
@@ -3001,6 +3004,50 @@
         "consumer-rights",
         "cancellation",
         "hebrew"
+      ]
+    },
+    {
+      "name": "rtl-email",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-RTL-Email"
+      },
+      "description": "Claude Code plugin: send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "email",
+        "rtl",
+        "hebrew",
+        "arabic",
+        "i18n"
+      ]
+    },
+    {
+      "name": "spec-led-certification",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/spec-led-certification-plugin"
+      },
+      "description": "Claude Code plugin: choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations \u2014 start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files \u2014 subject, current position read from evidence, learning preferences, objectives and standing positions, money and time \u2014 a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.",
+      "version": "0.3.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "certification",
+        "career",
+        "decision",
+        "research",
+        "scorecard"
       ]
     }
   ]

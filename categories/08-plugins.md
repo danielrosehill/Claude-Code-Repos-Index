@@ -368,6 +368,15 @@ Manage one or more Buttondown newsletters from Claude Code — multi-newsletter 
 
 ---
 
+## Certification
+
+### Spec Led Certification
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/spec-led-certification-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations — start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files — subject, current position read from evidence, learning preferences, objectives and standing positions, money and time — a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.
+
+---
+
 ## Claude Code
 
 ### Claude Code Feedback
@@ -518,7 +527,7 @@ Companion plugin for the donetick-mcp server. Bundles the MCP and adds skills fo
 ### Teach This Repo
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Teach-This-Repo-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Uses a real code repository in reverse for developer education: assesses the learner's profile, builds a teaching plan grounded in the repo, writes lessons with code samples drawn from the source, and supports an interactive Q&A mode.
+Uses a real code repository in reverse for developer education: assesses the learner's profile, builds a teaching plan grounded in the repo, writes lessons and file-by-file analyses with code samples drawn from the source, supports interactive Q&A, and typesets any of it as a PDF via Typst.
 
 ---
 
@@ -528,6 +537,13 @@ Uses a real code repository in reverse for developer education: assesses the lea
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-HTML-Email-Designer-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Design and build responsive HTML email templates using Foundation for Emails, Maizzle, or MJML. Framework-agnostic authoring with email-client compatibility baked in.
+
+---
+
+### Rtl Email
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-RTL-Email) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Claude Code plugin: send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.
 
 ---
 
