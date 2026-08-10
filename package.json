@@ -5,11 +5,13 @@
   "scripts": {
     "build:data": "python3 scripts/build_site.py",
     "build:site": "astro build",
-    "build": "npm run build:data && npm run build:site",
+    "build": "npm run build:data && npm run build:site && npm run check:links",
     "dev": "astro dev",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "check:links": "python3 scripts/check_links.py"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.18.1"
   }
 }

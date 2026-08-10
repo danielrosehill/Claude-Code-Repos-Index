@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// The home page renders its repo list client-side from tagged_repos.json, so a
+// crawler that does not execute JS sees "Loading repositories..." and finds no
+// links. This page is the static counterpart: every repo, grouped by category,
+// linked with real <a href> in the initial HTML.
+const dataPath = path.join(process.cwd(), 'docs', 'tagged_repos.json');
+const repos = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+
+type Repo = {
+  name: string; url: string; description: string; slug: string;
+  category: string; category_group: string; tags: string[]; created_date?: string;
+};
+
+const byGroup = new Map<string, Map<string, Repo[]>>();
+for (const repo of repos as Repo[]) {
+  if (!byGroup.has(repo.category_group)) byGroup.set(repo.category_group, new Map());
+  const cats = byGroup.get(repo.category_group)!;
+  if (!cats.has(repo.category)) cats.set(repo.category, []);
+  cats.get(repo.category)!.push(repo);
+}
+for (const cats of byGroup.values()) {
+  for (const list of cats.values()) list.sort((a, b) => a.name.localeCompare(b.name));
+}
+const groups = [...byGroup.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+const description =
+  `Complete A–Z listing of all ${repos.length} Claude Code repositories in the index, ` +
+  `grouped by category — agent workspaces, plugins, slash commands and MCP tooling.`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'All repositories',
+  description,
+  url: 'https://claude.danielrosehill.com/browse/',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Claude Code Projects Index',
+    url: 'https://claude.danielrosehill.com',
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: repos.length,
+    itemListElement: (repos as Repo[]).map((repo, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://claude.danielrosehill.com/repos/${repo.slug}/`,
+      name: repo.name,
+    })),
+  },
+};
+---
+<BaseLayout title="All repositories" description={description} schema={schema}>
+
+<div class="breadcrumbs">
+  <div class="breadcrumbs-inner">
+    <a href="/">Index</a>
+    <span class="bc-sep" aria-hidden="true">/</span>
+    <span class="bc-current">All repositories</span>
+  </div>
+</div>
+
+<main class="page" id="main">
+  <h1>All repositories</h1>
+  <p class="browse-intro">
+    Every one of the {repos.length} repositories in this index, grouped by category.
+    The <a href="/">main index</a> offers search, tag filtering and sorting;
+    this page is the plain, complete listing.
+  </p>
+
+  <nav class="browse-toc" aria-label="Jump to category group">
+    {groups.map(([group]) => (
+      <a href={`#${group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{group}</a>
+    ))}
+  </nav>
+
+  {groups.map(([group, cats]) => (
+    <section class="browse-group" id={group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
+      <h2>{group}</h2>
+      {[...cats.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([cat, list]) => (
+        <section class="browse-cat">
+          <h3>{cat} <span class="browse-count">{list.length}</span></h3>
+          <ul class="browse-list">
+            {list.map((repo) => (
+              <li>
+                <a class="browse-repo" href={`/repos/${repo.slug}/`}>{repo.name}</a>
+                <span class="browse-desc">{repo.description}</span>
+                <a class="browse-gh" href={repo.url} target="_blank" rel="noopener">
+                  GitHub<span class="visually-hidden"> repository for {repo.name}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </section>
+  ))}
+</main>
+
+</BaseLayout>
+
+<style>
+  .browse-intro { color: var(--text-muted); max-width: 60ch; margin-bottom: 1.5rem; }
+  .browse-toc {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    padding: 0.85rem 1rem; margin-bottom: 2rem;
+    background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+  }
+  .browse-toc a {
+    font-size: 0.85rem; font-weight: 500;
+    padding: 0.25rem 0.65rem; border-radius: 999px; background: var(--brand-light);
+  }
+  .browse-group { margin-bottom: 2.5rem; scroll-margin-top: 5rem; }
+  .browse-group > h2 {
+    font-size: 1.35rem; padding-bottom: 0.4rem; margin-bottom: 1rem;
+    border-bottom: 2px solid var(--brand);
+  }
+  .browse-cat { margin-bottom: 1.75rem; }
+  .browse-cat > h3 { font-size: 1.05rem; margin-bottom: 0.6rem; color: var(--text); }
+  .browse-count {
+    font-size: 0.75rem; font-weight: 500; color: var(--text-muted);
+    background: var(--bg-alt); border: 1px solid var(--border-light);
+    border-radius: 999px; padding: 0.05rem 0.5rem; margin-left: 0.35rem;
+  }
+  .browse-list { list-style: none; display: grid; gap: 0.55rem; }
+  .browse-list li {
+    padding: 0.6rem 0.8rem; background: var(--bg);
+    border: 1px solid var(--border-light); border-radius: var(--radius);
+  }
+  .browse-repo { font-weight: 600; }
+  .browse-desc {
+    display: block; font-size: 0.88rem; color: var(--text-muted); margin-top: 0.15rem;
+  }
+  .browse-gh { font-size: 0.8rem; color: var(--text-muted); }
+  .browse-gh:hover { color: var(--link); }
+</style>

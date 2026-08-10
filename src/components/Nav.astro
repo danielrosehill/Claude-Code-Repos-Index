@@ -1,41 +1,74 @@
 ---
 ---
-<nav class="topnav">
+<nav class="topnav" aria-label="Primary">
   <div class="nav-inner">
     <a href="/" class="nav-brand">Claude Code Index</a>
     <span class="nav-author">by Daniel Rosehill</span>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="/">Index</a>
       <a href="/plugins/">Plugins</a>
       <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
-        <div class="nav-dropdown-menu nav-dropdown-ideas">
+        <button class="nav-dropdown-trigger" aria-expanded="false" aria-controls="nav-ideas-menu" aria-haspopup="true">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true" focusable="false"><path d="M2 4l3 3 3-3z"/></svg></button>
+        <div class="nav-dropdown-menu nav-dropdown-ideas" id="nav-ideas-menu">
           <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
           <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
         </div>
       </div>
       <a href="/about/">About</a>
-      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
-      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
+      <a href="https://danielrosehill.com" target="_blank" rel="noopener">Homepage</a>
+      <a href="https://github.com/danielrosehill" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open'); document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'))">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
     </button>
   </div>
 </nav>
 
 <script>
-// Mobile dropdown toggle
+// Mobile menu toggle. aria-expanded is kept in sync so screen readers and
+// keyboard users get the same state the CSS class conveys visually.
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+
+function closeAllDropdowns() {
+  document.querySelectorAll('.nav-dropdown.open').forEach(d => {
+    d.classList.remove('open');
+    d.querySelector('.nav-dropdown-trigger')?.setAttribute('aria-expanded', 'false');
+  });
+}
+
+navToggle?.addEventListener('click', () => {
+  const open = navLinks?.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(!!open));
+  closeAllDropdowns();
+});
+
 document.querySelectorAll('.nav-dropdown-trigger').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const dropdown = btn.closest('.nav-dropdown');
     const wasOpen = dropdown.classList.contains('open');
-    document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-    if (!wasOpen) dropdown.classList.toggle('open');
+    closeAllDropdowns();
+    if (!wasOpen) {
+      dropdown.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
   });
 });
-document.addEventListener('click', () => {
-  document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+
+document.addEventListener('click', closeAllDropdowns);
+
+// Escape closes whatever is open and returns focus to the trigger.
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  const openDropdown = document.querySelector('.nav-dropdown.open');
+  if (openDropdown) {
+    closeAllDropdowns();
+    openDropdown.querySelector('.nav-dropdown-trigger')?.focus();
+  } else if (navLinks?.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.focus();
+  }
 });
 </script>

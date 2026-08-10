@@ -32,6 +32,7 @@ CATEGORIES_JSON_PATH = DATA_DIR / "categories.json"
 TAGGED_REPOS_PATH = DOCS_DIR / "tagged_repos.json"
 SITE_STATE_PATH = DATA_DIR / "site_state.json"
 CREATED_DATES_PATH = DATA_DIR / "repo_created_dates.json"
+ADDED_DATES_PATH = DATA_DIR / "repo_added_dates.json"
 SPLIT_PAGES_PATH = DATA_DIR / "split_pages.json"
 SPLIT_PAGE_BANNER = "<!-- GENERATED from categories/{source} — do not edit directly. Run `npm run build`. -->"
 
@@ -339,8 +340,20 @@ def load_created_dates():
 
 
 def derive_added_dates(tagged_repos):
-    """Derive per-repo added dates from site_state.json history."""
+    """Derive per-repo added dates, persisting them so they cannot drift.
+
+    site_state.json history is capped at the last 50 entries, so a repo added long
+    enough ago loses its "added" record and used to fall through to *today* — on
+    every build. That silently restamped most of the index each time it was rebuilt
+    (143 repos jumped from 2026-08-03 to 2026-08-10 in one build). Dates are now
+    written to data/repo_added_dates.json and only ever assigned once.
+    """
     dates = {}
+    if ADDED_DATES_PATH.exists():
+        with open(ADDED_DATES_PATH, "r", encoding="utf-8") as f:
+            dates = json.load(f)
+
+    # Fill any gaps from whatever history survives.
     if SITE_STATE_PATH.exists():
         with open(SITE_STATE_PATH, "r", encoding="utf-8") as f:
             state = json.load(f)
@@ -351,11 +364,17 @@ def derive_added_dates(tagged_repos):
                     for name in change.get("repos", []):
                         if name not in dates:
                             dates[name] = date
-    # Default for repos with no history
+
+    # Genuinely new repos are stamped today — once.
     today = datetime.now().strftime("%Y-%m-%d")
     for repo in tagged_repos:
         if repo["name"] not in dates:
             dates[repo["name"]] = today
+
+    with open(ADDED_DATES_PATH, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(dates.items())), f, indent=2)
+        f.write("\n")
+
     return dates
 
 

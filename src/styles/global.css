@@ -34,6 +34,58 @@ body {
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); }
 
+/* === Accessibility === */
+
+/* Keyboard-only escape hatch past the nav. Off-screen until focused. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 300;
+  padding: 0.75rem 1.25rem;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius) 0;
+}
+.skip-link:focus {
+  left: 0;
+  color: #fff;
+}
+
+/* Make focus visible everywhere; the UA default is lost against the brand blue. */
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.hero :focus-visible,
+.topnav .nav-links a:focus-visible {
+  outline-color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible only to screen readers. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* === Top Navigation === */
 .topnav {
   background: var(--bg);
@@ -215,6 +267,44 @@ a:hover { color: var(--link-hover); }
   background: linear-gradient(135deg, #0061a7 0%, #004a80 100%);
   color: #fff;
   padding: 3rem 1.5rem 2.5rem;
+}
+
+/* Hero calls to action — the marketplace is the main thing people arrive for. */
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.15s, color 0.15s;
+}
+.hero-btn-primary { background: #fff; color: var(--brand-dark); }
+.hero-btn-primary:hover { background: #e8f2fb; color: var(--brand-dark); }
+.hero-btn-ghost { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.45); }
+.hero-btn-ghost:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+.hero-install {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+.hero-install-label { opacity: 0.8; }
+.hero-install code {
+  background: rgba(0,0,0,0.28);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.82rem;
+  word-break: break-all;
 }
 
 .hero-inner {
@@ -1178,4 +1268,11 @@ a:hover { color: var(--link-hover); }
   font-size: 0.75rem;
   color: var(--text-light);
   margin-top: 0.15rem;
+}
+
+/* Repos named in the essay pages that no longer exist on GitHub. Kept as prose
+   so the writing still reads, but not linked — see notes/dead-repo-mentions.md. */
+.repo-mention {
+  font-weight: 500;
+  border-bottom: 1px dotted var(--border);
 }

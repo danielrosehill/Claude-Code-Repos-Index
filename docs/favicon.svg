@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Claude Code Projects Index">
+  <rect width="64" height="64" rx="12" fill="#0061a7"/>
+  <path d="M16 22l10 10-10 10" fill="none" stroke="#ffffff" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="32" y1="44" x2="48" y2="44" stroke="#ffffff" stroke-width="6"
+        stroke-linecap="round"/>
+</svg>

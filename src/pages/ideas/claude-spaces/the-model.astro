@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="The Model - Claude Spaces">
+<BaseLayout title="The Model - Claude Spaces" description={"The agent workspace model: how a Claude Space is structured and why the workspace, not the prompt, is the unit of reuse."}>
 
 <div class="breadcrumbs">
   <div class="breadcrumbs-inner">
@@ -13,7 +13,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
   </div>
 </div>
 
-<div class="page">
+<div class="page" id="main">
   <h1>The Agent Workspace Model</h1>
 
   <img src="/images/claude-space.png" alt="Agent Workspace definition">
@@ -39,7 +39,7 @@ and use it as a template to scaffold a workspace for [your use case].</pre>
 
   <h2>Related Tools</h2>
 
-  <p>The <a class="repo-link" href="/repos/claude-space-self-ideator/">Claude Space Self-Ideator</a> is a meta-workspace that helps you brainstorm and design new workspaces, using Claude itself to identify workflows that would benefit from this pattern.</p>
+  <p>The <span class="repo-mention">Claude Space Self-Ideator</span> is a meta-workspace that helps you brainstorm and design new workspaces, using Claude itself to identify workflows that would benefit from this pattern.</p>
 
   <div style="margin-top: 2rem;">
     <a href="/?tag=Claude+Space" style="font-weight: 500;">Browse all Agent Workspaces in the index &rarr;</a>

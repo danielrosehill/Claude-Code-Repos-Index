@@ -310,6 +310,56 @@ either:
 Compare results against the category files before adding anything; the script
 does not know which repos were deliberately excluded.
 
+## The deployed site
+
+Live at **https://claude.danielrosehill.com**, deployed by **Vercel** on push to
+`main` (`vercel.json` sets `outputDirectory: docs`). `docs/` is the committed
+Astro build output — so **run `npm run build` and commit the result**; this repo
+is not one where the build can be left to CI.
+
+`npm run build` is three steps: `build:data` (the Python pipeline that regenerates
+`README.md`, the split markdown pages and `data/*.json`), `build:site` (Astro), and
+`check:links`, which fails the build on a broken internal link.
+
+### SEO and machine-readable surfaces
+
+`astro.config.mjs` sets `site:` — this is load-bearing. Without it canonical URLs,
+Open Graph URLs and `@astrojs/sitemap` all silently produce nothing.
+
+`BaseLayout.astro` takes `description`, `image`, `isHome` and `schema` props and
+emits the canonical link, Open Graph and Twitter tags, and JSON-LD. **Pass a
+`description` on every new page** — the fallback is the site-wide one, which is
+fine for a stray page but poor if it ends up on many.
+
+| Surface | Source | Notes |
+| --- | --- | --- |
+| `/sitemap-index.xml` | `@astrojs/sitemap` | every page, generated |
+| `/robots.txt` | `public/robots.txt` | static; points at the sitemap |
+| `/llms.txt` | `src/pages/llms.txt.ts` | generated from `tagged_repos.json`, cannot drift |
+| `/browse/` | `src/pages/browse/index.astro` | static listing of every repo |
+| `/og-image.png` | `public/` | 1200×630 |
+
+**Why `/browse/` exists:** the home page renders its repo list client-side from
+`tagged_repos.json`, so a crawler that does not run JS sees only "Loading
+repositories…" and finds no repo links at all. `/browse/` is the static
+counterpart that puts all 236 in the initial HTML. Keep it working; do not fold it
+into the client-rendered index.
+
+### Dates: both are persisted, deliberately
+
+`created_date` (real GitHub creation date, `data/repo_created_dates.json`, filled
+by `scripts/fetch_created_dates.py`) drives the site's default "Newest" sort.
+`added_date` (`data/repo_added_dates.json`) is when the repo entered this index.
+
+Both files exist because both values used to be recomputed as *today* on every
+build whenever a lookup missed — `site_state.json` history is capped at 50 entries,
+so older repos fell off and got restamped. On 2026-08-10 that had left 125 of 236
+repos claiming they were created that day, which made the default sort meaningless.
+Never reintroduce a `datetime.now()` fallback that is not written back to disk.
+
+After adding repos, run `python3 scripts/fetch_created_dates.py` before building,
+or the new entries sort to the top with a fabricated date.
+
 ## This repo's own name
 
 Canonical slug: **`danielrosehill/Claude-Code-Projects-Index`**. It has been

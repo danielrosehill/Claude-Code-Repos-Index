@@ -1,8 +1,40 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { CATEGORY_ICONS } from '../data/categoryIcons';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const repos = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'docs', 'tagged_repos.json'), 'utf-8'),
+);
+
+const description =
+  `A curated index of ${repos.length} open-source Claude Code repositories by Daniel Rosehill — ` +
+  'agent workspaces, plugins, slash commands and MCP tooling, covering sysadmin, ' +
+  'legal, health and research as well as software development.';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Claude Code Projects Index',
+  alternateName: 'Claude Code Repos Index',
+  url: 'https://claude.danielrosehill.com',
+  description,
+  inLanguage: 'en',
+  author: {
+    '@type': 'Person',
+    name: 'Daniel Rosehill',
+    url: 'https://danielrosehill.com',
+    sameAs: ['https://github.com/danielrosehill'],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'Claude Code repositories',
+    numberOfItems: repos.length,
+  },
+};
 ---
-<BaseLayout title="Claude Code Repos Index">
+<BaseLayout title="Claude Code Projects Index" description={description} schema={schema} isHome={true}>
 
 
 <header class="hero">
@@ -10,6 +42,17 @@ import { CATEGORY_ICONS } from '../data/categoryIcons';
     <img src="/banner.png" alt="Claude Code Projects" class="hero-banner" />
     <p>A curated collection of <span id="repo-count">100+</span> repositories exploring Claude Code beyond traditional development &mdash; from sysadmin workspaces to legal research, health tracking, and more.</p>
     <p style="margin-top: 0.75rem;"><a href="https://github.com/danielrosehill/Claude-Agent-Workspace-Model" target="_blank" rel="noopener" style="color: #c4b5fd; font-weight: 500;">The Agent Workspace Model &rarr;</a> <span style="opacity: 0.7; margin-left: 0.25rem;">The template behind these workspaces</span></p>
+
+    <div class="hero-cta">
+      <a class="hero-btn hero-btn-primary" href="/plugins/">
+        Plugin marketplace &amp; install guide &rarr;
+      </a>
+      <a class="hero-btn hero-btn-ghost" href="/browse/">Browse all repositories</a>
+    </div>
+    <p class="hero-install">
+      <span class="hero-install-label">Install in Claude Code:</span>
+      <code>/plugin marketplace add danielrosehill/Claude-Code-Plugins</code>
+    </p>
     <div class="hero-stats">
       <div class="stat"><span class="stat-num" id="stat-repos">-</span><span class="stat-label">Repositories</span></div>
       <div class="stat"><span class="stat-num" id="stat-tags">-</span><span class="stat-label">Tags</span></div>
@@ -20,12 +63,13 @@ import { CATEGORY_ICONS } from '../data/categoryIcons';
 
 <div class="toolbar">
   <div class="toolbar-inner">
-    <input type="text" class="search-box" id="search" placeholder="Search repositories..." autocomplete="off">
+    <label class="visually-hidden" for="search">Search repositories</label>
+    <input type="search" class="search-box" id="search" placeholder="Search repositories..." autocomplete="off">
     <div class="sort-toggle">
       <button class="sort-btn active" id="sort-newest" onclick="setSort('newest')">Newest</button>
       <button class="sort-btn" id="sort-az" onclick="setSort('az')">A&ndash;Z</button>
     </div>
-    <div class="result-count" id="result-count"></div>
+    <div class="result-count" id="result-count" role="status" aria-live="polite"></div>
   </div>
 </div>
 
@@ -38,7 +82,7 @@ import { CATEGORY_ICONS } from '../data/categoryIcons';
   </div>
 </div>
 
-<main class="content">
+<main class="content" id="main">
   <aside class="sidebar" id="sidebar">
     <h3 class="sidebar-heading">Categories</h3>
     <div id="category-nav"></div>
@@ -48,18 +92,18 @@ import { CATEGORY_ICONS } from '../data/categoryIcons';
     </div>
     <div class="sidebar-section">
       <h3 class="sidebar-heading">Data</h3>
-      <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Repos-Index" target="_blank">
+      <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Projects-Index" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         Source Repository
       </a>
-      <a class="sidebar-link" href="/tagged_repos.json" target="_blank">
+      <a class="sidebar-link" href="/tagged_repos.json" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1h8l3 3v11H1V1h3z"/><path d="M5 8h6M5 11h4"/></svg>
         JSON Data
       </a>
     </div>
   </aside>
 
-  <div class="repo-area" id="repo-area">
+  <div class="repo-area" id="repo-area" aria-busy="true">
     <div class="loading">Loading repositories...</div>
   </div>
 </main>

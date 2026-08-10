@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Machine-readable entry points for agents and crawlers.
+# /llms.txt          — site overview in the llms.txt convention
+# /tagged_repos.json — full index: name, url, description, tags, category, dates
+# /repos.json        — category-grouped view of the same data
+# /categories.json   — category hierarchy
+
+Sitemap: https://claude.danielrosehill.com/sitemap-index.xml

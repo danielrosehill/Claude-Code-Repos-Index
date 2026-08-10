@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Remote Admin - Claude Spaces">
+<BaseLayout title="Remote Admin - Claude Spaces" description={"Running Claude Code against remote machines — jump hosts, recovery surfaces and remote administration patterns."}>
 
 <div class="breadcrumbs">
   <div class="breadcrumbs-inner">
@@ -23,12 +23,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
   </div>
 </div>
 
-<div class="page">
+<div class="page" id="main">
   <p>One of the most powerful patterns is using Claude Spaces as system administration interfaces. Instead of memorising commands or writing shell scripts, you describe what you want in natural language and Claude handles the execution.</p>
 
-  <p>The <a class="repo-link" href="/repos/claude-linux-server-manager/">Claude Linux Server Manager</a> and <a class="repo-link" href="/repos/claude-server-manager-template/">Claude Server Manager Template</a> demonstrate this pattern: they give Claude SSH access to remote machines with pre-configured slash commands for common admin tasks &mdash; checking disk space, managing Docker containers, auditing security configurations, and running backups.</p>
+  <p>The <span class="repo-mention">Claude Linux Server Manager</span> and <span class="repo-mention">Claude Server Manager Template</span> demonstrate this pattern: they give Claude SSH access to remote machines with pre-configured slash commands for common admin tasks &mdash; checking disk space, managing Docker containers, auditing security configurations, and running backups.</p>
 
-  <p>The <a class="repo-link" href="/repos/claude-code-lan-manager/">Claude Code LAN Manager</a> extends this to network-wide management, monitoring devices across your local network. And <a class="repo-link" href="/repos/claude-proxmox-manager-template/">Claude Proxmox Manager Template</a> applies the same pattern to virtualisation infrastructure.</p>
+  <p>The <span class="repo-mention">Claude Code LAN Manager</span> extends this to network-wide management, monitoring devices across your local network. And <span class="repo-mention">Claude Proxmox Manager Template</span> applies the same pattern to virtualisation infrastructure.</p>
 
   <p>What makes this approach compelling is that Claude understands intent. You can say "check if anything looks wrong with my Docker setup" and it will investigate systematically, explain what it finds, and suggest fixes &mdash; all while keeping a record of what it did.</p>
 

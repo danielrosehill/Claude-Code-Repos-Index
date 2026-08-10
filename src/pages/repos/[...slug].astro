@@ -17,8 +17,30 @@ const { repo } = Astro.props;
 const tagsHtml = repo.tags.map((t: string) => `<span class="tag-pill" data-tag="${t}">${t}</span>`).join('');
 const addedHtml = repo.added_date ? `<span class="repo-detail-date">Added ${repo.added_date}</span>` : '';
 const categoryIconsJson = JSON.stringify(CATEGORY_ICONS);
+
+// Per-repo metadata. Falls back to a generated sentence when a repo has no
+// description, so no page ships an empty <meta name="description">.
+const metaDescription = (repo.description && repo.description.trim())
+  ? `${repo.description.trim()} A Claude Code project by Daniel Rosehill, indexed under ${repo.category}.`
+  : `${repo.name} — a Claude Code project by Daniel Rosehill, indexed under ${repo.category}.`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareSourceCode',
+  name: repo.name,
+  description: repo.description,
+  codeRepository: repo.url,
+  url: `https://claude.danielrosehill.com/repos/${repo.slug}/`,
+  keywords: [...repo.tags, repo.category, 'Claude Code'].join(', '),
+  author: { '@type': 'Person', name: 'Daniel Rosehill', url: 'https://danielrosehill.com' },
+  isPartOf: {
+    '@type': 'CollectionPage',
+    name: 'Claude Code Projects Index',
+    url: 'https://claude.danielrosehill.com',
+  },
+};
 ---
-<BaseLayout title={repo.name}>
+<BaseLayout title={repo.name} description={metaDescription} schema={schema}>
 
 <div class="breadcrumbs">
   <div class="breadcrumbs-inner">
@@ -30,7 +52,7 @@ const categoryIconsJson = JSON.stringify(CATEGORY_ICONS);
   </div>
 </div>
 
-<main class="content detail-layout">
+<main class="content detail-layout" id="main">
   <aside class="sidebar" id="sidebar">
     <h3 class="sidebar-heading">Categories</h3>
     <div id="category-nav"></div>
@@ -40,11 +62,11 @@ const categoryIconsJson = JSON.stringify(CATEGORY_ICONS);
     </div>
     <div class="sidebar-section">
       <h3 class="sidebar-heading">Data</h3>
-      <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Repos-Index" target="_blank">
+      <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Projects-Index" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
         Source Repository
       </a>
-      <a class="sidebar-link" href="/tagged_repos.json" target="_blank">
+      <a class="sidebar-link" href="/tagged_repos.json" target="_blank" rel="noopener">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1h8l3 3v11H1V1h3z"/><path d="M5 8h6M5 11h4"/></svg>
         JSON Data
       </a>
