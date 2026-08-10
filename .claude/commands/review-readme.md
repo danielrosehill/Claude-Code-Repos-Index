@@ -4,7 +4,7 @@ Review the README and category files for quality and organization.
 
 1. **Rebuild README** from category files:
    ```bash
-   cd /home/daniel/repos/github/Claude-Code-Repos-Index && python3 scripts/build_site.py
+   npm run build
    ```
 
 2. **Check alphabetical ordering** within each category file in `categories/`. Flag any repos that are out of order and fix them.

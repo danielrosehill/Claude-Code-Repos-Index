@@ -4,7 +4,7 @@ Review the frontend site to ensure new repos are properly displayed and categori
 
 1. **Rebuild the site** to ensure latest data:
    ```bash
-   cd /home/daniel/repos/github/Claude-Code-Repos-Index && python3 scripts/build_site.py
+   npm run build
    ```
 
 2. **Check tagged_repos.json** for category distribution:

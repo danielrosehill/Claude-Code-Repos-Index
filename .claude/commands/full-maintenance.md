@@ -4,7 +4,7 @@ Run the complete index maintenance pipeline: update charts, review README, sync 
 
 1. Run tracking script to update repo count history and regenerate the chart:
    ```bash
-   cd /home/daniel/repos/github/Claude-Code-Repos-Index && python3 scripts/update_repo_tracking.py
+   python3 scripts/update_repo_tracking.py
    ```
 2. Verify chart was updated and count is accurate.
 
@@ -20,7 +20,7 @@ Run the complete index maintenance pipeline: update charts, review README, sync 
 
 1. Run the full build pipeline:
    ```bash
-   python3 scripts/build_site.py
+   npm run build
    ```
 2. Cross-check that repo counts match across: category files, `data/repos.json`, `docs/tagged_repos.json`, and `data/site_state.json`.
 3. Verify every repo appears in `docs/tagged_repos.json` with valid tags and categories.

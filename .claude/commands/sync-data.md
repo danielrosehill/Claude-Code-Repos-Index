@@ -4,7 +4,7 @@ Verify data files are in sync with category files and rebuild the frontend.
 
 1. **Run the full build pipeline**:
    ```bash
-   cd /home/daniel/repos/github/Claude-Code-Repos-Index && python3 scripts/build_site.py
+   npm run build
    ```
 
 2. **Cross-check repo counts**:

@@ -321,6 +321,13 @@ is not one where the build can be left to CI.
 `README.md`, the split markdown pages and `data/*.json`), `build:site` (Astro), and
 `check:links`, which fails the build on a broken internal link.
 
+**Repo detail pages come from Astro, not Python.** `src/pages/repos/[...slug].astro`
+owns `/repos/<slug>/`. `build_site.py` used to render those pages too — 237 of them,
+from a duplicate HTML template — and `astro build` then overwrote every one. The
+Python copies still carried the pre-rename slug and none of the SEO metadata, and
+editing that template had no visible effect whatsoever. Removed 2026-08-10. If you
+need to change how a repo page looks, the `.astro` file is the only place.
+
 ### SEO and machine-readable surfaces
 
 `astro.config.mjs` sets `site:` — this is load-bearing. Without it canonical URLs,

@@ -68,18 +68,31 @@ Brief description here.
 ---
 ```
 
-## Step 6: Build and deploy
+## Step 6: Fetch creation dates for the new repos
+
+The site's default "Newest" sort keys on `created_date`. A repo missing from
+`data/repo_created_dates.json` falls back to today's date and sorts to the top
+with a fabricated value, so do this *before* building:
 
 ```bash
-python3 scripts/build_site.py
+python3 scripts/fetch_created_dates.py
 ```
 
-## Step 7: Commit and push
+## Step 7: Build and deploy
+
+```bash
+npm run build
+```
+
+This runs the data pipeline, then Astro, then `scripts/check_links.py` — which
+fails the build if any internal link points at a page that was not generated.
+
+## Step 8: Commit and push
 
 Commit all changes with a descriptive message listing the added repos, then push:
 
 ```bash
-git add categories/ data/ docs/ README.md scripts/
+git add -A
 git commit -m "Add [N] new repositories to index: [list names]
 
 Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>"

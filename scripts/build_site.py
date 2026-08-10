@@ -100,7 +100,7 @@ def build_readme():
 
     split_config = load_split_config()
     if split_config:
-        print(f"[1a/6] Emitting {len(split_config)} split page(s)")
+        print(f"[1a/5] Emitting {len(split_config)} split page(s)")
         teasers = emit_split_pages(split_config)
     else:
         teasers = {}
@@ -115,7 +115,7 @@ def build_readme():
     full_content = "\n".join(content_parts)
     README_PATH.write_text(full_content, encoding="utf-8")
     split_note = f" ({len(teasers)} as teasers)" if teasers else ""
-    print(f"[1/6] README.md built from {len(category_files)} category files{split_note}")
+    print(f"[1/5] README.md built from {len(category_files)} category files{split_note}")
     return full_content
 
 
@@ -132,7 +132,7 @@ def parse_readme_to_repos_json():
 
     total = data["statistics"]["total_repositories"]
     cats = data["statistics"]["total_categories"]
-    print(f"[2/6] repos.json updated: {total} repos in {cats} categories")
+    print(f"[2/5] repos.json updated: {total} repos in {cats} categories")
     return data
 
 
@@ -320,7 +320,7 @@ def generate_tagged_repos(_repos_data):
     for r in tagged:
         all_tags.update(r["tags"])
 
-    print(f"[3/6] tagged_repos.json generated: {len(tagged)} repos, {len(all_tags)} tags")
+    print(f"[3/5] tagged_repos.json generated: {len(tagged)} repos, {len(all_tags)} tags")
     return tagged
 
 
@@ -378,246 +378,8 @@ def derive_added_dates(tagged_repos):
     return dates
 
 
-def generate_repo_pages(tagged_repos):
-    """Step 4a: Generate individual HTML pages for each repo."""
-    repos_dir = DOCS_DIR / "repos"
-    repos_dir.mkdir(parents=True, exist_ok=True)
-
-    # Clean old pages (both flat .html and directory-based)
-    for old_page in repos_dir.glob("*.html"):
-        old_page.unlink()
-    for old_dir in repos_dir.iterdir():
-        if old_dir.is_dir():
-            for f in old_dir.glob("*"):
-                f.unlink()
-            old_dir.rmdir()
-
-    template = '''<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{name} - Claude Code Repos Index</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-
-<nav class="topnav">
-  <div class="nav-inner">
-    <a href="/" class="nav-brand">Claude Code Index</a>
-    <span class="nav-author">by Daniel Rosehill</span>
-    <div class="nav-links">
-      <a href="/">Index</a>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-trigger">Ideas <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><path d="M2 4l3 3 3-3z"/></svg></button>
-        <div class="nav-dropdown-menu nav-dropdown-ideas">
-          <a class="dropdown-item" href="/ideas/claude-spaces/">Claude Spaces</a>
-          <a class="dropdown-item" href="/ideas/non-code/">Non-Code Uses</a>
-        </div>
-      </div>
-      <a href="/about/">About</a>
-      <a href="https://danielrosehill.com" target="_blank">Homepage</a>
-      <a href="https://github.com/danielrosehill" target="_blank">GitHub</a>
-    </div>
-
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open'); document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'))">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-    </button>
-  </div>
-</nav>
-
-<div class="breadcrumbs">
-  <div class="breadcrumbs-inner">
-    <a href="/">Index</a>
-    <span class="bc-sep">/</span>
-    <a href="/?category={category_slug}">{category}</a>
-    <span class="bc-sep">/</span>
-    <span class="bc-current">{name}</span>
-  </div>
-</div>
-
-<main class="content detail-layout">
-  <aside class="sidebar" id="sidebar">
-    <h3 class="sidebar-heading">Categories</h3>
-    <div id="category-nav"></div>
-    <div class="sidebar-section">
-      <h3 class="sidebar-heading">Tags</h3>
-      <div id="tag-list"></div>
-    </div>
-    <div class="sidebar-section">
-      <h3 class="sidebar-heading">Data</h3>
-      <a class="sidebar-link" href="https://github.com/danielrosehill/Claude-Code-Repos-Index" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        Source Repository
-      </a>
-      <a class="sidebar-link" href="/tagged_repos.json" target="_blank">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 1h8l3 3v11H1V1h3z"/><path d="M5 8h6M5 11h4"/></svg>
-        JSON Data
-      </a>
-    </div>
-  </aside>
-
-  <div class="repo-detail">
-    <h1>{name}</h1>
-    <div class="repo-detail-meta">
-      <span class="repo-detail-category">{category_group} &rsaquo; {category}</span>
-      {added_html}
-    </div>
-    <div class="repo-detail-tags">{tags_html}</div>
-    <p class="repo-detail-desc">{description}</p>
-    <div class="repo-detail-actions">
-      <a class="btn btn-primary" href="{url}" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        View on GitHub
-      </a>
-      <a class="btn btn-outline" href="/">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2L4 8l6 6"/></svg>
-        Back to Index
-      </a>
-    </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <span>&copy; Daniel Rosehill</span>
-    <span class="footer-sep">&middot;</span>
-    <a href="https://danielrosehill.com">danielrosehill.com</a>
-    <span class="footer-sep">&middot;</span>
-    <a href="https://github.com/danielrosehill/Claude-Code-Repos-Index">Source</a>
-    <span class="footer-sep">&middot;</span>
-    <a href="https://dsrholdings.cloud" target="_blank">Business Enquiries</a>
-  </div>
-</footer>
-
-<script>
-const CURRENT_CATEGORY_SLUG = "{category_slug}";
-
-const CATEGORY_ICONS = {{
-  'Non-Code': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
-  'Marketing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
-  'Technology & Hardware': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
-  'Technical': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
-  'Research & Ideas': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>',
-  'Other': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>',
-  'Productivity & Planning': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>',
-  'Legal': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 7l9-4 9 4M3 7v4l9 4 9-4V7"/></svg>',
-  'Health & Wellbeing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>',
-  'Communications & Writing': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>',
-  'Financial Planning': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>',
-  'Career': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>',
-  'Business': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>',
-  'Privacy & Anonymity': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-  'Systems Administration': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
-  'Multi-Agent Tooling': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>',
-  'MCP': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M12 18v4M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M18 12h4M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>',
-  'Plugins': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg>',
-  'Slash Commands': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="21" x2="17" y2="3"/></svg>',
-  'Research': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>',
-  'Argument and Perspective Exploration': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5A8.48 8.48 0 0121 11.5z"/></svg>',
-  'Context and Personalization': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
-  'Miscellaneous': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>'
-}};
-
-function esc(s) {{
-  const d = document.createElement('div');
-  d.textContent = s;
-  return d.innerHTML;
-}}
-
-async function loadSidebar() {{
-  try {{
-    const [repoRes, catRes] = await Promise.all([
-      fetch('/tagged_repos.json'),
-      fetch('/categories.json')
-    ]);
-    const repos = await repoRes.json();
-    const catHierarchy = await catRes.json();
-
-    // Build category nav (same as index)
-    const container = document.getElementById('category-nav');
-    catHierarchy.groups.forEach(group => {{
-      const groupEl = document.createElement('div');
-      groupEl.className = 'cat-group';
-      const groupLabel = document.createElement('div');
-      groupLabel.className = 'cat-group-label';
-      groupLabel.innerHTML = (CATEGORY_ICONS[group.name] || '') + ' ' + esc(group.name);
-      groupEl.appendChild(groupLabel);
-
-      group.categories.forEach(cat => {{
-        const count = repos.filter(r => r.category_slug === cat.slug).length;
-        if (count === 0) return;
-        const btn = document.createElement('a');
-        btn.className = 'cat-btn' + (cat.slug === CURRENT_CATEGORY_SLUG ? ' active' : '');
-        btn.href = '/?category=' + cat.slug;
-        btn.innerHTML = (CATEGORY_ICONS[cat.name] || '') + ' <span class="cat-name">' + esc(cat.name) + '</span><span class="tag-count">' + count + '</span>';
-        groupEl.appendChild(btn);
-      }});
-      container.appendChild(groupEl);
-    }});
-
-    // Build tag list
-    const allTags = {{}};
-    repos.forEach(r => r.tags.forEach(t => {{ allTags[t] = (allTags[t] || 0) + 1; }}));
-    const tagEl = document.getElementById('tag-list');
-    Object.keys(allTags).sort().forEach(tag => {{
-      const btn = document.createElement('a');
-      btn.className = 'tag-btn';
-      btn.href = '/?tag=' + encodeURIComponent(tag);
-      btn.innerHTML = '<span class="tag-name">' + esc(tag) + '</span><span class="tag-count">' + allTags[tag] + '</span>';
-      tagEl.appendChild(btn);
-    }});
-  }} catch(e) {{}}
-}}
-// Mobile dropdown toggle
-document.querySelectorAll('.nav-dropdown-trigger').forEach(btn => {{
-  btn.addEventListener('click', (e) => {{
-    e.stopPropagation();
-    const dropdown = btn.closest('.nav-dropdown');
-    const wasOpen = dropdown.classList.contains('open');
-    document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-    if (!wasOpen) dropdown.classList.toggle('open');
-  }});
-}});
-document.addEventListener('click', () => {{
-  document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
-}});
-loadSidebar();
-</script>
-</body>
-</html>'''
-
-    for repo in tagged_repos:
-        slug = slugify(repo["name"])
-        tags_html = "".join(
-            f'<span class="tag-pill" data-tag="{t}">{t}</span>' for t in repo["tags"]
-        )
-        added = repo.get("added_date", "")
-        added_html = f'<span class="repo-detail-date">Added {added}</span>' if added else ""
-
-        html = template.format(
-            name=repo["name"],
-            description=repo["description"],
-            url=repo["url"],
-            tags_html=tags_html,
-            added_html=added_html,
-            category=repo.get("category", "Miscellaneous"),
-            category_slug=repo.get("category_slug", "misc"),
-            category_group=repo.get("category_group", "Other"),
-            slug=slug,
-        )
-        repo_page_dir = repos_dir / slug
-        repo_page_dir.mkdir(exist_ok=True)
-        (repo_page_dir / "index.html").write_text(html, encoding="utf-8")
-
-    print(f"[4a/6] Generated {len(tagged_repos)} repo detail pages")
-
-
 def copy_assets():
-    """Step 4b: Copy data files to public/ for Astro and docs/ for legacy."""
+    """Step 4: Copy data files to public/ for Astro and docs/ for legacy."""
     # Copy to Astro's public/ directory (served as static files)
     PUBLIC_DIR = REPO_ROOT / "public"
     PUBLIC_DIR.mkdir(exist_ok=True)
@@ -634,7 +396,7 @@ def copy_assets():
         shutil.copy2(REPOS_JSON_PATH, DOCS_DIR / "repos.json")
     if CATEGORIES_JSON_PATH.exists():
         shutil.copy2(CATEGORIES_JSON_PATH, DOCS_DIR / "categories.json")
-    print("[4b/6] Assets copied to public/ and docs/")
+    print("[4/5] Assets copied to public/ and docs/")
 
 
 def update_site_state(tagged_repos):
@@ -708,7 +470,7 @@ def update_site_state(tagged_repos):
     if not summary:
         summary.append("no changes")
 
-    print(f"[6/6] site_state.json updated ({', '.join(summary)})")
+    print(f"[5/5] site_state.json updated ({', '.join(summary)})")
 
     if added:
         for name in added:
@@ -724,9 +486,9 @@ def sync_marketplace_step():
     try:
         from sync_marketplace import sync as run_sync
     except ImportError as e:
-        print(f"[0/6] skipped marketplace sync: {e}")
+        print(f"[0/5] skipped marketplace sync: {e}")
         return
-    print("[0/6] Syncing marketplace manifest")
+    print("[0/5] Syncing marketplace manifest")
     run_sync()
 
 
@@ -739,7 +501,6 @@ def main():
     readme_content = build_readme()
     repos_data = parse_readme_to_repos_json()
     tagged = generate_tagged_repos(repos_data)
-    generate_repo_pages(tagged)
     copy_assets()
     update_site_state(tagged)
 
