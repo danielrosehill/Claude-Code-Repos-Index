@@ -1,6 +1,6 @@
 # Claude Code Projects Index
 
-> A curated index of 231 open-source Claude Code repositories by Daniel Rosehill —
+> A curated index of 232 open-source Claude Code repositories by Daniel Rosehill —
 > agent workspaces, plugins, slash commands and MCP tooling, spanning software
 > development and non-code domains such as sysadmin, legal, health and research.
 > Site: https://claude.danielrosehill.com
@@ -273,6 +273,7 @@ Install guide: https://claude.danielrosehill.com/plugins/
 - [Claude Dork](https://github.com/danielrosehill/Claude-Dork): Agent that generates platform-specific search dorks across Google, Reddit, Twitter/X, and more.
 - [Claude For OS Mgmt Research](https://github.com/danielrosehill/Claude-For-OS-Mgmt-Research): Research workspace on using Claude and Claude Code for operating system management.
 - [Claude Open Router Model Research Plugin](https://github.com/danielrosehill/Claude-Open-Router-Model-Research-Plugin): Claude Code plugin for researching, filtering, comparing, and evaluating models on OpenRouter, pulling the live catalogue without an API key.
+- [Claude Tooling Prior Art](https://github.com/danielrosehill/Claude-Tooling-Prior-Art): Public record of build-vs-adopt scans for Claude Code tooling: does a plugin, MCP server or skill already exist for a given requirement, or is it blue sky? Each scan keeps the searches — including the empty ones — against a closed verdict set with dated decay.
 
 ## Slash Commands
 

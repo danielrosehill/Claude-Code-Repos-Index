@@ -42,3 +42,10 @@ Research workspace on using Claude and Claude Code for operating system manageme
 Claude Code plugin for researching, filtering, comparing, and evaluating models on OpenRouter, pulling the live catalogue without an API key.
 
 ---
+
+### Claude Tooling Prior Art
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Tooling-Prior-Art) ![Agent Workspace](https://img.shields.io/badge/Agent-Workspace-purple?style=flat-square)
+
+Public record of build-vs-adopt scans for Claude Code tooling: does a plugin, MCP server or skill already exist for a given requirement, or is it blue sky? Each scan keeps the searches — including the empty ones — against a closed verdict set with dated decay.
+
+---

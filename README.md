@@ -302,7 +302,7 @@ Projects using Claude and agentic systems for deep research, report generation, 
 
 > **See also:** The [Research Space](https://github.com/danielrosehill/Claude-Research-Space-Plugin) cluster plugin in the [Plugins](#plugins) section covers deep research, technical research, OSINT, geo-reaction, stack, ecosystem, and competitor research workflows.
 
-**[See full list in the dedicated research page →](./research.md)** (5 entries)
+**[See full list in the dedicated research page →](./research.md)** (6 entries)
 
 ---
 

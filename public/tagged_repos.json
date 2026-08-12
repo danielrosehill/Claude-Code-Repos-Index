@@ -1343,6 +1343,22 @@
     "created_date": "2025-12-27"
   },
   {
+    "name": "Claude Tooling Prior Art",
+    "url": "https://github.com/danielrosehill/Claude-Tooling-Prior-Art",
+    "description": "Public record of build-vs-adopt scans for Claude Code tooling: does a plugin, MCP server or skill already exist for a given requirement, or is it blue sky? Each scan keeps the searches \u2014 including the empty ones \u2014 against a closed verdict set with dated decay.",
+    "tags": [
+      "MCP",
+      "Plugin",
+      "Research"
+    ],
+    "category": "Research",
+    "category_slug": "research",
+    "category_group": "Research & Ideas",
+    "added_date": "2026-08-12",
+    "slug": "claude-tooling-prior-art",
+    "created_date": "2026-08-12"
+  },
+  {
     "name": "Claude Transcription",
     "url": "https://github.com/danielrosehill/Claude-Transcription-Plugin",
     "description": "Claude Code plugin: audio transcription workflow \u2014 denoise, VAD, transcribe (Gemini/AssemblyAI/Whisper), clean, structure, export, with cloud and local engine backends.",
