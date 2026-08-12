@@ -44,10 +44,13 @@ These exist and are linked from the index, so every visitor gets a 404:
 - `Claude-Repo-Mgmt-Plugin` — in `08-plugins.md`, which is generated from the
   marketplace manifest. Fixing it means publishing the repo or removing it from
   `Claude-Code-Plugins`; editing the category file does nothing.
-- `Habits-Of-Claude` — in `05-context-personalization.md`, added 2026-08-10.
 
 Publishing them is probably the intent, since they were indexed at all. Left
 untouched rather than guessed at.
+
+**Resolved 2026-08-12:** `Habits-Of-Claude` was in this list from 2026-08-10; it was
+made public, so the `05-context-personalization.md` link now works. The entry there
+needed no edit — the index stores no visibility field, it just links out.
 
 ## Unresolved: the model repo the site is built around
 
