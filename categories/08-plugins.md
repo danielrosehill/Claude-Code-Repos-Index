@@ -11,7 +11,7 @@ All plugins registered in the [danielrosehill marketplace](https://github.com/da
 ### Desktop Manager
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Desktop-Manager-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: Linux desktop management workflow — auto-profiles the local machine on first run and persists it to user data, then runs system checks, package install/remove, config application, hardware troubleshooting, service/log inspection against that profile.
+Linux desktop management — auto-profiles the local machine on first run and persists it to user data, then runs system checks, package install/remove, config application, hardware troubleshooting, service/log inspection against that profile.
 
 ---
 
@@ -25,14 +25,14 @@ Register machines and run repeatable Claude-Code-driven security audits over SSH
 ### Security Checkup
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Security-Checkup-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: security and compliance workflow — vulnerability scanning, system hardening, config audits.
+Security and compliance — vulnerability scanning, system hardening, config audits.
 
 ---
 
 ### Sysadmin Homelab
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Sysadmin-Homelab-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: sysadmin and homelab workflow — diagnose, status, update config, backup, with linux/docker/conda/proxmox/nas/adb/sbc/remote-admin/lan variants.
+Sysadmin and homelab — diagnose, status, update config, backup, with linux/docker/conda/proxmox/nas/adb/sbc/remote-admin/lan variants.
 
 ---
 
@@ -41,7 +41,7 @@ Claude Code plugin: sysadmin and homelab workflow — diagnose, status, update c
 ### Debugging
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Debugging-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: debugging workflow — capture logs, isolate issue, diagnose error, track bugs, with code/system/issue variants. Includes a KDE hotkey utility for capturing live system bugs.
+Debugging — capture logs, isolate issue, diagnose error, track bugs, with code/system/issue variants. Includes a KDE hotkey utility for capturing live system bugs.
 
 ---
 
@@ -55,14 +55,14 @@ Bug-ticket workflow for development repos — capture bugs into planning/bugs/, 
 ### Dev Tools
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Dev-Tools-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: dev-tools workflow — scaffold repos, multi-agent QA review, templatize. Session-handover commands and agent moved to claude-hopper in 1.2.0.
+Dev-tools — scaffold repos, multi-agent QA review, templatize. Session-handover commands and agent moved to claude-hopper in 1.2.0.
 
 ---
 
 ### Workspace Foundational
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Workspace-Foundational-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: foundational workspace workflow — setup, context management, report parsing, inventory, template discovery, with 6 variants.
+Foundational workspace — setup, context management, report parsing, inventory, template discovery, with 6 variants.
 
 ---
 
@@ -82,26 +82,33 @@ Meta-plugin for per-project activation of dormant plugins and MCP servers from a
 
 ---
 
+### Personal Context
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Personal-Context-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Builds and maintains a persistent, portable background context layer about the user — intake interview, ingestion of material they already have, gap analysis, scoped retrieval, maintenance and export. Plain markdown entries in a store the user owns, read through declared scopes and sensitivity levels; explicitly does not use model-managed memory. Ships the Portable Context Contract so issue-scoped workspaces can read it without re-asking who the person is.
+
+---
+
 ## Research & Investigation
 
 ### Ideation Planning
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Ideation-Planning-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: ideation and planning workflow — capture, evaluate, rank, simulate, and plan ideas, with ideation/single-idea-eval/multi-idea-ranking/feature-ideas/simulation/idea-capture variants.
+Ideation and planning — capture, generate, evaluate, rank, simulate, and plan ideas, with ideation/single-idea-eval/multi-idea-ranking/feature-ideas/simulation/idea-capture variants and Typst PDF deliverables.
 
 ---
 
 ### Legal Investigative
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Legal-Investigative-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: legal and investigative workflow — log evidence, analyze documents, redact, generate briefs, with legal-research/evidence/osint/document-analysis variants.
+Legal and investigative — log evidence, analyze documents, redact, generate briefs, with legal-research/evidence/osint/document-analysis variants.
 
 ---
 
 ### Research Space
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Research-Space-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: research workflow — source log, summarize, deep-dive, export, with deep-research/technical/osint/georeaction/stack/ecosystem/competitor variants. Includes a 30-agent tech research team for hardware/software stack evaluations (folded in from Claude-Tech-Research-Team).
+Research — source log, summarize, deep-dive, export, with deep-research/technical/osint/georeaction/stack/ecosystem/competitor/purchasing/general-research-workspace/obsidian-vault variants. The obsidian-vault variant scaffolds the research loop as a working Obsidian vault (committed .obsidian/ config, frontmatter schema, wikilinks, templates, canvas). Includes a 30-agent tech research team for hardware/software stack evaluations (folded in from Claude-Tech-Research-Team).
 
 ---
 
@@ -117,14 +124,14 @@ Check what people are actually saying about a topic, product, or provider by sea
 ### AI Attribution
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-AI-Attribution-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: AI transparency workflow — document human vs AI contributions, add attribution, audit provenance.
+AI transparency — document human vs AI contributions, add attribution, audit provenance.
 
 ---
 
 ### AI Engineering
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-AI-Engineering-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: prompt engineering workflow — craft, eval, catalog, version, search prompts, with library/factory variants.
+Prompt engineering — craft, eval, catalog, version, search prompts, with library/factory variants.
 
 ---
 
@@ -140,35 +147,35 @@ Drive an AI-generated video project end-to-end: creative brief, model selection,
 ### Audio Production
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Audio-Production-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: audio production workflow — normalize, VAD, transcribe, diarize, podcast assembly, with engineering/podcast/transcript variants.
+Audio production — normalize, VAD, transcribe, diarize, podcast assembly, with engineering/podcast/transcript variants.
 
 ---
 
 ### Claude Transcription
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Transcription-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: audio transcription workflow — denoise, VAD, transcribe (Gemini/AssemblyAI/Whisper), clean, structure, export, with cloud and local engine backends.
+Audio transcription — denoise, VAD, transcribe (Gemini/AssemblyAI/Whisper), clean, structure, export, with cloud and local engine backends.
 
 ---
 
 ### Media Library
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Media-Library-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: media library workflow — catalog, tag, search, sort, dedupe assets.
+Media library — catalog, tag, search, sort, dedupe assets.
 
 ---
 
 ### PR & Media Work
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PR-Media-Work-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: PR and media monitoring workflow — scan coverage, summarize press, draft responses, comms strategy, with monitoring/response/strategy variants.
+PR and media monitoring — scan coverage, summarize press, draft responses, comms strategy, with monitoring/response/strategy variants.
 
 ---
 
 ### Video Editing
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Video-Editor-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin for video editing, transcoding, video processing, and multimedia workflow automation. Two-tier workspace (index + project), per-user data store, and a growing set of ffmpeg/MLT/Kdenlive primitives.
+Video editing, transcoding, video processing, and multimedia workflow automation. Two-tier workspace (index + project), per-user data store, and a growing set of ffmpeg/MLT/Kdenlive primitives.
 
 ---
 
@@ -177,72 +184,72 @@ Claude Code plugin for video editing, transcoding, video processing, and multime
 ### Content Writing
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Content-Writing-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: content writing workflow — draft, proofread, version, publish, style guides, with writing/blog/opinion/document variants.
+Content writing — draft, proofread, version, publish, style guides, with writing/blog/opinion/document variants.
 
 ---
 
 ### Knowledge Documentation
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Knowledge-Documentation-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: knowledge documentation workflow — index, cross-link, build taxonomy, version docs, with wiki/resource-library/process-docs/experiment-report variants.
+Knowledge documentation — index, cross-link, build taxonomy, version docs, with wiki/resource-library/process-docs/experiment-report variants.
 
 ---
 
 ### Technical Docs
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Technical-Docs-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: technical documentation workflow — READMEs, reference docs, changelogs, environment docs, with api-reference/code-docs/environment-docs/dev-notebook variants.
+Technical documentation — READMEs, reference docs, changelogs, environment docs, with api-reference/code-docs/environment-docs/dev-notebook variants.
 
 ---
 
 ## Personal & Planning
 
+### Amazon
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Amazon-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Amazon.com marketplace research — verified price, stock, rating, seller and specs read from the listing rather than the search grid; Prime-aware delivery dates checked against the ZIP they were actually rendered for; filtered signed-in search with tested extractors, a marketplace profile and a durable brand allowlist.
+
+---
+
 ### Budgeting
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Budgeting-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: personal budgeting workflow — log transactions, categorize, forecast, track goals, monthly reports.
+Personal budgeting — log transactions, categorize, forecast, track goals, monthly reports.
 
 ---
 
 ### Career
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Career-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: career planning workflow — log roles, compare offers, track applications, salary benchmark, with planning/job-search/salary variants.
-
----
-
-### Daniel Rosehill
-[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Daniel-Rosehill-Claude-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
-
-Personal-use skills and slash commands for Daniel Rosehill — released publicly for convenience.
+Career planning — log roles, compare offers, track applications, salary benchmark, with planning/job-search/salary variants.
 
 ---
 
 ### Personal Planning
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Personal-Planning-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: personal life planning workflow — log entries, review progress, set goals, with diary/health/family/house-search/preparedness/personal-dev/inbox variants.
+Personal life planning — log entries, review progress, set goals, with diary/health/family/house-search/preparedness/personal-dev/inbox variants.
 
 ---
 
-### Purchasing
+### Procurement Tools
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Purchasing-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: purchasing workflow — intake, compare products, evaluate options, recommend, with general/tech-procurement/recommendations variants.
+Marketplace-agnostic purchasing and procurement process — spec definition from a vague want or a photograph, annotated search vocabulary, intake, research, compare, evaluate, recommend, market-check, spec-driven market landscape surveys, live price/delivery scanning through your own VPN egress, preference memory, hardware-rig profiling primitives, with general/market-landscape/tech-procurement/recommendations variants.
 
 ---
 
 ### Shopping
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Shopping-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: consumer shopping workflow — find product, compare vendors, check availability. Region-specific commands (e.g. Israel) now live in dedicated plugins like israel-skills.
+Region-specific consumer shopping primitives — find products, compare local vendors, check availability, and generate ranked purchase recommendations. Ships variant scaffolds per supported region and a provisioning skill for fresh shopping workspaces. Marketplace-specific research (Amazon US, AliExpress Israel) now lives in dedicated per-marketplace plugins; the marketplace-plugins skill is the roster.
 
 ---
 
 ### Therapy Tracking
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Therapy-Tracking-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin for organising therapy reflections — pre/post-session notes, goal tracking, and turning voice-memo transcripts into structured problem summaries. Not therapy: organises notes only. Workspace data lives outside the plugin so the same install survives plugin updates.
+Organising therapy reflections — pre/post-session notes, goal tracking, and turning voice-memo transcripts into structured problem summaries. Not therapy: organises notes only. Workspace data lives outside the plugin so the same install survives plugin updates.
 
 ---
 
@@ -251,14 +258,14 @@ Claude Code plugin for organising therapy reflections — pre/post-session notes
 ### HP5200 Printer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-HP5200-Skill-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: HP DeskJet 5200 printer and scanner operations — ink levels, color/B&W printing, scanning, auto-discovery.
+HP DeskJet 5200 printer and scanner operations — ink levels, color/B&W printing, scanning, auto-discovery.
 
 ---
 
 ### Smart Home
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Smart-Home-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: smart home workflow — Home Assistant, Snapcast multi-room audio, Plex media server ops, with HA/audio/media-server variants.
+Smart home — Home Assistant, Snapcast multi-room audio, Plex media server ops, with HA/audio/media-server variants.
 
 ---
 
@@ -267,7 +274,7 @@ Claude Code plugin: smart home workflow — Home Assistant, Snapcast multi-room 
 ### Filesystem Organiser
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Filesystem-Organiser-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: filesystem organisation workflow — scan, dedupe, cleanup, rename, sort for local directories and Google Drive, with local/gdrive variants. Includes organise-filesystem (modular modes) and super-organise (comprehensive single-pass) skills.
+Filesystem organisation — scan, dedupe, cleanup, rename, sort for local directories and Google Drive, with local/gdrive variants. Includes organise-filesystem (modular modes) and super-organise (comprehensive single-pass) skills.
 
 ---
 
@@ -293,6 +300,15 @@ Author and maintain unofficial MCP servers for third-party APIs that don't ship 
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-ADB-Ops-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 ADB (Android Debug Bridge) operations — onboard a phone, map folders, import media, capture screenshots, and manage bloatware with a persistent log.
+
+---
+
+## Agent To Agent
+
+### Breakout Claude
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Breakout) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Route an idea that surfaces mid-task but does not belong to the current repository into its own repo and its own agent, without derailing the work in flight. Uses the cross-session SendMessage/ListAgents layer for a push-model handoff — the seed brief is written to disk in the new repo and the message carries a pointer to it. Companion to interrupt-claude (same-repo interruption routing) and claude-hopper (session spawning and handover); breakout splits tracks rather than work or time. WIP.
 
 ---
 
@@ -328,7 +344,7 @@ Skeptical analyst toolkit for long reports — READ/SKIM/SKIP verdicts, structur
 ### Resource List Builder
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Resource-List-Builder-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: build, maintain, and audit curated GitHub resource lists (Awesome-style indexes) with AI-driven categorisation, alphabetised tables, and dynamic shields.io badges.
+Build, maintain, and audit curated GitHub resource lists (Awesome-style indexes) with AI-driven categorisation, alphabetised tables, and dynamic shields.io badges.
 
 ---
 
@@ -338,6 +354,15 @@ Claude Code plugin: build, maintain, and audit curated GitHub resource lists (Aw
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Backup-Planner-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
 Plan, document, and implement a backup and data-protection strategy for the current project — from architecture discovery through script generation and restore drills.
+
+---
+
+## Book
+
+### Book Writing
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Book-Writing-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Write a full-length reference or instructional book with teams of subagents — definition, planning, research, parallel chapter drafting, review, graphics and publication. Organised so no single agent is ever handed the whole book, because quality degrades long before a context window fills; consistency is carried by a style guide, per-chapter briefs and a continuity ledger instead of by shared context. Authorship only — print geometry hands off to kdp-publishing.
 
 ---
 
@@ -373,7 +398,7 @@ Manage one or more Buttondown newsletters from Claude Code — multi-newsletter 
 ### Spec Led Certification
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/spec-led-certification-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations — start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files — subject, current position read from evidence, learning preferences, objectives and standing positions, money and time — a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.
+Choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations — start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files — subject, current position read from evidence, learning preferences, objectives and standing positions, money and time — a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.
 
 ---
 
@@ -403,7 +428,7 @@ Claude-Rudder — collection of utilities to smoothen Claude Code UX. Context-ga
 ### Style Switcher
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Style-Switcher) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: persona-recipe library for swapping Claude into themed personalities (Daredevil, Jaded IT, Reluctant, Chatty, Philosophical, Operational, Dubious, Hyper Creative, Approval Needed, Visionary, Claude FM, Claude Bouncer). Each recipe ships a banner image and sound effect, and applies via either a managed block in ~/.claude/CLAUDE.md or a repo-sandbox mode that holds the user CLAUDE.md aside.
+Persona-recipe library for swapping Claude into themed personalities (Daredevil, Jaded IT, Reluctant, Chatty, Philosophical, Operational, Dubious, Hyper Creative, Approval Needed, Visionary, Claude FM, Claude Bouncer). Each recipe ships a banner image and sound effect, and applies via either a managed block in ~/.claude/CLAUDE.md or a repo-sandbox mode that holds the user CLAUDE.md aside.
 
 ---
 
@@ -543,7 +568,7 @@ Design and build responsive HTML email templates using Foundation for Emails, Ma
 ### Rtl Email
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-RTL-Email) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.
+Send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.
 
 ---
 
@@ -570,7 +595,7 @@ General-purpose digital-evidence processing: capture, hash, OpenTimestamps, Exif
 ### Freight Vol Calculator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Freight-Vol-Calculator) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: freight volume arithmetic from a product's external dimensions — retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.
+Freight volume arithmetic from a product's external dimensions — retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.
 
 ---
 
@@ -668,7 +693,7 @@ Capture screenshots and apply annotations (arrows, callouts, boxes, highlights, 
 ### Image Production
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Image-Production-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: image production — editing, format conversion, batch ops, and filesystem organisation by resolution, aspect ratio, orientation, format, EXIF time, camera, plus dedupe and metadata scrubbing.
+Image production — editing, format conversion, batch ops, and filesystem organisation by resolution, aspect ratio, orientation, format, EXIF time, camera, plus dedupe and metadata scrubbing.
 
 ---
 
@@ -693,7 +718,7 @@ Claude Code agent skills for Israel and Hebrew-specific workflows: Hebrew transl
 ### Israel Opening Hours
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Israel-Opening-Hours-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.
+Check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.
 
 ---
 
@@ -707,7 +732,7 @@ Israeli shopping workflows — tech retailers (Ivory, KSP, Bug, TMS), Zap price 
 ### Netek Disconnect
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/netek-disconnect-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: cancel Israeli service subscriptions (ניתוק) through netek.co.il — mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend — not a published API.
+Cancel Israeli service subscriptions (ניתוק) through netek.co.il — mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend — not a published API.
 
 ---
 
@@ -743,12 +768,21 @@ Skill for developing KDE Plasma plasmoids (QML/Plasma 6 desktop and panel widget
 
 ---
 
+## Kdp
+
+### Kdp Publishing
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/KDP-Publishing-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Amazon KDP paperback production with Typst — choose a standard trim, typeset the interior with gutter-aware margins and an even page count, build the full-wrap cover last from the interior's measured extent, pre-flight for silent glyph substitution and stale spines, and assemble the upload folder. Production only; it does not write the book.
+
+---
+
 ## Label Printer
 
 ### Label Printer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/label-printer-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: print labels on a Brother P-touch label printer — single labels, N copies, batch runs, and QR-coded asset and storage-unit templates for inventory work. Bundles a streamable-HTTP MCP server that renders labels and hands them to a USB print bridge on a Linux host, plus notes on the device settings the Linux driver cannot reach.
+Print labels from Claude Code on Brother QL and P-touch label printers on Linux. Discovers printers over mDNS, USB and CUPS and keeps a machine-local registry so later prints can name one; renders text and QR labels to the pixel canvas of the loaded DK or TZe media; previews without touching the printer, because brother_ql converts and transmits in a single step with no dry run. Ships a media catalogue of DK and TZe product codes, reusable label templates in the user's data directory, and a Linux driver-install skill covering brother_ql, ptouch-print, mDNS and CUPS. Zebra and DYMO are discovered and registered but not yet printable. Also bundles the original streamable-HTTP MCP server for P-touch setups built around a USB print bridge.
 
 ---
 
@@ -857,6 +891,15 @@ Skills for analyzing large text corpora — topic modeling (BERTopic with tempor
 
 ---
 
+## Obd
+
+### Obd Diagnostics
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-OBD-Diagnostics-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Read OBD-II data from an ELM327-class adapter, normalise it to JSON, and use it to diagnose faults and plan vehicle maintenance. WIP.
+
+---
+
 ## Obs
 
 ### Obs Mgmt
@@ -927,6 +970,15 @@ Nudges Claude to document decisions, todos, sprints, and handovers into a struct
 
 ---
 
+## Plugin Authoring
+
+### Site Skill Builder
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Site-Skill-Builder-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Site skills built by watching a site in your own signed-in Chrome — observe pages and endpoints, propose a skill roster for approval, then author skills that survive UI changes and probe for drift. Semantic handles only, never pixel coordinates. Every observation is classified publishable, private, or never-recorded, with a stop rule for incidental security findings.
+
+---
+
 ## Plugins
 
 ### Favorite Plugins Installers
@@ -954,6 +1006,15 @@ Personal schedule, task, and meeting management. Routes mixed brain-dumps into G
 
 ---
 
+## Profiles
+
+### Daniel Rosehill
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Daniel-Rosehill-Claude-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Jump to Daniel Rosehill's public work from Claude Code — profiles (LinkedIn, X, GitHub, YouTube, npm, Kaggle, DeviantArt, Pexels), blog, Hugging Face, public repos by recency/stars/A–Z, bio, resume download, and contact/newsletter pages. Also refreshes this marketplace's local cache. A directory of one person's published output, not personal configuration.
+
+---
+
 ## Proxmox
 
 ### Proxmox Mgmt
@@ -968,7 +1029,7 @@ Manage a Proxmox VE host via SSH and the Proxmox API — guided first-run onboar
 ### System Recovery Mode
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-System-Recovery-Mode) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: AI-assisted Linux system recovery — slash commands and agents (diagnose, logs, network, disk, services, packages) for diagnosing and fixing a broken system. Pairs with an optional GRUB/systemd installer that boots a minimal recovery TTY straight into Claude CLI.
+AI-assisted Linux system recovery — slash commands and agents (diagnose, logs, network, disk, services, packages) for diagnosing and fixing a broken system. Pairs with an optional GRUB/systemd installer that boots a minimal recovery TTY straight into Claude CLI.
 
 ---
 
@@ -992,6 +1053,13 @@ Capture geo-restricted web content (articles, prices) via the user's own localho
 
 ## Sop
 
+### Claude Sops
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-SOPs) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Keep your own standard operating procedures — the recurring things you do a particular way — as a private, versioned library of markdown files the agent reads on demand and follows. Distinct from sop-writer, which authors printed SOP documents for other people; these are procedures an agent executes. One delimited block in your CLAUDE.md points at the library, a generated INDEX.md carries id, title and a 'use when' trigger for each procedure, and exactly one file is read once a situation matches — so a library of forty procedures costs one table to consult rather than forty resident skill descriptions. Seven skills cover setup, run, write, edit, list, retire and sync. Procedures live in ~/.claude-user-data/sops/ as flat readable files inside a private git repo, mirrored across machines; the plugin repo never holds one. Each SOP declares an autonomy level (auto, confirm, confirm-each, manual) that records a default rather than granting permission, and a last_verified date meaning the procedure was seen to work rather than that the file was edited.
+
+---
+
 ### Sop Writer
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-SOP-Writer-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
@@ -1004,7 +1072,7 @@ Project-scoped authoring tools for Standard Operating Procedures and decision fl
 ### Spamhole
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-SpamHole-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: AI-assisted defenses against pseudo-personalised wide-scrape outreach, AI-faked impersonation, and tracking-pixel surveillance. Capture spam to a personal corpus, analyse intent, suggest filter patterns, scan for tracking + ad-tracker pixels, draft unsubscribe replies, push server-side Gmail blocks via an email MCP, push DNS-level blocks to AdGuard Home, and contribute redacted findings to public anti-tracking lists. Bundles a stub AdGuard Home MCP.
+AI-assisted defenses against pseudo-personalised wide-scrape outreach, AI-faked impersonation, and tracking-pixel surveillance. Capture spam to a personal corpus, analyse intent, suggest filter patterns, scan for tracking + ad-tracker pixels, draft unsubscribe replies, push server-side Gmail blocks via an email MCP, push DNS-level blocks to AdGuard Home, and contribute redacted findings to public anti-tracking lists. Bundles a stub AdGuard Home MCP.
 
 ---
 
@@ -1022,7 +1090,7 @@ Spec-driven development workflow for Claude Code: turn unstructured project brie
 ### Stack Evaluator
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/stack-evaluator-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: component-level review of a project's technology stack, not its code — records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.
+Component-level review of a project's technology stack, not its code — records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.
 
 ---
 
@@ -1040,7 +1108,7 @@ Loose skills that will be migrated into other plugins later. Recommended not to 
 ### Contact Support
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/contact-support-plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin (work in progress — concept stage): contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones — ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service.
+Contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones — ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service. Work in progress — concept stage.
 
 ---
 
@@ -1098,6 +1166,15 @@ Convert JSON, CSV, YAML, and other structured data into TOON (Token-Oriented Obj
 
 ---
 
+## Travel
+
+### Travel Packing
+[![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-Travel-Packing-Assistant-Plugin) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
+
+Make optimal use of a baggage allowance on an international itinerary — research each carrier's real checked, cabin and personal-item allowance per segment with a source and a confidence level for every figure, compute the binding limit that governs the journey, inventory what is carried by weight, reconcile scale readings against the inventory, solve the allocation to bags and packing cubes, price every way out of being over, and rank an emergency leave-behind list by cost per kilogram saved. Renders a one-page airport counter card and a per-bag packing list as PDF via Typst and as Markdown. One trip workspace per itinerary.
+
+---
+
 ## Tts
 
 ### Text To Speech Toolkit
@@ -1139,7 +1216,7 @@ Plan and prompt-engineer AI-generated visuals (images, diagrams, video) for whit
 ### Claude Pa
 [![View Repo](https://img.shields.io/badge/View%20Repo-blue?style=flat-square&logo=github)](https://github.com/danielrosehill/Claude-PA) ![Plugin](https://img.shields.io/badge/Plugin-purple?style=flat-square)
 
-Claude Code plugin: passive-aggressive PA system. Claude barks status updates over a speaker; if ignored, escalates across the house via Home Assistant or MQTT. Includes pre-recorded voice packs, RGB signal bulb, full-screen flash overlay, and a quiet-mode skill that translates natural-language pause/schedule requests.
+Passive-aggressive PA system. Claude barks status updates over a speaker; if ignored, escalates across the house via Home Assistant or MQTT. Includes pre-recorded voice packs, RGB signal bulb, full-screen flash overlay, and a quiet-mode skill that translates natural-language pause/schedule requests.
 
 ---
 

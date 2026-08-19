@@ -60,9 +60,8 @@
   {
     "name": "AI Attribution",
     "url": "https://github.com/danielrosehill/Claude-AI-Attribution-Plugin",
-    "description": "Claude Code plugin: AI transparency workflow \u2014 document human vs AI contributions, add attribution, audit provenance.",
+    "description": "AI transparency \u2014 document human vs AI contributions, add attribution, audit provenance.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -75,9 +74,8 @@
   {
     "name": "AI Engineering",
     "url": "https://github.com/danielrosehill/Claude-AI-Engineering-Plugin",
-    "description": "Claude Code plugin: prompt engineering workflow \u2014 craft, eval, catalog, version, search prompts, with library/factory variants.",
+    "description": "Prompt engineering \u2014 craft, eval, catalog, version, search prompts, with library/factory variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -207,6 +205,21 @@
     "created_date": "2026-05-02"
   },
   {
+    "name": "Amazon",
+    "url": "https://github.com/danielrosehill/Claude-Amazon-Plugin",
+    "description": "Amazon.com marketplace research \u2014 verified price, stock, rating, seller and specs read from the listing rather than the search grid; Prime-aware delivery dates checked against the ZIP they were actually rendered for; filtered signed-in search with tested extractors, a marketplace profile and a durable brand allowlist.",
+    "tags": [
+      "Plugin",
+      "Research"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "amazon",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "An Ode To Claude",
     "url": "https://github.com/danielrosehill/An-Ode-To-Claude",
     "description": "Workspace tracking a blog post through iterative drafting and revision, keeping every iteration, diff, and supporting context.",
@@ -239,9 +252,8 @@
   {
     "name": "Audio Production",
     "url": "https://github.com/danielrosehill/Claude-Audio-Production-Plugin",
-    "description": "Claude Code plugin: audio production workflow \u2014 normalize, VAD, transcribe, diarize, podcast assembly, with engineering/podcast/transcript variants.",
+    "description": "Audio production \u2014 normalize, VAD, transcribe, diarize, podcast assembly, with engineering/podcast/transcript variants.",
     "tags": [
-      "Automation",
       "Documentation",
       "Plugin"
     ],
@@ -327,6 +339,38 @@
     "created_date": "2025-12-05"
   },
   {
+    "name": "Book Writing",
+    "url": "https://github.com/danielrosehill/Claude-Book-Writing-Plugin",
+    "description": "Write a full-length reference or instructional book with teams of subagents \u2014 definition, planning, research, parallel chapter drafting, review, graphics and publication. Organised so no single agent is ever handed the whole book, because quality degrades long before a context window fills; consistency is carried by a style guide, per-chapter briefs and a continuity ledger instead of by shared context. Authorship only \u2014 print geometry hands off to kdp-publishing.",
+    "tags": [
+      "Documentation",
+      "Multi-Agent",
+      "Plugin",
+      "Research",
+      "Tool"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "book-writing",
+    "created_date": "2026-08-20"
+  },
+  {
+    "name": "Breakout Claude",
+    "url": "https://github.com/danielrosehill/Claude-Breakout",
+    "description": "Route an idea that surfaces mid-task but does not belong to the current repository into its own repo and its own agent, without derailing the work in flight. Uses the cross-session SendMessage/ListAgents layer for a push-model handoff \u2014 the seed brief is written to disk in the new repo and the message carries a pointer to it. Companion to interrupt-claude (same-repo interruption routing) and claude-hopper (session spawning and handover); breakout splits tracks rather than work or time. WIP.",
+    "tags": [
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "breakout-claude",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "Browser Data Capture",
     "url": "https://github.com/danielrosehill/Claude-Browser-Data-Capture-Plugin",
     "description": "Streamline programmatic data ingestion against sites and apps that don't ship a documented API \u2014 capture network traffic (HAR, mitmproxy, or live tab via claude-in-chrome), map endpoints, infer schemas, and produce a draft OpenAPI spec you can build a stable client against. Ships skills for per-domain map documents, version-controlled storage in a private GitHub repo, and good-faith vulnerability disclosure if a finding turns up incidentally. White-hat use only.",
@@ -344,9 +388,8 @@
   {
     "name": "Budgeting",
     "url": "https://github.com/danielrosehill/Claude-Budgeting-Plugin",
-    "description": "Claude Code plugin: personal budgeting workflow \u2014 log transactions, categorize, forecast, track goals, monthly reports.",
+    "description": "Personal budgeting \u2014 log transactions, categorize, forecast, track goals, monthly reports.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -388,9 +431,8 @@
   {
     "name": "Career",
     "url": "https://github.com/danielrosehill/Claude-Career-Plugin",
-    "description": "Claude Code plugin: career planning workflow \u2014 log roles, compare offers, track applications, salary benchmark, with planning/job-search/salary variants.",
+    "description": "Career planning \u2014 log roles, compare offers, track applications, salary benchmark, with planning/job-search/salary variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -1166,7 +1208,7 @@
   {
     "name": "Claude Pa",
     "url": "https://github.com/danielrosehill/Claude-PA",
-    "description": "Claude Code plugin: passive-aggressive PA system. Claude barks status updates over a speaker; if ignored, escalates across the house via Home Assistant or MQTT. Includes pre-recorded voice packs, RGB signal bulb, full-screen flash overlay, and a quiet-mode skill that translates natural-language pause/schedule requests.",
+    "description": "Passive-aggressive PA system. Claude barks status updates over a speaker; if ignored, escalates across the house via Home Assistant or MQTT. Includes pre-recorded voice packs, RGB signal bulb, full-screen flash overlay, and a quiet-mode skill that translates natural-language pause/schedule requests.",
     "tags": [
       "Plugin"
     ],
@@ -1297,6 +1339,20 @@
     "created_date": "2025-10-11"
   },
   {
+    "name": "Claude Sops",
+    "url": "https://github.com/danielrosehill/Claude-SOPs",
+    "description": "Keep your own standard operating procedures \u2014 the recurring things you do a particular way \u2014 as a private, versioned library of markdown files the agent reads on demand and follows. Distinct from sop-writer, which authors printed SOP documents for other people; these are procedures an agent executes. One delimited block in your CLAUDE.md points at the library, a generated INDEX.md carries id, title and a 'use when' trigger for each procedure, and exactly one file is read once a situation matches \u2014 so a library of forty procedures costs one table to consult rather than forty resident skill descriptions. Seven skills cover setup, run, write, edit, list, retire and sync. Procedures live in ~/.claude-user-data/sops/ as flat readable files inside a private git repo, mirrored across machines; the plugin repo never holds one. Each SOP declares an autonomy level (auto, confirm, confirm-each, manual) that records a default rather than granting permission, and a last_verified date meaning the procedure was seen to work rather than that the file was edited.",
+    "tags": [
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "claude-sops",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "Claude Spec Starter",
     "url": "https://github.com/danielrosehill/Claude-Spec-Starter",
     "description": "Pattern for AI-assisted development that starts from a single long user prompt and refines it into a spec.",
@@ -1361,9 +1417,8 @@
   {
     "name": "Claude Transcription",
     "url": "https://github.com/danielrosehill/Claude-Transcription-Plugin",
-    "description": "Claude Code plugin: audio transcription workflow \u2014 denoise, VAD, transcribe (Gemini/AssemblyAI/Whisper), clean, structure, export, with cloud and local engine backends.",
+    "description": "Audio transcription \u2014 denoise, VAD, transcribe (Gemini/AssemblyAI/Whisper), clean, structure, export, with cloud and local engine backends.",
     "tags": [
-      "Automation",
       "Documentation",
       "Plugin"
     ],
@@ -1513,7 +1568,7 @@
   {
     "name": "Contact Support",
     "url": "https://github.com/danielrosehill/contact-support-plugin",
-    "description": "Claude Code plugin (work in progress \u2014 concept stage): contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones \u2014 ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service.",
+    "description": "Contact a vendor's support desk from a registry of verified, dated contact routes rather than recalled ones \u2014 ticket URLs and which support plans can reach them, abuse and fraud addresses taken from mailto hrefs rather than page text, per-tier response windows, priority vocabulary, escalation ladders with SLA claim deadlines, pre-contact checks, and the plausible routes that turn out to be dead. Records the user's account identity and where credentials live (a pointer, never the secret), drafts the request with the identifiers the desk will demand, sends it through whichever channel is actually reachable, logs the ticket and chases it when the window elapses. Ships verified for Twilio only; extend with support-add-service. Work in progress \u2014 concept stage.",
     "tags": [
       "Plugin",
       "Research"
@@ -1528,9 +1583,8 @@
   {
     "name": "Content Writing",
     "url": "https://github.com/danielrosehill/Claude-Content-Writing-Plugin",
-    "description": "Claude Code plugin: content writing workflow \u2014 draft, proofread, version, publish, style guides, with writing/blog/opinion/document variants.",
+    "description": "Content writing \u2014 draft, proofread, version, publish, style guides, with writing/blog/opinion/document variants.",
     "tags": [
-      "Automation",
       "Documentation",
       "Plugin",
       "Tool"
@@ -1591,10 +1645,10 @@
   {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill/Daniel-Rosehill-Claude-Plugin",
-    "description": "Personal-use skills and slash commands for Daniel Rosehill \u2014 released publicly for convenience.",
+    "description": "Jump to Daniel Rosehill's public work from Claude Code \u2014 profiles (LinkedIn, X, GitHub, YouTube, npm, Kaggle, DeviantArt, Pexels), blog, Hugging Face, public repos by recency/stars/A\u2013Z, bio, resume download, and contact/newsletter pages. Also refreshes this marketplace's local cache. A directory of one person's published output, not personal configuration.",
     "tags": [
-      "Plugin",
-      "Slash Commands"
+      "Configuration",
+      "Plugin"
     ],
     "category": "Plugins",
     "category_slug": "plugins",
@@ -1634,9 +1688,8 @@
   {
     "name": "Debugging",
     "url": "https://github.com/danielrosehill/Claude-Debugging-Plugin",
-    "description": "Claude Code plugin: debugging workflow \u2014 capture logs, isolate issue, diagnose error, track bugs, with code/system/issue variants. Includes a KDE hotkey utility for capturing live system bugs.",
+    "description": "Debugging \u2014 capture logs, isolate issue, diagnose error, track bugs, with code/system/issue variants. Includes a KDE hotkey utility for capturing live system bugs.",
     "tags": [
-      "Automation",
       "Plugin",
       "Tool"
     ],
@@ -1694,10 +1747,9 @@
   {
     "name": "Desktop Manager",
     "url": "https://github.com/danielrosehill/Claude-Desktop-Manager-Plugin",
-    "description": "Claude Code plugin: Linux desktop management workflow \u2014 auto-profiles the local machine on first run and persists it to user data, then runs system checks, package install/remove, config application, hardware troubleshooting, service/log inspection against that profile.",
+    "description": "Linux desktop management \u2014 auto-profiles the local machine on first run and persists it to user data, then runs system checks, package install/remove, config application, hardware troubleshooting, service/log inspection against that profile.",
     "tags": [
       "Agent Workspace",
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -1725,9 +1777,8 @@
   {
     "name": "Dev Tools",
     "url": "https://github.com/danielrosehill/Claude-Dev-Tools-Plugin",
-    "description": "Claude Code plugin: dev-tools workflow \u2014 scaffold repos, multi-agent QA review, templatize. Session-handover commands and agent moved to claude-hopper in 1.2.0.",
+    "description": "Dev-tools \u2014 scaffold repos, multi-agent QA review, templatize. Session-handover commands and agent moved to claude-hopper in 1.2.0.",
     "tags": [
-      "Automation",
       "Multi-Agent",
       "Plugin"
     ],
@@ -1843,9 +1894,8 @@
   {
     "name": "Filesystem Organiser",
     "url": "https://github.com/danielrosehill/Claude-Filesystem-Organiser-Plugin",
-    "description": "Claude Code plugin: filesystem organisation workflow \u2014 scan, dedupe, cleanup, rename, sort for local directories and Google Drive, with local/gdrive variants. Includes organise-filesystem (modular modes) and super-organise (comprehensive single-pass) skills.",
+    "description": "Filesystem organisation \u2014 scan, dedupe, cleanup, rename, sort for local directories and Google Drive, with local/gdrive variants. Includes organise-filesystem (modular modes) and super-organise (comprehensive single-pass) skills.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -1858,7 +1908,7 @@
   {
     "name": "Freight Vol Calculator",
     "url": "https://github.com/danielrosehill/Freight-Vol-Calculator",
-    "description": "Claude Code plugin: freight volume arithmetic from a product's external dimensions \u2014 retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.",
+    "description": "Freight volume arithmetic from a product's external dimensions \u2014 retrieves and cross-checks dimensions from a supplier listing, then pallet quantity across 11 pallet standards, container loads palletised or floor-loaded for 20 ft / 40 ft / HC / reefer / 13.6 m trailer with stated buffers and payload limits, master-carton permutations ranked by units per container, and freight cost per unit from rates you supply. Reproduces published trade figures; holds no rate data and makes no network call.",
     "tags": [
       "Plugin"
     ],
@@ -2063,7 +2113,7 @@
   {
     "name": "HP5200 Printer",
     "url": "https://github.com/danielrosehill/Claude-HP5200-Skill-plugin",
-    "description": "Claude Code plugin: HP DeskJet 5200 printer and scanner operations \u2014 ink levels, color/B&W printing, scanning, auto-discovery.",
+    "description": "HP DeskJet 5200 printer and scanner operations \u2014 ink levels, color/B&W printing, scanning, auto-discovery.",
     "tags": [
       "Plugin"
     ],
@@ -2092,9 +2142,8 @@
   {
     "name": "Ideation Planning",
     "url": "https://github.com/danielrosehill/Claude-Ideation-Planning-Plugin",
-    "description": "Claude Code plugin: ideation and planning workflow \u2014 capture, evaluate, rank, simulate, and plan ideas, with ideation/single-idea-eval/multi-idea-ranking/feature-ideas/simulation/idea-capture variants.",
+    "description": "Ideation and planning \u2014 capture, generate, evaluate, rank, simulate, and plan ideas, with ideation/single-idea-eval/multi-idea-ranking/feature-ideas/simulation/idea-capture variants and Typst PDF deliverables.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -2121,7 +2170,7 @@
   {
     "name": "Image Production",
     "url": "https://github.com/danielrosehill/Claude-Image-Production-Plugin",
-    "description": "Claude Code plugin: image production \u2014 editing, format conversion, batch ops, and filesystem organisation by resolution, aspect ratio, orientation, format, EXIF time, camera, plus dedupe and metadata scrubbing.",
+    "description": "Image production \u2014 editing, format conversion, batch ops, and filesystem organisation by resolution, aspect ratio, orientation, format, EXIF time, camera, plus dedupe and metadata scrubbing.",
     "tags": [
       "Plugin"
     ],
@@ -2150,7 +2199,7 @@
   {
     "name": "Israel Opening Hours",
     "url": "https://github.com/danielrosehill/Claude-Israel-Opening-Hours-Plugin",
-    "description": "Claude Code plugin: check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.",
+    "description": "Check opening hours for Israeli businesses, including hours stated relative to Shabbat and yom tov. Combines Google Business and easy.co.il for stated hours with Hebcal candle-lighting/havdalah times, resolving phrasing like 'reopens an hour after Shabbat' into concrete clock times. Bundles 56 Israeli locations with verified per-city candle-lighting customs.",
     "tags": [
       "Plugin"
     ],
@@ -2268,6 +2317,20 @@
     "created_date": "2026-04-27"
   },
   {
+    "name": "Kdp Publishing",
+    "url": "https://github.com/danielrosehill/KDP-Publishing-Plugin",
+    "description": "Amazon KDP paperback production with Typst \u2014 choose a standard trim, typeset the interior with gutter-aware margins and an even page count, build the full-wrap cover last from the interior's measured extent, pre-flight for silent glyph substitution and stale spines, and assemble the upload folder. Production only; it does not write the book.",
+    "tags": [
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "kdp-publishing",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "Keyboard Scanner",
     "url": "https://github.com/danielrosehill/Claude-Keyboard-Scanner",
     "description": "Profile Linux keyboards, scan keycodes, and surface underused keys for remapping. Walks intake \u2192 keycode dump (xmodmap/XKB/evdev/libinput, X11 + Wayland) \u2192 tailored remap suggestions referencing keyd, kmonad, xremap, xmodmap, xbindkeys, input-remapper, autokey.",
@@ -2284,9 +2347,8 @@
   {
     "name": "Knowledge Documentation",
     "url": "https://github.com/danielrosehill/Claude-Knowledge-Documentation-Plugin",
-    "description": "Claude Code plugin: knowledge documentation workflow \u2014 index, cross-link, build taxonomy, version docs, with wiki/resource-library/process-docs/experiment-report variants.",
+    "description": "Knowledge documentation \u2014 index, cross-link, build taxonomy, version docs, with wiki/resource-library/process-docs/experiment-report variants.",
     "tags": [
-      "Automation",
       "Documentation",
       "Plugin"
     ],
@@ -2300,9 +2362,8 @@
   {
     "name": "Label Printer",
     "url": "https://github.com/danielrosehill/label-printer-plugin",
-    "description": "Claude Code plugin: print labels on a Brother P-touch label printer \u2014 single labels, N copies, batch runs, and QR-coded asset and storage-unit templates for inventory work. Bundles a streamable-HTTP MCP server that renders labels and hands them to a USB print bridge on a Linux host, plus notes on the device settings the Linux driver cannot reach.",
+    "description": "Print labels from Claude Code on Brother QL and P-touch label printers on Linux. Discovers printers over mDNS, USB and CUPS and keeps a machine-local registry so later prints can name one; renders text and QR labels to the pixel canvas of the loaded DK or TZe media; previews without touching the printer, because brother_ql converts and transmits in a single step with no dry run. Ships a media catalogue of DK and TZe product codes, reusable label templates in the user's data directory, and a Linux driver-install skill covering brother_ql, ptouch-print, mDNS and CUPS. Zebra and DYMO are discovered and registered but not yet printable. Also bundles the original streamable-HTTP MCP server for P-touch setups built around a USB print bridge.",
     "tags": [
-      "Configuration",
       "MCP",
       "Plugin"
     ],
@@ -2316,9 +2377,8 @@
   {
     "name": "Legal Investigative",
     "url": "https://github.com/danielrosehill/Claude-Legal-Investigative-Plugin",
-    "description": "Claude Code plugin: legal and investigative workflow \u2014 log evidence, analyze documents, redact, generate briefs, with legal-research/evidence/osint/document-analysis variants.",
+    "description": "Legal and investigative \u2014 log evidence, analyze documents, redact, generate briefs, with legal-research/evidence/osint/document-analysis variants.",
     "tags": [
-      "Automation",
       "Plugin",
       "Research"
     ],
@@ -2507,9 +2567,8 @@
   {
     "name": "Media Library",
     "url": "https://github.com/danielrosehill/Claude-Media-Library-Plugin",
-    "description": "Claude Code plugin: media library workflow \u2014 catalog, tag, search, sort, dedupe assets.",
+    "description": "Media library \u2014 catalog, tag, search, sort, dedupe assets.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -2537,7 +2596,7 @@
   {
     "name": "Netek Disconnect",
     "url": "https://github.com/danielrosehill/netek-disconnect-plugin",
-    "description": "Claude Code plugin: cancel Israeli service subscriptions (\u05e0\u05d9\u05ea\u05d5\u05e7) through netek.co.il \u2014 mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend \u2014 not a published API.",
+    "description": "Cancel Israeli service subscriptions (\u05e0\u05d9\u05ea\u05d5\u05e7) through netek.co.il \u2014 mobile, internet, landline, TV, international calling, water bars, newspapers and credit cards across 55 providers. Resolves the provider and exact Hebrew service string, validates the Israeli ID checksum and address, shows the exact request before sending, and submits only on explicit confirmation. Falls back to filling the form in Chrome when the API changes. Uses Netek's own private, undocumented backend \u2014 not a published API.",
     "tags": [
       "Plugin"
     ],
@@ -2636,6 +2695,20 @@
     "created_date": "2026-04-30"
   },
   {
+    "name": "Obd Diagnostics",
+    "url": "https://github.com/danielrosehill/Claude-OBD-Diagnostics-Plugin",
+    "description": "Read OBD-II data from an ELM327-class adapter, normalise it to JSON, and use it to diagnose faults and plan vehicle maintenance. WIP.",
+    "tags": [
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "obd-diagnostics",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "Obs Mgmt",
     "url": "https://github.com/danielrosehill/Claude-OBS-Plugin",
     "description": "Manage OBS Studio on Linux from Claude Code: detect install type (native/Flatpak/Snap/AppImage), enable and validate obs-websocket, ship a bundled obs-mcp MCP server for programmatic OBS control, back up configs to a user-defined folder, and install third-party OBS plugins.",
@@ -2696,11 +2769,25 @@
     "created_date": "2025-11-17"
   },
   {
+    "name": "Personal Context",
+    "url": "https://github.com/danielrosehill/Claude-Personal-Context-Plugin",
+    "description": "Builds and maintains a persistent, portable background context layer about the user \u2014 intake interview, ingestion of material they already have, gap analysis, scoped retrieval, maintenance and export. Plain markdown entries in a store the user owns, read through declared scopes and sensitivity levels; explicitly does not use model-managed memory. Ships the Portable Context Contract so issue-scoped workspaces can read it without re-asking who the person is.",
+    "tags": [
+      "Agent Workspace",
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "personal-context",
+    "created_date": "2026-08-20"
+  },
+  {
     "name": "Personal Planning",
     "url": "https://github.com/danielrosehill/Claude-Personal-Planning-Plugin",
-    "description": "Claude Code plugin: personal life planning workflow \u2014 log entries, review progress, set goals, with diary/health/family/house-search/preparedness/personal-dev/inbox variants.",
+    "description": "Personal life planning \u2014 log entries, review progress, set goals, with diary/health/family/house-search/preparedness/personal-dev/inbox variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -2727,9 +2814,8 @@
   {
     "name": "PR & Media Work",
     "url": "https://github.com/danielrosehill/Claude-PR-Media-Work-Plugin",
-    "description": "Claude Code plugin: PR and media monitoring workflow \u2014 scan coverage, summarize press, draft responses, comms strategy, with monitoring/response/strategy variants.",
+    "description": "PR and media monitoring \u2014 scan coverage, summarize press, draft responses, comms strategy, with monitoring/response/strategy variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -2752,6 +2838,22 @@
     "added_date": "2026-03-06",
     "slug": "private-and-public-claude-md",
     "created_date": "2025-10-22"
+  },
+  {
+    "name": "Procurement Tools",
+    "url": "https://github.com/danielrosehill/Claude-Purchasing-Plugin",
+    "description": "Marketplace-agnostic purchasing and procurement process \u2014 spec definition from a vague want or a photograph, annotated search vocabulary, intake, research, compare, evaluate, recommend, market-check, spec-driven market landscape surveys, live price/delivery scanning through your own VPN egress, preference memory, hardware-rig profiling primitives, with general/market-landscape/tech-procurement/recommendations variants.",
+    "tags": [
+      "Documentation",
+      "Plugin",
+      "Research"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "procurement-tools",
+    "created_date": "2026-04-19"
   },
   {
     "name": "Programmatic Doc Generation",
@@ -2784,21 +2886,6 @@
     "added_date": "2026-04-28",
     "slug": "proxmox-mgmt",
     "created_date": "2026-04-27"
-  },
-  {
-    "name": "Purchasing",
-    "url": "https://github.com/danielrosehill/Claude-Purchasing-Plugin",
-    "description": "Claude Code plugin: purchasing workflow \u2014 intake, compare products, evaluate options, recommend, with general/tech-procurement/recommendations variants.",
-    "tags": [
-      "Automation",
-      "Plugin"
-    ],
-    "category": "Plugins",
-    "category_slug": "plugins",
-    "category_group": "Technical",
-    "added_date": "2026-04-19",
-    "slug": "purchasing",
-    "created_date": "2026-04-19"
   },
   {
     "name": "Repo Mgmt",
@@ -2847,10 +2934,9 @@
   {
     "name": "Research Space",
     "url": "https://github.com/danielrosehill/Claude-Research-Space-Plugin",
-    "description": "Claude Code plugin: research workflow \u2014 source log, summarize, deep-dive, export, with deep-research/technical/osint/georeaction/stack/ecosystem/competitor variants. Includes a 30-agent tech research team for hardware/software stack evaluations (folded in from Claude-Tech-Research-Team).",
+    "description": "Research \u2014 source log, summarize, deep-dive, export, with deep-research/technical/osint/georeaction/stack/ecosystem/competitor/purchasing/general-research-workspace/obsidian-vault variants. The obsidian-vault variant scaffolds the research loop as a working Obsidian vault (committed .obsidian/ config, frontmatter schema, wikilinks, templates, canvas). Includes a 30-agent tech research team for hardware/software stack evaluations (folded in from Claude-Tech-Research-Team).",
     "tags": [
       "Agent Workspace",
-      "Automation",
       "Plugin",
       "Research"
     ],
@@ -2864,7 +2950,7 @@
   {
     "name": "Resource List Builder",
     "url": "https://github.com/danielrosehill/Claude-Resource-List-Builder-Plugin",
-    "description": "Claude Code plugin: build, maintain, and audit curated GitHub resource lists (Awesome-style indexes) with AI-driven categorisation, alphabetised tables, and dynamic shields.io badges.",
+    "description": "Build, maintain, and audit curated GitHub resource lists (Awesome-style indexes) with AI-driven categorisation, alphabetised tables, and dynamic shields.io badges.",
     "tags": [
       "Plugin"
     ],
@@ -2892,7 +2978,7 @@
   {
     "name": "Rtl Email",
     "url": "https://github.com/danielrosehill/Claude-RTL-Email",
-    "description": "Claude Code plugin: send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.",
+    "description": "Send email in right-to-left scripts (Hebrew, Arabic, Farsi, Urdu) that actually renders RTL. Plain-text email carries no direction metadata, so RTL bodies render LTR in many clients and multi-part numbers like account references reorder. Ships dir=rtl HTML templates, separate personal and business send skills inheriting saved signature profiles, and one-time signature setup. Works with Google Workspace MCP or Resend.",
     "tags": [
       "Agent Workspace",
       "Documentation",
@@ -2938,9 +3024,8 @@
   {
     "name": "Security Checkup",
     "url": "https://github.com/danielrosehill/Claude-Security-Checkup-Plugin",
-    "description": "Claude Code plugin: security and compliance workflow \u2014 vulnerability scanning, system hardening, config audits.",
+    "description": "Security and compliance \u2014 vulnerability scanning, system hardening, config audits.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -2953,10 +3038,11 @@
   {
     "name": "Shopping",
     "url": "https://github.com/danielrosehill/Claude-Shopping-Plugin",
-    "description": "Claude Code plugin: consumer shopping workflow \u2014 find product, compare vendors, check availability. Region-specific commands (e.g. Israel) now live in dedicated plugins like israel-skills.",
+    "description": "Region-specific consumer shopping primitives \u2014 find products, compare local vendors, check availability, and generate ranked purchase recommendations. Ships variant scaffolds per supported region and a provisioning skill for fresh shopping workspaces. Marketplace-specific research (Amazon US, AliExpress Israel) now lives in dedicated per-marketplace plugins; the marketplace-plugins skill is the roster.",
     "tags": [
-      "Automation",
-      "Plugin"
+      "Agent Workspace",
+      "Plugin",
+      "Research"
     ],
     "category": "Plugins",
     "category_slug": "plugins",
@@ -2964,6 +3050,20 @@
     "added_date": "2026-04-19",
     "slug": "shopping",
     "created_date": "2026-04-19"
+  },
+  {
+    "name": "Site Skill Builder",
+    "url": "https://github.com/danielrosehill/Claude-Site-Skill-Builder-Plugin",
+    "description": "Site skills built by watching a site in your own signed-in Chrome \u2014 observe pages and endpoints, propose a skill roster for approval, then author skills that survive UI changes and probe for drift. Semantic handles only, never pixel coordinates. Every observation is classified publishable, private, or never-recorded, with a stop rule for incidental security findings.",
+    "tags": [
+      "Plugin"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "site-skill-builder",
+    "created_date": "2026-08-20"
   },
   {
     "name": "Skill Creation Research",
@@ -2983,9 +3083,8 @@
   {
     "name": "Smart Home",
     "url": "https://github.com/danielrosehill/Claude-Smart-Home-Plugin",
-    "description": "Claude Code plugin: smart home workflow \u2014 Home Assistant, Snapcast multi-room audio, Plex media server ops, with HA/audio/media-server variants.",
+    "description": "Smart home \u2014 Home Assistant, Snapcast multi-room audio, Plex media server ops, with HA/audio/media-server variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -3054,7 +3153,7 @@
   {
     "name": "Spamhole",
     "url": "https://github.com/danielrosehill/Claude-SpamHole-Plugin",
-    "description": "Claude Code plugin: AI-assisted defenses against pseudo-personalised wide-scrape outreach, AI-faked impersonation, and tracking-pixel surveillance. Capture spam to a personal corpus, analyse intent, suggest filter patterns, scan for tracking + ad-tracker pixels, draft unsubscribe replies, push server-side Gmail blocks via an email MCP, push DNS-level blocks to AdGuard Home, and contribute redacted findings to public anti-tracking lists. Bundles a stub AdGuard Home MCP.",
+    "description": "AI-assisted defenses against pseudo-personalised wide-scrape outreach, AI-faked impersonation, and tracking-pixel surveillance. Capture spam to a personal corpus, analyse intent, suggest filter patterns, scan for tracking + ad-tracker pixels, draft unsubscribe replies, push server-side Gmail blocks via an email MCP, push DNS-level blocks to AdGuard Home, and contribute redacted findings to public anti-tracking lists. Bundles a stub AdGuard Home MCP.",
     "tags": [
       "Plugin"
     ],
@@ -3068,7 +3167,7 @@
   {
     "name": "Spec Led Certification",
     "url": "https://github.com/danielrosehill/spec-led-certification-plugin",
-    "description": "Claude Code plugin: choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations \u2014 start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files \u2014 subject, current position read from evidence, learning preferences, objectives and standing positions, money and time \u2014 a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.",
+    "description": "Choose a professional certification specification-first rather than market-first. create-workspace stands the search up as a private GitHub repo instantiated from the Spec-Led-Certification template, so it survives the machine and its git history shows when the scorecard was frozen relative to when the research ran. Three entry points for the three situations \u2014 start-search onboards and runs the full intake, rerun-search archives the previous run and reports what moved in the market, update-profile changes what is stored about you and marks the scorecard stale. Intake writes five dated profile files \u2014 subject, current position read from evidence, learning preferences, objectives and standing positions, money and time \u2014 a weighted scorecard is derived from those alone and frozen before any credential is looked up, then candidates are scored against it with a source tier and confidence tag on every number. Hard requirements exclude rather than score down. Emits a ranked comparison and a Typst PDF whose figures are computed from the CSVs at compile time. All state is written to the working directory, never to an agent memory store.",
     "tags": [
       "Agent Workspace",
       "Documentation",
@@ -3115,7 +3214,7 @@
   {
     "name": "Stack Evaluator",
     "url": "https://github.com/danielrosehill/stack-evaluator-plugin",
-    "description": "Claude Code plugin: component-level review of a project's technology stack, not its code \u2014 records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.",
+    "description": "Component-level review of a project's technology stack, not its code \u2014 records the stack to docs/stack/ with the run date, checks each component for end-of-life and currency, finds architectural gaps (caching, backups, queues, rate limiting, observability), flags redundancy and over-engineering against the real workload, then emits a sequenced revision proposal and an execution brief. Re-runnable per repo with persistent decisions and finding history.",
     "tags": [
       "Plugin"
     ],
@@ -3143,7 +3242,7 @@
   {
     "name": "Style Switcher",
     "url": "https://github.com/danielrosehill/Claude-Style-Switcher",
-    "description": "Claude Code plugin: persona-recipe library for swapping Claude into themed personalities (Daredevil, Jaded IT, Reluctant, Chatty, Philosophical, Operational, Dubious, Hyper Creative, Approval Needed, Visionary, Claude FM, Claude Bouncer). Each recipe ships a banner image and sound effect, and applies via either a managed block in ~/.claude/CLAUDE.md or a repo-sandbox mode that holds the user CLAUDE.md aside.",
+    "description": "Persona-recipe library for swapping Claude into themed personalities (Daredevil, Jaded IT, Reluctant, Chatty, Philosophical, Operational, Dubious, Hyper Creative, Approval Needed, Visionary, Claude FM, Claude Bouncer). Each recipe ships a banner image and sound effect, and applies via either a managed block in ~/.claude/CLAUDE.md or a repo-sandbox mode that holds the user CLAUDE.md aside.",
     "tags": [
       "Plugin"
     ],
@@ -3187,9 +3286,8 @@
   {
     "name": "Sysadmin Homelab",
     "url": "https://github.com/danielrosehill/Claude-Sysadmin-Homelab-Plugin",
-    "description": "Claude Code plugin: sysadmin and homelab workflow \u2014 diagnose, status, update config, backup, with linux/docker/conda/proxmox/nas/adb/sbc/remote-admin/lan variants.",
+    "description": "Sysadmin and homelab \u2014 diagnose, status, update config, backup, with linux/docker/conda/proxmox/nas/adb/sbc/remote-admin/lan variants.",
     "tags": [
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
@@ -3202,7 +3300,7 @@
   {
     "name": "System Recovery Mode",
     "url": "https://github.com/danielrosehill/Claude-System-Recovery-Mode",
-    "description": "Claude Code plugin: AI-assisted Linux system recovery \u2014 slash commands and agents (diagnose, logs, network, disk, services, packages) for diagnosing and fixing a broken system. Pairs with an optional GRUB/systemd installer that boots a minimal recovery TTY straight into Claude CLI.",
+    "description": "AI-assisted Linux system recovery \u2014 slash commands and agents (diagnose, logs, network, disk, services, packages) for diagnosing and fixing a broken system. Pairs with an optional GRUB/systemd installer that boots a minimal recovery TTY straight into Claude CLI.",
     "tags": [
       "Plugin",
       "Slash Commands",
@@ -3261,9 +3359,8 @@
   {
     "name": "Technical Docs",
     "url": "https://github.com/danielrosehill/Claude-Technical-Docs-Plugin",
-    "description": "Claude Code plugin: technical documentation workflow \u2014 READMEs, reference docs, changelogs, environment docs, with api-reference/code-docs/environment-docs/dev-notebook variants.",
+    "description": "Technical documentation \u2014 READMEs, reference docs, changelogs, environment docs, with api-reference/code-docs/environment-docs/dev-notebook variants.",
     "tags": [
-      "Automation",
       "Documentation",
       "Plugin"
     ],
@@ -3335,7 +3432,7 @@
   {
     "name": "Therapy Tracking",
     "url": "https://github.com/danielrosehill/Therapy-Tracking-Plugin",
-    "description": "Claude Code plugin for organising therapy reflections \u2014 pre/post-session notes, goal tracking, and turning voice-memo transcripts into structured problem summaries. Not therapy: organises notes only. Workspace data lives outside the plugin so the same install survives plugin updates.",
+    "description": "Organising therapy reflections \u2014 pre/post-session notes, goal tracking, and turning voice-memo transcripts into structured problem summaries. Not therapy: organises notes only. Workspace data lives outside the plugin so the same install survives plugin updates.",
     "tags": [
       "Agent Workspace",
       "Documentation",
@@ -3347,6 +3444,22 @@
     "added_date": "2026-04-28",
     "slug": "therapy-tracking",
     "created_date": "2026-04-28"
+  },
+  {
+    "name": "Travel Packing",
+    "url": "https://github.com/danielrosehill/Claude-Travel-Packing-Assistant-Plugin",
+    "description": "Make optimal use of a baggage allowance on an international itinerary \u2014 research each carrier's real checked, cabin and personal-item allowance per segment with a source and a confidence level for every figure, compute the binding limit that governs the journey, inventory what is carried by weight, reconcile scale readings against the inventory, solve the allocation to bags and packing cubes, price every way out of being over, and rank an emergency leave-behind list by cost per kilogram saved. Renders a one-page airport counter card and a per-bag packing list as PDF via Typst and as Markdown. One trip workspace per itinerary.",
+    "tags": [
+      "Agent Workspace",
+      "Plugin",
+      "Research"
+    ],
+    "category": "Plugins",
+    "category_slug": "plugins",
+    "category_group": "Technical",
+    "added_date": "2026-08-20",
+    "slug": "travel-packing",
+    "created_date": "2026-08-20"
   },
   {
     "name": "Unofficial MCP Builder",
@@ -3394,7 +3507,7 @@
   {
     "name": "Video Editing",
     "url": "https://github.com/danielrosehill/Claude-Video-Editor-Plugin",
-    "description": "Claude Code plugin for video editing, transcoding, video processing, and multimedia workflow automation. Two-tier workspace (index + project), per-user data store, and a growing set of ffmpeg/MLT/Kdenlive primitives.",
+    "description": "Video editing, transcoding, video processing, and multimedia workflow automation. Two-tier workspace (index + project), per-user data store, and a growing set of ffmpeg/MLT/Kdenlive primitives.",
     "tags": [
       "Agent Workspace",
       "Automation",
@@ -3425,10 +3538,9 @@
   {
     "name": "Workspace Foundational",
     "url": "https://github.com/danielrosehill/Claude-Workspace-Foundational-Plugin",
-    "description": "Claude Code plugin: foundational workspace workflow \u2014 setup, context management, report parsing, inventory, template discovery, with 6 variants.",
+    "description": "Foundational workspace \u2014 setup, context management, report parsing, inventory, template discovery, with 6 variants.",
     "tags": [
       "Agent Workspace",
-      "Automation",
       "Plugin"
     ],
     "category": "Plugins",
