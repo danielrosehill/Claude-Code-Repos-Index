@@ -109,7 +109,7 @@
       },
       "description": "Amazon.com marketplace research \u2014 verified price, stock, rating, seller and specs read from the listing rather than the search grid; Prime-aware delivery dates checked against the ZIP they were actually rendered for; filtered signed-in search with tested extractors, a marketplace profile and a durable brand allowlist.",
       "category": "Marketing & Shopping",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -176,7 +176,7 @@
       },
       "description": "Audio production \u2014 normalize, VAD, transcribe, diarize, podcast assembly, with engineering/podcast/transcript variants.",
       "category": "Media Editing",
-      "version": "1.0.0",
+      "version": "1.9.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -222,7 +222,7 @@
       },
       "description": "Video editing, transcoding, video processing, and multimedia workflow automation. Two-tier workspace (index + project), per-user data store, and a growing set of ffmpeg/MLT/Kdenlive primitives.",
       "category": "Media Editing",
-      "version": "1.6.0",
+      "version": "1.14.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -332,7 +332,7 @@
       },
       "description": "Career planning \u2014 log roles, compare offers, track applications, salary benchmark, with planning/job-search/salary variants.",
       "category": "Staging",
-      "version": "1.0.0",
+      "version": "2.2.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -349,11 +349,11 @@
       "displayName": "Procurement Tools",
       "source": {
         "source": "github",
-        "repo": "danielrosehill/Claude-Purchasing-Plugin"
+        "repo": "danielrosehill/procurement-tools-plugin"
       },
-      "description": "Marketplace-agnostic purchasing and procurement process \u2014 spec definition from a vague want or a photograph, annotated search vocabulary, intake, research, compare, evaluate, recommend, market-check, spec-driven market landscape surveys, live price/delivery scanning through your own VPN egress, preference memory, hardware-rig profiling primitives, with general/market-landscape/tech-procurement/recommendations variants.",
+      "description": "Product research and procurement skills with a particular focus on technical specification conformance \u2014 does this part actually meet the requirement, and can you show your working. Marketplace-agnostic: spec definition from a vague want or a photograph, annotated search vocabulary, versioned spec-as-code, manufacturer datasheet retrieval, cross-region part-number equivalence, conformance evaluation matrices, bills of materials and RFQ packages. Plus the surrounding process: intake, research, compare, evaluate, recommend, market-check, spec-driven market landscape surveys, live price/delivery scanning through your own VPN egress, preference memory and hardware-rig profiling. Hands off to the marketplace-specific plugins (shopping, israel-shopping, amazon, aliexpress-israel-skills) once a question becomes about a particular shop.",
       "category": "Marketing & Shopping",
-      "version": "2.0.1",
+      "version": "2.3.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -365,7 +365,11 @@
         "procurement",
         "spec-definition",
         "search-terms",
-        "decision"
+        "decision",
+        "technical-sourcing",
+        "datasheet",
+        "bill-of-materials",
+        "rfq"
       ]
     },
     {
@@ -424,7 +428,7 @@
       },
       "description": "Knowledge documentation \u2014 index, cross-link, build taxonomy, version docs, with wiki/resource-library/process-docs/experiment-report variants.",
       "category": "Research & Learning",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -690,7 +694,7 @@
       },
       "description": "AI transparency \u2014 document human vs AI contributions, add attribution, audit provenance.",
       "category": "Documentation & Writing",
-      "version": "1.0.0",
+      "version": "0.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -735,7 +739,7 @@
       },
       "description": "HP DeskJet 5200 printer and scanner operations \u2014 ink levels, color/B&W printing, scanning, auto-discovery.",
       "category": "Linux Sysadmin",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -783,7 +787,7 @@
       },
       "description": "Israeli shopping workflows \u2014 tech retailers (Ivory, KSP, Bug, TMS), Zap price comparison, Hebrew term resolution, ILS conversion, RRP checks, PN cross-reference, brand identification, and AliExpress IL-context search (ILS/Hebrew, IL reviews, free-shipping, combo exclusion, local-vs-import compare).",
       "category": "Personal Productivity",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -881,7 +885,7 @@
       },
       "description": "Semantic GitHub repo discovery for reusable components. Search, rank, overview, evaluate, and recommend open-source repos \u2014 Claude parses gh API results, weighing stars, activity, maintenance, license, and stack fit.",
       "category": "Git & GitHub",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -905,7 +909,7 @@
       },
       "description": "Plan, document, and implement a backup and data-protection strategy for the current project \u2014 from architecture discovery through script generation and restore drills.",
       "category": "Linux Sysadmin",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -978,7 +982,7 @@
       },
       "description": "ADB (Android Debug Bridge) operations \u2014 onboard a phone, map folders, import media, capture screenshots, and manage bloatware with a persistent log.",
       "category": "Network & Smart Home",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -1026,7 +1030,7 @@
       },
       "description": "Manage a resume as JSON Resume schema data and render it with custom Typst templates. Onboard, iterate, fork variants, and version.",
       "category": "Documentation & Writing",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -1143,9 +1147,9 @@
         "source": "github",
         "repo": "danielrosehill/Claude-Israel-Agent-Skills-Plugin"
       },
-      "description": "Claude Code agent skills for Israel and Hebrew-specific workflows: Hebrew translation, Hebrew typography, emergency readiness utilities, and regional lookups.",
+      "description": "Claude Code agent skills for Israel-specific workflows: emergency readiness utilities, medicine and drug registry lookups, Kol Zchut rights lookups, municipal and transport information, and regional lookups. For Hebrew correspondence and typography see the hebrew-correspondence plugin.",
       "category": "Regional",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -1349,7 +1353,7 @@
       },
       "description": "Skill for developing KDE Plasma plasmoids (QML/Plasma 6 desktop and panel widgets) \u2014 scaffold, debug, package, install, and migrate Plasma 5 \u2192 6.",
       "category": "Linux Sysadmin",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -1816,7 +1820,7 @@
       },
       "description": "Linux desktop debugging toolkit \u2014 targeted journal/boot/log inspection skills plus proactive logging instrumentation (persistent journald, kdump, sysstat, OOM protection) so AI agents can analyze hard crashes, freezes, and runtime issues. Targets Ubuntu + Wayland; forkable for other distros.",
       "category": "Linux Sysadmin",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -1917,7 +1921,7 @@
       },
       "description": "Meta-plugin for per-project activation of dormant plugins and MCP servers from a personal vault. Mitigates user-level eager skill description loading.",
       "category": "Privacy & Security",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -3122,7 +3126,7 @@
       },
       "description": "AliExpress shopping skills for Israel-based buyers \u2014 Choice-first search in ILS via a local browser, free-shipping filter, Israeli-reviews filter, single-listing landed-cost parse, and a running cart-value VAT-threshold nudge ($75 de-minimis).",
       "category": "Personal Productivity",
-      "version": "1.3.0",
+      "version": "1.6.1",
       "author": {
         "name": "Daniel Rosehill",
         "email": "public@danielrosehill.com",
@@ -3440,6 +3444,30 @@
       ]
     },
     {
+      "name": "chatgpt-importer",
+      "displayName": "ChatGPT Importer",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-ChatGPT-Importer-Plugin"
+      },
+      "description": "Import a ChatGPT conversation into local files via the browser. Captures the full thread from a chatgpt.com URL, a shared link, or an official export archive, then normalizes it to JSON and renders Markdown or a styled Typst PDF with user and assistant turns marked, artifacts (canvas docs, images, code) extracted, cited sources collected, and conversation metadata recorded. Includes a two-pass redaction skill and a conversation-to-context workflow that writes transcripts into a repo's context/ folder.",
+      "category": "AI & Context",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "chatgpt",
+        "conversation-import",
+        "browser-automation",
+        "archival",
+        "transcripts"
+      ]
+    },
+    {
       "name": "travel-packing",
       "displayName": "Travel Packing",
       "source": {
@@ -3557,6 +3585,388 @@
         "site-integration",
         "maintenance"
       ]
+    },
+    {
+      "name": "timemark",
+      "displayName": "Timemark",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Timemark-Plugin"
+      },
+      "description": "Timemark stamp-camera photo import that recovers the field data the app withholds. No Timemark export carries both the full-resolution image and the values, so imports are gated on having the originals and the Photosheet XLSX, then joined on capture timestamp. Outputs are XMP burned into the files or a self-contained archive of images, JSON sidecars and an index.",
+      "category": "Media Editing",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "tags": [
+        "timemark",
+        "photo-metadata",
+        "exif",
+        "xmp",
+        "field-capture",
+        "inventory-photography",
+        "android"
+      ]
+    },
+    {
+      "name": "eml-toolkit",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Eml-Toolkit"
+      },
+      "description": "Process .eml email exports \u2014 reconstruct a thread from loose .eml files, render the chain to a single PDF with correct right-to-left handling for Hebrew and Arabic, extract attachments, export Markdown, redact before sharing, and build numbered evidence bundles.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "keywords": [
+        "eml",
+        "email",
+        "pdf",
+        "rtl",
+        "hebrew",
+        "bidi",
+        "thread",
+        "redaction",
+        "evidence"
+      ]
+    },
+    {
+      "name": "hebrew-correspondence",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Hebrew-Correspondence-Plugin"
+      },
+      "description": "One home for correspondence in Hebrew \u2014 send RTL email that renders correctly in every client, typeset formal letters to PDF with David Libre via Typst, turn incoming .eml threads into readable PDFs, and verify a render before it goes out.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT",
+      "keywords": [
+        "hebrew",
+        "rtl",
+        "bidi",
+        "email",
+        "typst",
+        "pdf",
+        "correspondence",
+        "israel",
+        "david-libre"
+      ]
+    },
+    {
+      "name": "anonymisation-assistant",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Anonymisation-Assistant-Plugin"
+      },
+      "description": "Anonymise sensitive documents (whistleblower disclosures, harassment diaries, incident reports) by replacing identifying details while preserving narrative integrity.",
+      "category": "Privacy & Security",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "audio-voice-id",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/audio-voice-id-plugin"
+      },
+      "description": "Speaker diarization, voice enrollment, and identification for audio files \u2014 builds a local voiceprint library with optional cloud replication.",
+      "category": "Media Editing",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "brainstorm-solutions",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/brainstorm-solutions-plugin"
+      },
+      "description": "When you hit a wall, spin up a research workspace to brainstorm solutions \u2014 captures the blocker, what you tried, and kicks off deep research",
+      "category": "Personal Productivity",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "conda-manager",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/conda-manager-plugin"
+      },
+      "description": "Claude Code plugin for managing, auditing, and optimising Conda environments \u2014 list, validate, compare, backup, and clean up environments with AI assistance.",
+      "category": "Linux Sysadmin",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "context-toolkit",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/context-toolkit-plugin"
+      },
+      "description": "A comprehensive toolkit implementing the CONTEXT.md workflow system for managing human-authored context and agent-ready briefings, bridging natural expression and AI-optimized formats.",
+      "category": "AI & Context",
+      "version": "1.0.1",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "diary-planner",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/diary-planner-plugin"
+      },
+      "description": "A workflow planning and time management template with agent definitions and slash commands for managing daily, weekly, and monthly schedules while maintaining connections between immediate tasks and longer-term objectives.",
+      "category": "Personal Productivity",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "docker-manager",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/docker-manager-plugin"
+      },
+      "description": "Slash commands and subagents for managing Docker containers, Compose stacks, volumes, networks, and multi-environment deployments.",
+      "category": "Linux Sysadmin",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "eval-runner",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Eval-Runner-Plugin"
+      },
+      "description": "Scaffolding, running, documenting, and publishing AI evaluations. Ships skills and commands for setting up eval workspaces, creating custom evals (or adapting existing frameworks/benchmarks), running them, and publishing evals or datasets. Bundles a curated ground-truth list of open-source eval tools and benchmarks as a reference data source.",
+      "category": "QA & Agent Sessions",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "filesystem-organisation",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/filesystem-org-plugin"
+      },
+      "description": "Claude Code plugin for file system organization, folder structure optimization, and file management automation workflows.",
+      "category": "Linux Sysadmin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "github-research",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/github-research-plugin"
+      },
+      "description": "Research existing GitHub repositories before building \u2014 search, rank, and evaluate candidate tools via gh CLI with careful attention to stars, recency, and maintenance quality",
+      "category": "Git & GitHub",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "grainger",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Claude-Grainger-Plugin"
+      },
+      "description": "Claude Code plugin: Grainger.com (US industrial MRO) product research \u2014 typeahead and category discovery from a script, price and spec verification from the signed-in browser. Encodes the mapped /ta/v3, /tap/v2 and __PRELOADED_STATE__ surfaces, the facet grammar that filters a category, per-branch stock counts across ~325 branches, and the three distinct ways Grainger refuses a request while returning HTTP 200.",
+      "category": "Marketing & Shopping",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "learning",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/learning-plugin"
+      },
+      "description": "Claude Code plugin for learning resources, skill development, educational content creation, and knowledge management.",
+      "category": "Research & Learning",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "linux-desktop-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/linux-desktop-plugin"
+      },
+      "description": "Claude Code plugin for Linux desktop environment management, KDE/Plasma configuration, and desktop system administration.",
+      "category": "Linux Sysadmin",
+      "version": "2.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "linux-server-mgmt",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/linux-server-plugin"
+      },
+      "description": "Claude Code plugin for Linux server administration, service management, and server infrastructure workflows.",
+      "category": "Linux Sysadmin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "mqtt-observability",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/mqtt-observability-plugin"
+      },
+      "description": "Observe and interact with an MQTT broker \u2014 monitor all payloads, watch a specific topic, and publish messages. Stores broker credentials once and reuses them.",
+      "category": "Network & Smart Home",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "stack-search",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Stack-Search-Plugin"
+      },
+      "description": "Spawn a new stack search workspace from the Claude-Stack-Research-Workspace template \u2014 clone, name, create GitHub repo, and kick off the structured intake interview",
+      "category": "Research & Learning",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "tech-research",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/tech-research-plugin"
+      },
+      "description": "Claude Code plugin for technology research, competitive analysis, technical documentation retrieval, and research workflows.",
+      "category": "Research & Learning",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "user-manual",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/user-manual-plugin"
+      },
+      "description": "Claude Code plugin for generating personal user manuals and private documentation for codebases. Creates personalized, private reference guides with PDF output support.",
+      "category": "Documentation & Writing",
+      "version": "1.0.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
+    },
+    {
+      "name": "aliexpress-shopper",
+      "source": {
+        "source": "github",
+        "repo": "danielrosehill/Aliexpress-Shopper"
+      },
+      "description": "Browser-driven AliExpress shopping assistant for Claude in Chrome. Bundles userscripts (Find Similar, Hide Combo Deals) and skills/commands that drive aliexpress.com directly in the user's browser session \u2014 search, read current listing, compare open tabs, apply filters, hide bundles, and find similar items. Scope is global aliexpress.com (any locale/currency) and visual/interactive shopping, not headless scraping or programmatic API flows.",
+      "category": "Marketing & Shopping",
+      "version": "0.1.0",
+      "author": {
+        "name": "Daniel Rosehill",
+        "email": "public@danielrosehill.com",
+        "url": "https://danielrosehill.com"
+      },
+      "license": "MIT"
     }
   ]
 }
